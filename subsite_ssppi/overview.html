@@ -1,0 +1,136 @@
+<html>
+<head>
+
+<title>SS-PPI Demo Overview</title>
+<meta name="Microsoft Theme" content="none, default"><meta name="Microsoft Border" content="tlb, default"></head>
+
+<BODY BGColor="#ffffff" text="#000055" 
+link="#CC0000" alink="#FF3300"
+vlink="#005522">
+
+<!--msnavigation-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<br>
+<p>
+<DD>
+<img src="img/banner_ssppi.jpg">
+<p>
+<DD><font color=blue size=6>Overview
+</font> 
+</p>
+<br>
+<p>
+</td></tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+
+<p>&nbsp;</p>
+</td><td valign="top" width="24"></td><!--msnavigation--><td valign="top">
+<center>
+<img src="img/linebar.jpg"
+alt="-------"><p>
+</center>
+
+<DL>
+<DD>
+<a name="overview">
+<h2>Introduction</h2>
+<font size=+1>
+<p>
+Many healthcare providers, payers, and pharmaceutical compa-nies have increased their use of eHealth solutions to manage health-related 
+information and to automate administrative and clinical func-tions. We are witnessing an increasing demand for the next generation health information networks, 
+which hold the promise of provid-ing large-scale information sharing over distributed, access controlled content across a network of healthcare providers. A representative
+example is the work currently under way to construct the Nationwide Health Information Network (NHIN) that supports information
+sharing among more than 20 federal agencies, along with numerous private hospitals and doctors’ offices. A fundamental capability of
+such information network is to provide efficient, privacy-preserving search over distributed, access controlled content.
+<p>
+More specifically, individual healthcare providers typically enforce strict regulations over the healthcare information for a number of reasons,
+such as patients’ privacy requirements, conflicting economic interests, and federal administration; meanwhile, the capability of
+efficiently identifying and retrieving relevant content across health-care administrative boundaries is crucial for the healthcare information network to improve care quality, emergency response, and diag-nosis accuracy. 
+This poses the question of how to facilitate effective search while minimally revealing which providers possess which con-tent (i.e., content privacy).
+<p>
+
+<h2>What is SS-PPI</h2>
+
+<p>
+The first Privacy Preserving Index (PPI) was refered to as flipping PPI to
+strike a balance between privacy preservation and search efficiency.
+It leverages an abstraction of group-wise index, by which providers are organized into a set of
+disjoint privacy groups.1 Content privacy is preserved in the sense that providers in the same group are indistinguishable. 
+Query dis-semination is performed at the granularity of privacy group. Within a privacy group, a given query is forwarded either to all providers
+or to none of them, depending on whether there exists (at least) one provider with matched content. Flipping PPI is known to suffer from
+index construction inefficiency, due to the large number of rounds of PPI computation, and is vulnerable to colluding attacks.
+<p>
+We propose the concept of role-sensitive PPI and a secure protocol for fast construction of PPI based on the primitives of
+secret sharing. We entitle this concrete implementation of our role-sensitive PPI as SS-PPI. Given a query in conjunction with the role
+of the querier, our role-sensitive PPI returns the groups of providers that potentially hold the content that matches the search term for this
+role. Both privacy preserving and search efficiency are attained on a finer-granularity level. Since our PPI abstraction is defined on finne
+granularity (role sensitive), we preserve content privacy as well as access policy privacy at the same time. 
+This new type of privacy protects the sensitive information in provider-defined access rules, 
+such as to which role provider p has granted access. 
+
+<h2>Index Construction Protocol</h2>
+
+<p>
+The framework of SS-PPI mainly consists of two phases, index construction and query answering. The former further processes in
+three major components, group formation, group aggregation and global index construction.
+
+<ul>
+<li><b>Component 1 - Grouping</b><br>
+SS-PPI organizes providers into privacy groups. In this paper, we adopt the strategy of random grouping based on universal hashing.
+<p>
+
+<li><b>Component 2 - Secure group aggregation</b> <br>
+Within each privacy group, a summarization structure is built in a privacy-preserving manner that
+indexes the content possession by group members. Instead of using the generic circuit computing, SS-PPI constructs this
+aggregation by an extended secrete sharing scheme, which endows our solution with both scalability and attack-resilience.
+<p>
+
+<li><b>Component 3 - Privacy-aware global index construction</b> <br>
+The global index is constructed efficiently by merging the set of group aggregations. 
+SS-PPI adopts a distributed scheme that not only amortizes the trust on a single third party, but also supports localized, incremental index update.
+</ul>
+
+<center>
+<h2>Demo</h2>
+<p>
+<a href="img/screenshot.jpg" target="_blank"><IMG ALIGN=TOP SRC="img/screenshot.jpg" bgcolor=yellow width ="500" height="350"> </a>
+</center>
+
+</font>
+
+<br>
+<p>
+<p>
+<br>
+<p>
+<center>
+<img src="img/linebar.jpg"
+alt="-------"><p>
+</center>
+</DL>
+
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+
+
+<A HREF="http://www.gatech.edu">
+<IMG ALIGN=TOP 
+SRC="http://www.cc.gatech.edu/~lingliu/pictures/GTlogosm.gif"></A>
+<A HREF="http://www.cc.gatech.edu/projects/disl/XWRAPElite" target=_blank>
+<IMG ALIGN=TOP SRC="img/banner_ssppi.jpg"
+bgcolor=yellow width ="200" height="40"
+></A>
+<br>
+<A HREF="http://www.cc.gatech.edu/">
+<IMG ALIGN=TOP SRC="http://www.cc.gatech.edu/~lingliu/pictures/CCbanner.gif"></A>
+<p>
+<h5>For problems or questions regarding this web contact <a href="mailto:cq@cc.g
+atech.edu">[SS-PPI Demo]</a>.<br>
+Last updated: July 01, 2012.</h5>
+</td></tr><!--msnavigation--></table></body>
+
+</body>
+</html>
+
+<!-------------------------------------------------------->

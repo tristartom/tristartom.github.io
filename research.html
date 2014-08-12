@@ -1,0 +1,306 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<title>Research - Yuzhe Tang</title>
+<style fprolloverstyle>
+A:hover {color: #FF0000;}
+.style4 {font-family: Arial, Helvetica, sans-serif; font-size: 16px; }
+.style5 {font-family: Arial, Helvetica, sans-serif; font-size: 16pt; }
+.style6 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.style7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+}
+.style8 {font-family: Arial, Helvetica, sans-serif; font-style:italic; font-size: 13px; }
+.style16 {font-family: Arial, Helvetica, sans-serif; font-size: 18pt }
+.style17 {font-size: 12px }
+.style21 {font-size: 11.5pt; font-family: Arial, Helvetica, sans-serif; }
+.style27 {font-family: Arial, Helvetica, sans-serif; font-size: 12pt; }
+</style>
+
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="3" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+<tr>
+
+<td valign=top width="110" background="background.jpg">
+  <span class="style27"><a href="index.html">Home</a><br>
+  <br>
+  <a href="index.html#bio">About Me</a><br>
+  <br>
+  <a href="research.html">Research</a><br>
+  <br>
+  <a href="index.html#pub">Papers</a><br>
+  <br>
+<!--
+  <a href="index.html#course">Courses</a><br>
+  <br>
+-->
+
+  <br>
+  <a href="http://www.cc.gatech.edu/projects/disl/" target=_blank>DiSL Group</a>  <br>
+  <br>
+  <a href="http://www.cercs.gatech.edu/" target=_blank>CERCS</a>
+</span><br>
+</td>
+ 
+
+<td>
+ <table border="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111" width="900" id="AutoNumber1">
+  <tr> <td td  align="center" text-align="center">
+     <span class = "style16">Research Projects<a name="xxx" id="xxx"></span>
+<p/>
+     Yuzhe Tang <br> <span class = "style6">Last updated Jan. 12, 2014</span>
+  </td> </tr>
+ </table>
+
+ <table border="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111" width="900" id="AutoNumber2">
+  <tr> <td colspan="2">
+    <a name="ppi" id="ppi"><hr>
+</a> <span class = "style5">
+ Privacy Preserving Index and Search in Multi-domain Distributed Clouds
+ <p/></span>
+  </td>
+  </tr>
+
+  <tr> <td/>
+  <td colspan="1">
+     <span class = "style5">
+     <img border=0 src="./docs/system_providers_real.png"
+border="0" width="525" height="175" hspace="1" vspace="1"
+><a name="xxx" id="xxx"></span>
+  </td> 
+  <tr>
+
+  <tr>
+   <td align="left" valign="top">
+<img border=0 src="./docs/ssssp.png"
+border="0" width="250" height="400" hspace="1" vspace="1"
+>
+   </td> 
+   <td align="justify"> <span class="style12">
+<b>Introduction: </b>
+In the age of cloud computing, cloud data users submit their data to a
+third-party cloud domain to process their data. While the cloud computing
+paradigm enjoys a success nowadays, the cloud users may lose the control over
+their data. Recently, the move toward giving data control back to cloud users
+has given birth to a variety of distributed cloud systems for different
+applications<!--, including distributed social networking (e.g. Diaspora),
+peer-to-peer file sharing with access controls and electronic Healthcare
+networks over the Internet (e.g. NHIN Direct)-->. The distributed cloud system
+runs in multiple autonomously administrated domains (e.g. different servers in
+different countries) and the data owners are given a choice on the cloud domain
+to store their personal data. For example, in an eHealthcare network, a patient
+can store her data to a hospital she visited, or in a distributed social
+network<!--, a social user can decide to store her social presence data on a server
+whose administration she can presumably trust or can even launch a personal
+server-->.
+<p>
+
+<b>Research contributions:</b> 
+In the distributed cloud, information exchange
+and sharing between different domains, while crucially important from an
+application point of view, raise concerns on data privacy and confidentiality.
+We propose a privacy preserving index (or PPI) framework to facilitate 
+information sharing across a domain boundary without sacrificing data privacy. A
+PPI provides a directory lookup service for federated data discovery in the
+distributed cloud. For privacy protection and effective search utility, I first
+proposed an efficient index construction protocol, named ss-PPI [<a
+href="./docs/cikm11.pdf">CIKM'11</a>], based on the efficient use of secret
+sharing.  Based on the observed needs for differentiated privacy preservation,
+I then proposed ePPI 
+[<a href="http://www.cercs.gatech.edu/tech-reports/tr2014/git-cercs-14-02.pdf">ICDCS'14</a>]
+ that
+provides quantitatively controllable privacy protection for different data
+owners. To address multi-keyword content search against unstructured
+data, I proposed mPPI [<a href="./tba.html">Under submission</a>]. The
+key challenge in realizing the proposed PPI frameworks comes from the needs for secure
+index construction in a mutually untrusted network. While the common wisdom for
+secure computation
+is to use the multi-party computation (or MPC) techniques, the existing MPC frameworks do not (yet) provide
+a practical platform for big-data computation, as its performance is only feasible for small workloads. 
+I proposed several MPC optimization techniques (as in the left figure) for realizing the massive computation in the PPI construction on tens or hundreds of cloud domains.
+<p>
+
+<b>System implementation:</b>
+The proposed secure PPI construction is implemented. The system implementation is based on several existing computing software, including <i>FairplayMP</i> platform for secure MPC, Google's <i>Protobuf</i> and JBoss's <i>Netty</i> for RPC with flexibility, and <i>Mathematica</i> for NLP computation (non-linear programming). 
+    </span> </td> </tr>
+ </table>
+
+ <table border="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111" width="900" id="AutoNumber2">
+  <tr> <td colspan="2">
+<a name="kvindex" id="kvindex">
+<hr>
+</a>
+     <span class = "style5">
+Indexing Key-Value Stores with Deferred Repairs <p/></span>
+  </td> </tr>
+  <tr>
+   <td align="left" valign="top">
+     <img border=0 src="./docs/hindex.png"
+border="0" width="250" height="250" hspace="1" vspace="1"
+>
+<p/>
+     <img border=0 src="./docs/lsm.png"
+border="0" width="250" height="175" hspace="1" vspace="1"
+>
+   </td> 
+   <td align="justify"> <span class="style12">
+
+<b>Introduction:</b>
+The recent workload shift in clouds toward write-intensive workloads (e.g. for Web 2.0 applications)
+ has caused the proliferation of various write-optimized data storage systems, such as HBase, 
+Cassandra and BigTable. While these scalable stores, mostly called key-value stores, provide 
+key-based methods such as Get for data reads and retrieval, the value-based access methods 
+are rarely supported due to the challenge of indexing big data at scale. 
+<p>
+
+<b>Research contributions: </b>
+This project addresses the indexing problem of the write-intensive key-value
+data under the design goals of real-time data availability and lightweight
+index maintenance. The real-time availability entails that the recently updated
+data should be indexed in (near) real time and be made available to query
+results as soon as possible. Toward the design goals, I proposed HIndex
+<!-- [<a href="http://www.cercs.gatech.edu/tech-reports/tr2014/git-cercs-14-01.pdf">Under submission</a>],-->
+<!-- [<a href="./docs/hindex.pdf">Under submission</a>], -->
+[<a href="./tba.html">Under submission</a>], an append-only index
+design for write-optimized key-value stores.  HIndex utilizes an index repair
+operation for a garbage collection. For the optimized performance, I proposed a
+novel scheduling strategy that couples the index repair operations with offline
+reorganization processes<!--, mostly known as compactions in the key-value stores-->.  
+<!-- I
+further proposed DIndex [<a href="./index.html#dindex">Under submission</a>], a
+performance-optimized indexing framework which dynamically defers and schedules
+the execution of index repair operations in an online fashion. 
+To minimize the performance
+intrusion, I proposed various adaptive scheduling strategies that are carefully
+designed with the awareness of current data access patterns, system loads, and
+unique performance characteristics in the underlying key-value stores. 
+-->
+ <p>
+
+<b>System implementation</b>:
+The prototype system of HIndex and DIndex is implemented based on different cloud storage infrastructures, including <i>HBase</i> and <i>Cassandra</i>. For HBase-based implementation, I have taken advantage of HBase's CoProcessor API. The performance study of HIndex is based on <i>YCSB</i> as a workload generator, and <i>EMulab</i> as a cloud computing platform. With collaboration from IBM Research, we have implemented the indexing framework and integrated into the IBM BigInsights product [<a href="./docs/DiffIndex-EDBT14.pdf">EDBT'14</a>]. I will outsource the prototype of HIndex in the near future.
+    </span> </td> </tr>
+ </table>
+
+ <table border="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111" width="900" id="AutoNumber2">
+  <tr> <td colspan="2">
+<a name="kvauth" id="kvauth"><hr>
+</a>
+     <span class = "style5">Outsourcing Multi-Version Key-Value Stores with Authenticated Put/Get's <p/></span>
+  </td> </tr>
+
+  <tr> <td/>
+  <td colspan="1">
+     <span class = "style5">
+     <img border=0 src="./docs/system_arch.png"
+border="0" width="550" height="200" hspace="1" vspace="1"
+><a name="xxx" id="xxx"></span>
+  </td> 
+  </tr>
+
+  <tr>
+   <td align="left" valign="top">
+     <img border=0 src="./docs/incbmtree.png"
+border="0" width="250" height="250" hspace="1" vspace="1">
+   </td> 
+   <td align="justify"> <span class="style12">
+<b>Introduction: </b>
+Data outsourcing offers cost-effective computing power to manage massive data streams and reliable access to data. For example, data owners can forward their data to clouds, and the clouds provide data mirroring, backup, and online access services to end users. However, outsourcing data to untrusted clouds requires data authentication and query integrity to remain in the control of the data owners and users.
+<p>
+
+<b>Research contributions: </b>
+This project addresses the problem specifically for multi-version key-value data that is subject to continuous updates under the constraints of data integrity, data authenticity and "version freshness". The version freshness is to ensure that the value returned by a Get operation in an outsourced key-value store is the latest version of the requested key. I proposed IncBM tree 
+<!-- [<a href="http://www.cercs.gatech.edu/tech-reports/tr2014/git-cercs-14-03.pdf">Under submission</a>], -->
+<!-- [<a href="./docs/incbm.pdf">Under submission</a>], -->
+[<a href="./tba.html">Under submission</a>], 
+a novel construct delivering authenticated version freshness. The core idea of an IncBM tree is to combine  Bloom filters with a Merkle Hash Tree. As a stream authentication framework, the IncBM tree verifies the integrity of both real-time and historic data. The design of IncBM tree is to optimize the system performance under continuous data update streams. It provides lightweight signing and verification on massive streams yet with small memory footprint.
+<p>
+
+<b>System implementation: </b>
+I have implemented a stream authentication framework and the IncBM tree. The system implementation is based on security primitives provided in <i>Javax.crypto.*</i>, and <i>HBase</i> for key-value data persistence. The performance study and demonstration [<a href="./docs/ICDE14_demo_768.pdf">ICDE'14</a>] are based in the <i>Emulab</i> cloud platform and the <i>YCSB</i> cloud dataset.
+    </span> </td> </tr>
+ </table>
+
+ <table border="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111" width="900" id="AutoNumber2">
+  <tr> <td colspan="2">
+     <span class = "style5"><hr> 
+Indexing DHT Networks with Low Maintenance Overhead <p/><a name="xxx" id="xxx"></span>
+  </td> </tr>
+  <tr>
+   <td align="left" valign="center">
+     <img border=0 src="./docs/figure1.png"
+border="0" width="250" height="250" hspace="1" vspace="1"
+>
+   </td> 
+   <td align="justify"> <span class="style12">
+<b>Introduction and contributions: </b>
+This project aims at a generic index support on top of distributed hash tables (or DHT), which is
+a representative peer-to-peer network. Due to the high dynamism in peer-to-peer networks where
+peers can freely join and leave the network, the research addresses the need for a lightweight index maintenance
+scheme. I proposed LigHT, an indexing framework on top of generic DHT networks. The design
+of LigHT challenges two seemingly conflicting goals, that is, maximizing query efficiency while
+minimizing the maintenance overhead. To meet the challenge, I proposed a novel index-to-peer
+mapping scheme that intelligently minimizes inter-peer communications for both index maintenance
+and query processing. We apply this idea to different indexing and search scenarios with new devised
+algorithms, including value-based range query [<a href="./docs/icdcs08.pdf">ICDCS'08</a>, <a href="./docs/tkde10.pdf">TKDE'10</a>], multi-dimensional range queries [<a href="./docs/icdcs09.pdf">ICDCS'09</a>] and k-NN
+queries [<a href="./docs/tpds11.pdf">TPDS'11</a>].
+    </span> </td> </tr>
+ </table>
+
+ <table border="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111" width="900" id="AutoNumber2">
+  <tr> <td colspan="2">
+     <span class = "style5"><hr> 
+Scaling Up Stream Processing with Multi-cores by Automatic Pipelining
+<p/><a name="xxx" id="xxx"></span>
+  </td> </tr>
+  <tr>
+   <td align="left" valign="center">
+     <img border=0 src="./docs/operator_graph_runtime.png"
+border="0" width="250" height="250" hspace="1" vspace="1"
+>
+   </td> 
+   <td align="justify"> <span class="style12">
+<b>Introduction and contributions: </b>
+Stream processing, critical to many big data applications such as real-time analytics, is known to
+be computationally intensive. To fully utilize the multi-core resources, it is desirable to use the
+system optimization techniques. In this project, I studied the problem of automatic performance
+optimization of streaming applications by using pipelining parallelism [<a href="./docs/tpds13.pdf">TPDS'13</a>]. Through modeling the
+system CPU bottleneck, I formulated that the design goal is to prevent the single-core bottleneck
+from happening, in which one or few saturated cores may block the whole system. I proposed
+a program-to-thread mapping scheme that can dynamically adjust itself based on the changing
+workloads and automatically avoids the single-core bottleneck. 
+<p>
+
+<b>System implementation: </b>
+I implemented the proposed scheme
+in the IBM System S (an industrial strength big stream processing system), by a lightweight CPU
+profiler and optimizer under an adaptive control framework.
+    </span> </td> </tr>
+ </table>
+</td>
+
+
+</tr></table>
+
+<!-- for tracking with google analytics-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3890485-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+-->
+</body>
