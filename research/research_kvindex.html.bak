@@ -1,0 +1,157 @@
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<title>Welcome To Yuzhe Tang's Homepage</title>
+<style fprolloverstyle>
+A:hover {color: #FF0000;}
+.style4 {font-family: Arial, Helvetica, sans-serif; font-size: 16px; }
+.style5 {font-family: Arial, Helvetica, sans-serif; font-size: 16pt; }
+.style6 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.style60 {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color:maroon;}
+.style7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+}
+.style8 {font-family: Arial, Helvetica, sans-serif; font-style:italic; font-size: 13px; }
+.style10 {font-family: Arial, Helvetica, sans-serif; font-size: 14.5pt; }
+.style16 {font-family: Arial, Helvetica, sans-serif; font-size: 18pt }
+.style17 {font-size: 12px }
+.style21 {font-size: 11.5pt; font-family: Arial, Helvetica, sans-serif; }
+.style27 {font-family: Arial, Helvetica, sans-serif; font-size: 12pt; }
+.style37 {font-family: Arial, Helvetica, sans-serif; font-size: 13pt; }
+a:hover {color:#000000;}  /* mouse over link : disable anchor to change color upon mouse hovering*/
+</style>
+
+</head>
+
+<body>
+ <table border="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111" width="800" id="AutoNumber2">
+
+  <tr> <td align="center" >
+<a name="kvindex" id="kvindex">
+</a>
+<span class = "style5">
+Indexing Key-Value Stores for Large-Scale Real-time Analytics <p/>
+<hr/>
+</span>
+  </td> </tr>
+  <tr>
+   <td align="center" valign="top">
+     <img border=0 src="../docs/hindex.png"
+border="0" width="250" height="250" hspace="1" vspace="1"
+>
+     <img border=0 src="../docs/lsm.png"
+border="0" width="300" height="175" hspace="1" vspace="1"
+>
+   </td> 
+</tr>
+<tr>
+   <td align="justify"> <span class="style12">
+
+<span class = "style5">
+Project Description
+<p/></span>
+
+<b>Introduction</b> <br/>
+Large-scale real-time analytics are promising in many modern database/web
+applications, ranging from social networks, mobile clouds, to large-system
+diagnosis. Various application-specific software is developped for large-scale
+real-time analytics, such as <a
+href="http://thinkaurelius.github.io/titan/">Titan</a> for graph OLTP
+workloads, <a href="http://www.elasticsearch.org/">ElasticSearch</a> for
+full-text search, and <a
+href="http://research.google.com/pubs/pub36356.html">Dapper</a> for distributed
+system tracing, and etc. To store and persist the big-data generated from these
+modern applications, various emerging key-value stores have the potential; the
+key-value stores, such as <a href="http://hbase.apache.org/">HBase</a>, <a
+href="http://cassandra.apache.org/">Cassandra</a>, <a
+href="http://basho.com/riak/">Riak</a>, <a
+href="http://hypertable.org/">HyperTable</a>, etc, are all designed for
+scalable and write-intensive data storage.  However, as the front-end software
+requires rich data accesses, the key-value stores may fall short; existing
+key-value stores primarily provide key-based access methods such as Get, 
+the value-based access methods are rarely supported, due to various
+challenges for indexing big data at scale. 
+<p>
+
+<b>Research proposal 1: Deferred index maintenance</b> <br/>
+This project proposal focuses on the problem of real-time index maintenance in
+write-optimized key-value stores. The problem is flexible to different index
+structures, either a global index (e.g. an index table) or a local index (e.g.
+a replica of a per-node store or an index emmbeded on each storage file).  The
+real-time index maintenance requires that given a data update, the index
+entries obsoleted by the updates should be removed in real-time; however,
+locating and accessing obsolete index entries could be consuming due to the <a
+href="http://en.wikipedia.org/wiki/Log-structured_merge-tree">log-structured
+merge design</a>. 
+
+To reduce the write amplification caused by real-time indexing, we propose
+several approaches for lightweight index maintenace. Our first idea is to delay the
+obsolete index "repair" at offline hours when <a href="http://en.wikipedia.org/wiki/Log-structured_merge-tree">compactions</a> occur for
+storage reorganization. Towards this aspect, we propose <a href="#hindex">HIndex</a>,
+a system design that closely couples an index repair with the native compaction process.
+Our second idea is based on the observation that offline index repair in HIndex may
+incurs extra overhead for query processing. To improve the indexed query performance,
+I further proposed <a href="#rindex">RIndex</a> that schedules the expensive index-repair operations in online hours. 
+To minimize the performance intrusion, I proposed various adaptive scheduling
+strategies that are carefully designed with the awareness of current data
+access patterns, system loads, and unique performance characteristics in the
+underlying key-value stores. <p>
+
+<b>Research proposal 2: Scalable index placement</b> <br/>
+A baseline approach for indexing key-value store is to maintain a global index table; the local index design, as adopted by most existing cloud software (e.g. ElasticSearch, Riak, etc) does not scale in nature (since the query needs to broadcast). The global-index approach is scalable as the costs for indexed writes and reads are both two node lookups, namely O(<i>1</i>). However, as the cloud-provisioned cluster scales up, the latency of the extra node-lookup may be intolerable in regards of meeting the SLA requirement. This is especially the case, when the cluster can grow to multiple geo-distributed data centers and accesses are skewed. In this proposal, we aim at designing inteligent index placement strategy that is aware of the node-to-node latency distribution in the provisioned cloud cluster, and the data-access patterns from application levels. In particular, the data-access pattern is related to how the keys and values are correlated (i.e. correlation coefficient, being linear, inverse linear, etc) and how the queried value/keys are distributed.
+<p>
+
+<b>System impl. and deployment</b> <br/>
+The prototype system of HIndex and RIndex is implemented based on different
+cloud storage infrastructures, including <i>HBase</i> and <i>Cassandra</i>. The
+HBase-based implementation is based on HBase's CoProcessor API.
+For performance study, HIndex is currently deployed on <a href="http://www.emulab.net/">EMulab</a>. We
+also set up <a href="https://github.com/brianfrankcooper/YCSB">YCSB</a> as a benchmark tool.
+In addition, we have implemented
+a general framework, called <a href="#diffindex">Diff-index</a>, for exploring 
+different indexing options on key-value stores. 
+    </span> </td> </tr>
+
+<tr>
+<td >
+<span class = "style5">
+<hr>
+Papers
+<p/></span>
+
+<ol>
+<a name="diffindex" id="diffindex">
+<li class="style21">
+Wei Tan, Sandeep Tata, <b>Yuzhe Tang</b>, Liana Fong <br>
+Diff-Index: Differentiated Index in Distributed Log-Structured Data Stores <br>
+<b>EDBT 2014</b>, [<a href="../docs/DiffIndex-EDBT14-CR.pdf">pdf</a>]
+<br> &nbsp;
+</li>
+
+<a name="hindex" id="hindex">
+<li class="style21">
+Yuzhe Tang, Arun Iyengar, Wei Tan, Ling Liu<br>
+Lightweight Index Maintenance for Log-structured Key-Value Stores <br>
+[<a href="http://www.cercs.gatech.edu/tech-reports/tr2014/git-cercs-14-01.pdf">Under submission</a>, 
+<a href="https://github.com/tristartom/hindex">src</a>]
+<br> &nbsp;
+</li>
+
+<a name="rindex" id="rindex">
+<li class="style21">
+Yuzhe Tang<br>
+Real-time Analytics on Scalable Key-Value Stores by Online View Maintenance and Adaptive View Placement<br>
+[<a href="../tba.html">Under preparation</a>]
+<br> &nbsp;
+</li>
+
+</ol>
+</td></tr>
+ </table>
+
+</body>
+

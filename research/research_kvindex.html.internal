@@ -1,0 +1,28 @@
+<b>Research proposal 2: Scalable index placement</b> <br/>
+A baseline approach for indexing key-value store is to maintain a global index
+table; the local index design, as adopted by most existing cloud software (e.g.
+ElasticSearch, Riak, etc) does not scale in nature (since the query has to be
+broadcast). The global-index approach is scalable in the sense that both
+indexed writes and reads cost two node lookups, namely with O(<i>1</i>) cost.
+However, as the cloud-provisioned cluster scales up, the latency of the extra
+node-lookup may be intolerable in regards of meeting the SLA requirement. This
+is especially the case, when the cluster needs to span across multiple
+geo-distributed data centers and when the data accesses are skewed. In this
+proposal, we aim at designing intelligent index placement strategy that is
+aware of the node-to-node latency distribution in a cloud-provisioned cluster,
+and is aware of the data-access patterns from application levels. In
+particular, the data-access pattern is related to how the keys and values are
+correlated (i.e. correlation coefficient, being linear, inverse linear, etc)
+and how the queried value/keys are distributed. By taking advantage of these
+workload/infrastructure knowledge, the scalability of indexed systems can be
+improved.
+<p/>
+
+We plan to study the relationship between the average node-to-node latency in a 
+provisioned cloud cluster by EC2 and the scale of the cluster. A (linear) correlation
+is expected and then we can justify our scalability problem. In addition, we also plan 
+to deploy our software on multi-data center setting in EC2 (with data centers on eastern 
+and western coastal).
+
+<p/>
+
