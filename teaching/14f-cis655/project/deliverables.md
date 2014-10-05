@@ -31,7 +31,7 @@ Given a group of students, only **one** student (designated as group coordinator
 
 <a name="program_1"> Milestone 1: Project design
 ---
-Finish the **reading component** of your project [[link-proj1](http://tristartom.github.io/teaching/14f-cis655/project/proj-dtracing.html), [link-proj2](http://tristartom.github.io/teaching/14f-cis655/project/proj-sgxsim.html)]. Based on your reading, design the project, write a project-design report and submit it to the blackboard link. The project design should include two parts: 1) your technical review of the readings, 2) a preliminary plan to achieve the first project goal (i.e. for trace project, it is to deploy ``HBase'' and collect the traces; for SGX project, it is to design the implementation of simulator).
+Finish the **reading component** of your project [[link-proj1](http://tristartom.github.io/teaching/14f-cis655/project/proj-dtracing.html), [link-proj2](http://tristartom.github.io/teaching/14f-cis655/project/proj-sgxsim.html)]. Based on your reading, design the project, write a project-design report and submit it to the blackboard link. The project design should include two parts: 1) your technical review of the readings, 2) a preliminary plan to achieve the first project goal (i.e. for the trace project, it is related to ``HBase`` deployment, trace collection and analysis; for SGX project, it is to design the implementation of simulator).
 
 <a name="program_2"> Milestone 2: Implementation and deployment
 ---
