@@ -95,7 +95,9 @@
 
 <p>While you can use your favorable profiler to do cache profiling, I recommend to use Valgrind [<a href="http://valgrind.org/docs/manual/cg-manual.html">Cachegrind</a>]. </p>
 
-<p>I have set up Valgrind on a VirtualBox image which can be downloaded from Blackboard [<a href="https://blackboard.syr.edu/bbcswebdav/pid-3362138-dt-content-rid-9013808_1/xid-9013808_1">link</a>]. You can download VirtualBox from Oracle website [<a href="https://www.virtualbox.org/wiki/Downloads">link</a>]; You should choose installation file based on your local OS. Once you install VirtualBox successfully, you can download the image and launch an Ubuntu instance. On Ubuntu, you can find <code>a11.cpp</code> on <code>/teaching/14f-cis655/hw/cachemiss/</code>, and compile it to <code>a11.out</code>. Then follow the instructions below to run the program while measuring <code>D1</code> miss rate.</p>
+<p>I have set up Valgrind on a VirtualBox image which can be downloaded from Blackboard [<a href="https://blackboard.syr.edu/bbcswebdav/pid-3362138-dt-content-rid-9013808_1/xid-9013808_1">link</a>]; or you can download it from  <code>Class Sessions-&gt;Term project-&gt;VM-image</code> in Blackboard. </p>
+
+<p>You should set up VirtualBox by downloading it from Oracle website [<a href="https://www.virtualbox.org/wiki/Downloads">link</a>]; You should choose installation file based on your local OS. Once you install VirtualBox successfully, you can download the image and launch an Ubuntu instance. On Ubuntu, you can find <code>a11.cpp</code> on <code>/teaching/14f-cis655/hw/cachemiss/</code>, and compile it to <code>a11.out</code>. Then follow the instructions below to run the program while measuring <code>D1</code> miss rate.</p>
 
 <div class="highlight highlight-bash"><pre><span class="nb">cd</span> /teaching/14f-cis655/hw/cachemiss/
 ./tt_sh/profilerun_cache.sh ./a11.out 10000
