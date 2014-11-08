@@ -42,47 +42,56 @@
 
 <p>You should set up VirtualBox on your local machine. The installation file can be downloaded from Oracle website [<a href="https://www.virtualbox.org/wiki/Downloads">link</a>]; You should choose installation file based on your local OS. </p>
 
-<p>Once you install VirtualBox successfully, you can download the image file from Blackboard under category <code>Class Sessions-&gt;Term project-&gt;VM-image-2 in Blackboard.</code> </p>
+<p>Once you install VirtualBox successfully, you can download the image file from Blackboard under category <code>Class Sessions-&gt;Term project-&gt;VM-image-2</code>. </p>
 
 <h1>Start HBase server</h1>
 
 <p>Run an HBase-0.99-SNAPSHOT server:</p>
 
 <div class="highlight highlight-bash"><pre> sudo su
- <span class="nb">cd</span> /teaching/14f-cis655/proj-dtracing/hbase/hbase-0.99.0-SNAPSHOT
- rm logs/* -r <span class="o">&amp;&amp;</span> bin/start-hbase.sh   <span class="c">#start hmaster and zk, no region server</span>
- bin/local-regionservers.sh start <span class="m">1</span> <span class="m">2</span>  <span class="c">#start region server locally</span>
-</pre></div>
+ <span class="nf">cd</span> /teaching/14f-cis655/proj-dtracing/hbase/hbase-0.99.0-SNAPSHOT
+ rm logs/<span class="o">*</span> -r <span class="o">&amp;&amp;</span> bin/start-hbase.sh   <span class="c1">#start hmaster and zk, no region server</span>
+ bin/local-regionservers.sh start 1 2  <span class="c1">#start region server locally</span></pre></div>
 
 <p>Log into HBase shell by <code>bin/hbase shell</code>. Inside the shell, create a table 't1' with column-family "cf" and populate it with </p>
 
-<div class="highlight highlight-bash"><pre>shell&gt; create <span class="s1">'t1'</span>, <span class="s2">"cf"</span>
-shell&gt; put <span class="s1">'t1'</span>, <span class="s2">"k"</span>, <span class="s2">"cf:c1"</span>, <span class="s2">"www"</span>
-</pre></div>
+<div class="highlight highlight-bash"><pre>shell<span class="o">&gt;</span> create <span class="s1">'t1'</span>, <span class="s2">"cf"</span>
+shell<span class="o">&gt;</span> put <span class="s1">'t1'</span>, <span class="s2">"k"</span>, <span class="s2">"cf:c1"</span>, <span class="s2">"www"</span></pre></div>
 
 <h1>Start trace client</h1>
 
 <p>Run trace client, which is an instrumented Java program that issues <code>Put/Get</code> requests to the <code>HBase</code> server.</p>
 
-<div class="highlight highlight-bash"><pre><span class="nb">cd</span> /teaching/14f-cis655/proj-dtracing/htrace-client/1_getTraces/editable/
-./tt_sh/runMain_woAnt.sh
-</pre></div>
+<div class="highlight highlight-bash"><pre><span class="nf">cd</span> /teaching/14f-cis655/proj-dtracing/htrace-client/1_getTraces/editable/
+./tt_sh/runMain_woAnt.sh</pre></div>
 
 <p>Collect traces from both server and client sides. Merge server trace <code>/teaching/14f-cis655/tmp/server-htrace.out</code> and client trace <code>/teaching/14f-cis655/proj-dtracing/htrace-client/1_getTraces/editable/htrace.out</code> together, and move the merged file to <code>/teaching/14f-cis655/proj-dtracing/htrace-client/2_analyseTraces/htrace.out</code>. Remember to collect all server traces if there are multiple server nodes, that is, HMaster and Regionservers.</p>
 
 <p>Visualize traces:</p>
 
-<div class="highlight highlight-bash"><pre><span class="nb">cd</span> /teaching/14f-cis655/proj-dtracing/2_analyseTraces/
-rm graphs/*
-./tt_sh/visual.sh
-</pre></div>
+<div class="highlight highlight-bash"><pre><span class="nf">cd</span> /teaching/14f-cis655/proj-dtracing/htrace-client/2_analyseTraces/
+rm graphs/<span class="o">*</span>
+./tt_sh/visual.sh</pre></div>
 
 <h1>Stop HBase server</h1>
 
 <div class="highlight highlight-bash"><pre> sudo su
- <span class="nb">cd</span> /teaching/14f-cis655/proj-dtracing/hbase/hbase-0.99.0-SNAPSHOT
- bin/stop-hbase.sh
-</pre></div>
+ <span class="nf">cd</span> /teaching/14f-cis655/proj-dtracing/hbase/hbase-0.99.0-SNAPSHOT
+ bin/stop-hbase.sh</pre></div>
+
+<h1>Edit <code>1_getTraces</code> project (if you want)</h1>
+
+<p>Change src file under <code>/teaching/14f-cis655/proj-dtracing/htrace-client/1_getTraces/editable/src</code>.</p>
+
+<p>Compile by:</p>
+
+<div class="highlight highlight-bash"><pre> <span class="nf">cd</span> /teaching/14f-cis655/proj-dtracing/htrace-client/1_getTraces/editable/
+ ./tt_sh/build.sh</pre></div>
+
+<p>Execute the modified code by:</p>
+
+<div class="highlight highlight-bash"><pre> <span class="nf">cd</span> /teaching/14f-cis655/proj-dtracing/htrace-client/1_getTraces/editable/
+ ./tt_sh/runMain_woAnt.sh</pre></div>
                     </div>
                   </div>
                 </div>
