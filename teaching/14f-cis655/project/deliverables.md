@@ -10,7 +10,7 @@ At this stage, students should fix the list of related materials. In the submitt
 
 <a name="survey_2">Milestone 2: Preliminary report
 ---
-Submit a preliminary report of at least 4 pages.
+Submit a preliminary report of at least 4 pages. Such report should include the topic introduction (e.g. domain-specific concept, background and motivation), a broad overview of existing techniques (e.g. present a classification of those techniques with an analysis of what is pros and cons), and a detailed and in-depth description of a reprensentitive technique. Optionally, you should also include a survey of open-source projects in the domain, and submit some sample program that can demonstate the proof of concept.
 
 <a name="survey_3">Milestone 3: Final deliverable 
 ---
