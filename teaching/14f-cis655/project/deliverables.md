@@ -15,6 +15,7 @@ Submit a preliminary report of at least 4 pages. Such report should include the 
 <a name="survey_3">Milestone 3: Final deliverable 
 ---
 The final deliverable includes 1) a survey paper which describes the technical advances in the corresponding topic, and 2) a presentation that summaries the results of survey paper in a clear and compact manner. In particular, the survey paper should consist of more than 15 pages (excluding reference list), formatted with one-half spacing, 12 point font, one inch borders. 
+You are encouraged to submit any test source code you wrote; bonus points will be given accordingly.
 
 In principle, the survey should address the following general questions, although specific paper organization may depend on the topic of choice.
 
@@ -41,7 +42,13 @@ Implement the proposed design, test it and deploy it to the working system. With
 
 <a name="program_3"> Milestone 3: Final deliverable 
 ---
-The deliverable for programming project will be 1) an end-to-end description of the project, including design motivation, problem statement, proposed design, implementation notes, system deployment and evaluation results that verify the motivation, 2) a demo for the working of the final system.
+The deliverable for programming project should consist:
+
+1. An end-to-end description of the project, including design motivation, problem statement, proposed design, implementation notes, system deployment and evaluation results that verify the motivation, 
+
+2. Source code of the project, and description on how to compile, configure, deploy, and execute the program.
+
+3. A proof of the working of the final system. For instance, if you are doing a demo, attach screenshot of the demo in your final report.
 
 
 
