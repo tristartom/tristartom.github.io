@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Security papers - CIS700/CSE791-DSiC-2015</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> CIS700/CSE791-DSiC-2015</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../syl">Syllabus</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../sched">Schedule</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../proj">Project</a>
+            </li>
+        
+
+    
+        
+        <span>Readings</span>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">Security papers</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l2"><a href="#readings-on-security">Readings on security</a></li>
+                            
+                                <li><a class="toctree-l3" href="#differential-privacy">Differential privacy</a></li>
+                            
+                                <li><a class="toctree-l3" href="#searcheable-encryption">Searcheable encryption</a></li>
+                            
+                                <li><a class="toctree-l3" href="#multi-party-computations">Multi-party computations</a></li>
+                            
+                                <li><a class="toctree-l3" href="#sgx">SGX</a></li>
+                            
+                                <li><a class="toctree-l3" href="#verifiable-computations">Verifiable computations</a></li>
+                            
+                                <li><a class="toctree-l3" href="#malware-detection">Malware detection</a></li>
+                            
+                                <li><a class="toctree-l3" href="#information-flow-analysis">Information flow analysis</a></li>
+                            
+                                <li><a class="toctree-l3" href="#side-channel-attacks">Side-channel attacks</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../sys">System papers</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>Security papers</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="readings-on-security">Readings on security</h1>
+<p><a name="1"></p>
+<h2 id="differential-privacy">Differential privacy</h2>
+<p></a></p>
+<ul>
+<li>Membership Privacy: A Unifying Framework For Privacy Definitions, CCS13 [pdf]</li>
+<li>Blowfish Privacy: Tuning Privacy-Utility Trade-offs using Policies, SIGMOD14 [pdf]</li>
+<li>Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing, SEC14 [pdf]</li>
+<li>
+<ul>
+<li>No Free Lunch in Data Privacy, ICDM11 [<a href="https://www.cs.duke.edu/~ashwin/pubs/nflprivacy.pdf">pdf</a>]</li>
+</ul>
+</li>
+</ul>
+<p><a name="2"></p>
+<h2 id="searcheable-encryption">Searcheable encryption</h2>
+<p></a></p>
+<ul>
+<li>CryptDB: Protecting Confidentiality with Encrypted Query Processing, SOSP12 [<a href="http://people.csail.mit.edu/nickolai/papers/raluca-cryptdb.pdf">pdf</a>]</li>
+<li>Dynamic Searchable Encryption via Blind Storage, SP14</li>
+</ul>
+<h2 id="multi-party-computations">Multi-party computations</h2>
+<p><a name="3"></p>
+<h3 id="oram-access-pattern-privacy-non-circuit-model">ORAM (access pattern privacy, non-circuit model)</h3>
+<p></a></p>
+<ul>
+<li>Automating Efficient RAM-Model Secure Computation, SP14</li>
+<li>Burst ORAM: Minimizing ORAM Response Times for Bursty Access Patterns, SEC14 </li>
+</ul>
+<p><a name="4"></p>
+<h3 id="performance-optimization">Performance optimization</h3>
+<p></a></p>
+<ul>
+<li>Wysteria: A Programming Language for Generic, Mixed-mode Multiparty Computations, SP14</li>
+<li>TRUESET: Faster Verifiable Set Computations, SEC14</li>
+<li>Faster Private Set Intersection Based on OT Extension, SEC14</li>
+</ul>
+<p><a name="5"></p>
+<h3 id="applied-in-big-systems">Applied in big systems</h3>
+<p></a></p>
+<ul>
+<li>Secure Multiparty Computations on Bitcoin, SP14</li>
+<li>Blind Seer: A Scalable Private DBMS [<a href="http://www.cs.columbia.edu/~angelos/Papers/2014/blind_seer.pdf">pdf</a>], SP14</li>
+<li>Private search on key-value stores with hierarchical indexes, ICDE14</li>
+<li>SPARSI: Partitioning Sensitive Data amongst Multiple Adversaries, VLDB14</li>
+</ul>
+<p><a name="6"></p>
+<h2 id="sgx">SGX</h2>
+<p></a></p>
+<ul>
+<li>Shielding Applications from an Untrusted Cloud with Haven, SOSP14 [<a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/baumann">pdf</a>]</li>
+<li>ICE: A Passive, High-Speed, State-Continuity Scheme, ACSAC14</li>
+<li>
+<ul>
+<li>Using Innovative Instructions to Create Trustworthy Software Solutions [<a href="https://software.intel.com/sites/default/files/article/413938/hasp-2013-innovative-instructions-for-trusted-solutions.pdf">pdf</a>]</li>
+</ul>
+</li>
+<li>TrInc: small trusted hardware for large distributed systems, NSDI09</li>
+</ul>
+<p><a name="7"></p>
+<h2 id="verifiable-computations">Verifiable computations</h2>
+<p></a></p>
+<ul>
+<li>Pinocchio: Nearly Practical Verifiable Computation, SP13 [<a href="http://research.microsoft.com/pubs/180286/pinocchio.pdf">pdf</a>], [<a href="https://vc.codeplex.com">src</a>] </li>
+<li>Succinct Non-Interactive Zero Knowledge for a von Neumann Architecture, SEC14 [<a href="http://eprint.iacr.org/2013/879">pdf</a>], SNARKs-for-C [<a href="http://www.scipr-lab.org/code.html">src</a>]. </li>
+<li>Verifying computations with state, SOSP13 [pdf]</li>
+</ul>
+<p><a name="8"></p>
+<h2 id="malware-detection">Malware detection</h2>
+<p></a></p>
+<ul>
+<li>BareCloud: Bare-metal Analysis-based Evasive Malware Detection, SEC14</li>
+<li>DSCRETE: Automatic Rendering of Forensic Information from Memory Images via Application Logic Reuse, SEC14</li>
+</ul>
+<p><a name="9"></p>
+<h2 id="information-flow-analysis">Information flow analysis</h2>
+<p></a></p>
+<ul>
+<li>Bootstrapping Privacy Compliance in Big Data Systems, SP14</li>
+<li>Quantifying Information Flow for Dynamic Secrets, SP14</li>
+</ul>
+<p><a name="10"></p>
+<h2 id="side-channel-attacks">Side-channel attacks</h2>
+<p></a></p>
+<ul>
+<li>Scheduler-based Defenses against Cross-VM Side-channels, SEC14</li>
+<li>Preventing Cryptographic Key Leakage in Cloud Virtual Machines, SEC14</li>
+</ul>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../sys" class="btn btn-neutral float-right" title="System papers"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../proj" class="btn btn-neutral" title="Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../../proj" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../sys" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

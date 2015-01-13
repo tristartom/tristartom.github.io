@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>System papers - CIS700/CSE791-DSiC-2015</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> CIS700/CSE791-DSiC-2015</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../syl">Syllabus</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../sched">Schedule</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../proj">Project</a>
+            </li>
+        
+
+    
+        
+        <span>Readings</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../sec">Security papers</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">System papers</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l2"><a href="#readings-on-system-and-performance">Readings on system and performance</a></li>
+                            
+                                <li><a class="toctree-l3" href="#big-data-analytics">Big-data analytics</a></li>
+                            
+                                <li><a class="toctree-l3" href="#big-database-systems">Big-database systems</a></li>
+                            
+                                <li><a class="toctree-l3" href="#request-tracing">Request tracing</a></li>
+                            
+                                <li><a class="toctree-l3" href="#cluster-scheduling">Cluster scheduling</a></li>
+                            
+                                <li><a class="toctree-l3" href="#nosql">NoSQL</a></li>
+                            
+                                <li><a class="toctree-l3" href="#workload-aware-storage">Workload-aware storage</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>System papers</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="readings-on-system-and-performance">Readings on system and performance</h1>
+<p><a name="1"></p>
+<h2 id="big-data-analytics">Big-data analytics</h2>
+<p></a></p>
+<ul>
+<li>GraphX: Graph Processing in a Distributed Dataflow Framework, OSDI14</li>
+<li>A lightweight infrastructure for graph analytics, SOSP13</li>
+<li>Scaling Distributed Machine Learning with the Parameter Server, OSDI14</li>
+<li>Naiad: a timely dataflow system, SOSP13</li>
+<li>TAO: Facebook's Distributed Data Store for the Social Graph</li>
+<li>
+<ul>
+<li>Pregel: a system for large-scale graph processing [apache-giraph]</li>
+</ul>
+</li>
+</ul>
+<p><a name="2"></p>
+<h2 id="big-database-systems">Big-database systems</h2>
+<p></a></p>
+<ul>
+<li>Spanner: Google's Globally-Distributed Database</li>
+<li>F1: A Distributed SQL Database That Scales</li>
+<li>Dremel: Interactive Analysis of Web-Scale Datasets [Apache-Drill]</li>
+<li>
+<ul>
+<li>New SQL: An Alternative to NoSQL and Old SQL for New OLTP Apps</li>
+</ul>
+</li>
+</ul>
+<p><a name="3"></p>
+<h2 id="request-tracing">Request tracing</h2>
+<p></a></p>
+<ul>
+<li>The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services, OSDI14 [pdf]</li>
+<li>Detecting large-scale system problems by mining console logs, ICML10 [pdf], SOSP09 [pdf]</li>
+<li>lprof: A Non-intrusive Request Flow Profiler for Distributed Systems, OSDI14</li>
+<li>
+<ul>
+<li>Dapper, a Large-Scale Distributed Systems Tracing Infrastructure, Google technical report, 2010</li>
+</ul>
+</li>
+</ul>
+<p><a name="4"></p>
+<h2 id="cluster-scheduling">Cluster scheduling</h2>
+<p></a></p>
+<ul>
+<li>Apollo: Scalable and Coordinated Scheduling for Cloud-Scale Computing, OSDI14 [pdf]</li>
+<li>The Power of Choice in Data-Aware Cluster Scheduling, OSDI14 [pdf]</li>
+<li>Sparrow: distributed, low latency scheduling, SOSP13 [pdf]</li>
+<li>
+<ul>
+<li>Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center, NSDI11, [src]</li>
+</ul>
+</li>
+</ul>
+<h2 id="nosql">NoSQL</h2>
+<p><a name="5"></p>
+<h3 id="not-only-sql">Not-Only-SQL</h3>
+<p></a></p>
+<ul>
+<li>SLIK: Scalable Low-Latency Indexes for a Key-Value Store, 14</li>
+<li>Storage Management in AsterixDB, VLDB14</li>
+<li>Rank Join Queries in NoSQL Databases, VLDB14</li>
+</ul>
+<p><a name="6"></p>
+<h3 id="onto-multi-cloud">Onto multi-cloud</h3>
+<p></a></p>
+<ul>
+<li>A Self-Configurable Geo-Replicated Cloud Storage System, OSDI14 [pdf]</li>
+<li>SPANStore: cost-effective geo-replicated storage spanning multiple cloud services, SOSP13 [pdf]</li>
+</ul>
+<p><a name="7"></p>
+<h3 id="kernel-optimization-for-data-intensive-app">Kernel optimization for data-intensive app</h3>
+<p></a></p>
+<ul>
+<li>Arrakis: The Operating System is the Control Plane, OSDI14</li>
+<li>IX: A Protected Dataplane Operating System for High Throughput and Low Latency, OSDI14</li>
+</ul>
+<p><a name="11"></p>
+<h3 id="deployment">Deployment</h3>
+<p></a></p>
+<ul>
+<li>Analysis of HDFS Under HBase: A Facebook Message Case Study, FAST</li>
+<li>Understanding Insights into the Basic Structure and Essential Issues of Table Placement Methods in Clusters, VLDB13</li>
+</ul>
+<p><a name="8"></p>
+<h3 id="elasticity">Elasticity</h3>
+<p></a></p>
+<ul>
+<li>E-Store: Fine-Grained Elastic Partitioning for Distributed Transaction Processing Systems, VLDB14 [pdf]</li>
+<li>Benchmarking Scalability and Elasticity of Distributed Database Systems, VLDB14 [pdf]</li>
+<li>MET: Workload aware elasticity for NoSQL, EuroSys13 [pdf]</li>
+<li>
+<ul>
+<li>On Scale Independence for Querying Big Data [PODS14]</li>
+</ul>
+</li>
+</ul>
+<p><a name="9"></p>
+<h3 id="consistency">Consistency</h3>
+<p></a></p>
+<ul>
+<li>Consistency-based service level agreements for cloud storage, SOSP13</li>
+<li>Salt: Combining ACID and BASE in a Distributed Database</li>
+<li>Scalable Atomic Visibility with RAMP Transactions, SIGMOD14</li>
+<li>Stronger Semantics for Low-Latency Geo-Replicated Storage, NSDI13</li>
+<li>Probabilistically Bounded Staleness for Practical Partial Quorums, VLDB12</li>
+<li>Fault tolerance: Torturing Databases for Fun and Profit, OSDI14</li>
+</ul>
+<p><a name="10"></p>
+<h3 id="performance-isolation">Performance isolation</h3>
+<p></a></p>
+<ul>
+<li>End-to-end Performance Isolation Through Virtual Datacenters, OSDI14</li>
+<li>Performance Isolation and Fairness for Multi-Tenant Cloud Storage, OSDI12</li>
+</ul>
+<p><a name="12"></p>
+<h2 id="workload-aware-storage">Workload-aware storage</h2>
+<p></a></p>
+<ul>
+<li>Pelican: A Building Block for Exascale Cold Data Storage, OSDI14 [pdf]</li>
+<li>f4: Facebook's Warm BLOB Storage System, OSDI14 [pdf]</li>
+<li>Characterizing Storage Workloads with Counter Stacks, OSDI14 [pdf]</li>
+</ul>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../sec" class="btn btn-neutral" title="Security papers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../sec" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
