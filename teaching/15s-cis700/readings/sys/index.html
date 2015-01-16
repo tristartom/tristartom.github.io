@@ -82,6 +82,10 @@
                             
                                 <li><a class="toctree-l3" href="#nosql">NoSQL</a></li>
                             
+                                <li><a class="toctree-l3" href="#elasticity">Elasticity</a></li>
+                            
+                                <li><a class="toctree-l3" href="#performance-isolation">Performance isolation</a></li>
+                            
                                 <li><a class="toctree-l3" href="#consistency">Consistency</a></li>
                             
                                 <li><a class="toctree-l3" href="#workload-aware-storage">Workload-aware storage</a></li>
@@ -101,7 +105,7 @@
     
         
             <li class="toctree-l1 ">
-                <a class="" href="../../books">Books</a>
+                <a class="" href="../../references">References</a>
             </li>
         
 
@@ -176,6 +180,12 @@
 <li>Dapper, a Large-Scale Distributed Systems Tracing Infrastructure, Google technical report, 2010</li>
 </ul>
 </li>
+<li>
+<ul>
+<li>So, you want to trace your distributed system? 
+Key design insights from years of practical experience, CMU-TR 2014, [[pdf(http://www.pdl.cmu.edu/PDL-FTP/SelfStar/CMU-PDL-14-102.pdf)]</li>
+</ul>
+</li>
 </ul>
 <p><a name="4"></p>
 <h2 id="cluster-scheduling">Cluster scheduling</h2>
@@ -220,8 +230,16 @@
 <li>Analysis of HDFS Under HBase: A Facebook Message Case Study, FAST</li>
 <li>Understanding Insights into the Basic Structure and Essential Issues of Table Placement Methods in Clusters, VLDB13</li>
 </ul>
+<p><a name="12"></p>
+<h3 id="on-ssd">On SSD</h3>
+<p></a></p>
+<ul>
+<li>An Efficient Design and Implementation of LSM-Tree based Key-Value Store on Open-Channel SSD, Eurosys14</li>
+<li>FAWN: A Fast Array of Wimpy Nodes, SOSP09</li>
+<li>NVMKV: A Scalable and Lightweight Flash Aware Key-Value Store, HotStorage14 [<a href="https://www.usenix.org/system/files/conference/hotstorage14/hotstorage14-paper-marmol.pdf">pdf</a>]</li>
+</ul>
 <p><a name="8"></p>
-<h3 id="elasticity">Elasticity</h3>
+<h2 id="elasticity">Elasticity</h2>
 <p></a></p>
 <ul>
 <li>E-Store: Fine-Grained Elastic Partitioning for Distributed Transaction Processing Systems, VLDB14 [pdf]</li>
@@ -234,7 +252,7 @@
 </li>
 </ul>
 <p><a name="10"></p>
-<h3 id="performance-isolation">Performance isolation</h3>
+<h2 id="performance-isolation">Performance isolation</h2>
 <p></a></p>
 <ul>
 <li>End-to-end Performance Isolation Through Virtual Datacenters, OSDI14</li>
