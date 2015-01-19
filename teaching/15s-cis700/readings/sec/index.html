@@ -79,17 +79,17 @@
                             
                                 <li><a class="toctree-l3" href="#differential-privacy">Differential privacy</a></li>
                             
-                                <li><a class="toctree-l3" href="#searcheable-encryption">Searcheable encryption</a></li>
-                            
                                 <li><a class="toctree-l3" href="#multi-party-computations">Multi-party computations</a></li>
                             
                                 <li><a class="toctree-l3" href="#sgx">SGX</a></li>
                             
                                 <li><a class="toctree-l3" href="#verifiable-computations">Verifiable computations</a></li>
                             
-                                <li><a class="toctree-l3" href="#malware-detection">Malware detection</a></li>
-                            
                                 <li><a class="toctree-l3" href="#information-flow-analysis">Information flow analysis</a></li>
+                            
+                                <li><a class="toctree-l3" href="#searcheable-encryption">Searcheable encryption</a></li>
+                            
+                                <li><a class="toctree-l3" href="#malware-detection">Malware detection</a></li>
                             
                                 <li><a class="toctree-l3" href="#side-channel-attacks">Side-channel attacks</a></li>
                             
@@ -138,88 +138,106 @@
           <div role="main">
             <div class="section">
               <h1 id="readings-on-security">Readings on security</h1>
-<p><a name="1"></p>
+<p>&#9733; indicates the preferred reading for class presentation.</p>
 <h2 id="differential-privacy">Differential privacy</h2>
+<p><a name="dp-app"></p>
+<h3 id="application">Application</h3>
 <p></a></p>
 <ul>
-<li>Membership Privacy: A Unifying Framework For Privacy Definitions, CCS13 [pdf]</li>
-<li>Smooth Sensitivity and Sampling in Private Data Analysis, STOC07 [<a href="http://www.cse.psu.edu/~sofya/pubs/smooth-sensitivity-stoc.pdf">pdf</a>]</li>
+<li>&#9733; Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing, SEC14 [pdf]</li>
 <li>Blowfish Privacy: Tuning Privacy-Utility Trade-offs using Policies, SIGMOD14 [pdf]</li>
-<li>Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing, SEC14 [pdf]</li>
 <li>
 <ul>
 <li>No Free Lunch in Data Privacy, ICDM11 [<a href="https://www.cs.duke.edu/~ashwin/pubs/nflprivacy.pdf">pdf</a>]</li>
 </ul>
 </li>
 </ul>
-<p><a name="2"></p>
-<h2 id="searcheable-encryption">Searcheable encryption</h2>
+<p><a name="dp-theory"></p>
+<h3 id="theory">Theory</h3>
 <p></a></p>
 <ul>
-<li>CryptDB: Protecting Confidentiality with Encrypted Query Processing, SOSP12 [<a href="http://people.csail.mit.edu/nickolai/papers/raluca-cryptdb.pdf">pdf</a>]</li>
-<li>Dynamic Searchable Encryption via Blind Storage, SP14</li>
+<li>&#9733; Analyzing Graphs with Node Differential Privacy, TCC13 [<a href="http://www.cse.psu.edu/~sofya/pubs/nodeprivacy-TCC.pdf">pdf</a>]: <code>dp-graph</code></li>
+<li>Smooth Sensitivity and Sampling in Private Data Analysis, STOC07 [<a href="http://www.cse.psu.edu/~sofya/pubs/smooth-sensitivity-stoc.pdf">pdf</a>]: <code>dp-clustering</code></li>
+<li>Membership Privacy: A Unifying Framework For Privacy Definitions, CCS13 [pdf]</li>
+<li>
+<ul>
+<li>Differential Privacy: A Survey of Results, TAMC 2008 [<a href="http://research.microsoft.com/pubs/74339/dwork_tamc.pdf">pdf</a>]</li>
+</ul>
+</li>
 </ul>
 <h2 id="multi-party-computations">Multi-party computations</h2>
-<p><a name="3"></p>
+<p><a name="oram"></p>
 <h3 id="oram-access-pattern-privacy-non-circuit-model">ORAM (access pattern privacy, non-circuit model)</h3>
 <p></a></p>
 <ul>
-<li>Automating Efficient RAM-Model Secure Computation, SP14</li>
+<li>&#9733; Automating Efficient RAM-Model Secure Computation, SP14</li>
 <li>Burst ORAM: Minimizing ORAM Response Times for Bursty Access Patterns, SEC14 </li>
 </ul>
-<p><a name="4"></p>
+<p><a name="mpc-perfopt"></p>
 <h3 id="performance-optimization">Performance optimization</h3>
 <p></a></p>
 <ul>
-<li>Wysteria: A Programming Language for Generic, Mixed-mode Multiparty Computations, SP14</li>
+<li>&#9733; Wysteria: A Programming Language for Generic, Mixed-mode Multiparty Computations, SP14</li>
 <li>Faster Private Set Intersection Based on OT Extension, SEC14</li>
 </ul>
-<p><a name="5"></p>
-<h3 id="applied-in-large-systems">Applied in large systems</h3>
+<p><a name="mpc-app"></p>
+<h3 id="application-at-scale">Application at scale</h3>
 <p></a></p>
 <ul>
+<li>&#9733; Blind Seer: A Scalable Private DBMS [<a href="http://www.cs.columbia.edu/~angelos/Papers/2014/blind_seer.pdf">pdf</a>], SP14</li>
 <li>Secure Multiparty Computations on Bitcoin, SP14</li>
-<li>Blind Seer: A Scalable Private DBMS [<a href="http://www.cs.columbia.edu/~angelos/Papers/2014/blind_seer.pdf">pdf</a>], SP14</li>
 <li>Private search on key-value stores with hierarchical indexes, ICDE14</li>
-<li>SPARSI: Partitioning Sensitive Data amongst Multiple Adversaries, VLDB14</li>
 </ul>
-<p><a name="6"></p>
+<p><a name="sgx"></p>
 <h2 id="sgx">SGX</h2>
 <p></a></p>
 <ul>
-<li>Shielding Applications from an Untrusted Cloud with Haven, SOSP14 [<a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/baumann">pdf</a>]</li>
+<li>&#9733; Shielding Applications from an Untrusted Cloud with Haven, SOSP14 [<a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/baumann">pdf</a>]</li>
 <li>ICE: A Passive, High-Speed, State-Continuity Scheme, ACSAC14</li>
 <li>
 <ul>
 <li>Using Innovative Instructions to Create Trustworthy Software Solutions [<a href="https://software.intel.com/sites/default/files/article/413938/hasp-2013-innovative-instructions-for-trusted-solutions.pdf">pdf</a>]</li>
 </ul>
 </li>
+<li>
+<ul>
 <li>TrInc: small trusted hardware for large distributed systems, NSDI09</li>
 </ul>
-<p><a name="7"></p>
+</li>
+</ul>
+<p><a name="verifiable"></p>
 <h2 id="verifiable-computations">Verifiable computations</h2>
 <p></a></p>
 <ul>
+<li>&#9733; Succinct Non-Interactive Zero Knowledge for a von Neumann Architecture, SEC14 [<a href="http://eprint.iacr.org/2013/879">pdf</a>], SNARKs-for-C [<a href="http://www.scipr-lab.org/code.html">src</a>]. </li>
 <li>Pinocchio: Nearly Practical Verifiable Computation, SP13 [<a href="http://research.microsoft.com/pubs/180286/pinocchio.pdf">pdf</a>], [<a href="https://vc.codeplex.com">src</a>] </li>
-<li>Succinct Non-Interactive Zero Knowledge for a von Neumann Architecture, SEC14 [<a href="http://eprint.iacr.org/2013/879">pdf</a>], SNARKs-for-C [<a href="http://www.scipr-lab.org/code.html">src</a>]. </li>
-<li>TRUESET: Faster Verifiable Set Computations, SEC14</li>
 <li>Verifying computations with state, SOSP13 [pdf]</li>
+<li>TRUESET: Faster Verifiable Set Computations, SEC14</li>
 </ul>
-<p><a name="8"></p>
+<!-- break line -->
+
+<p><a name="infoflow"></p>
+<h2 id="information-flow-analysis">Information flow analysis</h2>
+<p></a></p>
+<ul>
+<li>&#9733; Quantifying Information Flow for Dynamic Secrets, SP14</li>
+<li>Bootstrapping Privacy Compliance in Big Data Systems, SP14</li>
+</ul>
+<p><a name="searcheable"></p>
+<h2 id="searcheable-encryption">Searcheable encryption</h2>
+<p></a></p>
+<ul>
+<li>&#9733;  Dynamic Searchable Encryption via Blind Storage, SP14</li>
+<li>CryptDB: Protecting Confidentiality with Encrypted Query Processing, SOSP12 [<a href="http://people.csail.mit.edu/nickolai/papers/raluca-cryptdb.pdf">pdf</a>]</li>
+</ul>
+<p><a name="malware"></p>
 <h2 id="malware-detection">Malware detection</h2>
 <p></a></p>
 <ul>
 <li>BareCloud: Bare-metal Analysis-based Evasive Malware Detection, SEC14</li>
 <li>DSCRETE: Automatic Rendering of Forensic Information from Memory Images via Application Logic Reuse, SEC14</li>
 </ul>
-<p><a name="9"></p>
-<h2 id="information-flow-analysis">Information flow analysis</h2>
-<p></a></p>
-<ul>
-<li>Bootstrapping Privacy Compliance in Big Data Systems, SP14</li>
-<li>Quantifying Information Flow for Dynamic Secrets, SP14</li>
-</ul>
-<p><a name="10"></p>
+<p><a name="side-channel"></p>
 <h2 id="side-channel-attacks">Side-channel attacks</h2>
 <p></a></p>
 <ul>
