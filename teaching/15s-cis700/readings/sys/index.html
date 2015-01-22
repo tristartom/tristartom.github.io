@@ -72,29 +72,19 @@
                         
                             <li class="toctree-l2"><a href="#readings-on-system-and-performance">Readings on system and performance</a></li>
                             
-                                <li><a class="toctree-l3" href="#big-database-systems">Big-database systems</a></li>
-                            
                                 <li><a class="toctree-l3" href="#request-trace-analysis">Request trace analysis</a></li>
                             
                                 <li><a class="toctree-l3" href="#predictive-performance">Predictive performance</a></li>
+                            
+                                <li><a class="toctree-l3" href="#performance-isolation">Performance isolation</a></li>
                             
                                 <li><a class="toctree-l3" href="#nosql">NoSQL</a></li>
                             
                                 <li><a class="toctree-l3" href="#elasticity">Elasticity</a></li>
                             
-                                <li><a class="toctree-l3" href="#performance-isolation">Performance isolation</a></li>
-                            
                                 <li><a class="toctree-l3" href="#consistency">Consistency</a></li>
                             
-                                <li><a class="toctree-l3" href="#fault-tolerance">Fault tolerance</a></li>
-                            
                                 <li><a class="toctree-l3" href="#workload-aware-storage">Workload-aware storage</a></li>
-                            
-                                <li><a class="toctree-l3" href="#big-graph">Big graph</a></li>
-                            
-                                <li><a class="toctree-l3" href="#big-data-analytics">Big data analytics</a></li>
-                            
-                                <li><a class="toctree-l3" href="#cluster-scheduling">Cluster scheduling</a></li>
                             
                         
                         </ul>
@@ -103,6 +93,11 @@
             
                 <li class="toctree-l1 ">
                     <a class="" href="../sec">Security papers</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../sys-add">Additional system papers</a>
                     
                 </li>
             
@@ -146,19 +141,6 @@
           <div role="main">
             <div class="section">
               <h1 id="readings-on-system-and-performance">Readings on system and performance</h1>
-<p><a name="bigdb"></p>
-<h2 id="big-database-systems">Big-database systems</h2>
-<p></a></p>
-<ul>
-<li>Spanner: Google's Globally-Distributed Database</li>
-<li>F1: A Distributed SQL Database That Scales</li>
-<li>Dremel: Interactive Analysis of Web-Scale Datasets [Apache-Drill]</li>
-<li>
-<ul>
-<li>New SQL: An Alternative to NoSQL and Old SQL for New OLTP Apps</li>
-</ul>
-</li>
-</ul>
 <p><a name="tracing"></p>
 <h2 id="request-trace-analysis">Request trace analysis</h2>
 <p></a></p>
@@ -182,10 +164,20 @@
 <h2 id="predictive-performance">Predictive performance</h2>
 <p></a></p>
 <ul>
+<li>On Predictive Modeling for Optimizing Transaction Execution in Parallel OLTP Systems, VLDB12 [<a href="http://vldb.org/pvldb/vol5/p085_andrewpavlo_vldb2012.pdf">pdf</a>]</li>
+<li>Towards Predicting Query Execution Time for Concurrent and Dynamic Database Workloads, VLDB13 [<a href="http://www.vldb.org/pvldb/vol6/p925-wu.pdf">pdf</a>]</li>
 <li>Performance and Resource Modeling in Highly-Concurrent OLTP Workloads, SIGMOD13 
 [<a href="http://web.eecs.umich.edu/~mozafari/papers/sigmod_2013.pdf">pdf</a>], 
 [<a href="https://github.com/barzan/dbseer">src</a>]</li>
 <li>Uncertainty Aware Query Execution Time Prediction, VLDB14</li>
+</ul>
+<p><a name="perfiso"></p>
+<h2 id="performance-isolation">Performance isolation</h2>
+<p></a></p>
+<ul>
+<li>End-to-end Performance Isolation Through Virtual Datacenters, OSDI14</li>
+<li>Performance Isolation and Fairness for Multi-Tenant Cloud Storage, OSDI12</li>
+<li>CPI2: CPU performance isolation for shared compute clusters, Eurosys13</li>
 </ul>
 <h2 id="nosql">NoSQL</h2>
 <p><a name="nosql"></p>
@@ -202,6 +194,7 @@
 <ul>
 <li>A Self-Configurable Geo-Replicated Cloud Storage System, OSDI14 [pdf]</li>
 <li>SPANStore: cost-effective geo-replicated storage spanning multiple cloud services, SOSP13 [pdf]</li>
+<li>Customizable and Extensible Deployment for Mobile/Cloud Applications, OSDI14 [<a href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-zhang.pdf">pdf</a>]</li>
 <li>Stronger Semantics for Low-Latency Geo-Replicated Storage, NSDI13</li>
 </ul>
 <p><a name="kernelopt"></p>
@@ -210,14 +203,6 @@
 <ul>
 <li>Arrakis: The Operating System is the Control Plane, OSDI14</li>
 <li>IX: A Protected Dataplane Operating System for High Throughput and Low Latency, OSDI14</li>
-</ul>
-<p><a name="ssd"></p>
-<h3 id="on-ssd">On SSD</h3>
-<p></a></p>
-<ul>
-<li>An Efficient Design and Implementation of LSM-Tree based Key-Value Store on Open-Channel SSD, Eurosys14</li>
-<li>FAWN: A Fast Array of Wimpy Nodes, SOSP09</li>
-<li>NVMKV: A Scalable and Lightweight Flash Aware Key-Value Store, HotStorage14 [<a href="https://www.usenix.org/system/files/conference/hotstorage14/hotstorage14-paper-marmol.pdf">pdf</a>]</li>
 </ul>
 <p><a name="elastic"></p>
 <h2 id="elasticity">Elasticity</h2>
@@ -231,13 +216,6 @@
 <li>On Scale Independence for Querying Big Data [PODS14]</li>
 </ul>
 </li>
-</ul>
-<p><a name="perfiso"></p>
-<h2 id="performance-isolation">Performance isolation</h2>
-<p></a></p>
-<ul>
-<li>End-to-end Performance Isolation Through Virtual Datacenters, OSDI14</li>
-<li>Performance Isolation and Fairness for Multi-Tenant Cloud Storage, OSDI12</li>
 </ul>
 <p><a name="consistent"></p>
 <h2 id="consistency">Consistency</h2>
@@ -258,14 +236,6 @@
 </ul>
 </li>
 </ul>
-<p><a name="ft"></p>
-<h2 id="fault-tolerance">Fault tolerance</h2>
-<p></a></p>
-<ul>
-<li>SAMC: Semantic-Aware Model Checking for Fast Discovery of Deep Bugs in Cloud Systems, OSDI14</li>
-<li>Torturing Databases for Fun and Profit, OSDI14</li>
-<li>Limplock: Understanding the Impact of Limpware on Scale-Out Cloud Systems, SOCC13</li>
-</ul>
 <p><a name="warmstore"></p>
 <h2 id="workload-aware-storage">Workload-aware storage</h2>
 <p></a></p>
@@ -273,41 +243,6 @@
 <li>Pelican: A Building Block for Exascale Cold Data Storage, OSDI14 [pdf]</li>
 <li>f4: Facebook's Warm BLOB Storage System, OSDI14 [pdf]</li>
 <li>Characterizing Storage Workloads with Counter Stacks, OSDI14 [pdf]</li>
-</ul>
-<!- breakline -->
-
-<p><a name="biggraph"></p>
-<h2 id="big-graph">Big graph</h2>
-<p></a></p>
-<ul>
-<li>GraphX: Graph Processing in a Distributed Dataflow Framework, OSDI14</li>
-<li>A lightweight infrastructure for graph analytics, SOSP13</li>
-<li>TAO: Facebook's Distributed Data Store for the Social Graph</li>
-<li>
-<ul>
-<li>Pregel: a system for large-scale graph processing [Apache-Giraph]</li>
-</ul>
-</li>
-</ul>
-<p><a name="biganalysis"></p>
-<h2 id="big-data-analytics">Big data analytics</h2>
-<p></a></p>
-<ul>
-<li>Scaling Distributed Machine Learning with the Parameter Server, OSDI14</li>
-<li>Naiad: a timely dataflow system, SOSP13</li>
-</ul>
-<p><a name="scheduling"></p>
-<h2 id="cluster-scheduling">Cluster scheduling</h2>
-<p></a></p>
-<ul>
-<li>Apollo: Scalable and Coordinated Scheduling for Cloud-Scale Computing, OSDI14 [pdf]</li>
-<li>The Power of Choice in Data-Aware Cluster Scheduling, OSDI14 [pdf]</li>
-<li>Sparrow: distributed, low latency scheduling, SOSP13 [pdf]</li>
-<li>
-<ul>
-<li>Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center, NSDI11, [src]</li>
-</ul>
-</li>
 </ul>
 
             </div>
