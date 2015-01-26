@@ -76,6 +76,8 @@
                             
                                 <li><a class="toctree-l3" href="#predictive-performance">Predictive performance</a></li>
                             
+                                <li><a class="toctree-l3" href="#tail-latency">Tail latency</a></li>
+                            
                                 <li><a class="toctree-l3" href="#performance-isolation">Performance isolation</a></li>
                             
                                 <li><a class="toctree-l3" href="#nosql">NoSQL</a></li>
@@ -85,6 +87,8 @@
                                 <li><a class="toctree-l3" href="#consistency">Consistency</a></li>
                             
                                 <li><a class="toctree-l3" href="#workload-aware-storage">Workload-aware storage</a></li>
+                            
+                                <li><a class="toctree-l3" href="#fault-tolerance">Fault tolerance</a></li>
                             
                         
                         </ul>
@@ -141,14 +145,19 @@
           <div role="main">
             <div class="section">
               <h1 id="readings-on-system-and-performance">Readings on system and performance</h1>
+<p>&#9733; indicates the required reading for class presentation.</p>
 <p><a name="tracing"></p>
 <h2 id="request-trace-analysis">Request trace analysis</h2>
 <p></a></p>
 <ul>
-<li>The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services, OSDI14 [pdf]: <code>trace-analysis</code></li>
-<li>So, you want to trace your distributed system? Key design insights from years of practical experience, CMU-TR 2014, [<a href="http://www.pdl.cmu.edu/PDL-FTP/SelfStar/CMU-PDL-14-102.pdf">pdf</a>]: <code>tracing</code></li>
-<li>Towards General-Purpose Resource Management in Shared Cloud Services, HotDep14 [<a href="http://cs.brown.edu/~jcmace/papers/mace14resource.pdf">pdf</a>], NSDI15</li>
+<li>&#9733; Towards General-Purpose Resource Management in Shared Cloud Services, HotDep14 [<a href="http://cs.brown.edu/~jcmace/papers/mace14resource.pdf">pdf</a>], NSDI15</li>
+<li>&#9733; The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services, OSDI14 [pdf]: <code>trace-analysis</code></li>
 <li>Detecting large-scale system problems by mining console logs, ICML10 [<a href="http://www.cs.berkeley.edu/~jordan/papers/xu-etal-icml10.pd">pdf</a>], SOSP09 [<a href="http://iiis.tsinghua.edu.cn/~weixu/files/sosp09.pdf">pdf</a>]: <code>log-analysis</code></li>
+<li>
+<ul>
+<li>So, you want to trace your distributed system? Key design insights from years of practical experience, CMU-TR 2014, [<a href="http://www.pdl.cmu.edu/PDL-FTP/SelfStar/CMU-PDL-14-102.pdf">pdf</a>]: <code>tracing</code></li>
+</ul>
+</li>
 <li>
 <ul>
 <li>Dapper, a Large-Scale Distributed Systems Tracing Infrastructure, Google technical report, 2010: <code>tracing</code></li>
@@ -164,52 +173,62 @@
 <h2 id="predictive-performance">Predictive performance</h2>
 <p></a></p>
 <ul>
-<li>On Predictive Modeling for Optimizing Transaction Execution in Parallel OLTP Systems, VLDB12 [<a href="http://vldb.org/pvldb/vol5/p085_andrewpavlo_vldb2012.pdf">pdf</a>]</li>
-<li>Towards Predicting Query Execution Time for Concurrent and Dynamic Database Workloads, VLDB13 [<a href="http://www.vldb.org/pvldb/vol6/p925-wu.pdf">pdf</a>]</li>
-<li>Performance and Resource Modeling in Highly-Concurrent OLTP Workloads, SIGMOD13 
+<li>&#9733; On Predictive Modeling for Optimizing Transaction Execution in Parallel OLTP Systems, VLDB12 [<a href="http://vldb.org/pvldb/vol5/p085_andrewpavlo_vldb2012.pdf">pdf</a>]</li>
+<li>&#9733; Performance and Resource Modeling in Highly-Concurrent OLTP Workloads, SIGMOD13 
 [<a href="http://web.eecs.umich.edu/~mozafari/papers/sigmod_2013.pdf">pdf</a>], 
 [<a href="https://github.com/barzan/dbseer">src</a>]</li>
+<li>Towards Predicting Query Execution Time for Concurrent and Dynamic Database Workloads, VLDB13 [<a href="http://www.vldb.org/pvldb/vol6/p925-wu.pdf">pdf</a>]</li>
 <li>Uncertainty Aware Query Execution Time Prediction, VLDB14</li>
+</ul>
+<p><a name="tail"></p>
+<h2 id="tail-latency">Tail latency</h2>
+<p></a></p>
+<ul>
+<li>The Tail at Scale, CACM10 [<a href="http://dl.acm.org/citation.cfm?id=2408794">pdf</a>] (using SU network)</li>
+<li>Bobtail: Avoiding Long Tails in the Cloud, NSDI13</li>
+<li>C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection, NSDI15</li>
+<li>CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services,  NSDI15</li>
+<li>Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency, SOCC14 [<a href="http://drkp.net/papers/latency-tr14.pdf">pdf</a>]</li>
 </ul>
 <p><a name="perfiso"></p>
 <h2 id="performance-isolation">Performance isolation</h2>
 <p></a></p>
 <ul>
+<li>&#9733; Performance Isolation and Fairness for Multi-Tenant Cloud Storage, OSDI12</li>
+<li>&#9733; CPI2: CPU performance isolation for shared compute clusters, Eurosys13</li>
 <li>End-to-end Performance Isolation Through Virtual Datacenters, OSDI14</li>
-<li>Performance Isolation and Fairness for Multi-Tenant Cloud Storage, OSDI12</li>
-<li>CPI2: CPU performance isolation for shared compute clusters, Eurosys13</li>
 </ul>
 <h2 id="nosql">NoSQL</h2>
 <p><a name="nosql"></p>
 <h3 id="not-only-sql">Not-Only-SQL</h3>
 <p></a></p>
 <ul>
-<li>Storage Management in AsterixDB, VLDB14</li>
-<li>Rank Join Queries in NoSQL Databases, VLDB14</li>
-<li>SLIK: Scalable Low-Latency Indexes for a Key-Value Store, TR14</li>
+<li>&#9733; Rank Join Queries in NoSQL Databases, VLDB14</li>
+<li>&#9733; SLIK: Scalable Low-Latency Indexes for a Key-Value Store, TR14</li>
+<li>&#9733; Storage Management in AsterixDB, VLDB14</li>
 </ul>
 <p><a name="multicloud"></p>
 <h3 id="onto-multi-cloud">Onto multi-cloud</h3>
 <p></a></p>
 <ul>
-<li>A Self-Configurable Geo-Replicated Cloud Storage System, OSDI14 [pdf]</li>
-<li>SPANStore: cost-effective geo-replicated storage spanning multiple cloud services, SOSP13 [pdf]</li>
-<li>Customizable and Extensible Deployment for Mobile/Cloud Applications, OSDI14 [<a href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-zhang.pdf">pdf</a>]</li>
+<li>&#9733; A Self-Configurable Geo-Replicated Cloud Storage System, OSDI14 [pdf]</li>
+<li>&#9733; Customizable and Extensible Deployment for Mobile/Cloud Applications, OSDI14 [<a href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-zhang.pdf">pdf</a>]</li>
+<li>&#9733; SPANStore: cost-effective geo-replicated storage spanning multiple cloud services, SOSP13 [pdf]</li>
 <li>Stronger Semantics for Low-Latency Geo-Replicated Storage, NSDI13</li>
 </ul>
 <p><a name="kernelopt"></p>
 <h3 id="kernel-optimization-for-data-intensive-app">Kernel optimization for data-intensive app</h3>
 <p></a></p>
 <ul>
-<li>Arrakis: The Operating System is the Control Plane, OSDI14</li>
-<li>IX: A Protected Dataplane Operating System for High Throughput and Low Latency, OSDI14</li>
+<li>&#9733; IX: A Protected Dataplane Operating System for High Throughput and Low Latency, OSDI14</li>
+<li>&#9733; Arrakis: The Operating System is the Control Plane, OSDI14</li>
 </ul>
 <p><a name="elastic"></p>
 <h2 id="elasticity">Elasticity</h2>
 <p></a></p>
 <ul>
-<li>E-Store: Fine-Grained Elastic Partitioning for Distributed Transaction Processing Systems, VLDB14 [pdf]</li>
-<li>Benchmarking Scalability and Elasticity of Distributed Database Systems, VLDB14 [pdf]</li>
+<li>&#9733; E-Store: Fine-Grained Elastic Partitioning for Distributed Transaction Processing Systems, VLDB14 [pdf]</li>
+<li>&#9733; Benchmarking Scalability and Elasticity of Distributed Database Systems, VLDB14 [pdf]</li>
 <li>MET: Workload aware elasticity for NoSQL, EuroSys13 [pdf]</li>
 <li>
 <ul>
@@ -221,10 +240,10 @@
 <h2 id="consistency">Consistency</h2>
 <p></a></p>
 <ul>
-<li>Consistency-based service level agreements for cloud storage, SOSP13</li>
-<li>Salt: Combining ACID and BASE in a Distributed Database</li>
+<li>&#9733; Consistency-based service level agreements for cloud storage, SOSP13</li>
+<li>&#9733; Probabilistically Bounded Staleness for Practical Partial Quorums, VLDB12</li>
+<li>&#9733; Salt: Combining ACID and BASE in a Distributed Database, OSDI14</li>
 <li>Scalable Atomic Visibility with RAMP Transactions, SIGMOD14</li>
-<li>Probabilistically Bounded Staleness for Practical Partial Quorums, VLDB12</li>
 <li>
 <ul>
 <li>CAP theorem: Brewer's conjecture and the feasibility of consistent, available, partition-tolerant web services</li>
@@ -240,9 +259,17 @@
 <h2 id="workload-aware-storage">Workload-aware storage</h2>
 <p></a></p>
 <ul>
-<li>Pelican: A Building Block for Exascale Cold Data Storage, OSDI14 [pdf]</li>
-<li>f4: Facebook's Warm BLOB Storage System, OSDI14 [pdf]</li>
+<li>&#9733; Pelican: A Building Block for Exascale Cold Data Storage, OSDI14 [pdf]</li>
+<li>&#9733; f4: Facebook's Warm BLOB Storage System, OSDI14 [pdf]</li>
 <li>Characterizing Storage Workloads with Counter Stacks, OSDI14 [pdf]</li>
+</ul>
+<p><a name="ft"></p>
+<h2 id="fault-tolerance">Fault tolerance</h2>
+<p></a></p>
+<ul>
+<li>SAMC: Semantic-Aware Model Checking for Fast Discovery of Deep Bugs in Cloud Systems, OSDI14</li>
+<li>Torturing Databases for Fun and Profit, OSDI14</li>
+<li>Limplock: Understanding the Impact of Limpware on Scale-Out Cloud Systems, SOCC13</li>
 </ul>
 
             </div>
