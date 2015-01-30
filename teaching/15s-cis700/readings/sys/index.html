@@ -81,13 +81,13 @@
                         
                             <li class="toctree-l2"><a href="#readings-on-system-and-performance">Readings on system and performance</a></li>
                             
-                                <li><a class="toctree-l3" href="#request-trace-analysis">Request trace analysis</a></li>
-                            
-                                <li><a class="toctree-l3" href="#predictive-performance">Predictive performance</a></li>
-                            
-                                <li><a class="toctree-l3" href="#tail-latency">Tail latency</a></li>
+                                <li><a class="toctree-l3" href="#predictive-performance-db">Predictive performance db</a></li>
                             
                                 <li><a class="toctree-l3" href="#performance-isolation">Performance isolation</a></li>
+                            
+                                <li><a class="toctree-l3" href="#request-trace-analysis">Request trace analysis</a></li>
+                            
+                                <li><a class="toctree-l3" href="#tail-latency">Tail latency</a></li>
                             
                                 <li><a class="toctree-l3" href="#nosql">NoSQL</a></li>
                             
@@ -155,6 +155,27 @@
             <div class="section">
               <h1 id="readings-on-system-and-performance">Readings on system and performance</h1>
 <p>&#9733; indicates the required reading for class presentation.</p>
+<p><a name="predperf"></p>
+<h2 id="predictive-performance-db">Predictive performance <code>db</code></h2>
+<p></a></p>
+<ul>
+<li>&#9733; On Predictive Modeling for Optimizing Transaction Execution in Parallel OLTP Systems, VLDB12 [<a href="http://vldb.org/pvldb/vol5/p085_andrewpavlo_vldb2012.pdf">pdf</a>]: <code>predict to optimize</code>, <code>distributed transactions</code>, <code>stored procedure</code>, <code>workload trace</code>, <code>Markov modeling</code></li>
+<li>&#9733; Performance and Resource Modeling in Highly-Concurrent OLTP Workloads, SIGMOD13
+[<a href="http://web.eecs.umich.edu/~mozafari/papers/sigmod_2013.pdf">pdf</a>], 
+[<a href="https://github.com/barzan/dbseer">src</a>]
+: <code>log</code>, <code>statistic analysis</code>, <code>TPC-C</code>, <code>pred. bottleneck</code>, <code>pred. consumption</code>, <code>pred. throughput</code></li>
+<li>Towards Predicting Query Execution Time for Concurrent and Dynamic Database Workloads, VLDB13 [<a href="http://www.vldb.org/pvldb/vol6/p925-wu.pdf">pdf</a>]</li>
+<li>Automated analysis of multithreaded programs for performance modeling, SIGMETRICS14 [<a href="http://dl.acm.org/citation.cfm?id=2592016">pdf</a>] (using SU network)</li>
+<li>Uncertainty Aware Query Execution Time Prediction, VLDB14 [<a href="http://www.vldb.org/pvldb/vol7/p1857-wu.pdf">pdf</a>]</li>
+</ul>
+<p><a name="perfiso"></p>
+<h2 id="performance-isolation">Performance isolation</h2>
+<p></a></p>
+<ul>
+<li>&#9733; Performance Isolation and Fairness for Multi-Tenant Cloud Storage, OSDI12 [<a href="https://www.usenix.org/conference/osdi12/technical-sessions/presentation/shue">link</a>]: <code>multi-tenant kv store</code>, <code>system-wide fairness</code>, <code>right utilization</code>, <code>dominant resource</code>, <code>weight (re)allocation</code></li>
+<li>&#9733; CPI2: CPU performance isolation for shared compute clusters, Eurosys13 [<a href="http://eurosys2013.tudos.org/wp-content/uploads/2013/paper/Zhang_2.pdf">pdf</a>]: <code>per-task CPI sampling</code>, <code>perf. counter</code>, <code>anomaly detection</code>, <code>high CPI is contention</code> </li>
+<li>End-to-end Performance Isolation Through Virtual Datacenters, OSDI14 [<a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/angel">link</a>]: <code>network p.i.</code>, <code>appliance</code></li>
+</ul>
 <p><a name="tracing"></p>
 <h2 id="request-trace-analysis">Request trace analysis</h2>
 <p></a></p>
@@ -180,18 +201,6 @@
 </ul>
 </li>
 </ul>
-<p><a name="predperf"></p>
-<h2 id="predictive-performance">Predictive performance</h2>
-<p></a></p>
-<ul>
-<li>&#9733; On Predictive Modeling for Optimizing Transaction Execution in Parallel OLTP Systems, VLDB12 [<a href="http://vldb.org/pvldb/vol5/p085_andrewpavlo_vldb2012.pdf">pdf</a>]</li>
-<li>&#9733; Performance and Resource Modeling in Highly-Concurrent OLTP Workloads, SIGMOD13 
-[<a href="http://web.eecs.umich.edu/~mozafari/papers/sigmod_2013.pdf">pdf</a>], 
-[<a href="https://github.com/barzan/dbseer">src</a>]</li>
-<li>Towards Predicting Query Execution Time for Concurrent and Dynamic Database Workloads, VLDB13 [<a href="http://www.vldb.org/pvldb/vol6/p925-wu.pdf">pdf</a>]</li>
-<li>Automated analysis of multithreaded programs for performance modeling, SIGMETRICS14 [<a href="http://dl.acm.org/citation.cfm?id=2592016">pdf</a>] (using SU network)</li>
-<li>Uncertainty Aware Query Execution Time Prediction, VLDB14 [<a href="http://www.vldb.org/pvldb/vol7/p1857-wu.pdf">pdf</a>]</li>
-</ul>
 <p><a name="tail"></p>
 <h2 id="tail-latency">Tail latency</h2>
 <p></a></p>
@@ -201,14 +210,6 @@
 <li>C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection, NSDI15</li>
 <li>CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services,  NSDI15</li>
 <li>Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency, SOCC14 [<a href="http://drkp.net/papers/latency-tr14.pdf">pdf</a>]</li>
-</ul>
-<p><a name="perfiso"></p>
-<h2 id="performance-isolation">Performance isolation</h2>
-<p></a></p>
-<ul>
-<li>&#9733; Performance Isolation and Fairness for Multi-Tenant Cloud Storage, OSDI12 [<a href="https://www.usenix.org/conference/osdi12/technical-sessions/presentation/shue">link</a>]</li>
-<li>&#9733; CPI2: CPU performance isolation for shared compute clusters, Eurosys13 [<a href="http://eurosys2013.tudos.org/wp-content/uploads/2013/paper/Zhang_2.pdf">pdf</a>]</li>
-<li>End-to-end Performance Isolation Through Virtual Datacenters, OSDI14 [<a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/angel">link</a>]</li>
 </ul>
 <h2 id="nosql">NoSQL</h2>
 <p><a name="nosql"></p>
