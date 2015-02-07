@@ -56,6 +56,13 @@
 
     
         
+            <li class="toctree-l1 ">
+                <a class="" href="../../pres">Presentation</a>
+            </li>
+        
+
+    
+        
         <span>Project</span>
             
                 <li class="toctree-l1 ">
@@ -140,7 +147,14 @@
           <div role="main">
             <div class="section">
               <h1 id="readings-on-system-and-performance">Readings on system and performance</h1>
-<p>&#9733; indicates the required reading for class presentation.</p>
+<ul>
+<li>&#9733; indicates the required reading for class presentation.</li>
+<li>
+<ul>
+<li>indicates optional/background reading.</li>
+</ul>
+</li>
+</ul>
 <h2 id="performance">Performance</h2>
 <p><a name="predperf"></p>
 <h3 id="predictive-performance-db">Predictive performance <code>db</code></h3>
@@ -167,14 +181,13 @@
 <h3 id="request-trace-analysis">Request trace analysis</h3>
 <p></a></p>
 <ul>
-<li>&#9733; Towards General-Purpose Resource Management in Shared Cloud Services, HotDep14 [<a href="http://cs.brown.edu/~jcmace/papers/mace14resource.pdf">pdf</a>], NSDI15</li>
-<li>&#9733; The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services, OSDI14 [pdf]: <code>trace-analysis</code></li>
-<li>&#9733; IntroPerf: Transparent Context-Sensitive Multi-Layer Performance Inference using System Stack Traces, SIGMETRICS14 [<a href="https://www.cs.purdue.edu/homes/xyzhang/Comp/sigmetrics14.pdf">pdf</a>]</li>
-<li>Detecting large-scale system problems by mining console logs, ICML10 [<a href="http://www.cs.berkeley.edu/~jordan/papers/xu-etal-icml10.pd">pdf</a>], SOSP09 [<a href="http://iiis.tsinghua.edu.cn/~weixu/files/sosp09.pdf">pdf</a>]: <code>log-analysis</code></li>
-<li>Non-intrusive, Out-of-band and Out-of-the-box Systems Monitoring in the Cloud, SIGMETRICS14 [<a href="http://sysweb.cs.toronto.edu/publication_files/253/sigmet310-suneja.pdf">pdf</a>]</li>
+<li>The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services, OSDI14 [pdf]:  <code>logging with request id</code>, <code>traces by request id</code>, <code>modelling causal relations</code>, <code>happens-before</code>, <code>critical path/slack</code>, <code>aggregate for probablistic model</code>, <code>predict based on history</code></li>
+<li>&#9733; IntroPerf: Transparent Context-Sensitive Multi-Layer Performance Inference using System Stack Traces, SIGMETRICS14 [<a href="https://www.cs.purdue.edu/homes/xyzhang/Comp/sigmetrics14.pdf">pdf</a>]: <code>system stack trace</code>, <code>function call graph/tree</code>, <code>call-path latency profiling</code>, <code>call-path based debugging/patching</code></li>
+<li>Towards General-Purpose Resource Management in Shared Cloud Services, HotDep14 [<a href="http://cs.brown.edu/~jcmace/papers/mace14resource.pdf">pdf</a>, <a href="http://cs.brown.edu/~jcmace/presentations/mace14resource-presentation.pdf">slides</a>], NSDI15: <code>performance versus resource sharing</code>, <code>tracing and resource profiling</code>, <code>application/src-level resource modeling</code>, <code>control points</code></li>
+<li>Non-intrusive, Out-of-band and Out-of-the-box Systems Monitoring in the Cloud, SIGMETRICS14 [<a href="http://sysweb.cs.toronto.edu/publication_files/253/sigmet310-suneja.pdf">pdf</a>]: <code>VM monitoring</code></li>
 <li>
 <ul>
-<li>So, you want to trace your distributed system? Key design insights from years of practical experience, CMU-TR 2014, [<a href="http://www.pdl.cmu.edu/PDL-FTP/SelfStar/CMU-PDL-14-102.pdf">pdf</a>]: <code>tracing</code></li>
+<li>So, you want to trace your distributed system? Key design insights from years of practical experience, CMU-TR 2014, [<a href="http://www.pdl.cmu.edu/PDL-FTP/SelfStar/CMU-PDL-14-102.pdf">pdf</a>]: <code>request tracing</code>, <code>(survey)</code></li>
 </ul>
 </li>
 <li>
@@ -182,9 +195,10 @@
 <li>Dapper, a Large-Scale Distributed Systems Tracing Infrastructure, Google technical report, 2010: <code>tracing</code></li>
 </ul>
 </li>
+<li>Detecting large-scale system problems by mining console logs, ICML10 [<a href="http://www.cs.berkeley.edu/~jordan/papers/xu-etal-icml10.pd">pdf</a>], SOSP09 [<a href="http://iiis.tsinghua.edu.cn/~weixu/files/sosp09.pdf">pdf</a>]: <code>console log</code>, <code>stitching logs by static analysis</code></li>
 <li>
 <ul>
-<li>lprof: A Non-intrusive Request Flow Profiler for Distributed Systems, OSDI14: <code>tracing</code></li>
+<li>lprof: A Non-intrusive Request Flow Profiler for Distributed Systems, OSDI14: <code>stitching logs by static analysis</code>, <code>non-intrusive tracing</code>, <code>perf. bug verified by patch</code></li>
 </ul>
 </li>
 </ul>
@@ -192,9 +206,9 @@
 <h3 id="tail-latency">Tail latency</h3>
 <p></a></p>
 <ul>
-<li>&#9733; The Tail at Scale, CACM10 [<a href="http://dl.acm.org/citation.cfm?id=2408794">pdf</a>] (using SU network)</li>
-<li>&#9733; Bobtail: Avoiding Long Tails in the Cloud, NSDI13</li>
-<li>&#9733; Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency, SOCC14 [<a href="http://drkp.net/papers/latency-tr14.pdf">pdf</a>]</li>
+<li>&#9733; Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency, SOCC14 [<a href="http://drkp.net/papers/latency-tr14.pdf">pdf</a>]: <code>latency variance</code>, <code>causes of tails</code>, <code>sharing</code>, <code>scheduler:pin-core</code>, <code>single-queue reduces latency</code>, <code>no remote access in NUMA</code>, <code>interrupt isolation by dedicated core</code></li>
+<li>&#9733; Bobtail: Avoiding Long Tails in the Cloud, NSDI13: <code>vm scheduling</code>, <code>vm responsiveness by sleep-and-wake</code></li>
+<li>&#9733; The Tail at Scale, CACM10 [<a href="http://dl.acm.org/citation.cfm?id=2408794">pdf</a>] (using SU network): <code>tail tolerance</code>, <code>one finish, cancel others</code>, <code>duplicated requests</code>, <code>if works fine in small, then move on to large-scale execution</code></li>
 <li>C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection, NSDI15</li>
 <li>CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services,  NSDI15</li>
 </ul>
