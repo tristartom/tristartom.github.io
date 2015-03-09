@@ -237,17 +237,25 @@
 <li>The Hybrex model for confidentiality and privacy in cloud computing, HotCloud11, <code>hybrid-cloud</code></li>
 </ul>
 <p><a name="kernelopt"></p>
-<h3 id="kernel-optimization-for-bare-metal-io">Kernel optimization for bare-metal IO</h3>
+<h3 id="kernel-optimization-for-io-at-bare-metal-speed">Kernel optimization for IO at bare-metal speed</h3>
 <p></a></p>
 <ul>
+<li>&#9733; Arrakis: The Operating System is the Control Plane, OSDI14: <code>control plane in kernel</code>, <code>data plane out of kernel</code>, <code>LibOS</code>, <code>capacity</code>, <code>Intel VT</code>, <code>disk/network IO</code></li>
 <li>&#9733; IX: A Protected Dataplane Operating System for High Throughput and Low Latency, OSDI14</li>
-<li>&#9733; Arrakis: The Operating System is the Control Plane, OSDI14</li>
+</ul>
+<p><a name="warmstore"></p>
+<h3 id="cold-data-storage">Cold-data storage</h3>
+<p></a></p>
+<ul>
+<li>&#9733; Pelican: A Building Block for Exascale Cold Data Storage, OSDI14 [pdf]: <code>rack-scale computing</code>, <code>energy/cooling</code>, <code>cold data</code>, <code>disk spin up/down</code>, <code>low throughput</code></li>
+<li>&#9733; f4: Facebook's Warm BLOB Storage System, OSDI14 [pdf]: <code>RAID at rack-scale</code>, <code>error-correcting code</code></li>
+<li>Characterizing Storage Workloads with Counter Stacks, OSDI14 [pdf]</li>
 </ul>
 <p><a name="elastic"></p>
 <h3 id="elasticity">Elasticity</h3>
 <p></a></p>
 <ul>
-<li>&#9733; E-Store: Fine-Grained Elastic Partitioning for Distributed Transaction Processing Systems, VLDB14 [pdf]</li>
+<li>&#9733; E-Store: Fine-Grained Elastic Partitioning for Distributed Transaction Processing Systems, VLDB14 [pdf]: <code>hot data fine partitioned</code>, <code>cold data coarsely partitioned</code></li>
 <li>&#9733; Benchmarking Scalability and Elasticity of Distributed Database Systems, VLDB14 [pdf]</li>
 <li>MET: Workload aware elasticity for NoSQL, EuroSys13 [pdf]</li>
 <li>
@@ -274,14 +282,6 @@
 <li>CAP theorem in plain english [<a href="http://ksat.me/a-plain-english-introduction-to-cap-theorem/">link</a>]</li>
 </ul>
 </li>
-</ul>
-<p><a name="warmstore"></p>
-<h3 id="workload-aware-storage">Workload-aware storage</h3>
-<p></a></p>
-<ul>
-<li>&#9733; Pelican: A Building Block for Exascale Cold Data Storage, OSDI14 [pdf]</li>
-<li>&#9733; f4: Facebook's Warm BLOB Storage System, OSDI14 [pdf]</li>
-<li>Characterizing Storage Workloads with Counter Stacks, OSDI14 [pdf]</li>
 </ul>
 <p><a name="ft"></p>
 <h3 id="fault-tolerance">Fault tolerance</h3>
