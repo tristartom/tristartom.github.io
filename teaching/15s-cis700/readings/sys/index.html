@@ -75,6 +75,11 @@
                     
                 </li>
             
+                <li class="toctree-l1 ">
+                    <a class="" href="../../proj/midterm">Midterm</a>
+                    
+                </li>
+            
         
 
     
@@ -209,7 +214,7 @@
 <li>&#9733; Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency, SOCC14 [<a href="http://drkp.net/papers/latency-tr14.pdf">pdf</a>]: <code>latency variance</code>, <code>causes of tails</code>, <code>sharing</code>, <code>scheduler:pin-core</code>, <code>single-queue reduces latency</code>, <code>no remote access in NUMA</code>, <code>interrupt isolation by dedicated core</code></li>
 <li>&#9733; Bobtail: Avoiding Long Tails in the Cloud, NSDI13: <code>vm scheduling</code>, <code>vm responsiveness by sleep-and-wake</code></li>
 <li>&#9733; The Tail at Scale, CACM10 [<a href="http://dl.acm.org/citation.cfm?id=2408794">pdf</a>] (using SU network): <code>tail tolerance</code>, <code>one finish, cancel others</code>, <code>duplicated requests</code>, <code>if works fine in small, then move on to large-scale execution</code></li>
-<li>C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection, NSDI15</li>
+<li>C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection, NSDI15 [<a href="http://perso.uclouvain.be/marco.canini/papers/c3.nsdi15.pdf">pdf</a>]</li>
 <li>CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services,  NSDI15</li>
 </ul>
 <h2 id="distributed-storage-system-nosql">Distributed storage system (NoSQL)</h2>
@@ -232,17 +237,25 @@
 <li>The Hybrex model for confidentiality and privacy in cloud computing, HotCloud11, <code>hybrid-cloud</code></li>
 </ul>
 <p><a name="kernelopt"></p>
-<h3 id="kernel-optimization-for-data-intensive-app">Kernel optimization for data-intensive app</h3>
+<h3 id="kernel-optimization-for-io-at-bare-metal-speed">Kernel optimization for IO at bare-metal speed</h3>
 <p></a></p>
 <ul>
+<li>&#9733; Arrakis: The Operating System is the Control Plane, OSDI14: <code>control plane in kernel</code>, <code>data plane out of kernel</code>, <code>LibOS</code>, <code>capacity</code>, <code>Intel VT</code>, <code>disk/network IO</code></li>
 <li>&#9733; IX: A Protected Dataplane Operating System for High Throughput and Low Latency, OSDI14</li>
-<li>&#9733; Arrakis: The Operating System is the Control Plane, OSDI14</li>
+</ul>
+<p><a name="warmstore"></p>
+<h3 id="cold-data-storage">Cold-data storage</h3>
+<p></a></p>
+<ul>
+<li>&#9733; Pelican: A Building Block for Exascale Cold Data Storage, OSDI14 [pdf]: <code>rack-scale computing</code>, <code>energy/cooling</code>, <code>cold data</code>, <code>disk spin up/down</code>, <code>low throughput</code></li>
+<li>&#9733; f4: Facebook's Warm BLOB Storage System, OSDI14 [pdf]: <code>RAID at rack-scale</code>, <code>error-correcting code</code></li>
+<li>Characterizing Storage Workloads with Counter Stacks, OSDI14 [pdf]</li>
 </ul>
 <p><a name="elastic"></p>
 <h3 id="elasticity">Elasticity</h3>
 <p></a></p>
 <ul>
-<li>&#9733; E-Store: Fine-Grained Elastic Partitioning for Distributed Transaction Processing Systems, VLDB14 [pdf]</li>
+<li>&#9733; E-Store: Fine-Grained Elastic Partitioning for Distributed Transaction Processing Systems, VLDB14 [pdf]: <code>hot data fine partitioned</code>, <code>cold data coarsely partitioned</code></li>
 <li>&#9733; Benchmarking Scalability and Elasticity of Distributed Database Systems, VLDB14 [pdf]</li>
 <li>MET: Workload aware elasticity for NoSQL, EuroSys13 [pdf]</li>
 <li>
@@ -270,14 +283,6 @@
 </ul>
 </li>
 </ul>
-<p><a name="warmstore"></p>
-<h3 id="workload-aware-storage">Workload-aware storage</h3>
-<p></a></p>
-<ul>
-<li>&#9733; Pelican: A Building Block for Exascale Cold Data Storage, OSDI14 [pdf]</li>
-<li>&#9733; f4: Facebook's Warm BLOB Storage System, OSDI14 [pdf]</li>
-<li>Characterizing Storage Workloads with Counter Stacks, OSDI14 [pdf]</li>
-</ul>
 <p><a name="ft"></p>
 <h3 id="fault-tolerance">Fault tolerance</h3>
 <p></a></p>
@@ -296,7 +301,7 @@
         <a href="../sec" class="btn btn-neutral float-right" title="Security papers"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../proj/topics" class="btn btn-neutral" title="Topics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../proj/midterm" class="btn btn-neutral" title="Midterm"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -322,7 +327,7 @@
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
         
-      <span><a href="../../proj/topics" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span><a href="../../proj/midterm" style="color: #fcfcfc;">&laquo; Previous</a></span>
       <span style="margin-left: 15px"><a href="../sec" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
