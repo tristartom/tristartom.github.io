@@ -171,11 +171,11 @@ This project addresses the indexing problem of the write-intensive key-value
 data under the design goals of real-time data availability and lightweight
 index maintenance. The real-time availability entails that the recently updated
 data should be indexed in (near) real time and be made available to query
-results as soon as possible. Toward the design goals, I proposed HIndex
+results as soon as possible. Toward the design goals, I proposed DELI
 <!-- [<a href="http://www.cercs.gatech.edu/tech-reports/tr2014/git-cercs-14-01.pdf">Under submission</a>],-->
 <!-- [<a href="./docs/hindex.pdf">Under submission</a>], -->
 [<a href="./docs/ccgrid15.pdf">CCGrid'15</a>], an append-only index
-design for write-optimized key-value stores.  HIndex utilizes an index repair
+design for write-optimized key-value stores.  DELI utilizes an index repair
 operation for a garbage collection. For the optimized performance, I proposed a
 novel scheduling strategy that couples the index repair operations with offline
 reorganization processes<!--, mostly known as compactions in the key-value stores-->.  
@@ -191,7 +191,7 @@ unique performance characteristics in the underlying key-value stores.
  <p>
 
 <b>System implementation</b>:
-The prototype system of HIndex and DIndex is implemented based on different cloud storage infrastructures, including <i>HBase</i> and <i>Cassandra</i>. For HBase-based implementation, I have taken advantage of HBase's CoProcessor API. The performance study of HIndex is based on <i>YCSB</i> as a workload generator, and <i>EMulab</i> as a cloud computing platform. With collaboration from IBM Research, we have implemented the indexing framework and integrated into the IBM BigInsights product [<a href="./docs/DiffIndex-EDBT14.pdf">EDBT'14</a>]. I will outsource the prototype of HIndex in the near future.
+The prototype system of DELI and DIndex is implemented based on different cloud storage infrastructures, including <i>HBase</i> and <i>Cassandra</i>. For HBase-based implementation, I have taken advantage of HBase's CoProcessor API. The performance study of DELI is based on <i>YCSB</i> as a workload generator, and <i>EMulab</i> as a cloud computing platform. With collaboration from IBM Research, we have implemented the indexing framework and integrated into the IBM BigInsights product [<a href="./docs/DiffIndex-EDBT14.pdf">EDBT'14</a>]. I will outsource the prototype of DELI in the near future.
     </span> </td> </tr>
  </table>
 
