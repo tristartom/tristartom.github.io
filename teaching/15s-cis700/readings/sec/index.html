@@ -8,6 +8,8 @@
   <title>Security papers - CIS700/CSE791-DSiC-2015</title>
   
 
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
   
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
@@ -15,16 +17,18 @@
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../../css/highlight.css">
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "readings/sec"
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../../js/highlight.pack.js"></script>
-  <script src="../../js/theme.js"></script>
+  <script src="../../js/theme.js"></script> 
 
-  <style>
-    body {font-size: 90%;}
-    pre, code {font-size: 100%;}
-    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
-  </style> 
+  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -35,94 +39,118 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
         <a href="../.." class="icon icon-home"> CIS700/CSE791-DSiC-2015</a>
-        
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="../../syl">Syllabus</a>
-            </li>
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../syl/">Syllabus</a>
         
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../sched/">Schedule</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../pres/">Presentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Project</span></li>
 
-    
         
-            <li class="toctree-l1 ">
-                <a class="" href="../../sched">Schedule</a>
-            </li>
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../proj/policy/">Policy</a>
         
+    </li>
 
-    
         
-            <li class="toctree-l1 ">
-                <a class="" href="../../pres">Presentation</a>
-            </li>
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../proj/midterm/">Midterm</a>
         
+    </li>
 
-    
         
-        <span>Project</span>
             
-                <li class="toctree-l1 ">
-                    <a class="" href="../../proj/policy">Policy</a>
-                    
-                </li>
-            
-                <li class="toctree-l1 ">
-                    <a class="" href="../../proj/midterm">Midterm</a>
-                    
-                </li>
-            
-                <li class="toctree-l1 ">
-                    <a class="" href="../../proj/final">Final</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../../proj/final/">Final</a>
         
+    </li>
 
-    
         
-        <span>Readings</span>
-            
-                <li class="toctree-l1 ">
-                    <a class="" href="../sys">System papers</a>
-                    
-                </li>
-            
-                <li class="toctree-l1 current">
-                    <a class="current" href=".">Security papers</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l2"><a href="#readings-on-security">Readings on security</a></li>
-                            
-                                <li><a class="toctree-l3" href="#differential-privacy">Differential privacy</a></li>
-                            
-                                <li><a class="toctree-l3" href="#multi-party-computations">Multi-party computations</a></li>
-                            
-                                <li><a class="toctree-l3" href="#cloud-security">Cloud security</a></li>
-                            
-                                <li><a class="toctree-l3" href="#misc">Misc.</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Readings</span></li>
 
-    
         
-            <li class="toctree-l1 ">
-                <a class="" href="../../references">References</a>
-            </li>
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sys/">System papers</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Security papers</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#readings-on-security">Readings on security</a></li>
+                
+                    <li><a class="toctree-l4" href="#differential-privacy">Differential privacy</a></li>
+                
+                    <li><a class="toctree-l4" href="#multi-party-computations">Multi-party computations</a></li>
+                
+                    <li><a class="toctree-l4" href="#cloud-security">Cloud security</a></li>
+                
+                    <li><a class="toctree-l4" href="#misc">Misc.</a></li>
+                
+            
+            </ul>
+        
+    </li>
 
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../references/">References</a>
+        
+    </li>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -131,8 +159,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
-        <a href="../.."></a>
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">CIS700/CSE791-DSiC-2015</a>
       </nav>
 
       
@@ -141,16 +169,24 @@
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../..">Docs</a> &raquo;</li>
-    <li>Security papers</li>
-      <li class="wy-breadcrumbs-aside">
+    
+      
         
-      </li>
+          <li>Readings &raquo;</li>
+        
+      
+    
+    <li>Security papers</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="readings-on-security">Readings on security</h1>
+              
+                <h1 id="readings-on-security">Readings on security</h1>
 <ul>
 <li>&#9733; indicates the required reading for class presentation.</li>
 <li>
@@ -243,17 +279,14 @@
 <li>ANONIZE: A Large-Scale Anonymous Survey System, SP14: <code>anonymity between surveyee and result</code>, <code>`cryptographic app</code>, <code>no agg</code></li>
 <li>&#9733; Secure Multiparty Computations on Bitcoin, SP14</li>
 <li>Private search on key-value stores with hierarchical indexes, ICDE14</li>
-<li>WANalytics: Analytics for a Geo-Distributed Data-Intensive World, CIDR15 [<a href="http://web.engr.illinois.edu/~vulimir1/papers/15-cidr.pdf">pdf</a>]</li>
 </ul>
 <p><a name="dp-mpc"></p>
 <h3 id="differentially-private-multi-party-computation">Differentially private multi-party computation</h3>
 <p></a></p>
 <ul>
 <li>&#9733; Our data, Ourselves: Privacy via distributed noise generation, EUROCRYPT06 [<a href="http://research.microsoft.com/pubs/65086/odo.pdf">pdf</a>]: <code>laplace noising without floating-point numbers</code>, <code>secret sharing</code></li>
-<li>&#9733; DJoin: Differentially Private Join Queries over Distributed Databases, OSDI 2012.</li>
 <li>&#9733; RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response, CCS14: <code>randomized responses</code></li>
-<li>Towards Statistical Queries over Distributed Private User Data, NSDI12 [<a href="https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final24.pdf">pdf</a>]: <code>statistical analysis</code>, <code>scalable D.P.</code></li>
-<li>Compute Globally, Act Locally: Protecting Federated Systems from Systemic Threats, HotDep14, [<a href="http://www.cis.upenn.edu/~ahae/papers/systemic-hotdep2014.pdf">pdf</a>]</li>
+<li>&#9733; DJoin: Differentially Private Join Queries over Distributed Databases, OSDI 2012.</li>
 <li>The limits of two-party differential privacy, 2010.</li>
 </ul>
 <h2 id="cloud-security">Cloud security</h2>
@@ -321,17 +354,17 @@
 <li>Scheduler-based Defenses against Cross-VM Side-channels, SEC14</li>
 <li>Preventing Cryptographic Key Leakage in Cloud Virtual Machines, SEC14</li>
 </ul>
-
+              
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../references" class="btn btn-neutral float-right" title="References"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../references/" class="btn btn-neutral float-right" title="References"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../sys" class="btn btn-neutral" title="System papers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sys/" class="btn btn-neutral" title="System papers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -356,10 +389,15 @@
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-      <span><a href="../sys" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../../references" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+      
+        <span><a href="../sys/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../references/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
+
 </body>
 </html>
