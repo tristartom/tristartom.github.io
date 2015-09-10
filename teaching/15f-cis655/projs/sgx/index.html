@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sgx - CIS655/CSE661-2015Fall</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "sgx";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> CIS655/CSE661-2015Fall</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../syl/">Syllabus</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Project</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../proj/">Proj</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">sgx</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#sgxencls">SGX/ENCLS</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">CIS655/CSE661-2015Fall</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Project &raquo;</li>
+        
+      
+    
+    <li>sgx</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="sgxencls">SGX/ENCLS</h1>
+<p>SGX is an upcoming Intel ISA extension for trusted program execution.</p>
+<p>Read SGX document [<a href="https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf">pdf</a>] (mostly chapter 1,2,3 and 5), understand the semantics of SGX/ENCLS instructions (e.g. EINIT, EREPORT, EEXTEND, ECREATE, etc; see Chapter 5.3). Following is a copy of Table 5-1 in the SGX document.</p>
+<table>
+<thead>
+<tr>
+<th>Instr. Leaf</th>
+<th align="left">EAX</th>
+<th align="left">RBX</th>
+<th align="left">RCX</th>
+<th align="left">RDX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECREATE</td>
+<td align="left">00H (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EADD</td>
+<td align="left">01H (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EINIT</td>
+<td align="left">02H (In)</td>
+<td align="left">SIGSTRUCT (In, EA)</td>
+<td align="left">SECS (In, EA)</td>
+<td align="left">EINITTOKEN (In, EA)</td>
+</tr>
+<tr>
+<td>EREMOVE</td>
+<td align="left">03H (In)</td>
+<td align="left"></td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EDBGRD</td>
+<td align="left">04H (In)</td>
+<td align="left">Result Data (Out)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EDBGWR</td>
+<td align="left">05H (In)</td>
+<td align="left">Source Data (In)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EEXTEND</td>
+<td align="left">06H (In)</td>
+<td align="left"></td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>ELDB</td>
+<td align="left">07H (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left">VERSION (In, EA)</td>
+</tr>
+<tr>
+<td>ELDU</td>
+<td align="left">08H (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left">VERSION (In, EA)</td>
+</tr>
+<tr>
+<td>EBLOCK</td>
+<td align="left">09H (In)</td>
+<td align="left"></td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EPA</td>
+<td align="left">0AH (In)</td>
+<td align="left">PT_VA (In)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EWB</td>
+<td align="left">0BH (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left">VERSION (In, EA)</td>
+</tr>
+<tr>
+<td>ETRACK</td>
+<td align="left">0CH (In)</td>
+<td align="left"></td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EAUG</td>
+<td align="left">0DH (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left">LINADDR</td>
+</tr>
+<tr>
+<td>EMODPR</td>
+<td align="left">0EH (In)</td>
+<td align="left">SECINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EMODT</td>
+<td align="left">0FH (In)</td>
+<td align="left">SECINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EA: Effective Address</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p>Assuming there is an SGX CPU that supports SGX/ENCLS, you need to write a userland program (assembly or C) to set up an Enclave area suitable for loading and running a simple Hello-world C program below.</p>
+<pre><code>int main(void){
+  int x = 0;
+  int y = 1;
+  int z = x + y;
+}
+</code></pre>
+
+<p>TBD</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../proj/" class="btn btn-neutral" title="Proj"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../proj/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
