@@ -64,27 +64,20 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../sched/">Schedule</a>
-        
-    </li>
-<li>
-          
-            <li>
     <li class="toctree-l1 current">
         <a class="current" href="./">Project</a>
         
             <ul>
             
-                <li class="toctree-l3"><a href="#advanced-project">Advanced Project</a></li>
+                <li class="toctree-l3"><a href="#course-project">Course Project</a></li>
                 
-                    <li><a class="toctree-l4" href="#format">Format</a></li>
+                    <li><a class="toctree-l4" href="#policy">Policy</a></li>
+                
+                    <li><a class="toctree-l4" href="#deliverable">Deliverable</a></li>
                 
                     <li><a class="toctree-l4" href="#timeline">Timeline</a></li>
                 
-                    <li><a class="toctree-l4" href="#options">Options</a></li>
-                
-                    <li><a class="toctree-l4" href="#sample-topics">Sample Topics</a></li>
+                    <li><a class="toctree-l4" href="#topics-tentative">Topics (Tentative)</a></li>
                 
             
             </ul>
@@ -124,80 +117,59 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="advanced-project">Advanced Project</h1>
-<h2 id="format">Format</h2>
-<p>Students are expected to work in a group fashion; that is, once student groups are formed, a student is allowed only to collaborate inside his/her group (but <strong>NOT</strong> with students in other groups). Each group of students should work on one project, turn in one deliverable; so the workload assignment is encouraged. The project has two options; survey-oriented option, and programming option. There are some sample topics described in the document, and students are free to choose the sample topics or propose a new topic for their project; the new  topic should be relevant to computer architecture and systems, and reflect the advances in recent years.</p>
+                <h1 id="course-project">Course Project</h1>
+<h2 id="policy">Policy</h2>
+<p>Students can work in groups. But once groups are formed, collaboration is only allowed within the group. More specifically, <strong>inter-group collaboration is prohabited</strong>. Each group can have no more than 3 people.</p>
+<h2 id="deliverable">Deliverable</h2>
+<ul>
+<li>Mid-term report/presentation (40%): Formal survey of the technology with no less than 5 pages (format: 12-point font size on single-spaced 8.5" x 11” pages)   </li>
+<li>Group with good mid-term report will be given an opportunity to do presentation in class. And <strong>in-class presentation will be awarded with bonus grades (extra 30%)</strong></li>
+<li>Final report (20%): Formal survey of the technology and project design \&amp; implementation, no less than 10 pages (the same format to mid-term report).</li>
+<li>Final program/demo (40%): Demo needs to allow other people to reproduce your results.</li>
+</ul>
 <h2 id="timeline">Timeline</h2>
 <table>
 <thead>
 <tr>
 <th>Week</th>
-<th align="center">Survey</th>
-<th align="right">Programming</th>
+<th align="center">Schedule</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Week 1-2</td>
-<td align="center">group assigned</td>
-<td align="right">group assigned</td>
+<td>Week 1-4</td>
+<td align="center">form group and choose topic</td>
 </tr>
 <tr>
-<td>Week 3-4</td>
-<td align="center">topic assigned</td>
-<td align="right">topic assigned</td>
-</tr>
-<tr>
-<td>Week 6</td>
-<td align="center"></td>
-<td align="right">progress check</td>
-</tr>
-<tr>
-<td>Week 9</td>
+<td>Week 8</td>
 <td align="center">mid-term report</td>
-<td align="right">mid-term report</td>
-</tr>
-<tr>
-<td>Week 11</td>
-<td align="center"></td>
-<td align="right">progress check</td>
 </tr>
 <tr>
 <td>Week 13</td>
-<td align="center">final paper/demo</td>
-<td align="right">final demo</td>
+<td align="center">final report/demo</td>
 </tr>
 </tbody>
 </table>
-<h2 id="options">Options</h2>
-<h3 id="survey-oriented-option">Survey-oriented option</h3>
-<p>Choose one topic (or make a proposal), find related papers and open-source software, write a 10-page technology review. Note that this is not a pure "text-writing" task --- students are expected to survey existing software and to demonstrate the practical aspects of the topic (e.g. what kind of new APIs are made available to software programmers).</p>
-<p>Deliverable: final paper, presentation and optional code demonstration.</p>
-<h3 id="programming-option">Programming option</h3>
-<p>Based on the chosen topic, set up the computer system, write code/scripts, and collect measurement data and performance analysis.</p>
-<p>Deliverable: final demo of up-and-running systems and measurement results.</p>
-<h2 id="sample-topics">Sample Topics</h2>
-<h3 id="survey-oriented-topics">Survey-oriented topics</h3>
+<h2 id="topics-tentative">Topics (Tentative)</h2>
 <ol>
-<li>Many-core</li>
-<li>SSD/NVM</li>
-<li>GPGPU  </li>
-<li>Example: GPUOcelot</li>
-<li>Software-defined networking   </li>
-<li>Example: OpenFlow/MiniNet</li>
-<li>Infiniband  </li>
-<li>Virtualization  </li>
-<li>Example: XEN, vSphere, QEMU</li>
-<li>Cloud architecture  </li>
-<li>Example: Amazon AWS (availability zone, EBS, EMR, etc)</li>
-<li>Internet of things </li>
-<li>Example: Mobile sensing, wearable devices</li>
-<li>FPGA  </li>
-</ol>
-<h3 id="programming-topics">Programming topics</h3>
-<ol>
-<li>Request-level tracing in big-data distributed systems</li>
-<li>Emulating Intel SGX instructions</li>
+<li>x86-64 ISA  </li>
+<li>Page table and page-fault: intercept and analyze page-fault.</li>
+<li>Return-oriented programming (ROP): formulate a working ROP attack</li>
+<li>Program data dependency analysis   </li>
+<li>Double stack and isolation  </li>
+<li>Cache false sharing  </li>
+<li>Intel ISA extension:  </li>
+<li>AVX: understand AVX/SIMD, write data-parallel program that demonstrates perf speedup.</li>
+<li>SGX: understand SGX/CLS, write user-land code <a href="./docs/projs/sgx.md">link</a></li>
+<li>Devices (blkdev, cdev, netdev)</li>
+<li>USB: write a USB driver [<a href="http://lwn.net/images/pdf/LDD3/ch13.pdf">ldd3-13</a>]</li>
+<li>SSD: access SSD controller</li>
+<li>Cloud interface</li>
+<li>Amazon AWS  </li>
+<li>Other possible topics:</li>
+<li>GPGPU:</li>
+<li>AES: </li>
+<li>TTY, DMA, etc</li>
 </ol>
               
             </div>
@@ -207,7 +179,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="../sched/" class="btn btn-neutral" title="Schedule"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../syl/" class="btn btn-neutral" title="Syllabus"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -233,7 +205,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../sched/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../syl/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

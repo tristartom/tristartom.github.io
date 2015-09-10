@@ -54,6 +54,36 @@
             "location": "/syl/#ta-and-office-hours", 
             "text": "TA:      Jielong Xu: jxu21@syr.edu        Hari Krishna Gajarla: hgajarla@syr.edu        Haoyi Shi: hshi05@syr.edu        Katchaguy (Bebe) Areekijseree: kareekij@syr.edu      Instructor: Yuzhe (Richard) Tang      Email (teaching): teachingsu@hotmail.com (when you send email to me, include  [CIS 655]  in the subject.)        Office: 4-193, CST", 
             "title": "TA and office hours"
+        }, 
+        {
+            "location": "/proj/", 
+            "text": "Course Project\n\n\nPolicy\n\n\nStudents can work in groups. But once groups are formed, collaboration is only allowed within the group. More specifically, \ninter-group collaboration is prohabited\n. Each group can have no more than 3 people.\n\n\nDeliverable\n\n\n\n\nMid-term report/presentation (40%): Formal survey of the technology with no less than 5 pages (format: 12-point font size on single-spaced 8.5\" x 11\u201d pages)   \n\n\nGroup with good mid-term report will be given an opportunity to do presentation in class. And \nin-class presentation will be awarded with bonus grades (extra 30%)\n\n\nFinal report (20%): Formal survey of the technology and project design \\\n implementation, no less than 10 pages (the same format to mid-term report).\n\n\nFinal program/demo (40%): Demo needs to allow other people to reproduce your results.\n\n\n\n\nTimeline\n\n\n\n\n\n\n\n\nWeek\n\n\nSchedule\n\n\n\n\n\n\n\n\n\n\nWeek 1-4\n\n\nform group and choose topic\n\n\n\n\n\n\nWeek 8\n\n\nmid-term report\n\n\n\n\n\n\nWeek 13\n\n\nfinal report/demo\n\n\n\n\n\n\n\n\nTopics (Tentative)\n\n\n\n\nx86-64 ISA  \n\n\nPage table and page-fault: intercept and analyze page-fault.\n\n\nReturn-oriented programming (ROP): formulate a working ROP attack\n\n\nProgram data dependency analysis   \n\n\nDouble stack and isolation  \n\n\nCache false sharing  \n\n\nIntel ISA extension:  \n\n\nAVX: understand AVX/SIMD, write data-parallel program that demonstrates perf speedup.\n\n\nSGX: understand SGX/CLS, write user-land code \nlink\n\n\nDevices (blkdev, cdev, netdev)\n\n\nUSB: write a USB driver [\nldd3-13\n]\n\n\nSSD: access SSD controller\n\n\nCloud interface\n\n\nAmazon AWS  \n\n\nOther possible topics:\n\n\nGPGPU:\n\n\nAES: \n\n\nTTY, DMA, etc", 
+            "title": "Project"
+        }, 
+        {
+            "location": "/proj/#course-project", 
+            "text": "", 
+            "title": "Course Project"
+        }, 
+        {
+            "location": "/proj/#policy", 
+            "text": "Students can work in groups. But once groups are formed, collaboration is only allowed within the group. More specifically,  inter-group collaboration is prohabited . Each group can have no more than 3 people.", 
+            "title": "Policy"
+        }, 
+        {
+            "location": "/proj/#deliverable", 
+            "text": "Mid-term report/presentation (40%): Formal survey of the technology with no less than 5 pages (format: 12-point font size on single-spaced 8.5\" x 11\u201d pages)     Group with good mid-term report will be given an opportunity to do presentation in class. And  in-class presentation will be awarded with bonus grades (extra 30%)  Final report (20%): Formal survey of the technology and project design \\  implementation, no less than 10 pages (the same format to mid-term report).  Final program/demo (40%): Demo needs to allow other people to reproduce your results.", 
+            "title": "Deliverable"
+        }, 
+        {
+            "location": "/proj/#timeline", 
+            "text": "Week  Schedule      Week 1-4  form group and choose topic    Week 8  mid-term report    Week 13  final report/demo", 
+            "title": "Timeline"
+        }, 
+        {
+            "location": "/proj/#topics-tentative", 
+            "text": "x86-64 ISA    Page table and page-fault: intercept and analyze page-fault.  Return-oriented programming (ROP): formulate a working ROP attack  Program data dependency analysis     Double stack and isolation    Cache false sharing    Intel ISA extension:    AVX: understand AVX/SIMD, write data-parallel program that demonstrates perf speedup.  SGX: understand SGX/CLS, write user-land code  link  Devices (blkdev, cdev, netdev)  USB: write a USB driver [ ldd3-13 ]  SSD: access SSD controller  Cloud interface  Amazon AWS    Other possible topics:  GPGPU:  AES:   TTY, DMA, etc", 
+            "title": "Topics (Tentative)"
         }
     ]
 }
