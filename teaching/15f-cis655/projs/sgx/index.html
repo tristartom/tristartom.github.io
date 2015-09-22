@@ -83,6 +83,12 @@
             
                 <li class="toctree-l3"><a href="#sgxencls">SGX/ENCLS</a></li>
                 
+                    <li><a class="toctree-l4" href="#mid-term-report">Mid-term report</a></li>
+                
+                    <li><a class="toctree-l4" href="#jump-start-tasks">Jump-start tasks</a></li>
+                
+                    <li><a class="toctree-l4" href="#minimally-requirement-tasks">Minimally-requirement tasks</a></li>
+                
             
             </ul>
         
@@ -129,8 +135,15 @@
             <div class="section">
               
                 <h1 id="sgxencls">SGX/ENCLS</h1>
-<p>SGX is an upcoming Intel ISA extension for trusted program execution.</p>
-<p>Read SGX document [<a href="https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf">pdf</a>] (mostly chapter 1,2,3 and 5), understand the semantics of SGX/ENCLS instructions (e.g. EINIT, EREPORT, EEXTEND, ECREATE, etc; see Chapter 5.3). Following is a copy of Table 5-1 in the SGX document.</p>
+<p>Intel SGX (Software Guard Extensions), a set of instructions and mechanisms for memory accesses added to future Intel® Architecture processors
+The SGX extensions allow an application to instantiate a protected container, referred to as an <code>enclave</code>. An enclave is a protected area in the application’s address space, which provides confidentiality and integrity even in the presence of privileged malware. Accesses to the enclave memory area from any software not resident in the enclave are prevented.</p>
+<h2 id="mid-term-report">Mid-term report</h2>
+<p>Read SGX document [<a href="https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf">pdf</a>] (mostly chapter 1,2,3 and 5), understand the semantics of SGX/ENCLS instructions (e.g. EINIT, EREPORT, EEXTEND, ECREATE, etc; see Chapter 5.3). </p>
+<p>At its minimal, the mid-term report should include:</p>
+<ol>
+<li>The semantics of each SGX system-level instructions (SGX ENCLS). You should explain the working of all ENCLS instructions in the following table (a copy of Table 5-1 from the SGX document).</li>
+<li>The in-memory data structures used by SGX instructions (e.g. EPCM, TCS, SSA frames).</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -263,15 +276,21 @@
 </tr>
 </tbody>
 </table>
-<p>Assuming there is an SGX CPU that supports SGX/ENCLS, you need to write a userland program (assembly or C) to set up an Enclave area suitable for loading and running a simple Hello-world C program below.</p>
+<h2 id="jump-start-tasks">Jump-start tasks</h2>
+<ul>
+<li>Write a program that calls <code>EINIT</code> on the Ubuntu image with SGX emulator installed.</li>
+</ul>
+<h2 id="minimally-requirement-tasks">Minimally-requirement tasks</h2>
+<ul>
+<li>Simulate the SGX setup process; that is, to support all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by userland function calls).</li>
+<li>Use the SGX simulator to set up an Enclave environment suitable for loading and running a simple Hello-world C program below.</li>
+</ul>
 <pre><code>int main(void){
   int x = 0;
   int y = 1;
   int z = x + y;
 }
 </code></pre>
-
-<p>TBD</p>
               
             </div>
           </div>
