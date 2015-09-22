@@ -114,6 +114,141 @@
             "location": "/projs/sgx/#minimally-requirement-tasks", 
             "text": "Simulate the SGX setup process; that is, to support all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by userland function calls).  Use the SGX simulator to set up an Enclave environment suitable for loading and running a simple Hello-world C program below.   int main(void){\n  int x = 0;\n  int y = 1;\n  int z = x + y;\n}", 
             "title": "Minimally-requirement tasks"
+        }, 
+        {
+            "location": "/projs/trustzone/", 
+            "text": "TrustZone\n\n\nUnderstand the concept of TrustZone [\nlink\n], and new instructions (e.g. \nSMC\n).\n\n\nDesign and implement an emulator to emulate the working of TrustZone.", 
+            "title": "trustzone"
+        }, 
+        {
+            "location": "/projs/trustzone/#trustzone", 
+            "text": "Understand the concept of TrustZone [ link ], and new instructions (e.g.  SMC ).  Design and implement an emulator to emulate the working of TrustZone.", 
+            "title": "TrustZone"
+        }, 
+        {
+            "location": "/projs/avx/", 
+            "text": "AVX\n\n\nAVX is an extension to ISA proposed by Intel, which allows user to operate a single instruction on different values for one time. For example, VADDPS, when using 256-bit registers, is able to perform addition on 8 floating numbers for one time.\n\n\nRead AVX document [\npdf\n] and [\npdf\n], understand the semantics of AVX instructions (e.g. VMOVUPS, VMULPS, VADDPS, etc). At the end of the first pdf, all the AVX instructions are listed, and students can find the semantics of the instructions in the second pdf.\nThe following is just a piece of copy about semantics for VMOVUPS.\n\n\n\n\n\n\n\n\nInstr.\n\n\nOp / En\n\n\n64 32 bit mode support\n\n\nCPUID Feature Flag\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nVMOVUPS ymm1, ymm2/m256\n\n\nRM\n\n\nV / V\n\n\nAVX\n\n\nMove unaligned packed single-precision floating-point from ymm2/mem to ymm1.\n\n\n\n\n\n\nVMOVUPS ymm2/m256, ymm1\n\n\nMR\n\n\nV / V\n\n\nAVX\n\n\nMove unaligned packed single-precision floating-point from ymm1 to ymm2/mem.\n\n\n\n\n\n\nVMOVUPS xmm1 {k1}{z}, xmm2/m128\n\n\nFVM-RM\n\n\nV / V\n\n\nAVX512VL AVX512F\n\n\nMove unaligned packed single-precision floating-point values from xmm2/m128 to xmm1 using writemask k1.\n\n\n\n\n\n\n\n\nJump-start task\n\n\nAssuming there is a CPU that supports AVX, write an assembly program with AVX (256-bit and 512-bit versions) to do the following operations:\n\n\n\n\nAddition of two vectors in assembly codes\n\n\nInner product of two matrics in assembly codes\n\n\n\n\nFor example, the addition of two vectors implemented in AVX should have the same functionality with the following \nC\n code:\n\n\n// a, b and c are arrays of floating point with the same length. The length of them are both larger than 100,000.\n// len is the length of a.\nvoid add(float*a, float *b, float *c, int len){\n    for(int i=0;i\nlen;i++)\n       c[i]=a[i]+b[i];\n}\n\n\n\n\nMinimal-requirement task\n\n\nAt its minimum, the students taking this project should deliver the following:\n\n\n\n\nChoose an iterative machine-learning algorithm, for example, logistic regression with fixed Hessian Matrix [\npdf\n],[\nlink\n].\n\n\nImplement selected algorithm using AVX instruction. The implementation can be in assembly code or in C code with AVX annotations (and then using \ngcc\n to compile).\n\n\nConduct performance study and measure the performance advantage of using AVX by comparing the performance differences between the code with AVX and that with ordinary assembly code.\n\n\n\n\nRequirements for Mid-term report\n\n\n\n\nRead the provided materials and understand the opcodes needed for the target algorithm\n\n\nDesign workflow of the calculation\n\n\nDesign the operations within each step of the workflow\n\n\n\n\nBonus\n\n\nWe do provide extra credits or bonus for those whose work goes beyond the minimal requirements and have interesting and inspiring discoveries about AVX.\nFor example,\n\n\n\n\nImplement standard Hessian Matrix rather than approximated Hessian Matrix for Logistic Regression.\n\n\nImplement multi-threading with AVX", 
+            "title": "avx"
+        }, 
+        {
+            "location": "/projs/avx/#avx", 
+            "text": "AVX is an extension to ISA proposed by Intel, which allows user to operate a single instruction on different values for one time. For example, VADDPS, when using 256-bit registers, is able to perform addition on 8 floating numbers for one time.  Read AVX document [ pdf ] and [ pdf ], understand the semantics of AVX instructions (e.g. VMOVUPS, VMULPS, VADDPS, etc). At the end of the first pdf, all the AVX instructions are listed, and students can find the semantics of the instructions in the second pdf.\nThe following is just a piece of copy about semantics for VMOVUPS.     Instr.  Op / En  64 32 bit mode support  CPUID Feature Flag  Description      VMOVUPS ymm1, ymm2/m256  RM  V / V  AVX  Move unaligned packed single-precision floating-point from ymm2/mem to ymm1.    VMOVUPS ymm2/m256, ymm1  MR  V / V  AVX  Move unaligned packed single-precision floating-point from ymm1 to ymm2/mem.    VMOVUPS xmm1 {k1}{z}, xmm2/m128  FVM-RM  V / V  AVX512VL AVX512F  Move unaligned packed single-precision floating-point values from xmm2/m128 to xmm1 using writemask k1.", 
+            "title": "AVX"
+        }, 
+        {
+            "location": "/projs/avx/#jump-start-task", 
+            "text": "Assuming there is a CPU that supports AVX, write an assembly program with AVX (256-bit and 512-bit versions) to do the following operations:   Addition of two vectors in assembly codes  Inner product of two matrics in assembly codes   For example, the addition of two vectors implemented in AVX should have the same functionality with the following  C  code:  // a, b and c are arrays of floating point with the same length. The length of them are both larger than 100,000.\n// len is the length of a.\nvoid add(float*a, float *b, float *c, int len){\n    for(int i=0;i len;i++)\n       c[i]=a[i]+b[i];\n}", 
+            "title": "Jump-start task"
+        }, 
+        {
+            "location": "/projs/avx/#minimal-requirement-task", 
+            "text": "At its minimum, the students taking this project should deliver the following:   Choose an iterative machine-learning algorithm, for example, logistic regression with fixed Hessian Matrix [ pdf ],[ link ].  Implement selected algorithm using AVX instruction. The implementation can be in assembly code or in C code with AVX annotations (and then using  gcc  to compile).  Conduct performance study and measure the performance advantage of using AVX by comparing the performance differences between the code with AVX and that with ordinary assembly code.", 
+            "title": "Minimal-requirement task"
+        }, 
+        {
+            "location": "/projs/avx/#requirements-for-mid-term-report", 
+            "text": "Read the provided materials and understand the opcodes needed for the target algorithm  Design workflow of the calculation  Design the operations within each step of the workflow", 
+            "title": "Requirements for Mid-term report"
+        }, 
+        {
+            "location": "/projs/avx/#bonus", 
+            "text": "We do provide extra credits or bonus for those whose work goes beyond the minimal requirements and have interesting and inspiring discoveries about AVX.\nFor example,   Implement standard Hessian Matrix rather than approximated Hessian Matrix for Logistic Regression.  Implement multi-threading with AVX", 
+            "title": "Bonus"
+        }, 
+        {
+            "location": "/projs/pt/", 
+            "text": "Page-Table Manipulation\n\n\nEvery process is given the impression that it is working with large, contiguous sections of memory. When a process requests access to a data in its memory, it is the responsibility of the operating system to map the virtual address provided by the process to the physical address of the actual memory where that data is stored. The page table is where the operating system stores its mappings of virtual addresses to physical addresses, with each mapping also known as a page table entry (PTE)\n\n\nThe CPU's memory management unit (MMU) stores a cache of recently used mappings from the operating system's page table in translation lookaside buffer (TLB). When a virtual address needs to be translated into a physical address, the TLB is searched first. If there is no match, the page fault handler will typically look up the address mapping in the page table to see whether a mapping exists (a page walk).\n\n\nJump-Start Task\n\n\nWrite a Linux kernel module that intercepts and reports (to terminal) all page-faults\n\n\nMinimal-Requirement Task\n\n\nWrite a kernel module that will\n\n\n\n\nRedirect page-fault handling to signal handling\n\n\nIn signal handling, find a mechanism to trigger the original \ndo_page_fault", 
+            "title": "page-table"
+        }, 
+        {
+            "location": "/projs/pt/#page-table-manipulation", 
+            "text": "Every process is given the impression that it is working with large, contiguous sections of memory. When a process requests access to a data in its memory, it is the responsibility of the operating system to map the virtual address provided by the process to the physical address of the actual memory where that data is stored. The page table is where the operating system stores its mappings of virtual addresses to physical addresses, with each mapping also known as a page table entry (PTE)  The CPU's memory management unit (MMU) stores a cache of recently used mappings from the operating system's page table in translation lookaside buffer (TLB). When a virtual address needs to be translated into a physical address, the TLB is searched first. If there is no match, the page fault handler will typically look up the address mapping in the page table to see whether a mapping exists (a page walk).", 
+            "title": "Page-Table Manipulation"
+        }, 
+        {
+            "location": "/projs/pt/#jump-start-task", 
+            "text": "Write a Linux kernel module that intercepts and reports (to terminal) all page-faults", 
+            "title": "Jump-Start Task"
+        }, 
+        {
+            "location": "/projs/pt/#minimal-requirement-task", 
+            "text": "Write a kernel module that will   Redirect page-fault handling to signal handling  In signal handling, find a mechanism to trigger the original  do_page_fault", 
+            "title": "Minimal-Requirement Task"
+        }, 
+        {
+            "location": "/projs/mpx/", 
+            "text": "MPX\n\n\nUnderstand the concept of MPX [\nlink\n], and new instructions (e.g. BNDMK).\n\n\nDownload MPX emulator and write client program (e.g. the program in the above link).\n\n\nPropose a project idea to demonstrate the working of the \nMPX\n.", 
+            "title": "mpx"
+        }, 
+        {
+            "location": "/projs/mpx/#mpx", 
+            "text": "Understand the concept of MPX [ link ], and new instructions (e.g. BNDMK).  Download MPX emulator and write client program (e.g. the program in the above link).  Propose a project idea to demonstrate the working of the  MPX .", 
+            "title": "MPX"
+        }, 
+        {
+            "location": "/projs/sgx/", 
+            "text": "SGX/ENCLS\n\n\nIntel SGX (Software Guard Extensions), a set of instructions and mechanisms for memory accesses added to future Intel\u00ae Architecture processors\nThe SGX extensions allow an application to instantiate a protected container, referred to as an \nenclave\n. An enclave is a protected area in the application\u2019s address space, which provides confidentiality and integrity even in the presence of privileged malware. Accesses to the enclave memory area from any software not resident in the enclave are prevented.\n\n\nMid-term report\n\n\nRead SGX document [\npdf\n] (mostly chapter 1,2,3 and 5), understand the semantics of SGX/ENCLS instructions (e.g. EINIT, EREPORT, EEXTEND, ECREATE, etc; see Chapter 5.3). \n\n\nAt its minimal, the mid-term report should include:\n\n\n\n\nThe semantics of each SGX system-level instructions (SGX ENCLS). You should explain the working of all ENCLS instructions in the following table (a copy of Table 5-1 from the SGX document).\n\n\nThe in-memory data structures used by SGX instructions (e.g. EPCM, TCS, SSA frames).\n\n\n\n\n\n\n\n\n\n\nInstr. Leaf\n\n\nEAX\n\n\nRBX\n\n\nRCX\n\n\nRDX\n\n\n\n\n\n\n\n\n\n\nECREATE\n\n\n00H (In)\n\n\nPAGEINFO (In, EA)\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEADD\n\n\n01H (In)\n\n\nPAGEINFO (In, EA)\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEINIT\n\n\n02H (In)\n\n\nSIGSTRUCT (In, EA)\n\n\nSECS (In, EA)\n\n\nEINITTOKEN (In, EA)\n\n\n\n\n\n\nEREMOVE\n\n\n03H (In)\n\n\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEDBGRD\n\n\n04H (In)\n\n\nResult Data (Out)\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEDBGWR\n\n\n05H (In)\n\n\nSource Data (In)\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEEXTEND\n\n\n06H (In)\n\n\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nELDB\n\n\n07H (In)\n\n\nPAGEINFO (In, EA)\n\n\nEPCPAGE (In, EA)\n\n\nVERSION (In, EA)\n\n\n\n\n\n\nELDU\n\n\n08H (In)\n\n\nPAGEINFO (In, EA)\n\n\nEPCPAGE (In, EA)\n\n\nVERSION (In, EA)\n\n\n\n\n\n\nEBLOCK\n\n\n09H (In)\n\n\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEPA\n\n\n0AH (In)\n\n\nPT_VA (In)\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEWB\n\n\n0BH (In)\n\n\nPAGEINFO (In, EA)\n\n\nEPCPAGE (In, EA)\n\n\nVERSION (In, EA)\n\n\n\n\n\n\nETRACK\n\n\n0CH (In)\n\n\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEAUG\n\n\n0DH (In)\n\n\nPAGEINFO (In, EA)\n\n\nEPCPAGE (In, EA)\n\n\nLINADDR\n\n\n\n\n\n\nEMODPR\n\n\n0EH (In)\n\n\nSECINFO (In, EA)\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEMODT\n\n\n0FH (In)\n\n\nSECINFO (In, EA)\n\n\nEPCPAGE (In, EA)\n\n\n\n\n\n\n\n\nEA: Effective Address\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJump-start tasks\n\n\n\n\nWrite a program that calls \nEINIT\n on the Ubuntu image with SGX emulator installed.\n\n\n\n\nMinimally-requirement tasks\n\n\n\n\nSimulate the SGX setup process; that is, to support all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by userland function calls).\n\n\nUse the SGX simulator to set up an Enclave environment suitable for loading and running a simple Hello-world C program below.\n\n\n\n\nint main(void){\n  int x = 0;\n  int y = 1;\n  int z = x + y;\n}", 
+            "title": "sgx"
+        }, 
+        {
+            "location": "/projs/sgx/#sgxencls", 
+            "text": "Intel SGX (Software Guard Extensions), a set of instructions and mechanisms for memory accesses added to future Intel\u00ae Architecture processors\nThe SGX extensions allow an application to instantiate a protected container, referred to as an  enclave . An enclave is a protected area in the application\u2019s address space, which provides confidentiality and integrity even in the presence of privileged malware. Accesses to the enclave memory area from any software not resident in the enclave are prevented.", 
+            "title": "SGX/ENCLS"
+        }, 
+        {
+            "location": "/projs/sgx/#mid-term-report", 
+            "text": "Read SGX document [ pdf ] (mostly chapter 1,2,3 and 5), understand the semantics of SGX/ENCLS instructions (e.g. EINIT, EREPORT, EEXTEND, ECREATE, etc; see Chapter 5.3).   At its minimal, the mid-term report should include:   The semantics of each SGX system-level instructions (SGX ENCLS). You should explain the working of all ENCLS instructions in the following table (a copy of Table 5-1 from the SGX document).  The in-memory data structures used by SGX instructions (e.g. EPCM, TCS, SSA frames).      Instr. Leaf  EAX  RBX  RCX  RDX      ECREATE  00H (In)  PAGEINFO (In, EA)  EPCPAGE (In, EA)     EADD  01H (In)  PAGEINFO (In, EA)  EPCPAGE (In, EA)     EINIT  02H (In)  SIGSTRUCT (In, EA)  SECS (In, EA)  EINITTOKEN (In, EA)    EREMOVE  03H (In)   EPCPAGE (In, EA)     EDBGRD  04H (In)  Result Data (Out)  EPCPAGE (In, EA)     EDBGWR  05H (In)  Source Data (In)  EPCPAGE (In, EA)     EEXTEND  06H (In)   EPCPAGE (In, EA)     ELDB  07H (In)  PAGEINFO (In, EA)  EPCPAGE (In, EA)  VERSION (In, EA)    ELDU  08H (In)  PAGEINFO (In, EA)  EPCPAGE (In, EA)  VERSION (In, EA)    EBLOCK  09H (In)   EPCPAGE (In, EA)     EPA  0AH (In)  PT_VA (In)  EPCPAGE (In, EA)     EWB  0BH (In)  PAGEINFO (In, EA)  EPCPAGE (In, EA)  VERSION (In, EA)    ETRACK  0CH (In)   EPCPAGE (In, EA)     EAUG  0DH (In)  PAGEINFO (In, EA)  EPCPAGE (In, EA)  LINADDR    EMODPR  0EH (In)  SECINFO (In, EA)  EPCPAGE (In, EA)     EMODT  0FH (In)  SECINFO (In, EA)  EPCPAGE (In, EA)     EA: Effective Address", 
+            "title": "Mid-term report"
+        }, 
+        {
+            "location": "/projs/sgx/#jump-start-tasks", 
+            "text": "Write a program that calls  EINIT  on the Ubuntu image with SGX emulator installed.", 
+            "title": "Jump-start tasks"
+        }, 
+        {
+            "location": "/projs/sgx/#minimally-requirement-tasks", 
+            "text": "Simulate the SGX setup process; that is, to support all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by userland function calls).  Use the SGX simulator to set up an Enclave environment suitable for loading and running a simple Hello-world C program below.   int main(void){\n  int x = 0;\n  int y = 1;\n  int z = x + y;\n}", 
+            "title": "Minimally-requirement tasks"
+        }, 
+        {
+            "location": "/projs/rop/", 
+            "text": "Return Oriented Programming(ROP)\n\n\nReturn-oriented programming is a security attack technique in which attacker can execute code in the presence of defensive measures such as executable space protection (Non executable memory segments). \n\n\nIn normal buffer overflow attack, attacker uses local buffer to spray specific shell code on stack and also overrides return address to execute this shell code, But having executable space protection makes this attack invalid. ROP attack tries to execute arbitrary code present in the executable regions of the memory thus invalidating executable space protection.\nA sequence of instructions ending in RET is called a gadget. \n\n\n    pop %rdi\n    retq\n\n\n\n\nRop uses gadgets to perform the attacks. Stack-Smashing Protector and ASLR can be disabled during the attack.\n\n\nJump-start task\n\n\nTo get hang of it, As a first step start with basic buffer overflow attack on victim program by disabling executable space protection, place the shell code (designed to execute system call to get access to command shell) into the buffer and also overwrite the return address to execute this shell code.\nnext enable executable space protection and perform above step but now using ROP technique. i.e using the pre existing gadgets perform the attack.You may use old library version to get basic gadget as mentioned above.\n\n\nSample Victim Program:\n--------------------\n#include \nstdio.h\n \nint main() \n{ \n    char name[64]; \n    puts(\nInput your name:\n); \n    gets(name); \n    printf(\n, %s!\\n\n, name); \n    return 0; \n}\n\n\n\n\n\nMinimal-Requirement task:\n\n\n1) You need design a complex attack using gadget chaining. \n2) Must use newer versions of all software modules involved (as much newer as possible). \n3) Must be able to perform attack both in 32 and 64 bit architectures (depending on complexity of your attack this task can be adjusted to bonus task)\n\n\nBonus task\n\n\nUse popular software to demontrate the attack\nCome up with solutions(apart from existing solutions) to mitigate these attacks", 
+            "title": "rop"
+        }, 
+        {
+            "location": "/projs/rop/#return-oriented-programmingrop", 
+            "text": "Return-oriented programming is a security attack technique in which attacker can execute code in the presence of defensive measures such as executable space protection (Non executable memory segments).   In normal buffer overflow attack, attacker uses local buffer to spray specific shell code on stack and also overrides return address to execute this shell code, But having executable space protection makes this attack invalid. ROP attack tries to execute arbitrary code present in the executable regions of the memory thus invalidating executable space protection.\nA sequence of instructions ending in RET is called a gadget.       pop %rdi\n    retq  Rop uses gadgets to perform the attacks. Stack-Smashing Protector and ASLR can be disabled during the attack.", 
+            "title": "Return Oriented Programming(ROP)"
+        }, 
+        {
+            "location": "/projs/rop/#jump-start-task", 
+            "text": "To get hang of it, As a first step start with basic buffer overflow attack on victim program by disabling executable space protection, place the shell code (designed to execute system call to get access to command shell) into the buffer and also overwrite the return address to execute this shell code.\nnext enable executable space protection and perform above step but now using ROP technique. i.e using the pre existing gadgets perform the attack.You may use old library version to get basic gadget as mentioned above.  Sample Victim Program:\n--------------------\n#include  stdio.h  \nint main() \n{ \n    char name[64]; \n    puts( Input your name: ); \n    gets(name); \n    printf( , %s!\\n , name); \n    return 0; \n}", 
+            "title": "Jump-start task"
+        }, 
+        {
+            "location": "/projs/rop/#minimal-requirement-task", 
+            "text": "1) You need design a complex attack using gadget chaining. \n2) Must use newer versions of all software modules involved (as much newer as possible). \n3) Must be able to perform attack both in 32 and 64 bit architectures (depending on complexity of your attack this task can be adjusted to bonus task)", 
+            "title": "Minimal-Requirement task:"
+        }, 
+        {
+            "location": "/projs/rop/#bonus-task", 
+            "text": "Use popular software to demontrate the attack\nCome up with solutions(apart from existing solutions) to mitigate these attacks", 
+            "title": "Bonus task"
+        }, 
+        {
+            "location": "/projs/amazon/", 
+            "text": "Amazon Cloud Services (AWS) Programming\n\n\nThe project is to explore and demonstrate the programming interfaces exposed by a Cloud service provider. We consider the case of Amazon here by its AWS services.\n\n\nMinimal-requirement tasks\n\n\nAt its minimum, the students taking this project should deliver the following:\n\n\n\n\nChoose at least three AWS services under at least two XaaS models. For instance, Amazon's DynamoDB service is under PaaS model.\n\n\nStudy the capacity-planning interface, and then set up the chosen services free tier\n\n\nWrite a client program on your local Ubuntu VM OS that interacts with remote services\n\n\nScale up/out your program, demonstrating the benefit of using Cloud services (in comparison with installing software locally).", 
+            "title": "amazon"
+        }, 
+        {
+            "location": "/projs/amazon/#amazon-cloud-services-aws-programming", 
+            "text": "The project is to explore and demonstrate the programming interfaces exposed by a Cloud service provider. We consider the case of Amazon here by its AWS services.", 
+            "title": "Amazon Cloud Services (AWS) Programming"
+        }, 
+        {
+            "location": "/projs/amazon/#minimal-requirement-tasks", 
+            "text": "At its minimum, the students taking this project should deliver the following:   Choose at least three AWS services under at least two XaaS models. For instance, Amazon's DynamoDB service is under PaaS model.  Study the capacity-planning interface, and then set up the chosen services free tier  Write a client program on your local Ubuntu VM OS that interacts with remote services  Scale up/out your program, demonstrating the benefit of using Cloud services (in comparison with installing software locally).", 
+            "title": "Minimal-requirement tasks"
         }
     ]
 }
