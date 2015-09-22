@@ -117,13 +117,18 @@
         }, 
         {
             "location": "/projs/trustzone/", 
-            "text": "TrustZone\n\n\nUnderstand the concept of TrustZone [\nlink\n], and new instructions (e.g. \nSMC\n).\n\n\nDesign and implement an emulator to emulate the working of TrustZone.", 
+            "text": "TrustZone\n\n\nUnderstand the concept of TrustZone [\nlink\n], and new instructions (e.g. \nSMC\n).\n\n\nDesign and implement an emulator to emulate the working of TrustZone.\n\n\nDesign a security system to take advantage of TrustZone features.\n\n\nUseful references\n\n\nhttp://research.microsoft.com/en-us/um/people/alecw/asplos-2014.pdf", 
             "title": "trustzone"
         }, 
         {
             "location": "/projs/trustzone/#trustzone", 
-            "text": "Understand the concept of TrustZone [ link ], and new instructions (e.g.  SMC ).  Design and implement an emulator to emulate the working of TrustZone.", 
+            "text": "Understand the concept of TrustZone [ link ], and new instructions (e.g.  SMC ).  Design and implement an emulator to emulate the working of TrustZone.  Design a security system to take advantage of TrustZone features.", 
             "title": "TrustZone"
+        }, 
+        {
+            "location": "/projs/trustzone/#useful-references", 
+            "text": "http://research.microsoft.com/en-us/um/people/alecw/asplos-2014.pdf", 
+            "title": "Useful references"
         }, 
         {
             "location": "/projs/avx/", 
