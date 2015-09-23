@@ -88,9 +88,13 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#trustzone">TrustZone</a></li>
+                <li class="toctree-l3"><a href="#trustzone-technology">TrustZone Technology</a></li>
                 
-                    <li><a class="toctree-l4" href="#useful-references">Useful references</a></li>
+                    <li><a class="toctree-l4" href="#minimal-requirement-tasks">Minimal-requirement tasks</a></li>
+                
+                    <li><a class="toctree-l4" href="#requirements-for-mid-term-report">Requirements for Mid-term report</a></li>
+                
+                    <li><a class="toctree-l4" href="#bonus">Bonus</a></li>
                 
             
             </ul>
@@ -172,12 +176,28 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="trustzone">TrustZone</h1>
-<p>Understand the concept of TrustZone [<a href="http://www.arm.com/products/processors/technologies/trustzone/">link</a>], and new instructions (e.g. <code>SMC</code>).</p>
+                <h1 id="trustzone-technology">TrustZone Technology</h1>
+<p>TrustZone[<a href="http://www.arm.com/zh/products/processors/technologies/trustzone/">link</a>] is a technology introduced by ARM, aimed to provide security for various platforms. It secures peripherals such as secure memory, crypto blocks, keyboard and screen to ensure they can be protected from software attack.
+TrustZone technology allows the processor to evaluate the code in Normal world user mode and Secure world user mode, and ensures that normal world code can't acceess secure world resources. This kind of mode switch is called monitor mode. For example, software can trigger the monitor mode by calling Secure Monitor Call instruction (SMC)[<a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.kui0098a/armccref_ch04s01s13.htm">link</a>], or by exceptions mechanism.</p>
+<h2 id="minimal-requirement-tasks">Minimal-requirement tasks</h2>
+<p>At its minimum, the students taking this project should deliver the following:</p>
+<ol>
+<li>Simulate the hardware architecture of TrustZone, including Normal world, Secure world and Monitor Mode in high-level language, e.g. C++, Java, Python</li>
+<li>Simulate the working of TrustZone, including context switch between Normal world and Secure world via Monitor Mode and SMC mechanism</li>
+<li>Write a simple application to demonstrate the implementation</li>
+</ol>
+<h2 id="requirements-for-mid-term-report">Requirements for Mid-term report</h2>
+<ol>
+<li>Read the provided materials, understand concept of TrustZone and the new instructions (e.g. <code>SMC</code>)</li>
+<li>Understand the working of TrustZone</li>
+<li>Provide concret design of TrustZone emulator</li>
+</ol>
 <p>Design and implement an emulator to emulate the working of TrustZone.</p>
+<h2 id="bonus">Bonus</h2>
 <p>Design a security system to take advantage of TrustZone features.</p>
-<h2 id="useful-references">Useful references</h2>
-<p>http://research.microsoft.com/en-us/um/people/alecw/asplos-2014.pdf</p>
+<ul>
+<li>Example: Build TLR in TrustZone [<a href="http://research.microsoft.com/en-us/um/people/alecw/asplos-2014.pdf">pdf</a>]</li>
+</ul>
               
             </div>
           </div>

@@ -320,11 +320,23 @@ The SGX extensions allow an application to instantiate a protected container, re
 </table>
 <h2 id="jump-start-tasks">Jump-start tasks</h2>
 <ul>
-<li>Write a userland program that calls <code>EINIT</code> (as a function call) with arguments corresponding to the specification above.</li>
+<li>Write a program that calls <code>EINIT</code> (as a function call) with arguments corresponding to the specification above. See below as an example.</li>
 </ul>
+<pre><code class="c">void einit(struct sig * ptr_si, struct secs * ptr_s, struct token * ptr_t){
+  //TODO
+}
+
+int main(void){
+  struct sig var_si;
+  struct secs var_s;
+  struct token var_t;
+  einit(&amp;var_s, &amp;var_s, &amp;var_t);
+}
+</code></pre>
+
 <h2 id="minimally-requirement-tasks">Minimally-requirement tasks</h2>
 <ul>
-<li>Simulate the SGX setup process; that is, to support all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by userland function calls).</li>
+<li>Simulate the SGX setup process; that is, to support all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by function calls; you are allowed to do everything in userspace).</li>
 <li>Use the SGX simulator to set up an Enclave environment suitable for loading and running a simple Hello-world C program below.</li>
 </ul>
 <pre><code>int main(void){
