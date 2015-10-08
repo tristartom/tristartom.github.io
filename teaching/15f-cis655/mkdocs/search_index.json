@@ -264,6 +264,26 @@
             "location": "/hw/cachemiss/#b-matrix-transpose-70-points", 
             "text": "Matrix transpose is an operation that interchanges matrix rows and columns; the idea is illustrated in the pseudo code below:  for(i = 0; i   3; i++){\n    for(j = 0; j   3; j++){\n        output[j][i] = input[i][j];\n    }\n}  B.1 Basic implementation  This part requires you to implement a program for matrix transpose. First provide a basic implementation based on code snippet above, run the program with a  2000*2000  matrix and measure the  D1  miss rate as described before.   B.2 Optimization  Then, optimize your implementation using the \"blocking\" idea discussed in the class. Re-run the program with a  2000*2000  matrix.   Vary the value of blocking factor and measure the cache miss rates accordingly. Report the relationship between the configured blocking factor and cache miss rate, and study the \"optimal\" value of blocking factor.  B.3 Deliverable  You should make a zip file containing:   Your basic implementation for matrix transpose (i.e. the compilable source code!).  The cache miss rate of running basic matrix-transpose program on your system.  Your optimized program (i.e. the compilable source code!).  The cache miss rate of running optimized matrix-transpose program on your system. Here, you should include a series of (instead of just one) values for measured cache miss rates, under different setting of blocking factor. Report the optimal value of blocking factor that achieves the minimal miss rate.  The zip file from  A.3   And then submit the zip file to Blackboard.    Yuzhe Tang, 2015", 
             "title": "B. Matrix transpose [70 points]"
+        }, 
+        {
+            "location": "/midterm/midterm/", 
+            "text": "Final exam\n\n\nPolicy\n\n\nThe mid-term exam will take place between \n8:00 AM\n and 9:20 AM, Oct. 22nd, in Watson Theater. \n\n\nThe exam will be open-book and allow calculators; any other electronic devices including electronic watches, tablet, laptop, etc, will be prohibited. The mid-term exam must be done individually. No collaboration will be allowed, and close monitoring will be enforced during the exam. Cheating behavior will NOT be tolerated.\n\n\nTurn off your mobile phone, and put your SUID card on your table. You don't need to bring extra papers, and we will provide sufficient blank papers.\n\n\nScope\n\n\nThe content covered by mid-term will be primarily based on \nslides, and homework\n (use textbook as reference and secondary material). The mid-term will cover all topics taught till \"Cache Optimization (3.2)\" (inclusively). \n\n\nThe mid-term will be in a format similar to homework exercises and pop-quiz (i.e. single-choice questions and exercises).", 
+            "title": "Mid-term"
+        }, 
+        {
+            "location": "/midterm/midterm/#final-exam", 
+            "text": "", 
+            "title": "Final exam"
+        }, 
+        {
+            "location": "/midterm/midterm/#policy", 
+            "text": "The mid-term exam will take place between  8:00 AM  and 9:20 AM, Oct. 22nd, in Watson Theater.   The exam will be open-book and allow calculators; any other electronic devices including electronic watches, tablet, laptop, etc, will be prohibited. The mid-term exam must be done individually. No collaboration will be allowed, and close monitoring will be enforced during the exam. Cheating behavior will NOT be tolerated.  Turn off your mobile phone, and put your SUID card on your table. You don't need to bring extra papers, and we will provide sufficient blank papers.", 
+            "title": "Policy"
+        }, 
+        {
+            "location": "/midterm/midterm/#scope", 
+            "text": "The content covered by mid-term will be primarily based on  slides, and homework  (use textbook as reference and secondary material). The mid-term will cover all topics taught till \"Cache Optimization (3.2)\" (inclusively).   The mid-term will be in a format similar to homework exercises and pop-quiz (i.e. single-choice questions and exercises).", 
+            "title": "Scope"
         }
     ]
 }
