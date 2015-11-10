@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>rop - CIS655/CSE661-2015Fall</title>
+  <title>talk - CIS655/CSE661-2015Fall</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "rop";
+    var mkdocs_page_name = "talk";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -77,65 +77,49 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../sgx/">sgx</a>
+        <a class="" href="../../projs/sgx/">sgx</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../trustzone/">trustzone</a>
+        <a class="" href="../../projs/trustzone/">trustzone</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../avx/">avx</a>
+        <a class="" href="../../projs/avx/">avx</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../pt/">page-table</a>
+        <a class="" href="../../projs/pt/">page-table</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../mpx/">mpx</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">rop</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#return-oriented-programmingrop">Return Oriented Programming(ROP)</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#jump-start-task">Jump-start task</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#minimal-requirement-task">Minimal-Requirement task:</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#bonus-task">Bonus task</a></li>
-                
-            
-            </ul>
+        <a class="" href="../../projs/mpx/">mpx</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../amazon/">amazon</a>
+        <a class="" href="../../projs/rop/">rop</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../projs/amazon/">amazon</a>
         
     </li>
 
@@ -165,14 +149,40 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../midterm/midterm/">req</a>
+        <a class="" href="../midterm/">req</a>
         
     </li>
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../../midterm/stu-pres/">talk</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">talk</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#nov-12">Nov. 12</a></li>
+                
+                    <li><a class="toctree-l4" href="#rop">ROP</a></li>
+                
+                    <li><a class="toctree-l4" href="#avx">AVX</a></li>
+                
+                    <li><a class="toctree-l4" href="#sgx">SGX</a></li>
+                
+                    <li><a class="toctree-l4" href="#tweet-trend-using-aws">Tweet Trend using AWS</a></li>
+                
+                    <li><a class="toctree-l4" href="#usb-driver">USB Driver</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#nov-19">Nov. 19</a></li>
+                
+                    <li><a class="toctree-l4" href="#compiler-design">Compiler Design</a></li>
+                
+                    <li><a class="toctree-l4" href="#rop-2">ROP-2</a></li>
+                
+                    <li><a class="toctree-l4" href="#rop-3">ROP-3</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -202,11 +212,11 @@
     
       
         
-          <li>Project-topics &raquo;</li>
+          <li>Midterm &raquo;</li>
         
       
     
-    <li>rop</li>
+    <li>talk</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -216,39 +226,55 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="return-oriented-programmingrop">Return Oriented Programming(ROP)</h1>
-<p>Return-oriented programming is a security attack technique in which attacker can execute code in the presence of defensive measures such as executable space protection (Non executable memory segments). </p>
-<p>In normal buffer overflow attack, attacker uses local buffer to spray specific shell code on stack and also overrides return address to execute this shell code, But having executable space protection makes this attack invalid. ROP attack tries to execute arbitrary code present in the executable regions of the memory thus invalidating executable space protection.
-A sequence of instructions ending in RET is called a gadget. </p>
-<pre><code>    pop %rdi
-    retq
-</code></pre>
-
-<p>Rop uses gadgets to perform the attacks. Stack-Smashing Protector and ASLR can be disabled during the attack.</p>
-<h1 id="jump-start-task">Jump-start task</h1>
-<p>To get hang of it, As a first step start with basic buffer overflow attack on victim program by disabling executable space protection, place the shell code (designed to execute system call to get access to command shell) into the buffer and also overwrite the return address to execute this shell code.
-next enable executable space protection and perform above step but now using ROP technique. i.e using the pre existing gadgets perform the attack.You may use old library version to get basic gadget as mentioned above.</p>
-<pre><code>Sample Victim Program:
---------------------
-#include &lt;stdio.h&gt; 
-int main() 
-{ 
-    char name[64]; 
-    puts(&quot;Input your name:&quot;); 
-    gets(name); 
-    printf(&quot;, %s!\n&quot;, name); 
-    return 0; 
-}
-
-</code></pre>
-
-<h1 id="minimal-requirement-task">Minimal-Requirement task:</h1>
-<p>1) You need design a complex attack using gadget chaining. 
-2) Must use newer versions of all software modules involved (as much newer as possible). 
-3) Must be able to perform attack both in 32 and 64 bit architectures (depending on complexity of your attack this task can be adjusted to bonus task)</p>
-<h1 id="bonus-task">Bonus task</h1>
-<p>Use popular software to demontrate the attack
-Come up with solutions(apart from existing solutions) to mitigate these attacks  </p>
+                <h1 id="nov-12">Nov. 12</h1>
+<h2 id="rop">ROP</h2>
+<ul>
+<li>Changlong Wang</li>
+<li>Yicheng Jiang</li>
+<li>Chumeng Xu</li>
+</ul>
+<h2 id="avx">AVX</h2>
+<ul>
+<li>Diyu Wu</li>
+<li>Chang Lie</li>
+<li>Yifan Zhang</li>
+</ul>
+<h2 id="sgx">SGX</h2>
+<ul>
+<li>Gaurav Patil</li>
+<li>Sukhmeet Singh Mata </li>
+<li>Vishual Verma</li>
+</ul>
+<h2 id="tweet-trend-using-aws">Tweet Trend using AWS</h2>
+<ul>
+<li>Ninad Lank </li>
+<li>Rohith Engu </li>
+<li>Vaibhav Gajre</li>
+</ul>
+<h2 id="usb-driver">USB Driver</h2>
+<ul>
+<li>Nachiket Kulkarni</li>
+<li>Priya Mangal</li>
+</ul>
+<h1 id="nov-19">Nov. 19</h1>
+<h2 id="compiler-design">Compiler Design</h2>
+<ul>
+<li>Raghavendra Manjegowda </li>
+<li>Yashwanth Krishnaprasad </li>
+<li>Varsha Govindraj</li>
+</ul>
+<h2 id="rop-2">ROP-2</h2>
+<ul>
+<li>Philip Geramian </li>
+<li>Carter Yagemann </li>
+<li>Enes Yildirim </li>
+</ul>
+<h2 id="rop-3">ROP-3</h2>
+<ul>
+<li>Urvi Shashikant </li>
+<li>Patel Amey </li>
+<li>Ashok Patil</li>
+</ul>
               
             </div>
           </div>
@@ -256,10 +282,8 @@ Come up with solutions(apart from existing solutions) to mitigate these attacks 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../amazon/" class="btn btn-neutral float-right" title="amazon"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../mpx/" class="btn btn-neutral" title="mpx"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../midterm/" class="btn btn-neutral" title="req"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -285,10 +309,8 @@ Come up with solutions(apart from existing solutions) to mitigate these attacks 
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../mpx/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../midterm/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../amazon/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
