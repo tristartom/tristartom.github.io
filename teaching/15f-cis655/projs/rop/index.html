@@ -227,10 +227,9 @@ A sequence of instructions ending in RET is called a gadget. </p>
 <p>Rop uses gadgets to perform the attacks. Stack-Smashing Protector and ASLR can be disabled during the attack.</p>
 <h1 id="jump-start-task">Jump-start task</h1>
 <p>To get hang of it, As a first step start with basic buffer overflow attack on victim program by disabling executable space protection, place the shell code (designed to execute system call to get access to command shell) into the buffer and also overwrite the return address to execute this shell code.
-next enable executable space protection and perform above step but now using ROP technique. i.e using the pre existing gadgets perform the attack.You may use old library version to get basic gadget as mentioned above.</p>
-<pre><code>Sample Victim Program:
---------------------
-#include &lt;stdio.h&gt; 
+next enable executable space protection and perform above step but now using ROP technique. i.e using the pre existing gadgets perform the attack.You may use old library version to get basic gadget as mentioned above.
+Following is the sample victim program.</p>
+<pre><code>#include &lt;stdio.h&gt; 
 int main() 
 { 
     char name[64]; 
