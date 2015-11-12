@@ -292,58 +292,8 @@
         }, 
         {
             "location": "/midterm/stu-pres/", 
-            "text": "Nov. 12\n\n\nROP\n\n\n\n\nChanglong Wang\n\n\nYicheng Jiang\n\n\nChumeng Xu\n\n\n\n\nAVX\n\n\n\n\nDiyu Wu\n\n\nChang Lie\n\n\nYifan Zhang\n\n\n\n\nSGX\n\n\n\n\nGaurav Patil\n\n\nSukhmeet Singh Mata \n\n\nVishual Verma\n\n\n\n\nTweet Trend using AWS\n\n\n\n\nNinad Lank \n\n\nRohith Engu \n\n\nVaibhav Gajre\n\n\n\n\nUSB Driver\n\n\n\n\nNachiket Kulkarni\n\n\nPriya Mangal\n\n\n\n\nNov. 19\n\n\nCompiler Design\n\n\n\n\nRaghavendra Manjegowda \n\n\nYashwanth Krishnaprasad \n\n\nVarsha Govindraj\n\n\n\n\nROP-2\n\n\n\n\nPhilip Geramian \n\n\nCarter Yagemann \n\n\nEnes Yildirim \n\n\n\n\nROP-3\n\n\n\n\nUrvi Shashikant \n\n\nPatel Amey \n\n\nAshok Patil", 
+            "text": "", 
             "title": "talk"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#nov-12", 
-            "text": "", 
-            "title": "Nov. 12"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#rop", 
-            "text": "Changlong Wang  Yicheng Jiang  Chumeng Xu", 
-            "title": "ROP"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#avx", 
-            "text": "Diyu Wu  Chang Lie  Yifan Zhang", 
-            "title": "AVX"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#sgx", 
-            "text": "Gaurav Patil  Sukhmeet Singh Mata   Vishual Verma", 
-            "title": "SGX"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#tweet-trend-using-aws", 
-            "text": "Ninad Lank   Rohith Engu   Vaibhav Gajre", 
-            "title": "Tweet Trend using AWS"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#usb-driver", 
-            "text": "Nachiket Kulkarni  Priya Mangal", 
-            "title": "USB Driver"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#nov-19", 
-            "text": "", 
-            "title": "Nov. 19"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#compiler-design", 
-            "text": "Raghavendra Manjegowda   Yashwanth Krishnaprasad   Varsha Govindraj", 
-            "title": "Compiler Design"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#rop-2", 
-            "text": "Philip Geramian   Carter Yagemann   Enes Yildirim", 
-            "title": "ROP-2"
-        }, 
-        {
-            "location": "/midterm/stu-pres/#rop-3", 
-            "text": "Urvi Shashikant   Patel Amey   Ashok Patil", 
-            "title": "ROP-3"
         }
     ]
 }
