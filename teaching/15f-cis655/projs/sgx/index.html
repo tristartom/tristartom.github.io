@@ -375,14 +375,16 @@ int main(void){
 
 <h2 id="minimal-requirement-tasks">Minimal-requirement tasks</h2>
 <ul>
-<li>Simulate the SGX setup process; that is, to support all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by function calls; you are allowed to do everything in userspace).</li>
-<li>Use the SGX simulator to set up an Enclave environment suitable for loading and running a simple Hello-world C program below.</li>
-<li>Test your program loader with SGX-ENCLU emulator [<a href="https://github.com/tristartom/sgx-emulator">link</a>]</li>
+<li>In the SGX-ENCLU emulator [<a href="https://github.com/tristartom/sgx-emulator">link</a>], the following sample code is provided. Use your simulator to set up the SGX/Enclave so that the sample code can run successfully. And in general, you are supposed to simulate the setup for all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by function calls; you are allowed to do everything in userspace).</li>
 </ul>
-<pre><code>int main(void){
+<pre><code>int in_enclave(int xx,int yy){
+  return x + y;
+}
+
+int main(void){
   int x = 0;
   int y = 1;
-  int z = x + y;
+  int z = call_enclave(x, y);
 }
 </code></pre>
 
