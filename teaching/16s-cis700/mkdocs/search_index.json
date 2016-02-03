@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CIS700/CSE791: Big-Data and Cloud Security (BDCS)\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nCourse schedule\n\n\n\n\n\n\n\n\nDay\n\n\nTopic\n\n\nReadings\n\n\nOptional readings\n\n\n\n\n\n\n\n\n\n\njan 22\n\n\nIntro\n\n\n[\nslides\n]\n\n\n\n\n\n\n\n\nfeb 3\n\n\nIntro\n\n\n[\nslides\n]\n\n\n\n\n\n\n\n\nfeb 5\n\n\nsecurity analysis\n\n\ncloud analysis[\npdf\n], free shopping [\npdf\n], cloud attack surface [\npdf\n]\n\n\nSecEng\n-C1, vul-analysis [\nlink\n]\n\n\n\n\n\n\nfeb 12\n\n\ncontainer security\n\n\nKvmSec[\npdf\n], graphene [\npdf\n]\n\n\ndrawbridge [\npdf\n], docker security[\npdf\n], cloud container[\npdf\n], kubernetes[\npdf\n], borg[\npdf\n]\n\n\n\n\n\n\nfeb 19\n\n\ndb optimizer\n\n\nprogressive optimization[\npdf\n], geo-distributed[\npdf\n]\n\n\nRedBook\n-C7, DBO solved?[\nlink\n]\n\n\n\n\n\n\nfeb 26\n\n\ndata federation\n\n\nclio[\npdf\n], bigdawg [\npdf\n], large-curation[\npdf\n]\n\n\nRedBook\n-C12, Turing'15[\nvideo\n]\n\n\n\n\n\n\nmar 4\n\n\nHW attacks\n\n\nAEGIS[\npdf\n], Cache as TEE[\npdf\n]\n\n\n\n\n\n\n\n\nmar 11\n\n\nconsistency attacks\n\n\nconcurrency attack overview [\npdf\n], txos[\npdf\n]\n\n\nRedBook\n-C6, feral concurrency[\npdf\n], certificate transparency [\nacm link\n], ssi[\npdf\n], fork-consistency[\npdf\n], no-border[\npdf\n]\n\n\n\n\n\n\nmar 25\n\n\nTEE\n\n\nFlickr[\npdf\n], OpenSGX[\npdf\n], trust-ice[\npdf\n], Intel x86 harmful[\npdf\n]\n\n\nTEE intro [\nlink\n], Iago attack[\npdf\n]\n\n\n\n\n\n\napr 1\n\n\nCrypto basics-1\n\n\nSecEng\n\n\n\n\n\n\n\n\napr 8\n\n\nCrypto basics-2\n\n\nSecEng\n\n\n\n\n\n\n\n\napr 15\n\n\nTEE DB\n\n\nCorrectDB [\npdf\n], TrustedDB [\npdf\n], trust-otp[\npdf\n]\n\n\n\n\n\n\n\n\napr 22\n\n\nmulti-party computing\n\n\ncanon-mpc[\npdf\n], snark[\npdf\n]\n\n\nspdz[\npdf\n], YaoGC\n\n\n\n\n\n\napr 29\n\n\nencrypted DBs\n\n\ninferrence attack[\npdf\n], cipherbase[\npdf\n]\n\n\ncryptdb[\npdf\n], monomi[\npdf\n], \nCrypto\n-C10, ope [\npdf\n]\n\n\n\n\n\n\nmay 3\n\n\ntor \n bitcoin\n\n\nSmart contract [\npdf\n], vuvuzela [\npdf\n]\n\n\nSok BitCoin[\npdf\n], tor [\npdf\n], Mix [\npdf\n]\n\n\n\n\n\n\n\n\nReference book\n\n\n\n\nSecEng\n: Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.\n\n\nRedBook\n: Readings in Database Systems, 5th Edition, Peter Bailis, Joseph M. Hellerstein, Michael Stonebraker, editors. [\nfree copy\n]\n\n\nCrypto\n: Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell", 
+            "text": "CIS700/CSE791: Big-Data and Cloud Security (BDCS)\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nCourse schedule\n\n\n\n\n\n\n\n\nDay\n\n\nTopic\n\n\nReadings\n\n\nOptional readings\n\n\nQuestions\n\n\n\n\n\n\n\n\n\n\njan 22\n\n\nIntro\n\n\n[\nslides\n]\n\n\n\n\n\n\n\n\n\n\nfeb 3\n\n\nIntro\n\n\n[\nslides\n]\n\n\n\n\n\n\n\n\n\n\nfeb 5\n\n\nsecurity analysis\n\n\ncloud analysis[\npdf\n], free shopping [\npdf\n], cloud attack surface [\npdf\n]\n\n\nSecEng\n-C1, vul-analysis [\nlink\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nfeb 12\n\n\ncontainer security\n\n\nKvmSec[\npdf\n], graphene [\npdf\n]\n\n\ndrawbridge [\npdf\n], docker security[\npdf\n], cloud container[\npdf\n], kubernetes[\npdf\n], borg[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nfeb 19\n\n\ndb optimizer\n\n\nprogressive optimization[\npdf\n], geo-distributed[\npdf\n]\n\n\nRedBook\n-C7, DBO solved?[\nlink\n], dist. query[\nacm\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nfeb 26\n\n\ndata federation\n\n\nclio[\npdf\n], bigdawg [\npdf\n], large-curation[\npdf\n]\n\n\nRedBook\n-C12, Turing'15[\nvideo\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nmar 4\n\n\nMid-term presentation\n\n\n\n\n\n\n\n\n\n\n\n\nmar 11\n\n\nconsistency attacks\n\n\nconcurrency attack overview [\npdf\n], txos[\npdf\n]\n\n\nRedBook\n-C6, feral concurrency[\npdf\n], certificate transparency [\nacm link\n], ssi[\npdf\n], fork-consistency[\npdf\n], no-border[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nmar 25\n\n\nTEE\n\n\nFlickr[\npdf\n], OpenSGX[\npdf\n], trust-ice[\npdf\n], Intel x86 harmful[\npdf\n]\n\n\nTEE intro [\nlink\n], Iago attack[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\napr 1\n\n\nCrypto basics-1\n\n\nSecEng\n\n\n\n\n\n\n\n\n\n\napr 8\n\n\nCrypto basics-2\n\n\nSecEng\n\n\n\n\n\n\n\n\n\n\napr 15\n\n\nTEE DB\n\n\nCorrectDB [\npdf\n], TrustedDB [\npdf\n], trust-otp[\npdf\n]\n\n\n\n\n[\nlink\n]\n\n\n\n\n\n\napr 22\n\n\nmulti-party computing\n\n\ncanon-mpc[\npdf\n], snark[\npdf\n]\n\n\nspdz[\npdf\n], YaoGC\n\n\n[\nlink\n]\n\n\n\n\n\n\napr 29\n\n\nencrypted DBs\n\n\ninferrence attack[\npdf\n], cipherbase[\npdf\n]\n\n\ncryptdb[\npdf\n], monomi[\npdf\n], \nCrypto\n-C10, ope [\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nmay 3\n\n\ntor \n bitcoin\n\n\nSmart contract [\npdf\n], vuvuzela [\npdf\n]\n\n\nSok BitCoin[\npdf\n], tor [\npdf\n], Mix [\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\n\n\nReference book\n\n\n\n\nSecEng\n: Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.\n\n\nRedBook\n: Readings in Database Systems, 5th Edition, Peter Bailis, Joseph M. Hellerstein, Michael Stonebraker, editors. [\nfree copy\n]\n\n\nCrypto\n: Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell", 
             "title": "Schedule"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#course-schedule", 
-            "text": "Day  Topic  Readings  Optional readings      jan 22  Intro  [ slides ]     feb 3  Intro  [ slides ]     feb 5  security analysis  cloud analysis[ pdf ], free shopping [ pdf ], cloud attack surface [ pdf ]  SecEng -C1, vul-analysis [ link ]    feb 12  container security  KvmSec[ pdf ], graphene [ pdf ]  drawbridge [ pdf ], docker security[ pdf ], cloud container[ pdf ], kubernetes[ pdf ], borg[ pdf ]    feb 19  db optimizer  progressive optimization[ pdf ], geo-distributed[ pdf ]  RedBook -C7, DBO solved?[ link ]    feb 26  data federation  clio[ pdf ], bigdawg [ pdf ], large-curation[ pdf ]  RedBook -C12, Turing'15[ video ]    mar 4  HW attacks  AEGIS[ pdf ], Cache as TEE[ pdf ]     mar 11  consistency attacks  concurrency attack overview [ pdf ], txos[ pdf ]  RedBook -C6, feral concurrency[ pdf ], certificate transparency [ acm link ], ssi[ pdf ], fork-consistency[ pdf ], no-border[ pdf ]    mar 25  TEE  Flickr[ pdf ], OpenSGX[ pdf ], trust-ice[ pdf ], Intel x86 harmful[ pdf ]  TEE intro [ link ], Iago attack[ pdf ]    apr 1  Crypto basics-1  SecEng     apr 8  Crypto basics-2  SecEng     apr 15  TEE DB  CorrectDB [ pdf ], TrustedDB [ pdf ], trust-otp[ pdf ]     apr 22  multi-party computing  canon-mpc[ pdf ], snark[ pdf ]  spdz[ pdf ], YaoGC    apr 29  encrypted DBs  inferrence attack[ pdf ], cipherbase[ pdf ]  cryptdb[ pdf ], monomi[ pdf ],  Crypto -C10, ope [ pdf ]    may 3  tor   bitcoin  Smart contract [ pdf ], vuvuzela [ pdf ]  Sok BitCoin[ pdf ], tor [ pdf ], Mix [ pdf ]", 
+            "text": "Day  Topic  Readings  Optional readings  Questions      jan 22  Intro  [ slides ]      feb 3  Intro  [ slides ]      feb 5  security analysis  cloud analysis[ pdf ], free shopping [ pdf ], cloud attack surface [ pdf ]  SecEng -C1, vul-analysis [ link ]  [ link ]    feb 12  container security  KvmSec[ pdf ], graphene [ pdf ]  drawbridge [ pdf ], docker security[ pdf ], cloud container[ pdf ], kubernetes[ pdf ], borg[ pdf ]  [ link ]    feb 19  db optimizer  progressive optimization[ pdf ], geo-distributed[ pdf ]  RedBook -C7, DBO solved?[ link ], dist. query[ acm ]  [ link ]    feb 26  data federation  clio[ pdf ], bigdawg [ pdf ], large-curation[ pdf ]  RedBook -C12, Turing'15[ video ]  [ link ]    mar 4  Mid-term presentation       mar 11  consistency attacks  concurrency attack overview [ pdf ], txos[ pdf ]  RedBook -C6, feral concurrency[ pdf ], certificate transparency [ acm link ], ssi[ pdf ], fork-consistency[ pdf ], no-border[ pdf ]  [ link ]    mar 25  TEE  Flickr[ pdf ], OpenSGX[ pdf ], trust-ice[ pdf ], Intel x86 harmful[ pdf ]  TEE intro [ link ], Iago attack[ pdf ]  [ link ]    apr 1  Crypto basics-1  SecEng      apr 8  Crypto basics-2  SecEng      apr 15  TEE DB  CorrectDB [ pdf ], TrustedDB [ pdf ], trust-otp[ pdf ]   [ link ]    apr 22  multi-party computing  canon-mpc[ pdf ], snark[ pdf ]  spdz[ pdf ], YaoGC  [ link ]    apr 29  encrypted DBs  inferrence attack[ pdf ], cipherbase[ pdf ]  cryptdb[ pdf ], monomi[ pdf ],  Crypto -C10, ope [ pdf ]  [ link ]    may 3  tor   bitcoin  Smart contract [ pdf ], vuvuzela [ pdf ]  Sok BitCoin[ pdf ], tor [ pdf ], Mix [ pdf ]  [ link ]", 
             "title": "Course schedule"
         }, 
         {
@@ -74,6 +74,66 @@
             "location": "/proj/#timeline", 
             "text": "Project proposal: due Feb. 10  Mid-term report/presentation: due Mar. 4  Final submission: due Apr. 29", 
             "title": "Timeline"
+        }, 
+        {
+            "location": "/qa/", 
+            "text": "Questions\n\n\nWrite down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.\n\n\nfeb 5: security analysis\n\n\n\n\nwhat constitue of a cloud attack surface? (hint: consider a cloud service model)\n\n\nwhy is it hard to make a system secure?\n\n\nwhat is the vulnerability exploited in a \"free shopping\" paper?\n\n\n\n\nfeb 12: container security\n\n\n\n\nwhat is the conceptual diff. between container/VM instance/sandbox/libOS (from the trust-model perspective)?\n\n\nwhy do we need libOS?\n\n\n\n\nfeb 19: db optimizer\n\n\n\n\nwhat is the idea behind db optimizer? what makes it useful/possible?\n\n\nwhat is yet to be solved in the \"DBO solved\" paper?\n\n\nwhat is \"site selection\" problem? and how is it solved?\n\n\n\n\nfeb 26: data federation\n\n\n\n\nwhat is the typical work in data federation?\n\n\nwhat makes data federation difficult?\n\n\n\n\nmar 11: consistency attacks\n\n\n\n\nwhat is consistency defined in \"txos\" paper?\n\n\nwhat is consistency defined in \"fork consistency\" paper?\n\n\nwhat is consistency defined in \"certificate transparency\" paper?\n\n\n\n\nmar 25: TEE\n\n\n\n\nwhat is the model of TEE?\n\n\nHow is SGX differentiated from TPM/TXT?\n\n\nHow is TEE related to cloud?\n\n\n\n\napr 15: TEE DB\n\n\n\n\nwhat is the security properties addressed in CorrectDB?\n\n\nwhat is the security properties addressed in TrustedDB?\n\n\nwhat is the gap between those db-level security and TEE security?\n\n\n\n\napr 22: multi-party computing\n\n\n\n\nwhat is the model (input and output) of MPC? what does it guarantee in security?\n\n\nwhat would MPC be used in real-world life?\n\n\nwhat makes Snark (in)efficient?\n\n\n\n\napr 29: encrypted DBs\n\n\n\n\nwhat is the vulnerability in OPE?\n\n\nwhat is performance of OPE?\n\n\ncompare and contrast cipherbase to cryptodb?\n\n\n\n\nmay 3: tor \n bitcoin\n\n\n\n\nwhat is traffic analysis? and how to apply it to tor network?\n\n\nwhat is the model of bitcoin?", 
+            "title": "Reading questions"
+        }, 
+        {
+            "location": "/qa/#questions", 
+            "text": "Write down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.", 
+            "title": "Questions"
+        }, 
+        {
+            "location": "/qa/#feb-5-security-analysis", 
+            "text": "what constitue of a cloud attack surface? (hint: consider a cloud service model)  why is it hard to make a system secure?  what is the vulnerability exploited in a \"free shopping\" paper?", 
+            "title": "feb 5: security analysis"
+        }, 
+        {
+            "location": "/qa/#feb-12-container-security", 
+            "text": "what is the conceptual diff. between container/VM instance/sandbox/libOS (from the trust-model perspective)?  why do we need libOS?", 
+            "title": "feb 12: container security"
+        }, 
+        {
+            "location": "/qa/#feb-19-db-optimizer", 
+            "text": "what is the idea behind db optimizer? what makes it useful/possible?  what is yet to be solved in the \"DBO solved\" paper?  what is \"site selection\" problem? and how is it solved?", 
+            "title": "feb 19: db optimizer"
+        }, 
+        {
+            "location": "/qa/#feb-26-data-federation", 
+            "text": "what is the typical work in data federation?  what makes data federation difficult?", 
+            "title": "feb 26: data federation"
+        }, 
+        {
+            "location": "/qa/#mar-11-consistency-attacks", 
+            "text": "what is consistency defined in \"txos\" paper?  what is consistency defined in \"fork consistency\" paper?  what is consistency defined in \"certificate transparency\" paper?", 
+            "title": "mar 11: consistency attacks"
+        }, 
+        {
+            "location": "/qa/#mar-25-tee", 
+            "text": "what is the model of TEE?  How is SGX differentiated from TPM/TXT?  How is TEE related to cloud?", 
+            "title": "mar 25: TEE"
+        }, 
+        {
+            "location": "/qa/#apr-15-tee-db", 
+            "text": "what is the security properties addressed in CorrectDB?  what is the security properties addressed in TrustedDB?  what is the gap between those db-level security and TEE security?", 
+            "title": "apr 15: TEE DB"
+        }, 
+        {
+            "location": "/qa/#apr-22-multi-party-computing", 
+            "text": "what is the model (input and output) of MPC? what does it guarantee in security?  what would MPC be used in real-world life?  what makes Snark (in)efficient?", 
+            "title": "apr 22: multi-party computing"
+        }, 
+        {
+            "location": "/qa/#apr-29-encrypted-dbs", 
+            "text": "what is the vulnerability in OPE?  what is performance of OPE?  compare and contrast cipherbase to cryptodb?", 
+            "title": "apr 29: encrypted DBs"
+        }, 
+        {
+            "location": "/qa/#may-3-tor-bitcoin", 
+            "text": "what is traffic analysis? and how to apply it to tor network?  what is the model of bitcoin?", 
+            "title": "may 3: tor &amp; bitcoin"
         }
     ]
 }
