@@ -52,7 +52,7 @@
         }, 
         {
             "location": "/proj/", 
-            "text": "Project Topics\n\n\nProgramming option (w bonus)\n\n\nSample topics\n\n\n\n\nSecure applications on the SGX emulator [\nlink\n]:\n\n\nan OTP service [\npdf\n]\n\n\nzookeeper [\npdf\n]\n\n\nprivacy-preserving multi-party analytics\n\n\n\n\n\n\nCloud capacity planning on AWS [\npdf\n]\n\n\nCryptographic multi-party computation for analytics\n\n\n\n\nSurvey option\n\n\nChoose a topic related to big-data and cloud security. Conduct an in-depth survey in the field. Consult SoK papers (\"Systemization of knowledge\") in recent IEEE S\nP proceedings. The final survey must have the same format to the S\nP SoK paper; an example can be found [\nhere\n].\n\n\nTimeline\n\n\n\n\nProject proposal: due Feb. 10\n\n\nMid-term report/presentation: due Mar. 4\n\n\nFinal submission: due Apr. 29", 
+            "text": "Project Topics\n\n\nProgramming option (w bonus)\n\n\nSample topics\n\n\n\n\nSecure applications on the SGX emulator [\nlink\n]:\n\n\nan OTP service [\npdf\n]\n\n\nzookeeper [\npdf\n]\n\n\nprivacy-preserving multi-party analytics\n\n\n\n\n\n\nCryptographic multi-party computation for analytics\n\n\n\n\nSurvey option\n\n\nChoose a topic related to big-data and cloud security. Conduct an in-depth survey in the field. Consult SoK papers (\"Systemization of knowledge\") in recent IEEE S\nP proceedings. The final survey must have the same format to the S\nP SoK paper; an example can be found [\nhere\n].\n\n\nTimeline\n\n\n\n\nProject proposal: due Feb. 10\n\n\nMid-term report/presentation: due Mar. 4\n\n\nFinal submission: due Apr. 29", 
             "title": "Project"
         }, 
         {
@@ -62,7 +62,7 @@
         }, 
         {
             "location": "/proj/#programming-option-w-bonus", 
-            "text": "Sample topics   Secure applications on the SGX emulator [ link ]:  an OTP service [ pdf ]  zookeeper [ pdf ]  privacy-preserving multi-party analytics    Cloud capacity planning on AWS [ pdf ]  Cryptographic multi-party computation for analytics", 
+            "text": "Sample topics   Secure applications on the SGX emulator [ link ]:  an OTP service [ pdf ]  zookeeper [ pdf ]  privacy-preserving multi-party analytics    Cryptographic multi-party computation for analytics", 
             "title": "Programming option (w bonus)"
         }, 
         {
