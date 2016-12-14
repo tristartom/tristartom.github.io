@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CIS655/CSE661-2015Fall</title>
+  
+
+  <link rel="shortcut icon" href="./img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "None";
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script>
+  <script src="./js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> CIS655/CSE661-2015Fall</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href=".">Home</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#cis655cse661-advanced-computer-architecture">CIS655/CSE661: Advanced Computer Architecture</a></li>
+                
+                    <li><a class="toctree-l4" href="#textbook">Textbook</a></li>
+                
+                    <li><a class="toctree-l4" href="#lecture-schedule">Lecture schedule</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="syl/">Syllabus</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="proj/">Project-policy</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Project-topics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="projs/sgx/">sgx</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="projs/trustzone/">trustzone</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="projs/avx/">avx</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="projs/pt/">page-table</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="projs/mpx/">mpx</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="projs/rop/">rop</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="projs/amazon/">amazon</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Hw</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="hw/cachemiss/">cachemiss</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Midterm</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="midterm/midterm/">req</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="midterm/stu-pres/">talk</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="final/">Final</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">CIS655/CSE661-2015Fall</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="cis655cse661-advanced-computer-architecture">CIS655/CSE661: Advanced Computer Architecture</h1>
+<p>Instructor: Yuzhe (Richard) Tang</p>
+<h2 id="textbook">Textbook</h2>
+<p>Computer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design</p>
+<h2 id="lecture-schedule">Lecture schedule</h2>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th align="left">Session</th>
+<th align="left">Chapter</th>
+<th align="left">Slides</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.Overview</td>
+<td align="left">intro</td>
+<td align="left">1</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3767693-dt-content-rid-10837872_1/courses/18721.1161c/1.1.intro.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>1.Overview</td>
+<td align="left">metrics</td>
+<td align="left">1</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3770331-dt-content-rid-10843555_1/courses/18721.1161c/1.2.metrics.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>2.CPU</td>
+<td align="left">ILP &amp; pipelining</td>
+<td align="left">A</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3781234-dt-content-rid-10887233_1/courses/18721.1161c/2.1.pipelining%281%29.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>2.CPU</td>
+<td align="left">data hazard by compiler</td>
+<td align="left">3</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3784799-dt-content-rid-10896867_1/courses/18721.1161c/2.2.ILPhazard.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>2.CPU</td>
+<td align="left">branch hazard by HW</td>
+<td align="left">C.2,3.3,3.9</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3790193-dt-content-rid-10931482_1/courses/18721.1161c/2.3.branch.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>2.CPU</td>
+<td align="left">data hazard by HW, a.k.a tomasulo</td>
+<td align="left">3.4,3.5,3.6,3.9</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3793133-dt-content-rid-10948468_1/courses/18721.1161c/2.4.tomasulo.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>2.CPU</td>
+<td align="left">multi-issue &amp; SIMD</td>
+<td align="left">3</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3798494-dt-content-rid-10990204_1/courses/18721.1161c/2.5.multi-issue.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>3.Memory</td>
+<td align="left">cache</td>
+<td align="left">2.1,2.2,B.1,B.2,B.3</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3808485-dt-content-rid-11086573_1/courses/18721.1161c/3.1.cache.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>3.Memory</td>
+<td align="left">cache2</td>
+<td align="left">2.2</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3812375-dt-content-rid-11126346_1/courses/18721.1161c/3.2.cache2.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">Mid-term covers till here</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>3.Memory</td>
+<td align="left">memory</td>
+<td align="left">B.4,B.5,2.4</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3814824-dt-content-rid-11152027_1/courses/18721.1161c/3.3.memory.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>3.Memory</td>
+<td align="left">memory protection</td>
+<td align="left">B.4,B.5,2.4</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3818585-dt-content-rid-11196139_1/courses/18721.1161c/pf.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>4.Multi-processing</td>
+<td align="left">multiprocessing</td>
+<td align="left">5.1,5.2</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3820729-dt-content-rid-11219860_1/courses/18721.1161c/4.1.multiprocessing.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>4.Multi-processing</td>
+<td align="left">cache-coherence</td>
+<td align="left">5.2,5.3,5.4</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3831887-dt-content-rid-11324621_1/courses/18721.1161c/4.2.cache-coherence.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>4.Multi-processing</td>
+<td align="left">synchronization</td>
+<td align="left">5.5</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3834797-dt-content-rid-11360131_1/courses/18721.1161c/4.3.synchronization.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>4.Multi-processing</td>
+<td align="left">memory consistency</td>
+<td align="left">5.5, 5.6</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3837976-dt-content-rid-11401934_1/courses/18721.1161c/4.4.mem-consistency.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>4.Multi-processing</td>
+<td align="left">many-core</td>
+<td align="left">5.8</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3839912-dt-content-rid-11427011_1/courses/18721.1161c/4.5.many-core.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>5.IO</td>
+<td align="left">storage</td>
+<td align="left">D</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3843568-dt-content-rid-11474705_1/courses/18721.1161c/5.1.storage.pdf">link to BB</a>], [<a href="https://blackboard.syr.edu/bbcswebdav/pid-3843568-dt-content-rid-11474706_1/courses/18721.1161c/Disk%20IO.pdf">one more</a>]</td>
+</tr>
+<tr>
+<td>5.IO</td>
+<td align="left">raid &amp; lsm</td>
+<td align="left">D</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3876084-dt-content-rid-11573542_1/courses/18721.1161c/5.2.raid.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>5.IO</td>
+<td align="left">interconnect</td>
+<td align="left">F</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3882905-dt-content-rid-11635164_1/courses/18721.1161c/5.3.interconnect.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>6.WSC</td>
+<td align="left">wsc</td>
+<td align="left">6</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3887740-dt-content-rid-11669500_1/courses/18721.1161c/6.1.wsc.pdf">link to BB</a>]</td>
+</tr>
+<tr>
+<td>6.WSC</td>
+<td align="left">energy</td>
+<td align="left">6</td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3892023-dt-content-rid-11714335_1/xid-11714335_1">link to BB</a>]</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">review</td>
+<td align="left"></td>
+<td align="left">[<a href="https://blackboard.syr.edu/bbcswebdav/pid-3892023-dt-content-rid-11714336_1/courses/18721.1161c/ACA%20review.pdf">link to BB</a>]</td>
+</tr>
+</tbody>
+</table>
+<!---
+| 5.IO | interconnect2 | | [[TBA](TBA)] |
+| 6.WSC & misc | software in wsc | | [[TBA](TBA)] |
+| 6.WSC & misc | infrastructure | | [[TBA](TBA)] |
+| 6.WSC & misc | energy | | [[TBA](TBA)] |
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="syl/" class="btn btn-neutral float-right" title="Syllabus"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="syl/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 0.14.0
+Build Date UTC : 2015-12-08 06:39:58.905830
+-->
