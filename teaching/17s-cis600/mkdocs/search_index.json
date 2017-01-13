@@ -1,0 +1,29 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "CIS600: Applied Cryptography\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbooks (Recommended)\n\n\n\n\nIntroduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell\n\n\nCryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.\n\n\n\n\nSyllabus\n\n\n[\npdf\n]\n\n\nLecture schedule\n\n\nTBA", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#cis600-applied-cryptography", 
+            "text": "Instructor: Yuzhe (Richard) Tang", 
+            "title": "CIS600: Applied Cryptography"
+        }, 
+        {
+            "location": "/#textbooks-recommended", 
+            "text": "Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell  Cryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.", 
+            "title": "Textbooks (Recommended)"
+        }, 
+        {
+            "location": "/#syllabus", 
+            "text": "[ pdf ]", 
+            "title": "Syllabus"
+        }, 
+        {
+            "location": "/#lecture-schedule", 
+            "text": "TBA", 
+            "title": "Lecture schedule"
+        }
+    ]
+}
