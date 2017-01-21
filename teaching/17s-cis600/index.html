@@ -57,11 +57,13 @@
             
                 <li class="toctree-l3"><a href="#cis600-applied-cryptography">CIS600: Applied Cryptography</a></li>
                 
-                    <li><a class="toctree-l4" href="#textbooks-recommended">Textbooks (Recommended)</a></li>
+                    <li><a class="toctree-l4" href="#textbooks">Textbooks</a></li>
                 
                     <li><a class="toctree-l4" href="#syllabus">Syllabus</a></li>
                 
-                    <li><a class="toctree-l4" href="#lecture-schedule">Lecture schedule</a></li>
+                    <li><a class="toctree-l4" href="#part-1">Part 1</a></li>
+                
+                    <li><a class="toctree-l4" href="#part-2">Part 2</a></li>
                 
             
             </ul>
@@ -103,40 +105,96 @@
               
                 <h1 id="cis600-applied-cryptography">CIS600: Applied Cryptography</h1>
 <p>Instructor: Yuzhe (Richard) Tang</p>
-<h2 id="textbooks-recommended">Textbooks (Recommended)</h2>
+<h2 id="textbooks">Textbooks</h2>
 <ul>
-<li>Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell</li>
-<li>Cryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.</li>
+<li>Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (<code>KL</code>) </li>
+<li>Cryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (<code>FSK</code>)</li>
+<li>Other useful books<ul>
+<li>Network Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (<code>OpenSSL</code>)</li>
+<li>A course in cryptography, Rafael Pass, abhi shelat (<code>PS</code>)</li>
+</ul>
+</li>
 </ul>
 <h2 id="syllabus">Syllabus</h2>
 <p>[<a href="./syllabus-600ce.pdf">pdf</a>]</p>
-<h2 id="lecture-schedule">Lecture schedule</h2>
-<p>TBA</p>
+<h2 id="part-1">Part 1</h2>
+<p><em>Lectures: Introduction to Modern Cryptography</em></p>
+<ul>
+<li>Introduction<ul>
+<li>probability theory <code>KL</code>-A.3</li>
+<li>perfect secrecy <code>KL</code>-2</li>
+</ul>
+</li>
+<li>Private-key cryptography <ul>
+<li>Crash course on computation hardness and complexity <code>PS</code>-2/B</li>
+<li>Symmetric key encryption and computational security: Block cipher, AES <code>KL</code>-3</li>
+<li>Message authentication code, hash, password and commitment <code>KL</code>-4/5</li>
+</ul>
+</li>
+<li>
+<p>Public-key cryptography</p>
+<ul>
+<li>Crash course on number theory, <code>KL</code>-8</li>
+<li>Key distribution: DH <code>FSK</code>-11 (<code>KL</code>-10.1/.3)</li>
+<li>Public-key encryption: RSA, Digital signatures, <code>FSK</code>-12 (<code>KL</code>-11/12)</li>
+</ul>
+</li>
+<li>
+<p>Programming resources</p>
+<ul>
+<li>EasyCrypt </li>
+</ul>
+</li>
+</ul>
 <!--
 
-| Topic | Session | Chapter | Slides
-| ------------- |:------------- |:---------|
-| Introduction | probability theory | 1 | |
-| | perfect secrecy | | |
-| Private-key cryptography |
-| | Crash course on complexity theory
-| | Symmetric key encryption and computational security: Block cipher, AES 
-| | Message authentication code, hash and commitment
-| Public-key cryptography
-| | Crash course on number theory
-| | Public-key encryption: RSA, DH, Digital signatures
-| | The NaCL ("salt") crypto library 
-| Security applications and protocols
-| | The case of password management
-| | The case of block-chain and certificate transparency 
-| | Attestation protocols and the case of Intel SGX 
-| | The Kerberos authentication protocol
-| | Tthe case of Tor project
-| Secure computation
-| | Homomorphic encryption
-| | The case of ZeroDB Inc.
-| | Multi-party computation: Yao's GC, GMW
-| | Verifiable comptution
+* Secure computation
+    * Homomorphic encryption
+    * The case of ZeroDB Inc.
+    * Multi-party computation: Yao's GC, GMW
+    * Verifiable comptution
+
+-->
+
+<h2 id="part-2">Part 2</h2>
+<p><em>Projects &amp; presentations: Real-world security applications &amp; protocols</em></p>
+<ol>
+<li>Block-chain and cryptocurrency, <ul>
+<li>Lecture: [<a href="https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf">txtbk</a>], </li>
+<li>Lab: [<a href="https://mc2-umd.github.io/ethereumlab/">lab</a>]</li>
+<li>Paper presentation:<ul>
+<li>Teechan: Payment Channels Using Trusted Execution Environments, [<a href="https://www.cs.cornell.edu/People/egs/papers/teechan.pdf">pdf</a>]</li>
+<li>Enhancing Bitcoin Security and Performance with Strong Consistency via Collective Signing, [<a href="https://arxiv.org/pdf/1602.06997v3.pdf">pdf</a>]</li>
+<li>Zerocash: Decentralized Anonymous Payments from Bitcoin, [<a href="http://zerocash-project.org">website</a>]</li>
+<li>Town Crier: An Authenticated Data Feed for Smart Contracts, [(https://eprint.iacr.org/2016/168.pdf)]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Attestation protocols and the case of Intel SGX, <ul>
+<li>Lecture: [<a href="">VC3</a>], [<a href="">Haven</a>], [<a href="https://software.intel.com/sites/default/files/article/413939/hasp-2013-innovative-technology-for-attestation-and-sealing.pdf">Attestation</a>]</li>
+<li>Paper presentation:<ul>
+<li>SCONE: Secure Linux Containers with Intel SGX, [<a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-arnautov.pdf">pdf</a>]</li>
+<li>Rollback and Forking Detection for Trusted Execution Environments using Lightweight Collective Memory, [<a href="https://arxiv.org/pdf/1701.00981v1.pdf">pdf</a>]</li>
+<li>Attestation Transparency: Building secure Internet services for legacy clients</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Kerberos and password management</p>
+</li>
+<li>
+<p>Programming resources</p>
+<ul>
+<li>Crypto library: NaCL ("salt"), OpenSSL, <code>OpenSSL</code></li>
+</ul>
+</li>
+</ol>
+<!--
+
+    * Certificate transparency
+    * The Tor project
 
 -->
               
@@ -175,5 +233,5 @@
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2017-01-13 15:57:41.960643
+Build Date UTC : 2017-01-21 18:00:33.702863
 -->

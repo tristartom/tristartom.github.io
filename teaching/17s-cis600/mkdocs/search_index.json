@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CIS600: Applied Cryptography\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbooks (Recommended)\n\n\n\n\nIntroduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell\n\n\nCryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.\n\n\n\n\nSyllabus\n\n\n[\npdf\n]\n\n\nLecture schedule\n\n\nTBA", 
+            "text": "CIS600: Applied Cryptography\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbooks\n\n\n\n\nIntroduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (\nKL\n) \n\n\nCryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (\nFSK\n)\n\n\nOther useful books\n\n\nNetwork Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (\nOpenSSL\n)\n\n\nA course in cryptography, Rafael Pass, abhi shelat (\nPS\n)\n\n\n\n\n\n\n\n\nSyllabus\n\n\n[\npdf\n]\n\n\nPart 1\n\n\nLectures: Introduction to Modern Cryptography\n\n\n\n\nIntroduction\n\n\nprobability theory \nKL\n-A.3\n\n\nperfect secrecy \nKL\n-2\n\n\n\n\n\n\nPrivate-key cryptography \n\n\nCrash course on computation hardness and complexity \nPS\n-2/B\n\n\nSymmetric key encryption and computational security: Block cipher, AES \nKL\n-3\n\n\nMessage authentication code, hash, password and commitment \nKL\n-4/5\n\n\n\n\n\n\n\n\nPublic-key cryptography\n\n\n\n\nCrash course on number theory, \nKL\n-8\n\n\nKey distribution: DH \nFSK\n-11 (\nKL\n-10.1/.3)\n\n\nPublic-key encryption: RSA, Digital signatures, \nFSK\n-12 (\nKL\n-11/12)\n\n\n\n\n\n\n\n\nProgramming resources\n\n\n\n\nEasyCrypt \n\n\n\n\n\n\n\n\n\n\n\nPart 2\n\n\nProjects \n presentations: Real-world security applications \n protocols\n\n\n\n\nBlock-chain and cryptocurrency, \n\n\nLecture: [\ntxtbk\n], \n\n\nLab: [\nlab\n]\n\n\nPaper presentation:\n\n\nTeechan: Payment Channels Using Trusted Execution Environments, [\npdf\n]\n\n\nEnhancing Bitcoin Security and Performance with Strong Consistency via Collective Signing, [\npdf\n]\n\n\nZerocash: Decentralized Anonymous Payments from Bitcoin, [\nwebsite\n]\n\n\nTown Crier: An Authenticated Data Feed for Smart Contracts, [(https://eprint.iacr.org/2016/168.pdf)]\n\n\n\n\n\n\n\n\n\n\nAttestation protocols and the case of Intel SGX, \n\n\nLecture: [\nVC3\n], [\nHaven\n], [\nAttestation\n]\n\n\nPaper presentation:\n\n\nSCONE: Secure Linux Containers with Intel SGX, [\npdf\n]\n\n\nRollback and Forking Detection for Trusted Execution Environments using Lightweight Collective Memory, [\npdf\n]\n\n\nAttestation Transparency: Building secure Internet services for legacy clients\n\n\n\n\n\n\n\n\n\n\n\n\nKerberos and password management\n\n\n\n\n\n\nProgramming resources\n\n\n\n\nCrypto library: NaCL (\"salt\"), OpenSSL, \nOpenSSL", 
             "title": "Home"
         }, 
         {
@@ -11,9 +11,9 @@
             "title": "CIS600: Applied Cryptography"
         }, 
         {
-            "location": "/#textbooks-recommended", 
-            "text": "Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell  Cryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.", 
-            "title": "Textbooks (Recommended)"
+            "location": "/#textbooks", 
+            "text": "Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, ( KL )   Cryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno ( FSK )  Other useful books  Network Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega ( OpenSSL )  A course in cryptography, Rafael Pass, abhi shelat ( PS )", 
+            "title": "Textbooks"
         }, 
         {
             "location": "/#syllabus", 
@@ -21,9 +21,14 @@
             "title": "Syllabus"
         }, 
         {
-            "location": "/#lecture-schedule", 
-            "text": "TBA", 
-            "title": "Lecture schedule"
+            "location": "/#part-1", 
+            "text": "Lectures: Introduction to Modern Cryptography   Introduction  probability theory  KL -A.3  perfect secrecy  KL -2    Private-key cryptography   Crash course on computation hardness and complexity  PS -2/B  Symmetric key encryption and computational security: Block cipher, AES  KL -3  Message authentication code, hash, password and commitment  KL -4/5     Public-key cryptography   Crash course on number theory,  KL -8  Key distribution: DH  FSK -11 ( KL -10.1/.3)  Public-key encryption: RSA, Digital signatures,  FSK -12 ( KL -11/12)     Programming resources   EasyCrypt", 
+            "title": "Part 1"
+        }, 
+        {
+            "location": "/#part-2", 
+            "text": "Projects   presentations: Real-world security applications   protocols   Block-chain and cryptocurrency,   Lecture: [ txtbk ],   Lab: [ lab ]  Paper presentation:  Teechan: Payment Channels Using Trusted Execution Environments, [ pdf ]  Enhancing Bitcoin Security and Performance with Strong Consistency via Collective Signing, [ pdf ]  Zerocash: Decentralized Anonymous Payments from Bitcoin, [ website ]  Town Crier: An Authenticated Data Feed for Smart Contracts, [(https://eprint.iacr.org/2016/168.pdf)]      Attestation protocols and the case of Intel SGX,   Lecture: [ VC3 ], [ Haven ], [ Attestation ]  Paper presentation:  SCONE: Secure Linux Containers with Intel SGX, [ pdf ]  Rollback and Forking Detection for Trusted Execution Environments using Lightweight Collective Memory, [ pdf ]  Attestation Transparency: Building secure Internet services for legacy clients       Kerberos and password management    Programming resources   Crypto library: NaCL (\"salt\"), OpenSSL,  OpenSSL", 
+            "title": "Part 2"
         }
     ]
 }
