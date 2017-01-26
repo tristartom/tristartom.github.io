@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CIS655/CSE661: Advanced Computer Architecture\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbook\n\n\n\n\nComputer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design\n\n\n(Recommended) Operating Systems: Principles and Practice, Second Edition\n\n\n(Recommended) CSAPP, Computer systems from programming perspective\n\n\n\n\nLectures\n\n\n1.Overview \n    - intro \n    - metrics \n2.CPU \n    *  ILP \n pipelining \n    *  data hazard by compiler \n    *  branch hazard by HW \n    *  data hazard by HW, a.k.a tomasulo \n    *  multi-issue \n SIMD \n3.Memory \n    *  cache \n    *  cache2 \n    *  memory \n    *  memory protection \n4.Multi-processing \n    *  multiprocessing \n    *  cache-coherence \n    *  synchronization \n    *  memory consistency \n    *  many-core \n5.IO \n    *  storage \n    *  raid \n lsm \n    *  interconnect \n6.WSC \n    *  wsc \n    *  energy", 
+            "text": "CIS655/CSE661: Advanced Computer Architecture\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbook\n\n\n\n\nComputer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design\n\n\n(Recommended) Operating Systems: Principles and Practice, Second Edition\n\n\n(Recommended) CSAPP, Computer systems from programming perspective\n\n\n\n\nLectures\n\n\n\n\nOverview \n\n\nintro \n\n\nmetrics \n\n\n\n\n\n\nCPU \n\n\nILP \n pipelining \n\n\ndata hazard by compiler \n\n\nbranch hazard by HW \n\n\ndata hazard by HW, a. k. a tomasulo \n\n\nmulti-issue \n SIMD \n\n\n\n\n\n\nMemory \n\n\ncache \n\n\ncache2 \n\n\nmemory \n\n\nmemory protection \n\n\n\n\n\n\nMulti-processing \n\n\nmultiprocessing \n\n\ncache-coherence \n\n\nsynchronization \n\n\nmemory consistency \n\n\nmany-core \n\n\n\n\n\n\nIO \n\n\nstorage \n\n\nraid \n lsm \n\n\ninterconnect \n\n\n\n\n\n\nWSC \n\n\nwsc \n\n\nenergy", 
             "title": "Home"
         }, 
         {
@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/#lectures", 
-            "text": "1.Overview \n    - intro \n    - metrics \n2.CPU \n    *  ILP   pipelining \n    *  data hazard by compiler \n    *  branch hazard by HW \n    *  data hazard by HW, a.k.a tomasulo \n    *  multi-issue   SIMD \n3.Memory \n    *  cache \n    *  cache2 \n    *  memory \n    *  memory protection \n4.Multi-processing \n    *  multiprocessing \n    *  cache-coherence \n    *  synchronization \n    *  memory consistency \n    *  many-core \n5.IO \n    *  storage \n    *  raid   lsm \n    *  interconnect \n6.WSC \n    *  wsc \n    *  energy", 
+            "text": "Overview   intro   metrics     CPU   ILP   pipelining   data hazard by compiler   branch hazard by HW   data hazard by HW, a. k. a tomasulo   multi-issue   SIMD     Memory   cache   cache2   memory   memory protection     Multi-processing   multiprocessing   cache-coherence   synchronization   memory consistency   many-core     IO   storage   raid   lsm   interconnect     WSC   wsc   energy", 
             "title": "Lectures"
         }
     ]
