@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sgx - CIS655/CSE661-2015Fall</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "sgx";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> CIS655/CSE661-2015Fall</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../syl/">Syllabus</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../proj/">Project-policy</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Project-topics</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">sgx</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#sgxencls">SGX/ENCLS</a></li>
+                
+                    <li><a class="toctree-l4" href="#mid-term-report">Mid-term report</a></li>
+                
+                    <li><a class="toctree-l4" href="#jump-start-tasks">Jump-start tasks</a></li>
+                
+                    <li><a class="toctree-l4" href="#minimal-requirement-tasks">Minimal-requirement tasks</a></li>
+                
+                    <li><a class="toctree-l4" href="#bonus">Bonus</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../trustzone/">trustzone</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../avx/">avx</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../pt/">page-table</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../mpx/">mpx</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../rop/">rop</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../amazon/">amazon</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Hw</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../hw/cachemiss/">cachemiss</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Midterm</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../midterm/midterm/">req</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../midterm/stu-pres/">talk</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../final/">Final</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">CIS655/CSE661-2015Fall</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Project-topics &raquo;</li>
+        
+      
+    
+    <li>sgx</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="sgxencls">SGX/ENCLS</h1>
+<p>Intel SGX (Software Guard Extensions), a set of instructions and mechanisms for memory accesses added to future Intel® Architecture processors
+The SGX extensions allow an application to instantiate a protected container, referred to as an <code>enclave</code>. An enclave is a protected area in the application’s address space, which provides confidentiality and integrity even in the presence of privileged malware. Accesses to the enclave memory area from any software not resident in the enclave are prevented.</p>
+<h2 id="mid-term-report">Mid-term report</h2>
+<p>Read SGX document [<a href="https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf">pdf</a>] (mostly chapter 1,2,3 and 5), understand the semantics of SGX/ENCLS instructions (e.g. EINIT, EREPORT, EEXTEND, ECREATE, etc; see Chapter 5.3). </p>
+<p>At its minimal, the mid-term report should include:</p>
+<ol>
+<li>The semantics of each SGX system-level instructions (SGX ENCLS). You should explain the working of all ENCLS instructions in the following table (a copy of Table 5-1 from the SGX document).</li>
+<li>The in-memory data structures used by SGX instructions (e.g. EPCM, TCS, SSA frames).</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Instr. Leaf</th>
+<th align="left">EAX</th>
+<th align="left">RBX</th>
+<th align="left">RCX</th>
+<th align="left">RDX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECREATE</td>
+<td align="left">00H (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EADD</td>
+<td align="left">01H (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EINIT</td>
+<td align="left">02H (In)</td>
+<td align="left">SIGSTRUCT (In, EA)</td>
+<td align="left">SECS (In, EA)</td>
+<td align="left">EINITTOKEN (In, EA)</td>
+</tr>
+<tr>
+<td>EREMOVE</td>
+<td align="left">03H (In)</td>
+<td align="left"></td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EDBGRD</td>
+<td align="left">04H (In)</td>
+<td align="left">Result Data (Out)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EDBGWR</td>
+<td align="left">05H (In)</td>
+<td align="left">Source Data (In)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EEXTEND</td>
+<td align="left">06H (In)</td>
+<td align="left"></td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>ELDB</td>
+<td align="left">07H (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left">VERSION (In, EA)</td>
+</tr>
+<tr>
+<td>ELDU</td>
+<td align="left">08H (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left">VERSION (In, EA)</td>
+</tr>
+<tr>
+<td>EBLOCK</td>
+<td align="left">09H (In)</td>
+<td align="left"></td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EPA</td>
+<td align="left">0AH (In)</td>
+<td align="left">PT_VA (In)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EWB</td>
+<td align="left">0BH (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left">VERSION (In, EA)</td>
+</tr>
+<tr>
+<td>ETRACK</td>
+<td align="left">0CH (In)</td>
+<td align="left"></td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EAUG</td>
+<td align="left">0DH (In)</td>
+<td align="left">PAGEINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left">LINADDR</td>
+</tr>
+<tr>
+<td>EMODPR</td>
+<td align="left">0EH (In)</td>
+<td align="left">SECINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EMODT</td>
+<td align="left">0FH (In)</td>
+<td align="left">SECINFO (In, EA)</td>
+<td align="left">EPCPAGE (In, EA)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>EA: Effective Address</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="jump-start-tasks">Jump-start tasks</h2>
+<ul>
+<li>Write a program that calls <code>EINIT</code> (as a function call) with arguments corresponding to the specification above. See below as an example.</li>
+</ul>
+<pre><code class="c">void einit(struct sig * ptr_si, struct secs * ptr_s, struct token * ptr_t){
+  //TO IMPLEMENT 
+}
+
+int main(void){
+  struct sig var_si;
+  struct secs var_s;
+  struct token var_t;
+  einit(&amp;var_s, &amp;var_s, &amp;var_t);
+}
+</code></pre>
+
+<h2 id="minimal-requirement-tasks">Minimal-requirement tasks</h2>
+<ul>
+<li>In the SGX-ENCLU emulator [<a href="https://github.com/tristartom/sgx-emulator">link</a>], the following sample code is provided. Use your simulator to set up the SGX/Enclave so that the sample code can run successfully. And in general, you are supposed to simulate the setup for all SGX/ENCLS instructions mentioned above. (Hint: you can simulate those instructions by function calls; you are allowed to do everything in userspace).</li>
+</ul>
+<pre><code>int in_enclave(int xx,int yy){
+  return x + y;
+}
+
+int main(void){
+  int x = 0;
+  int y = 1;
+  int z = call_enclave(x, y);
+}
+</code></pre>
+
+<h2 id="bonus">Bonus</h2>
+<ul>
+<li>Emulate the SGX instruction execution as if real. The same SGX instruction should be able to run on your emulator as if it is running on real SGX CPU. For instance, your emulator should allow the following assembly code to run without throwing exception.</li>
+</ul>
+<pre><code>mov %1, rbx # %1 refers to address of sig
+mov %2, rcx # %2 refers to address of secs
+movl 0x02, eax
+.byte 0x0f,0x01,0xcf
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../trustzone/" class="btn btn-neutral float-right" title="trustzone"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../proj/" class="btn btn-neutral" title="Project-policy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../proj/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../trustzone/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

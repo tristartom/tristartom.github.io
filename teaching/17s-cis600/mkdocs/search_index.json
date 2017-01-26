@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CIS600: Applied Cryptography\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbooks\n\n\n\n\nIntroduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (\nKL\n) \n\n\nCryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (\nFSK\n)\n\n\nOther useful books\n\n\nNetwork Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (\nOpenSSL\n)\n\n\nA course in cryptography, Rafael Pass, abhi shelat (\nPS\n)\n\n\n\n\n\n\n\n\nSyllabus\n\n\n[\npdf\n]\n\n\nSchedule\n\n\n\n\n\n\n\n\nweek\n\n\narea\n\n\ntopic\n\n\nreading\n\n\n\n\n\n\n\n\n\n\n1,2\n\n\ntheory\n\n\nintro\n\n\nKL\n-1, [\nslides\n]\n\n\n\n\n\n\n3\n\n\ntheory\n\n\nperfect \n semantic security\n\n\nKL\n-2,3.1\n\n\n\n\n\n\n\n\nPresentation and project options\n\n\n\n\nCryptographic games\n\n\nPassword storage and management\n\n\nAuthentication \n\n\nBlockchain and cryptocurrency\n\n\n\n\nDiscuss with me, for the details of each option.\n\n\n\n\nProgramming resource\n\n\nCrypto library: NaCL (\"salt\"), OpenSSL, \nOpenSSL", 
+            "text": "CIS600: Cryptography Engineering\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbooks\n\n\n\n\nIntroduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (\nKL\n) \n\n\nCryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (\nFSK\n)\n\n\nOther useful books\n\n\nNetwork Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (\nOpenSSL\n)\n\n\nA course in cryptography, Rafael Pass, abhi shelat (\nPS\n)\n\n\n\n\n\n\n\n\nSyllabus\n\n\n[\npdf\n]\n\n\nSchedule\n\n\n\n\n\n\n\n\nweek\n\n\narea\n\n\ntopic\n\n\nreading\n\n\n\n\n\n\n\n\n\n\n1,2\n\n\ntheory\n\n\nintro\n\n\nKL\n-1, [\nslides\n]\n\n\n\n\n\n\n3\n\n\ntheory\n\n\nperfect \n semantic security\n\n\nKL\n-2,3.1\n\n\n\n\n\n\n\n\nPresentation and project options\n\n\n\n\nCryptographic games\n\n\nPassword storage and management\n\n\nAuthentication \n\n\nBlockchain and cryptocurrency\n\n\n\n\nDiscuss with me, for the details of each option.\n\n\n\n\nProgramming resource\n\n\nCrypto library: NaCL (\"salt\"), OpenSSL, \nOpenSSL", 
             "title": "Home"
         }, 
         {
-            "location": "/#cis600-applied-cryptography", 
+            "location": "/#cis600-cryptography-engineering", 
             "text": "Instructor: Yuzhe (Richard) Tang", 
-            "title": "CIS600: Applied Cryptography"
+            "title": "CIS600: Cryptography Engineering"
         }, 
         {
             "location": "/#textbooks", 

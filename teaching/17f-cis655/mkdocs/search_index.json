@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "CIS655/CSE661: Advanced Computer Architecture\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbook\n\n\n\n\nComputer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design\n\n\n(Recommended) Operating Systems: Principles and Practice, Second Edition\n\n\n(Recommended) CSAPP, Computer systems from programming perspective\n\n\n\n\nLectures\n\n\n1.Overview \n    - intro \n    - metrics \n2.CPU \n    *  ILP \n pipelining \n    *  data hazard by compiler \n    *  branch hazard by HW \n    *  data hazard by HW, a.k.a tomasulo \n    *  multi-issue \n SIMD \n3.Memory \n    *  cache \n    *  cache2 \n    *  memory \n    *  memory protection \n4.Multi-processing \n    *  multiprocessing \n    *  cache-coherence \n    *  synchronization \n    *  memory consistency \n    *  many-core \n5.IO \n    *  storage \n    *  raid \n lsm \n    *  interconnect \n6.WSC \n    *  wsc \n    *  energy", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#cis655cse661-advanced-computer-architecture", 
+            "text": "Instructor: Yuzhe (Richard) Tang", 
+            "title": "CIS655/CSE661: Advanced Computer Architecture"
+        }, 
+        {
+            "location": "/#textbook", 
+            "text": "Computer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design  (Recommended) Operating Systems: Principles and Practice, Second Edition  (Recommended) CSAPP, Computer systems from programming perspective", 
+            "title": "Textbook"
+        }, 
+        {
+            "location": "/#lectures", 
+            "text": "1.Overview \n    - intro \n    - metrics \n2.CPU \n    *  ILP   pipelining \n    *  data hazard by compiler \n    *  branch hazard by HW \n    *  data hazard by HW, a.k.a tomasulo \n    *  multi-issue   SIMD \n3.Memory \n    *  cache \n    *  cache2 \n    *  memory \n    *  memory protection \n4.Multi-processing \n    *  multiprocessing \n    *  cache-coherence \n    *  synchronization \n    *  memory consistency \n    *  many-core \n5.IO \n    *  storage \n    *  raid   lsm \n    *  interconnect \n6.WSC \n    *  wsc \n    *  energy", 
+            "title": "Lectures"
+        }
+    ]
+}
