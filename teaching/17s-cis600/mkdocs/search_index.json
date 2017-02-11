@@ -2,13 +2,8 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CIS600: Cryptography Engineering\n\n\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTime: MW 10:35 - 11:55 am\n\n\nPlace: Link Hall 211\n\n\n\n\nTextbooks\n\n\n\n\nIntroduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (\nKL\n) \n\n\nCryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (\nFSK\n)\n\n\nOther useful books\n\n\nNetwork Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (\nOpenSSL\n)\n\n\nA course in cryptography, Rafael Pass, abhi shelat (\nPS\n)\n\n\n\n\n\n\n\n\nSyllabus\n\n\n[\npdf\n]\n\n\nSchedule\n\n\n\n\n\n\n\n\nweek\n\n\narea\n\n\ntopic\n\n\nreading\n\n\n\n\n\n\n\n\n\n\n1,2\n\n\ntheory\n\n\nintro\n\n\nKL\n-1, [\nslides\n]\n\n\n\n\n\n\n3\n\n\ntheory\n\n\nperfect \n computational security\n\n\nKL\n-2,3.1,3.2\n\n\n\n\n\n\n4\n\n\ntheory\n\n\nsecure encryption construction\n\n\nKL\n-3.4,3.5,3.6\n\n\n\n\n\n\n\n\n\n\n\nPresentation and project options\n\n\n\n\nCryptographic games\n\n\nBlockchain \n\n\nAuthentication \n\n\nPassword storage and management\n\n\n\n\nDiscuss with me, for the details of each option.\n\n\n\n\nProgramming resource\n\n\nCrypto library: NaCL (\"salt\"), OpenSSL, \nOpenSSL", 
+            "text": "===\n\n\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTime: MW 10:35 - 11:55 am\n\n\nPlace: Link Hall 211\n\n\n\n\nTextbooks\n\n\n\n\nIntroduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (\nKL\n) \n\n\nCryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (\nFSK\n)\n\n\nOther useful books\n\n\nNetwork Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (\nOpenSSL\n)\n\n\nA course in cryptography, Rafael Pass, abhi shelat (\nPS\n)\n\n\n\n\n\n\n\n\nSyllabus\n\n\n[\npdf\n]\n\n\nSchedule\n\n\n\n\n\n\n\n\nweek\n\n\narea\n\n\ntopic\n\n\nreading\n\n\n\n\n\n\n\n\n\n\n1,2\n\n\ntheory\n\n\nintro\n\n\nKL\n-1, [\nslides\n]\n\n\n\n\n\n\n3\n\n\ntheory\n\n\nperfect \n computational security\n\n\nKL\n-2,3.1,3.2\n\n\n\n\n\n\n4\n\n\ntheory\n\n\nsecure encryption construction\n\n\nKL\n-3.4,3.5\n\n\n\n\n\n\n5\n\n\ntheory \n engineering\n\n\nmode of operations\n\n\nKL\n-3.6,\nFSK\n-4\n\n\n\n\n\n\n\n\n\n\n\nPresentation and project options\n\n\n\n\nPassword storage and management\n\n\nBlockchain \n\n\nAuthentication \n\n\n\n\nDiscuss with me, for the details of each option.\n\n\n\n\nProgramming resource\n\n\nCrypto library: NaCL (\"salt\"), OpenSSL, \nOpenSSL", 
             "title": "Home"
-        }, 
-        {
-            "location": "/#cis600-cryptography-engineering", 
-            "text": "Instructor: Yuzhe (Richard) Tang  Time: MW 10:35 - 11:55 am  Place: Link Hall 211", 
-            "title": "CIS600: Cryptography Engineering"
         }, 
         {
             "location": "/#textbooks", 
@@ -22,12 +17,12 @@
         }, 
         {
             "location": "/#schedule", 
-            "text": "week  area  topic  reading      1,2  theory  intro  KL -1, [ slides ]    3  theory  perfect   computational security  KL -2,3.1,3.2    4  theory  secure encryption construction  KL -3.4,3.5,3.6", 
+            "text": "week  area  topic  reading      1,2  theory  intro  KL -1, [ slides ]    3  theory  perfect   computational security  KL -2,3.1,3.2    4  theory  secure encryption construction  KL -3.4,3.5    5  theory   engineering  mode of operations  KL -3.6, FSK -4", 
             "title": "Schedule"
         }, 
         {
             "location": "/#presentation-and-project-options", 
-            "text": "Cryptographic games  Blockchain   Authentication   Password storage and management   Discuss with me, for the details of each option.   Programming resource  Crypto library: NaCL (\"salt\"), OpenSSL,  OpenSSL", 
+            "text": "Password storage and management  Blockchain   Authentication    Discuss with me, for the details of each option.   Programming resource  Crypto library: NaCL (\"salt\"), OpenSSL,  OpenSSL", 
             "title": "Presentation and project options"
         }
     ]
