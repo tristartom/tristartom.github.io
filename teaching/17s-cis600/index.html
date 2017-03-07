@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to Cryptography Engineering</title>
+  <title>Welcome to Applied Cryptography</title>
   
 
   <link rel="shortcut icon" href="./img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Welcome to Cryptography Engineering</a>
+        <a href="." class="icon icon-home"> Welcome to Applied Cryptography</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -55,16 +55,13 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#textbooks">Textbooks</a></li>
+                <li class="toctree-l3"><a href="#reading-materials">Reading materials</a></li>
                 
             
                 <li class="toctree-l3"><a href="#syllabus">Syllabus</a></li>
                 
             
                 <li class="toctree-l3"><a href="#schedule">Schedule</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#presentation-and-project-options">Presentation and project options</a></li>
                 
             
             </ul>
@@ -82,7 +79,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Welcome to Cryptography Engineering</a>
+        <a href=".">Welcome to Applied Cryptography</a>
       </nav>
 
       
@@ -110,11 +107,17 @@
 <li>Time: MW 10:35 - 11:55 am</li>
 <li>Place: Link Hall 211</li>
 </ul>
-<h2 id="textbooks">Textbooks</h2>
+<h2 id="reading-materials">Reading materials</h2>
 <ul>
+<li>Textbooks <ul>
 <li>Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (<code>KL</code>) </li>
 <li>Cryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (<code>FSK</code>)</li>
+<li>Principles of Computer System Design: An Introduction, Information Security (Chapter 11), Jerome H. Saltzer, M. Frans Kaashoek, [<a href="https://ocw.mit.edu/resources/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/online-textbook/protection_open_5_0.pdf">online book</a>], (<code>SK</code>)</li>
+</ul>
+</li>
 <li>Other useful books<ul>
+<li>Bitcoin and Cryptocurrency Technologies, Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven Goldfeder, [<a href="https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf">online book</a>], (<code>BitCoin</code>)</li>
+<li>Intel SGX Explained, Victor Costan, Srinivas Devadas, [<a href="https://eprint.iacr.org/2016/086.pdf">pdf</a>], (<code>SGX</code>)</li>
 <li>Network Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (<code>OpenSSL</code>)</li>
 <li>A course in cryptography, Rafael Pass, abhi shelat (<code>PS</code>)</li>
 </ul>
@@ -127,85 +130,86 @@
 <thead>
 <tr>
 <th>week</th>
-<th>area</th>
-<th>topic</th>
-<th>reading</th>
+<th>theory</th>
+<th>app</th>
+<th>questions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1,2</td>
-<td>theory</td>
-<td>intro</td>
-<td><code>KL</code>-1, [<a href="./Class-00.pptx">slides</a>]</td>
+<td>intro <code>KL</code>1, [<a href="./Class-00.pptx">slides</a>]</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>3</td>
-<td>theory</td>
-<td>perfect &amp; computational security</td>
-<td><code>KL</code>-2,3.1,3.2</td>
+<td>perfect &amp; computational security <code>KL</code>2,3.1,3.2</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>4</td>
-<td>theory</td>
-<td>secure encryption construction</td>
-<td><code>KL</code>-3.4,3.5</td>
+<td>private-key encryption <code>KL</code>3.4,3.5</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>5</td>
-<td>theory &amp; engineering</td>
-<td>mode of operations</td>
-<td><code>KL</code>-3.6,<code>FSK</code>-4</td>
+<td>mode of operations <code>KL</code>3.6,<code>FSK</code>4</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>6</td>
-<td>theory &amp; application</td>
-<td>DH protocol and TLS</td>
-<td><code>KL</code>-10,12.7/8, [<a href="http://www.moserware.com/2009/06/first-few-milliseconds-of-https.html">First msec in HTTPS</a>], [<a href="https://otr.cypherpunks.ca/otr-wpes.pdf">OTR messaging</a>]</td>
+<td>key-exchange \&amp; TLS <code>KL</code>10,12.7/8, [<a href="http://www.moserware.com/2009/06/first-few-milliseconds-of-https.html">First msec in HTTPS</a>],</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>7</td>
-<td>theory</td>
-<td>MAC and authentiated encryption</td>
-<td><code>KL</code>-4</td>
+<td>MAC <code>KL</code>4</td>
+<td>SW attestation <code>SGX</code>-3.3</td>
+<td></td>
 </tr>
 <tr>
 <td>8</td>
-<td>theory &amp; application</td>
-<td>hash and applications</td>
-<td><code>KL</code>-5</td>
+<td>hash <code>KL</code>5</td>
+<td></td>
+<td>1. what're three security notions for Hash? 2. name the domain extension for Hash? 3. name the industrial-standard variable-length MAC?</td>
 </tr>
 <tr>
 <td>9</td>
-<td>engineering</td>
-<td>cryptography misuse</td>
-<td>[<a href="http://cseweb.ucsd.edu/~mihir/cse107/yoshi.pdf">Impl. pitfalls</a>],[<a href="https://eprint.iacr.org/2015/102.pdf">GCM-SIV</a>],[<a href="https://cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf">android</a>]</td>
+<td>Spring break</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>10</td>
-<td>Spring break</td>
+<td>blockchain <code>Bitcoin</code></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<!-- 
-| 5 | application | blockchain | [[online book](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf)] |
+<!--
+
+| 9 | engineering | cryptography misuse  | [[Impl. pitfalls](http://cseweb.ucsd.edu/~mihir/cse107/yoshi.pdf)],[[GCM-SIV](https://eprint.iacr.org/2015/102.pdf)] |
+
+Project options
+---
+
+1. Password storage and management
+2. Blockchain 
+3. Authentication 
+
+Discuss with me, for the details of each option.
+
+* Programming resource
+    * Crypto library: NaCL ("salt"), OpenSSL, `OpenSSL`
+
 -->
 
-<h2 id="presentation-and-project-options">Presentation and project options</h2>
-<ol>
-<li>Password storage and management</li>
-<li>Blockchain </li>
-<li>Authentication </li>
-</ol>
-<p>Discuss with me, for the details of each option.</p>
-<ul>
-<li>Programming resource<ul>
-<li>Crypto library: NaCL ("salt"), OpenSSL, <code>OpenSSL</code></li>
-</ul>
-</li>
-</ul>
 <!---
 
 1. Cryptographic games
@@ -324,5 +328,5 @@ Part 2
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2017-02-19 16:06:09.263953
+Build Date UTC : 2017-03-07 01:25:32.753016
 -->
