@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Homework - Welcome to Applied Cryptography</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Homework";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Welcome to Applied Cryptography</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Homepage</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Homework</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#homework-1">Homework 1</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#homework-2">Homework 2</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#homework-3">Homework 3</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Welcome to Applied Cryptography</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Homework</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="homework-1">Homework 1</h2>
+<ol>
+<li>[Exercise 2.7] When using the one-time pad with the key k = 0^l, we have Enc_k(m) = k xor m = m and the message is sent in the clear! It has therefore been suggested to modify the one-time pad by only encrypting with k != 0^l (i.e., to have Gen choose k uniformly from the set of nonzero keys of length l). Is this modified scheme still perfectly secret? Explain.</li>
+<li>Prove that we may assume that the key-generation algorithm Gen always chooses a key uniformly from the key space K.</li>
+<li>[Bonus:30/100] [Exercise 3.4]: Prove the equivalence of Definition 3.8 and Definition 3.9.</li>
+</ol>
+<h2 id="homework-2">Homework 2</h2>
+<ol>
+<li>Write programs (with language of your choice) to implement the following: <ol>
+<li>one-time pad </li>
+<li>the RC4 stream cipher (read chapter 6.1.4 in textbook) </li>
+<li>construction 3.17 </li>
+<li>domain extension for a variable-length encryption based on 3); hint: use stream-cipher mode of operation (read 3.6.1). Note no block cipher is allowed in the implementation.</li>
+</ol>
+</li>
+<li>[Exercise 3.20]: Consider a stateful variant of CBC-mode encryption where the sender simply increments the IV by 1 each time a message is encrypted (rather than choosing IV at random each time). Show that the resulting scheme is not CPA-secure.</li>
+<li>[Bonus: 30/100] Write down the proof of security for Theorem 3.18 IN YOUR OWN LANGUAGE. Don't copy and paste from the textbook.</li>
+</ol>
+<h2 id="homework-3">Homework 3</h2>
+<ol>
+<li>Write programs (with language of your choice) to implement the following: <ol>
+<li>AES block cipher </li>
+<li>A CPA-secure construction for fixed-length encryption (of your choice) </li>
+<li>A CPA-secure construction for variable-length encryption; use CBC mode for domain extension.</li>
+</ol>
+</li>
+<li>Read online [<a href="http://cs.uccs.edu/~cs691/crypto/openssl/example.htm">tutorial</a>], finish the following operations:<ol>
+<li>create a self signed CA certificate)</li>
+<li>create the private key and certificate request for a user, CIS600) Send the certificate request to CA for signing)</li>
+<li>sign a certificate request)</li>
+<li>create public key from the private key and use them to encrypt and decrypt msg)</li>
+<li>create, sign, and verify message digest)</li>
+</ol>
+</li>
+<li>[Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform k, r in {0, 1}^n, and sends s := k xor r to Bob. (b) Bob chooses uniform t in {0, 1}^n, and sends u := s xor t to Alice. (c) Alice computes w := u xor r and sends w to Bob. (d) Alice outputs k and Bob outputs w xor t. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack).</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Homepage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
