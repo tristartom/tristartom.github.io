@@ -134,11 +134,11 @@
 </ol>
 </li>
 <li>Read online [<a href="http://cs.uccs.edu/~cs691/crypto/openssl/example.htm">tutorial</a>], finish the following operations. Upload the screenshots as your solution.<ol>
-<li>create a self signed CA certificate)</li>
-<li>create the private key and certificate request for a user, CIS600) Send the certificate request to CA for signing)</li>
-<li>sign a certificate request)</li>
-<li>create public key from the private key and use them to encrypt and decrypt msg)</li>
-<li>create, sign, and verify message digest)</li>
+<li>create a self signed CA certificate</li>
+<li>generate private-public key pair bind to an user, say <code>CIS600</code></li>
+<li>request a certificate of user <code>CIS600</code> to CA for signing; (hint: use <code>CIS600</code>'s public key as his identity)</li>
+<li>use the public-private key pair to encrypt and decrypt messages</li>
+<li>use the public-private key pair to sign and verify messages </li>
 </ol>
 </li>
 <li>[Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform k, r in {0, 1}^n, and sends s := k xor r to Bob. (b) Bob chooses uniform t in {0, 1}^n, and sends u := s xor t to Alice. (c) Alice computes w := u xor r and sends w to Bob. (d) Alice outputs k and Bob outputs w xor t. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack).</li>
