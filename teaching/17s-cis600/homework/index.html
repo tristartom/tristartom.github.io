@@ -71,6 +71,9 @@
                 <li class="toctree-l3"><a href="#homework-3">Homework 3</a></li>
                 
             
+                <li class="toctree-l3"><a href="#homework-4">Homework 4</a></li>
+                
+            
             </ul>
         
     </li>
@@ -142,6 +145,16 @@
 </ol>
 </li>
 <li>[Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform k, r in {0, 1}^n, and sends s := k xor r to Bob. (b) Bob chooses uniform t in {0, 1}^n, and sends u := s xor t to Alice. (c) Alice computes w := u xor r and sends w to Bob. (d) Alice outputs k and Bob outputs w xor t. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack).</li>
+</ol>
+<h2 id="homework-4">Homework 4</h2>
+<ol>
+<li><strong>Merkle tree collision-resistance</strong> [Exercise 5.12] Prove theorem 5.11, that is, the hash-resistance of Merkle tree depends on the hash-resistance of the hash function used in Merkle tree.</li>
+<li><strong>Merkle tree for variable-length hash</strong> [Exerise 5.13] Show how to find a collision in the Merkle tree construction if $t$ is not fixed. Specifically, show how to find two sets of inputs $x_1,...,x_t$ and $x_1',...,x_{2t}'$, such that $MT_t(x_1,...,x_t)=MT_{2t}(x_1',...,x_{2t}')$.<ul>
+<li>Can you design an approach to fix the problem and have variable-length collision resistant Merkle tree? </li>
+</ul>
+</li>
+<li>[Bonus: 20/100] Consider using Merkle tree to digest a list of <em>distinct</em> messages. Can Merkle digest support the merge operation of two such lists? Specifically, given lists $l_1$ and $l_2$, will it be possible to calculate $\mt(l_1\cup{}l_2)$ purely from $\mt(l_1)$ and $\mt(l_2)$ ($\cup$ is merging two lists)? If yes, give an example. If not, prove your claim.</li>
+<li><strong>Authenticated Data Structures</strong> [Exercise 1 from book <code>Bitcoin and Cryptocurrency Technologies</code>; Page 49].</li>
 </ol>
               
             </div>
