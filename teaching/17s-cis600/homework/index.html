@@ -1,200 +1,57 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Homework - Welcome to Applied Cryptography</title>
-  
-
-  <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/highlight.css">
-
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Homework";
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js"></script>
-  <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-
-  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
 </head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Welcome to Applied Cryptography</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Homepage</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Homework</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#homework-1">Homework 1</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#homework-2">Homework 2</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#homework-3">Homework 3</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#homework-4">Homework 4</a></li>
-                
-            
-            </ul>
-        
-    </li>
-<li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Welcome to Applied Cryptography</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Homework</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <h2 id="homework-1">Homework 1</h2>
-<ol>
-<li>[Exercise 2.7] When using the one-time pad with the key k = 0^l, we have Enc_k(m) = k xor m = m and the message is sent in the clear! It has therefore been suggested to modify the one-time pad by only encrypting with k != 0^l (i.e., to have Gen choose k uniformly from the set of nonzero keys of length l). Is this modified scheme still perfectly secret? Explain.</li>
+<body>
+<h2 id="homework-1">Homework 1</h2>
+<ol style="list-style-type: decimal">
+<li>[Exercise 2.7] When using the one-time pad with the key k = <span class="math">0<sup><em>l</em></sup></span>, we have <span class="math"><em>E</em><em>n</em><em>c</em><sub><em>k</em></sub>(<em>m</em>) = <em>k</em> ⊕ <em>m</em> = <em>m</em></span> and the message is sent in the clear! It has therefore been suggested to modify the one-time pad by only encrypting with <span class="math"><em>k</em>! = 0<sup><em>l</em></sup></span> (i.e., to have Gen choose k uniformly from the set of nonzero keys of length l). Is this modified scheme still perfectly secret? Explain. Note <span class="math"> ⊕ </span> is XOR.</li>
 <li>Prove that we may assume that the key-generation algorithm Gen always chooses a key uniformly from the key space K.</li>
 <li>[Bonus:30/100] [Exercise 3.4]: Prove the equivalence of Definition 3.8 and Definition 3.9.</li>
 </ol>
 <h2 id="homework-2">Homework 2</h2>
-<ol>
-<li>Write programs (with language of your choice) to implement the following: <ol>
-<li>one-time pad </li>
-<li>the RC4 stream cipher (read chapter 6.1.4 in textbook) </li>
-<li>construction 3.17 </li>
+<ol style="list-style-type: decimal">
+<li>Write programs (with language of your choice) to implement the following:
+<ol style="list-style-type: decimal">
+<li>one-time pad</li>
+<li>the RC4 stream cipher (read chapter 6.1.4 in textbook)</li>
+<li>construction 3.17</li>
 <li>domain extension for a variable-length encryption based on 3); hint: use stream-cipher mode of operation (read 3.6.1). Note no block cipher is allowed in the implementation.</li>
-</ol>
-</li>
+</ol></li>
 <li>[Exercise 3.20]: Consider a stateful variant of CBC-mode encryption where the sender simply increments the IV by 1 each time a message is encrypted (rather than choosing IV at random each time). Show that the resulting scheme is not CPA-secure.</li>
 <li>[Bonus: 30/100] Write down the proof of security for Theorem 3.18 IN YOUR OWN LANGUAGE. Don't copy and paste from the textbook.</li>
 </ol>
 <h2 id="homework-3">Homework 3</h2>
-<ol>
-<li>Write programs (with language of your choice) to implement a CPA-secure encryption scheme based on block cipher. In your implementation, you can assume a insecure block cipher (e.g. a fixed permutation or even an identity function). Specifically, implement construction for the following schemes:<ol>
+<ol style="list-style-type: decimal">
+<li>Write programs (with language of your choice) to implement a CPA-secure encryption scheme based on block cipher. In your implementation, you can assume a insecure block cipher (e.g. a fixed permutation or even an identity function). Specifically, implement construction for the following schemes:
+<ol style="list-style-type: decimal">
 <li>Fixed-length encryption (with scheme of your choice),</li>
 <li>Variable-length encryption; use CBC mode for domain extension.</li>
-</ol>
-</li>
-<li>Read online [<a href="http://cs.uccs.edu/~cs691/crypto/openssl/example.htm">tutorial</a>], finish the following operations. Upload the screenshots as your solution.<ol>
+</ol></li>
+<li>Read online [<a href="http://cs.uccs.edu/~cs691/crypto/openssl/example.htm">tutorial</a>], finish the following operations. Upload the screenshots as your solution.
+<ol style="list-style-type: decimal">
 <li>create a self signed CA certificate</li>
 <li>generate private-public key pair bind to an user, say <code>CIS600</code></li>
 <li>request a certificate of user <code>CIS600</code> to CA for signing; (hint: use <code>CIS600</code>'s public key as his identity)</li>
 <li>use the public-private key pair to encrypt and decrypt messages</li>
-<li>use the public-private key pair to sign and verify messages </li>
-</ol>
-</li>
-<li>[Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform k, r in {0, 1}^n, and sends s := k xor r to Bob. (b) Bob chooses uniform t in {0, 1}^n, and sends u := s xor t to Alice. (c) Alice computes w := u xor r and sends w to Bob. (d) Alice outputs k and Bob outputs w xor t. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack).</li>
+<li>use the public-private key pair to sign and verify messages</li>
+</ol></li>
+<li>[Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform <span class="math"><em>k</em>, <em>r</em></span> in <span class="math">0, 1<sup><em>n</em></sup></span>, and sends <span class="math"><em>s</em> := <em>k</em> ⊕ <em>r</em></span> to Bob. (b) Bob chooses uniform <span class="math"><em>t</em></span> in <span class="math">0, 1<sup><em>n</em></sup></span>, and sends <span class="math"><em>u</em> := <em>s</em> ⊕ <em>t</em></span> to Alice. (c) Alice computes <span class="math"><em>w</em> := <em>u</em> ⊕ <em>r</em></span> and sends <span class="math"><em>w</em></span> to Bob. (d) Alice outputs <span class="math"><em>k</em></span> and Bob outputs <span class="math"><em>w</em> ⊕ <em>t</em></span>. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack). Note <span class="math"> ⊕ </span> is XOR.</li>
 </ol>
 <h2 id="homework-4">Homework 4</h2>
-<ol>
+<ol style="list-style-type: decimal">
 <li><strong>Merkle tree collision-resistance</strong> [Exercise 5.12] Prove theorem 5.11, that is, the hash-resistance of Merkle tree depends on the hash-resistance of the hash function used in Merkle tree.</li>
-<li><strong>Merkle tree for variable-length hash</strong> [Exerise 5.13] Show how to find a collision in the Merkle tree construction if $t$ is not fixed. Specifically, show how to find two sets of inputs $x_1,...,x_t$ and $x_1',...,x_{2t}'$, such that $MT_t(x_1,...,x_t)=MT_{2t}(x_1',...,x_{2t}')$.<ul>
-<li>Can you design an approach to fix the problem and have variable-length collision resistant Merkle tree? </li>
-</ul>
-</li>
-<li>[Bonus: 20/100] Consider using Merkle tree to digest a list of <em>distinct</em> messages. Can Merkle digest support the merge operation of two such lists? Specifically, given lists $l_1$ and $l_2$, will it be possible to calculate $\mt(l_1\cup{}l_2)$ purely from $\mt(l_1)$ and $\mt(l_2)$ ($\cup$ is merging two lists)? If yes, give an example. If not, prove your claim.</li>
-<li><strong>Authenticated Data Structures</strong> [Exercise 1 from book <code>Bitcoin and Cryptocurrency Technologies</code>; Page 49].</li>
+<li><strong>Merkle tree for variable-length hash</strong> [Exerise 5.13] Show how to find a collision in the Merkle tree construction if <span class="math"><em>t</em></span> is not fixed. Specifically, show how to find two sets of inputs <span class="math"><em>x</em><sub>1</sub>, ..., <em>x</em><sub><em>t</em></sub></span> and <span class="math"><em>x</em><sub>1</sub>′, ..., <em>x</em><sub>2<em>t</em></sub>′</span>, such that <span class="math"><em>M</em><em>T</em><sub><em>t</em></sub>(<em>x</em><sub>1</sub>, ..., <em>x</em><sub><em>t</em></sub>) = <em>M</em><em>T</em><sub>2<em>t</em></sub>(<em>x</em><sub>1</sub>′, ..., <em>x</em><sub>2<em>t</em></sub>′)</span>.
+<ul>
+<li>Can you design an approach to fix the problem and have variable-length collision resistant Merkle tree?</li>
+</ul></li>
+<li>[Bonus: 20/100] Consider using Merkle tree to digest a list of <em>distinct</em> messages. Can Merkle digest support the merge operation of two such lists? Specifically, given lists <span class="math"><em>l</em><sub>1</sub></span> and <span class="math"><em>l</em><sub>2</sub></span>, will it be possible to calculate <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>1</sub> ∪ <em>l</em><sub>2</sub>)</span> purely from <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>1</sub>)</span> and <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>2</sub>)</span> (<span class="math"> ∪ </span> is merging two lists)? If yes, give an example. If not, prove your claim.</li>
+<li><strong>Authenticated Data Structures</strong> [Exercise 1 from book <code>BtC</code> (Bitcoin and Cryptocurrency Technologies); Page 49].</li>
 </ol>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href=".." class="btn btn-neutral" title="Homepage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-<div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-    </span>
-</div>
-
 </body>
 </html>
