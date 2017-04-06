@@ -16,7 +16,7 @@
 </ol>
 <h2 id="homework-2">Homework 2</h2>
 <ol style="list-style-type: decimal">
-<li>Write programs (with language of your choice) to implement the following:
+<li><strong>CPA-secure variable-length PrivK encryption (stream cipher)</strong> Write programs (with language of your choice) to implement the following:
 <ol style="list-style-type: decimal">
 <li>one-time pad</li>
 <li>the RC4 stream cipher (read chapter 6.1.4 in textbook)</li>
@@ -28,12 +28,12 @@
 </ol>
 <h2 id="homework-3">Homework 3</h2>
 <ol style="list-style-type: decimal">
-<li>Write programs (with language of your choice) to implement a CPA-secure encryption scheme based on block cipher. In your implementation, you can assume a insecure block cipher (e.g. a fixed permutation or even an identity function). Specifically, implement construction for the following schemes:
+<li><strong>CPA-secure variable-length PrivK encryption (block cipher)</strong> Write programs (with language of your choice) to implement a CPA-secure encryption scheme based on block cipher. In your implementation, you can assume a insecure block cipher (e.g. a fixed permutation or even an identity function). Specifically, implement construction for the following schemes:
 <ol style="list-style-type: decimal">
 <li>Fixed-length encryption (with scheme of your choice),</li>
 <li>Variable-length encryption; use CBC mode for domain extension.</li>
 </ol></li>
-<li>Read online [<a href="http://cs.uccs.edu/~cs691/crypto/openssl/example.htm">tutorial</a>], finish the following operations. Upload the screenshots as your solution.
+<li><strong>OpenSSL</strong> Read online [<a href="http://cs.uccs.edu/~cs691/crypto/openssl/example.htm">tutorial</a>], finish the following operations. Upload the screenshots as your solution.
 <ol style="list-style-type: decimal">
 <li>create a self signed CA certificate</li>
 <li>generate private-public key pair bind to an user, say <code>CIS600</code></li>
@@ -43,6 +43,39 @@
 </ol></li>
 <li>[Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform <span class="math"><em>k</em>, <em>r</em></span> in <span class="math">{0, 1}<sup><em>n</em></sup></span>, and sends <span class="math"><em>s</em> := <em>k</em> ⊕ <em>r</em></span> to Bob. (b) Bob chooses uniform <span class="math"><em>t</em></span> in <span class="math">{0, 1}<sup><em>n</em></sup></span>, and sends <span class="math"><em>u</em> := <em>s</em> ⊕ <em>t</em></span> to Alice. (c) Alice computes <span class="math"><em>w</em> := <em>u</em> ⊕ <em>r</em></span> and sends <span class="math"><em>w</em></span> to Bob. (d) Alice outputs <span class="math"><em>k</em></span> and Bob outputs <span class="math"><em>w</em> ⊕ <em>t</em></span>. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack). Note <span class="math"> ⊕ </span> is XOR.</li>
 </ol>
+<!--
+
+Amin's sol:
+
+    1. create a self signed CA certificate
+
+mkdir private
+openssl req -new -x509 -keyout private/cakey.pem -out cacert.pem -days 365 -config /etc/ssl/openssl.cnf
+
+    2. generate private-public key pair bind to an user, say `CIS600`
+    3. request a certificate of user `CIS600` to CA for signing; (hint: use `CIS600`'s public key as his identity)
+
+cp private/cakey.pem private/cakey.pem.enc
+openssl rsa -in private/cakey.pem.enc -out private/cakey.pem
+openssl req -nodes -new -x509 -keyout cs691privatekey.pem -out cs691req.pem -days 365 -config /etc/ssl/openssl.cnf
+openssl x509 -x509toreq -in cs691req.pem -signkey cs691privatekey.pem -out cs691certrequest.pem
+
+#/*** here we need to make a couple of files, otherwise the next openssl command will produce errors ***/
+#mkdir newcerts; touch index.txt; echo 01>serial; Edit /etc/ssl/openssl.cnf and set two appearances of dir= CADemo to dir= .
+openssl ca -config /etc/ssl/openssl.cnf -policy policy_anything -out cs691signedcert.pem -infiles cs691certrequest.pem
+cp cs691privatekey.pem private/cs691privatekey.pem
+openssl rsa -in private/cs691privatekey.pem -passin pass:cs03se -pubout -out cs691publickey.pem
+
+    4. use the public-private key pair to encrypt and decrypt messages
+    5. use the public-private key pair to sign and verify messages 
+
+echo "sometext">plain.txt
+openssl rsautl -encrypt -pubin -inkey cs691publickey.pem -in plain.txt -out cipher.txt
+openssl rsautl -decrypt -inkey private/cs691privatekey.pem -in cipher.txt -out plainRcv.txt
+openssl sha1 -out digest.txt plain.txt
+openssl sha1 -sign private/cs691privatekey.pem -out rsasign.bin plain.txt
+openssl sha1 -verify cs691publickey.pem -signature rsasign.bin plain.txt
+-->
 <h2 id="homework-4">Homework 4</h2>
 <ol style="list-style-type: decimal">
 <li><strong>Merkle tree collision-resistance</strong> [Exercise 5.12] Prove theorem 5.11, that is, the hash-resistance of Merkle tree depends on the hash-resistance of the hash function used in Merkle tree.</li>
