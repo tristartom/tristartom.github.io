@@ -52,11 +52,17 @@ Amin's sol:
 mkdir private
 openssl req -new -x509 -keyout private/cakey.pem -out cacert.pem -days 365 -config /etc/ssl/openssl.cnf
 
+#cakey.pem private key
+#cacert.pem certificate
+
     2. generate private-public key pair bind to an user, say `CIS600`
     3. request a certificate of user `CIS600` to CA for signing; (hint: use `CIS600`'s public key as his identity)
 
 cp private/cakey.pem private/cakey.pem.enc
 openssl rsa -in private/cakey.pem.enc -out private/cakey.pem
+
+#
+
 openssl req -nodes -new -x509 -keyout cs691privatekey.pem -out cs691req.pem -days 365 -config /etc/ssl/openssl.cnf
 openssl x509 -x509toreq -in cs691req.pem -signkey cs691privatekey.pem -out cs691certrequest.pem
 
@@ -100,17 +106,16 @@ openssl sha1 -verify cs691publickey.pem -signature rsasign.bin plain.txt
 <ul>
 <li>Install Ethereum commandline tools (client <code>eth</code> recommended) by following [<a href="https://www.ethereum.org/cli">tutorial</a>] on your computer.</li>
 <li>Then, follow section &quot;How do I mine ether?&quot; in [<a href="https://ethereum.org/ether">tutorial</a>], and run CPU mining for a period of time (e.g. 10 min). Submit the screenshot of your mining process as the result.</li>
-</ul></li>
-<li><strong>Blockchain Mining (2): OrangeGrid </strong>:
-<ul>
-<li>Connect to OrangeGrid [<a href="http://researchcomputing.syr.edu/connecting-to-orangegrid/">tutorial</a>], and submit a hello-world job there by following [<a href="http://researchcomputing.syr.edu/running-your-job/">tutorial</a>]
-<ul>
-<li>Note: if you have problem accessing OrangeGrid, send the instructor an email with your SU email account.</li>
-</ul></li>
-<li>Package your mining script and the dependent Ethereum software (from Problem 2) to create a Condor job. Submit it for execution to OrangeGrid. When you complete the mining job, submit the screenshot as solution.</li>
+<li>[Bonus] Install Ubuntu 12.04 (e.g. as a guest OS in VirtualBox) and repeat the previous steps to do the mining in Ubuntu 12.04. Submit your screenshot.</li>
 </ul></li>
 </ol>
 <!--
+
+3. **Blockchain Mining (2): OrangeGrid **:
+    - Connect to OrangeGrid [[tutorial](http://researchcomputing.syr.edu/connecting-to-orangegrid/)], and submit a hello-world job there by following [[tutorial](http://researchcomputing.syr.edu/running-your-job/)]
+        - Note: if you have problem accessing OrangeGrid, send the instructor an email with your SU email account.
+    - Package your mining script and the dependent Ethereum software (from Problem 2) to create a Condor job. Submit it for execution to OrangeGrid. When you complete the mining job, submit the screenshot as solution.
+
 
 4. Smart contracts are programs running on the storage of Blockchain. They are written in a special-purpose language, [[tutorial](https://www.ethereum.org/greeter)]. Write a hello-world smart contract on Ethereum. Submit your program source code and the screenshot of compilation and execution.
 
