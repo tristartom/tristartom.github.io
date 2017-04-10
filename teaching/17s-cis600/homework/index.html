@@ -16,7 +16,7 @@
 </ol>
 <h2 id="homework-2">Homework 2</h2>
 <ol style="list-style-type: decimal">
-<li><strong>CPA-secure variable-length PrivK encryption (stream cipher)</strong> Write programs (with language of your choice) to implement the following:
+<li><strong>variable-length PrivK encryption (stream cipher)</strong> Write programs (with language of your choice) to implement the following:
 <ol style="list-style-type: decimal">
 <li>one-time pad</li>
 <li>the RC4 stream cipher (read chapter 6.1.4 in textbook)</li>
@@ -89,7 +89,11 @@ openssl sha1 -verify cs691publickey.pem -signature rsasign.bin plain.txt
 <ul>
 <li>Can you design an approach to fix the problem and have variable-length collision resistant Merkle tree?</li>
 </ul></li>
-<li>[Bonus: 20/100] Consider using Merkle tree to digest a list of <em>distinct</em> messages. Can Merkle digest support the merge operation of two such lists? Specifically, given lists <span class="math"><em>l</em><sub>1</sub></span> and <span class="math"><em>l</em><sub>2</sub></span>, will it be possible to calculate the Merkle digest <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>1</sub> ∪ <em>l</em><sub>2</sub>)</span> directly from Merkle digests <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>1</sub>)</span> and <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>2</sub>)</span> without knowing <span class="math"><em>l</em><sub>1</sub></span> and <span class="math"><em>l</em><sub>2</sub></span> (<span class="math"> ∪ </span> is merging two lists)? If yes, give an example. If no, prove your claim.</li>
+<li>[Bonus: 20/100] Consider using Merkle tree to digest a list of <em>distinct</em> messages. Can Merkle digest support the merge operation of two such lists? Specifically, given lists <span class="math"><em>l</em><sub>1</sub></span> and <span class="math"><em>l</em><sub>2</sub></span>, will it be possible to calculate the Merkle digest <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>1</sub> ∪ <em>l</em><sub>2</sub>)</span> directly from Merkle digests <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>1</sub>)</span> and <span class="math"><em>M</em><em>T</em>(<em>l</em><sub>2</sub>)</span> without knowing <span class="math"><em>l</em><sub>1</sub></span> and <span class="math"><em>l</em><sub>2</sub></span> (<span class="math"> ∪ </span> is merging two lists)? If yes, give an example. If no, prove your claim.
+<ul>
+<li>(Updated) clarification: a list is not a set: Elements in a list are ordered (by definition).</li>
+<li><span class="math"> ∪ </span> is merging two lists, it is not set union.</li>
+</ul></li>
 <li><strong>Authenticated Data Structures</strong> [Exercise 1 from book <code>BtC</code> (Bitcoin and Cryptocurrency Technologies); Page 49].
 <ul>
 <li>hint: In Merkle tree, sublinear proof of non-membership is very similar to that of proving membership.</li>
