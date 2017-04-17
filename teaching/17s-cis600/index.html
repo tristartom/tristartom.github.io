@@ -120,6 +120,7 @@
 <li>Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (<code>KL</code>) </li>
 <li>Bitcoin and Cryptocurrency Technologies, Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven Goldfeder, [<a href="https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf">online book</a>], (<code>BtC</code>)</li>
 <li>Cryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (<code>FSK</code>)</li>
+<li>A Graduate Course in Applied Cryptography, Dan Boneh and Victor Shoup, [<a href="http://toc.cryptobook.us">pdf</a>], <code>BS</code></li>
 </ul>
 </li>
 </ul>
@@ -127,7 +128,6 @@
 - Other useful books
     * Network Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (`OpenSSL`)
     * A course in cryptography, Rafael Pass, abhi shelat (`PS`)
-    * A Graduate Course in Applied Cryptography, Dan Boneh and Victor Shoup, [[pdf](http://toc.cryptobook.us)], `BS`
     * Principles of Computer System Design: An Introduction, Information Security (Chapter 11), Jerome H. Saltzer, M. Frans Kaashoek, [[online book](https://ocw.mit.edu/resources/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/online-textbook/protection_open_5_0.pdf)], (`SK`)
 -->
 
@@ -239,15 +239,19 @@ Syllabus
 <td>exam. 1</td>
 <td></td>
 </tr>
+<tr>
+<td>14.1</td>
+<td>Bitcoin anonimity <code>BtC</code>6,<code>BS</code>2.3</td>
+<td>1. name one de-anonymization attack against Bitcoin. 2. name one defense heuristic for Bitcoin anonymity. 3. name one cryptographic protocol for defense in Bitcoin anonimity.</td>
+</tr>
 </tbody>
 </table>
 <!--
 
-| 14.1 | anonimity by mixing & zerocoin `BtC`6,`BS`2.3 | |
-| 14.2 | smart contract `BtC`9 | |
-| 14.3 | Kerboros | |
+| 14.2 | forward secrecy (Tor, PGP,etc) | 1. what's leaked in SGX dynamic memory management? 2. which private-key encryption scheme is used in enclave? |
+| 15.2 | smart contract `BtC`9 | |
+| 15.1 | Kerboros | |
 | 15.1 | SGX memory | 1. what's leaked in SGX dynamic memory management? 2. which private-key encryption scheme is used in enclave? |
-| 15.2 | app of secure messaging (PGP,etc) | 1. what's leaked in SGX dynamic memory management? 2. which private-key encryption scheme is used in enclave? |
 | 16.1 | secure impl.: trusting the trust [[pdf](https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf)] | |
 | 16.2 | cryptography misuse  | [[Impl. pitfalls](http://cseweb.ucsd.edu/~mihir/cse107/yoshi.pdf)],[[GCM-SIV](https://eprint.iacr.org/2015/102.pdf)] |
 
@@ -404,5 +408,5 @@ Part 2
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2017-04-09 22:31:47.073898
+Build Date UTC : 2017-04-17 13:52:11.663786
 -->
