@@ -1,0 +1,74 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "CIS700/CSE791: Information Security and Privacy (IS\nP)\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nCourse schedule\n\n\n\n\n\n\n\n\nDay\n\n\nTopic\n\n\nReadings\n\n\nOptional readings\n\n\nQuestions\n\n\n\n\n\n\n\n\n\n\nsep 1\n\n\nIntro\n\n\n[\nslides\n]\n\n\n\n\n\n\n\n\n\n\nsep 8\n\n\nIntro\n\n\n[\nslides\n]\n\n\n\n\n\n\n\n\n\n\nsep 15\n\n\nTEE-1\n\n\nFlickr[\npdf\n], OpenSGX[\npdf\n], trust-ice[\npdf\n], Intel x86 harmful[\npdf\n]\n\n\nTEE intro [\nlink\n], Iago attack[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nsep 22\n\n\nTEE-2\n\n\n\n\n\n\n\n\n\n\n\n\napr 15\n\n\nTEE DB\n\n\nCorrectDB [\npdf\n], TrustedDB [\npdf\n], trust-otp[\npdf\n]\n\n\n\n\n[\nlink\n]\n\n\n\n\n\n\nfeb 5\n\n\nsecurity analysis\n\n\ncloud analysis[\npdf\n], free shopping [\npdf\n], cloud attack surface [\npdf\n]\n\n\nSecEng\n-C1, vul-analysis [\nlink\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nfeb 12\n\n\ncontainer security\n\n\nKvmSec[\npdf\n], graphene [\npdf\n]\n\n\ndrawbridge [\npdf\n], docker security[\npdf\n], cloud container[\npdf\n], kubernetes[\npdf\n], borg[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nsep 29\n\n\nBlockchain-1\n\n\n\n\n\n\n\n\n\n\n\n\nsep 29\n\n\nBlockchain-2\n\n\n\n\n\n\n\n\n\n\n\n\nmay 3\n\n\nbitcoin\n\n\nSmart contract [\npdf\n]\n\n\nSok BitCoin[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nmay 3\n\n\ntor \n verifiable program\n\n\nVuvuzela [\npdf\n], buffet[\npdf\n]\n\n\ntor [\npdf\n], Mix [\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\n\n\nReference book\n\n\n\n\nSecEng\n:  \nSecurity Engineering: A Guide to Building Dependable Distributed Systems\n, Ross J. Anderson \n\n\nInfoSec\n:  \nPrinciples of Computer System Design: An Introduction, Information Security (Chapter 11)\n, Jerome H. Saltzer, M. Frans Kaashoek\n\n\nCryptoEng\n: Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.", 
+            "title": "Schedule"
+        }, 
+        {
+            "location": "/#cis700cse791-information-security-and-privacy-isp", 
+            "text": "Instructor: Yuzhe (Richard) Tang", 
+            "title": "CIS700/CSE791: Information Security and Privacy (IS&amp;P)"
+        }, 
+        {
+            "location": "/#course-schedule", 
+            "text": "Day  Topic  Readings  Optional readings  Questions      sep 1  Intro  [ slides ]      sep 8  Intro  [ slides ]      sep 15  TEE-1  Flickr[ pdf ], OpenSGX[ pdf ], trust-ice[ pdf ], Intel x86 harmful[ pdf ]  TEE intro [ link ], Iago attack[ pdf ]  [ link ]    sep 22  TEE-2       apr 15  TEE DB  CorrectDB [ pdf ], TrustedDB [ pdf ], trust-otp[ pdf ]   [ link ]    feb 5  security analysis  cloud analysis[ pdf ], free shopping [ pdf ], cloud attack surface [ pdf ]  SecEng -C1, vul-analysis [ link ]  [ link ]    feb 12  container security  KvmSec[ pdf ], graphene [ pdf ]  drawbridge [ pdf ], docker security[ pdf ], cloud container[ pdf ], kubernetes[ pdf ], borg[ pdf ]  [ link ]    sep 29  Blockchain-1       sep 29  Blockchain-2       may 3  bitcoin  Smart contract [ pdf ]  Sok BitCoin[ pdf ]  [ link ]    may 3  tor   verifiable program  Vuvuzela [ pdf ], buffet[ pdf ]  tor [ pdf ], Mix [ pdf ]  [ link ]", 
+            "title": "Course schedule"
+        }, 
+        {
+            "location": "/#reference-book", 
+            "text": "SecEng :   Security Engineering: A Guide to Building Dependable Distributed Systems , Ross J. Anderson   InfoSec :   Principles of Computer System Design: An Introduction, Information Security (Chapter 11) , Jerome H. Saltzer, M. Frans Kaashoek  CryptoEng : Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.", 
+            "title": "Reference book"
+        }, 
+        {
+            "location": "/proj/", 
+            "text": "Project Topics", 
+            "title": "Project"
+        }, 
+        {
+            "location": "/proj/#project-topics", 
+            "text": "", 
+            "title": "Project Topics"
+        }, 
+        {
+            "location": "/qa/", 
+            "text": "Questions\n\n\nWrite down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.", 
+            "title": "Questions"
+        }, 
+        {
+            "location": "/qa/#questions", 
+            "text": "Write down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.", 
+            "title": "Questions"
+        }, 
+        {
+            "location": "/syl/", 
+            "text": "Syllabus\n\n\nClass meetings\n\n\n\n\nWhen: Fr 9:30AM - 12:15PM\n\n\nWhere: Room 4-206K, Centre for Science \n Tech (CST)\n\n\n\n\nWho should take the course?\n\n\nThe course is mainly designed for PhD students and master students with a research motivation. The course requires preliminary knowledge on \ncomputer systems (operating systems, architecture and databases)\n and system-level programming skills. \n\n\nGrading policy\n\n\nSubmission of any work done by others will result in an F grade in the course, with the academic integrity violation reported to the University administration for further action. Violations include plagiarism, and usage of material available on the internet without proper attribution.\n\n\n\n\nClass participation (10%)  \n\n\nIn-class presentation (50%): peer grading form [\nlink\n]  \n\n\nProject (40%):  \n\n\nMid-term presentation (20%)\n\n\nFinal demo \n code submission (20%)\n\n\n\n\n\n\n\n\nOffice\n\n\n\n\nOffice: 4-193, CST, Yuzhe Tang\n\n\nEmail: ytang100@syr.edu", 
+            "title": "Syllabus"
+        }, 
+        {
+            "location": "/syl/#syllabus", 
+            "text": "", 
+            "title": "Syllabus"
+        }, 
+        {
+            "location": "/syl/#class-meetings", 
+            "text": "When: Fr 9:30AM - 12:15PM  Where: Room 4-206K, Centre for Science   Tech (CST)", 
+            "title": "Class meetings"
+        }, 
+        {
+            "location": "/syl/#who-should-take-the-course", 
+            "text": "The course is mainly designed for PhD students and master students with a research motivation. The course requires preliminary knowledge on  computer systems (operating systems, architecture and databases)  and system-level programming skills.", 
+            "title": "Who should take the course?"
+        }, 
+        {
+            "location": "/syl/#grading-policy", 
+            "text": "Submission of any work done by others will result in an F grade in the course, with the academic integrity violation reported to the University administration for further action. Violations include plagiarism, and usage of material available on the internet without proper attribution.   Class participation (10%)    In-class presentation (50%): peer grading form [ link ]    Project (40%):    Mid-term presentation (20%)  Final demo   code submission (20%)", 
+            "title": "Grading policy"
+        }, 
+        {
+            "location": "/syl/#office", 
+            "text": "Office: 4-193, CST, Yuzhe Tang  Email: ytang100@syr.edu", 
+            "title": "Office"
+        }
+    ]
+}
