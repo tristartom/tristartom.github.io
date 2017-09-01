@@ -22,13 +22,18 @@
         }, 
         {
             "location": "/proj/", 
-            "text": "Project Topics", 
+            "text": "Project Topics\n\n\nProgramming option\n\n\nSample topics\n\n\n\n\nPerformance of memory protection in SGX\n\n\nPKI based software attestation in SGX\n\n\nObserving side-channel attacks\n\n\nMining in local-area Blockchain network\n\n\nMulti-user file systems secured by blockchain", 
             "title": "Project"
         }, 
         {
             "location": "/proj/#project-topics", 
             "text": "", 
             "title": "Project Topics"
+        }, 
+        {
+            "location": "/proj/#programming-option", 
+            "text": "Sample topics   Performance of memory protection in SGX  PKI based software attestation in SGX  Observing side-channel attacks  Mining in local-area Blockchain network  Multi-user file systems secured by blockchain", 
+            "title": "Programming option"
         }, 
         {
             "location": "/qa/", 
