@@ -34,36 +34,6 @@
             "location": "/qa/#questions", 
             "text": "Write down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.", 
             "title": "Questions"
-        }, 
-        {
-            "location": "/syl/", 
-            "text": "Syllabus\n\n\nClass meetings\n\n\n\n\nWhen: Fr 9:30AM - 12:15PM\n\n\nWhere: Room 4-206K, Centre for Science \n Tech (CST)\n\n\n\n\nWho should take the course?\n\n\nThe course is mainly designed for PhD students and master students with a research motivation. The course requires preliminary knowledge on \ncomputer systems (operating systems, architecture and databases)\n and system-level programming skills. \n\n\nGrading policy\n\n\nSubmission of any work done by others will result in an F grade in the course, with the academic integrity violation reported to the University administration for further action. Violations include plagiarism, and usage of material available on the internet without proper attribution.\n\n\n\n\nClass participation (10%)  \n\n\nIn-class presentation (50%): peer grading form [\nlink\n]  \n\n\nProject (40%):  \n\n\nMid-term presentation (20%)\n\n\nFinal demo \n code submission (20%)\n\n\n\n\n\n\n\n\nOffice\n\n\n\n\nOffice: 4-193, CST, Yuzhe Tang\n\n\nEmail: ytang100@syr.edu", 
-            "title": "Syllabus"
-        }, 
-        {
-            "location": "/syl/#syllabus", 
-            "text": "", 
-            "title": "Syllabus"
-        }, 
-        {
-            "location": "/syl/#class-meetings", 
-            "text": "When: Fr 9:30AM - 12:15PM  Where: Room 4-206K, Centre for Science   Tech (CST)", 
-            "title": "Class meetings"
-        }, 
-        {
-            "location": "/syl/#who-should-take-the-course", 
-            "text": "The course is mainly designed for PhD students and master students with a research motivation. The course requires preliminary knowledge on  computer systems (operating systems, architecture and databases)  and system-level programming skills.", 
-            "title": "Who should take the course?"
-        }, 
-        {
-            "location": "/syl/#grading-policy", 
-            "text": "Submission of any work done by others will result in an F grade in the course, with the academic integrity violation reported to the University administration for further action. Violations include plagiarism, and usage of material available on the internet without proper attribution.   Class participation (10%)    In-class presentation (50%): peer grading form [ link ]    Project (40%):    Mid-term presentation (20%)  Final demo   code submission (20%)", 
-            "title": "Grading policy"
-        }, 
-        {
-            "location": "/syl/#office", 
-            "text": "Office: 4-193, CST, Yuzhe Tang  Email: ytang100@syr.edu", 
-            "title": "Office"
         }
     ]
 }
