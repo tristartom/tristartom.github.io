@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CIS700/CSE791: Information Security and Privacy (IS\nP)\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nWhen: Fr 9:30AM - 12:15PM\n\n\nWhere: Link Hall 058\n\n\nCourse schedule\n\n\n\n\n\n\n\n\nDay\n\n\nTopic\n\n\nTask\n\n\nReadings\n\n\nQuestions\n\n\n\n\n\n\n\n\n\n\nsep 1\n\n\nIntro\n\n\n[\nSlides\n]\n\n\n\n\n\n\n\n\n\n\nsep 8\n\n\nTEE\n\n\nSGX intro [\nCompanion slides\n]\n\n\n[\nSGX explained\n]\n\n\n\n\n\n\n\n\n\n\n\n\n\nReference book\n\n\n\n\nSecEng\n:  \nSecurity Engineering: A Guide to Building Dependable Distributed Systems\n, Ross J. Anderson \n\n\nInfoSec\n:  \nPrinciples of Computer System Design: An Introduction, Information Security (Chapter 11)\n, Jerome H. Saltzer, M. Frans Kaashoek\n\n\nCryptoEng\n: Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.", 
+            "text": "CIS700/CSE791: Information Security and Privacy (IS\nP)\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nWhen: Fr 9:30AM - 12:15PM\n\n\nWhere: Link Hall 058\n\n\nCourse schedule\n\n\n\n\n\n\n\n\nDay\n\n\nTopic\n\n\nTask\n\n\nReadings\n\n\n\n\n\n\n\n\n\n\nsep 1\n\n\nIntro\n\n\n[\nSlides\n]\n\n\n\n\n\n\n\n\nsep 8\n\n\nTEE\n\n\nSGX intro [\nCompanion slides\n]\n\n\n[\nSGX explained\n]\n\n\n\n\n\n\n\n\n\n\n\nReference book\n\n\n\n\nSecEng\n:  \nSecurity Engineering: A Guide to Building Dependable Distributed Systems\n, Ross J. Anderson \n\n\nInfoSec\n:  \nPrinciples of Computer System Design: An Introduction, Information Security (Chapter 11)\n, Jerome H. Saltzer, M. Frans Kaashoek\n\n\nCryptoEng\n: Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.", 
             "title": "Schedule"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#course-schedule", 
-            "text": "Day  Topic  Task  Readings  Questions      sep 1  Intro  [ Slides ]      sep 8  TEE  SGX intro [ Companion slides ]  [ SGX explained ]", 
+            "text": "Day  Topic  Task  Readings      sep 1  Intro  [ Slides ]     sep 8  TEE  SGX intro [ Companion slides ]  [ SGX explained ]", 
             "title": "Course schedule"
         }, 
         {
