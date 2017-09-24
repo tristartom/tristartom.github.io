@@ -38,14 +38,20 @@ Project: Data-Intensive Cryptographic Engineering on Hardware Enclaves
 &nbsp; Thrust 1: Oblivious Data Analytics with Systems-level Efficiency 
 
 <ol start="1">
+
+<li class="style21">
+Ju Chen, <b>Yuzhe (Richard) Tang</b>, Hao Zhou. "Oblivious Data Shuffling on Hardware Enclave", SysTex 2017 at ACM SOSP (Workshop paper) 
+<ul><li class="style22">
+The work is to build a data shuffling capability on Intel SGX platform in a unique way that is both strongly secure (or oblivious memory access) and efficient. The key idea to lower performance overhead without sacrificing strong security is the notion of cache-miss obliviousness. Upon implementation, the cache-miss obliviousness is realized by leveraging Intel TSX features. 
+</li></ul></li>
+
 <li class="style21">
 "Towards Building Practical And Secure Multi-Party Databases", <br>
-Yuzhe Tang, Wenqing Zhuang.<br>
+<b>Yuzhe Tang</b>, Wenqing Zhuang.<br>
 IEEE SecDev 2016. [<a href="http://cybersec-prod.s3.amazonaws.com/secdev/wp-content/uploads/2016/10/05211506/secdev16-final37.pdf">pdf</a>] 
 <ul><li class="style22">
 The work is to build a database system on top of multiple private-data sources. A user can submit a regular SQL query to our database which evaluates the query among data sources while preserving the privacy of each data source. Comparing existing work on applied multi-party computations (MPC), our work is distinct in building real MPC-based systems.
-</li></ul>
-</li>
+</li></ul></li>
 </ol>
 
 &nbsp; Thrust 2:  Authenticated Data-Storage Systems
@@ -74,7 +80,7 @@ This work supports secondary index on a "NoSQL" key-value store, and tackles the
 <li class="style21">
 "Log-Structured Authenticated Data Structure with Minimal Trust (Or When LSM tree meets ADS)" <br>
 Yuzhe Tang, Ju Chen.<br>
-IACR Report 2016, [<a href="https://eprint.iacr.org/2016/1063.pdf">pdf</a>, Theoretic result: <a href="http://eprint.iacr.org/2016/617.pdf">pdf</a>] <br>
+IACR Report 2016, [<a href="https://eprint.iacr.org/2016/1063.pdf">pdf</a>, Related theoretic facts: <a href="http://eprint.iacr.org/2016/617.pdf">pdf</a>] <br>
 <ul><li class="style22">
 The work proposes a novel approach to building authenticated cloud storage systems by combining Authentication Data Structure (ADS) and Log-Structured Merge Trees (LSM trees). ADS is a security protocol used to ensure data authenticity in an outsourced key-value store. LSM tree is a data structure used to build cloud key-value stores with write-optimized performance. This work is the first to combine these two structures together and builds an overall storage system. The end result is that data can be authenticated without (significantly) slowing down the write performance in a log-structured cloud storage system.
 </li></ul>
