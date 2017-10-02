@@ -33,8 +33,6 @@ A:hover {color: #FF0000;}
 <span class = "style5">
 Project: Data-Intensive Cryptographic Engineering on Hardware Enclaves
 <p/>
-<b>Preliminary Results</b>
-<p/>
 </span>
 
 
@@ -44,6 +42,7 @@ Project: Data-Intensive Cryptographic Engineering on Hardware Enclaves
 <ol start="1">
 
 <li class="style21">
+<i>Preliminary Results</i>: 
 "Cache-Miss Oblivious Data Shuffling on Hardware Enclave", <br>
 Ju Chen, <b>Yuzhe (Richard) Tang</b>, Hao Zhou. <br>
 SysTex 2017 at ACM SOSP (Workshop paper) 
@@ -52,6 +51,7 @@ The work is to build a data shuffling capability on Intel SGX platform in a uniq
 </li></ul></li>
 
 <li class="style21">
+<i>Prior Related Work</i>: 
 "Towards Building Practical And Secure Multi-Party Databases", <br>
 <b>Yuzhe Tang</b>, Wenqing Zhuang.<br>
 IEEE SecDev 2016. [<a href="http://cybersec-prod.s3.amazonaws.com/secdev/wp-content/uploads/2016/10/05211506/secdev16-final37.pdf">pdf</a>] 
@@ -64,6 +64,16 @@ The work is to build a database system on top of multiple private-data sources. 
 
 <ol start="2">
 <li class="style21">
+<i>Preliminary Results</i>: 
+"Log-Structured Authenticated Data Structure with Minimal Trust (Or When LSM tree meets ADS)" <br>
+<b>Yuzhe Tang</b>, Ju Chen.<br>
+IACR Report 2016, [<a href="https://eprint.iacr.org/2016/1063.pdf">pdf</a>, Related theoretic facts: <a href="http://eprint.iacr.org/2016/617.pdf">pdf</a>] <br>
+<ul><li class="style22">
+The work proposes a novel approach to building authenticated cloud storage systems by combining Authentication Data Structure (ADS) and Log-Structured Merge Trees (LSM trees). ADS is a security protocol used to ensure data authenticity in an outsourced key-value store. LSM tree is a data structure used to build cloud key-value stores with write-optimized performance. This work is the first to combine these two structures together and builds an overall storage system. The end result is that data can be authenticated without (significantly) slowing down the write performance in a log-structured cloud storage system.
+</li>
+</li></ul>
+<li class="style21">
+<i>Prior Related Work</i>: 
 "Lightweight Authentication of Freshness in Outsourced Key-Value Stores"<br> 
 <b>Yuzhe Tang</b>, Ting Wang, Ling Liu, Xin Hu, Jiyong Jang <br> 
 ACSAC 2014 (AR&lt;19.9%), 
@@ -74,6 +84,7 @@ improves write performance while enabling freshness authentication. The proposed
 </li></ul>
 </li>
 <li class="style21">
+<i>Prior Related Work</i>: 
 "Deferred Lightweight Indexing for Log-Structured Key-Value Stores"<br>
 <b>Yuzhe Tang</b>, Arun Iyengar, Wei Tan, Liana Fong, Ling Liu, Balaji Palanisamy <br> 
 CCGrid 2015, (AR&lt;25.7%), [<a href="./docs/ccgrid15.pdf">pdf</a>, <a href="https://github.com/tristartom/nosql-indexing">src</a>]
@@ -81,15 +92,8 @@ CCGrid 2015, (AR&lt;25.7%), [<a href="./docs/ccgrid15.pdf">pdf</a>, <a href="htt
 <font>Best Paper Award [<a href="http://cloud.siat.ac.cn/ccgrid2015/awards.html">link</a>]</font>
 <ul><li class="style22">
 This work supports secondary index on a "NoSQL" key-value store, and tackles the optimization of write performance. Inspire by the Log-structured Merge (LSM) design that optimizes the write performance of primary index, our key idea is to apply LSM tree to the secondary index design. The distinct design comes from the mapping of the LSM design to the underlying sharded index-base partitions. We proposed a  mechanism  to defer index maintenance without sacrificing the performance of serving online reads and writes. We implemented the proposed scheme on Apache HBase without modifying its internal codebase, and open-source the code on <a href="https://github.com/tristartom/nosql-indexing">github</a>.
-</li></ul>
 </li>
-<li class="style21">
-"Log-Structured Authenticated Data Structure with Minimal Trust (Or When LSM tree meets ADS)" <br>
-<b>Yuzhe Tang</b>, Ju Chen.<br>
-IACR Report 2016, [<a href="https://eprint.iacr.org/2016/1063.pdf">pdf</a>, Related theoretic facts: <a href="http://eprint.iacr.org/2016/617.pdf">pdf</a>] <br>
-<ul><li class="style22">
-The work proposes a novel approach to building authenticated cloud storage systems by combining Authentication Data Structure (ADS) and Log-Structured Merge Trees (LSM trees). ADS is a security protocol used to ensure data authenticity in an outsourced key-value store. LSM tree is a data structure used to build cloud key-value stores with write-optimized performance. This work is the first to combine these two structures together and builds an overall storage system. The end result is that data can be authenticated without (significantly) slowing down the write performance in a log-structured cloud storage system.
-</li></ul>
+</ul>
 </li>
 </ol>
 
