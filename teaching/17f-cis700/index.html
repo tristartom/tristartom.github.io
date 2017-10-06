@@ -151,7 +151,7 @@
 <td>sep 15</td>
 <td align="left"></td>
 <td align="left">Key exchange &amp; Software attestation</td>
-<td><code>CryptoEng</code>, [<a href="https://eprint.iacr.org/2016/086.pdf">SGX explained</a>]-C3.3</td>
+<td><code>CryptoEng</code>, [<a href="https://eprint.iacr.org/2016/086.pdf">SGX explained</a>]-3.3</td>
 </tr>
 <tr>
 <td>sep 29</td>
@@ -159,23 +159,46 @@
 <td align="left">In-class lab 1: SGX memory-protection profiling [<a href="https://github.com/syracuse-fullstacksecurity/CIS700-sgxlab">link</a>]</td>
 <td>SGX programming on Linux [<a href="https://download.01.org/intel-sgx/linux-1.9/docs/Intel_SGX_Developer_Guide.pdf">pdf</a>]</td>
 </tr>
+<tr>
+<td>oct 6</td>
+<td align="left"></td>
+<td align="left">Attack surface on SGX</td>
+<td>[<a href="https://eprint.iacr.org/2016/086.pdf">SGX explained</a>]-3.4,3.8</td>
+</tr>
+<tr>
+<td>oct 13</td>
+<td align="left"></td>
+<td align="left">non-SGX TEE</td>
+<td>[<a href="https://eprint.iacr.org/2016/086.pdf">SGX explained</a>]-4</td>
+</tr>
 </tbody>
 </table>
 <!--
 
 | oct 6  | Security isolation & TEE | 
 
+[[side-channel lecture](https://www.coursera.org/learn/hardware-security/lecture/64qG3/memory-vulnerabilities-and-cache-attacks)]
+
 -->
 
 <h1 id="presentation-papers">Presentation papers</h1>
 <h2 id="tee">TEE</h2>
-<ul>
+<ol>
+<li>SGX attacks<ul>
 <li>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems, [<a href="https://www.cs.utexas.edu/~yxu/files/xu15oakland.pdf">pdf</a>]</li>
-<li>Opaque: An Oblivious and Encrypted Distributed Analytics Platform, [<a href="https://people.eecs.berkeley.edu/~wzheng/opaque.pdf">pdf</a>]</li>
+<li>High-Resolution Side Channels for Untrusted Operating Systems [<a href="https://www.usenix.org/system/files/conference/atc17/atc17-hahnel.pdf">pdf</a>]</li>
+<li>Telling Your Secrets Without Page Faults: Stealthy Page Table-Based Attacks on Enclaved Execution [<a href="https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-van_bulck.pdf">pdf</a>]</li>
+</ul>
+</li>
+<li>SGX software system<ul>
 <li>Oblivious multi-party machine learning on trusted processors, [<a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/ohrimenko">pdf</a>]</li>
 <li>SCONE: Secure Linux Containers with Intel SGX, [<a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-arnautov.pdf">pdf</a>]</li>
 </ul>
+</li>
+</ol>
 <!--
+
+    * Opaque: An Oblivious and Encrypted Distributed Analytics Platform, [[pdf](https://people.eecs.berkeley.edu/~wzheng/opaque.pdf)]
 
 * Rollback and Forking Detection for Trusted Execution Environments using Lightweight Collective Memory, [[pdf](https://arxiv.org/pdf/1701.00981v1.pdf)]
 
@@ -265,5 +288,5 @@ Flickr[[pdf](http://research.microsoft.com/pubs/138301/eurosys053-mccune-cr.pdf)
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2017-09-29 02:19:32.551768
+Build Date UTC : 2017-10-06 17:34:17.643972
 -->
