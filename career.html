@@ -42,9 +42,9 @@ Project: Data-Intensive Cryptographic Engineering on Hardware Enclaves
 <ol start="1">
 
 <li class="style21">
-<i>Preliminary Results</i>: 
+<b>Preliminary Result</b>: 
 "Cache-Miss Oblivious Data Shuffling on Hardware Enclave", <br>
-Ju Chen, <b>Yuzhe (Richard) Tang</b>, Hao Zhou. <br>
+Ju Chen, Yuzhe (Richard) Tang, Hao Zhou. <br>
 SysTex 2017 at ACM SOSP (Workshop paper) 
 <ul><li class="style22">
 The work is to build a data shuffling capability on Intel SGX platform in a unique way that is both strongly secure (or oblivious memory access) and efficient. The key idea to lower performance overhead without sacrificing strong security is the notion of cache-miss obliviousness. Upon implementation, the cache-miss obliviousness is realized by leveraging Intel TSX features. 
@@ -53,7 +53,7 @@ The work is to build a data shuffling capability on Intel SGX platform in a uniq
 <li class="style21">
 <i>Prior Related Work</i>: 
 "Towards Building Practical And Secure Multi-Party Databases", <br>
-<b>Yuzhe Tang</b>, Wenqing Zhuang.<br>
+Yuzhe Tang, Wenqing Zhuang.<br>
 IEEE SecDev 2016. [<a href="http://cybersec-prod.s3.amazonaws.com/secdev/wp-content/uploads/2016/10/05211506/secdev16-final37.pdf">pdf</a>] 
 <ul><li class="style22">
 The work is to build a database system on top of multiple private-data sources. A user can submit a regular SQL query to our database which evaluates the query among data sources while preserving the privacy of each data source. Comparing existing work on applied multi-party computations (MPC), our work is distinct in building real MPC-based systems.
@@ -64,9 +64,9 @@ The work is to build a database system on top of multiple private-data sources. 
 
 <ol start="2">
 <li class="style21">
-<i>Preliminary Results</i>: 
+<b>Preliminary Result</b>: 
 "Log-Structured Authenticated Data Structure with Minimal Trust (Or When LSM tree meets ADS)" <br>
-<b>Yuzhe Tang</b>, Ju Chen.<br>
+Yuzhe Tang, Ju Chen.<br>
 IACR Report 2016, [<a href="https://eprint.iacr.org/2016/1063.pdf">pdf</a>, Related theoretic facts: <a href="http://eprint.iacr.org/2016/617.pdf">pdf</a>] <br>
 <ul><li class="style22">
 The work proposes a novel approach to building authenticated cloud storage systems by combining Authentication Data Structure (ADS) and Log-Structured Merge Trees (LSM trees). ADS is a security protocol used to ensure data authenticity in an outsourced key-value store. LSM tree is a data structure used to build cloud key-value stores with write-optimized performance. This work is the first to combine these two structures together and builds an overall storage system. The end result is that data can be authenticated without (significantly) slowing down the write performance in a log-structured cloud storage system.
@@ -75,7 +75,7 @@ The work proposes a novel approach to building authenticated cloud storage syste
 <li class="style21">
 <i>Prior Related Work</i>: 
 "Lightweight Authentication of Freshness in Outsourced Key-Value Stores"<br> 
-<b>Yuzhe Tang</b>, Ting Wang, Ling Liu, Xin Hu, Jiyong Jang <br> 
+Yuzhe Tang, Ting Wang, Ling Liu, Xin Hu, Jiyong Jang <br> 
 ACSAC 2014 (AR&lt;19.9%), 
 [<a href="./docs/acsac14.pdf">pdf</a>, ICDE demo: <a href="./docs/ICDE14_demo_768.pdf">pdf</a>] 
 <ul><li class="style22">
@@ -86,7 +86,7 @@ improves write performance while enabling freshness authentication. The proposed
 <li class="style21">
 <i>Prior Related Work</i>: 
 "Deferred Lightweight Indexing for Log-Structured Key-Value Stores"<br>
-<b>Yuzhe Tang</b>, Arun Iyengar, Wei Tan, Liana Fong, Ling Liu, Balaji Palanisamy <br> 
+Yuzhe Tang, Arun Iyengar, Wei Tan, Liana Fong, Ling Liu, Balaji Palanisamy <br> 
 CCGrid 2015, (AR&lt;25.7%), [<a href="./docs/ccgrid15.pdf">pdf</a>, <a href="https://github.com/tristartom/nosql-indexing">src</a>]
 <br> &#9733; 
 <font>Best Paper Award [<a href="http://cloud.siat.ac.cn/ccgrid2015/awards.html">link</a>]</font>
