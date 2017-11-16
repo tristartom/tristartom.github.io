@@ -10,6 +10,4 @@
 
 - GLSD 2017 [[link](https://www.rit.edu/cybersecurity/great-lakes-security-day-2017)]
 
-##
-
-- More details will be announced.
+- *More details will be announced.*
