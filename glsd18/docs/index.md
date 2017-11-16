@@ -1,5 +1,7 @@
 # Great Lakes Security Day 2018
 
+
+
 ## Host
 
 * Department of EECS, Syracuse University
@@ -8,3 +10,6 @@
 
 - GLSD 2017 [[link](https://www.rit.edu/cybersecurity/great-lakes-security-day-2017)]
 
+##
+
+- More details will be announced.
