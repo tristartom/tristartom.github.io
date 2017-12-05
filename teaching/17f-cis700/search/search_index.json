@@ -34,31 +34,6 @@
             "location": "/#reference-books", 
             "text": "SecEng :   Security Engineering: A Guide to Building Dependable Distributed Systems , Ross J. Anderson   InfoSec :   Principles of Computer System Design: An Introduction, Information Security (Chapter 11) , Jerome H. Saltzer, M. Frans Kaashoek  CryptoEng : Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.", 
             "title": "Reference books"
-        }, 
-        {
-            "location": "/proj/", 
-            "text": "Project Topics\n\n\nProgramming option\n\n\nSample topics\n\n\n\n\nPerformance of memory protection in SGX\n\n\nPKI based software attestation in SGX\n\n\nObserving side-channel attacks\n\n\nMining in local-area Blockchain network\n\n\nMulti-user file systems secured by blockchain", 
-            "title": "Proj"
-        }, 
-        {
-            "location": "/proj/#project-topics", 
-            "text": "", 
-            "title": "Project Topics"
-        }, 
-        {
-            "location": "/proj/#programming-option", 
-            "text": "Sample topics   Performance of memory protection in SGX  PKI based software attestation in SGX  Observing side-channel attacks  Mining in local-area Blockchain network  Multi-user file systems secured by blockchain", 
-            "title": "Programming option"
-        }, 
-        {
-            "location": "/qa/", 
-            "text": "Questions\n\n\nWrite down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.", 
-            "title": "Qa"
-        }, 
-        {
-            "location": "/qa/#questions", 
-            "text": "Write down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.", 
-            "title": "Questions"
         }
     ]
 }
