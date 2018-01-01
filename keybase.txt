@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/tristartom
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tristartom.github.io
+  * I am tristartom (https://keybase.io/tristartom) on keybase.
+  * I have a public key ASDsjkkihWzaWI8ypezHh_Gbt-A_ceoXLQBShCrNK2RJKAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ec8e4922856cda588f32a5ecc787f19bb7e03f71ea172d0052842acd2b6449280a",
+      "host": "keybase.io",
+      "kid": "0120ec8e4922856cda588f32a5ecc787f19bb7e03f71ea172d0052842acd2b6449280a",
+      "uid": "809361f48925ff7d05bcb58646e8d319",
+      "username": "tristartom"
+    },
+    "merkle_root": {
+      "ctime": 1514826205,
+      "hash": "41dac6fdb9858026f1a7e679a8a5901dec4be825518e513a6a08cddf7675326a9f266572a6e772c4915148870e4795bccee3dcd404ef7836758b0576ee9fe7f0",
+      "hash_meta": "c5d57c0cd883262e17b7287dc1d11681490748309348c4a00aaa6d2c3c54e1ff",
+      "seqno": 1874905
+    },
+    "service": {
+      "hostname": "tristartom.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1514826281,
+  "expire_in": 504576000,
+  "prev": "ecf069609c7f229c3168d5afc4b3cb414b15ff77a3573ff249299f413751d7bd",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7I5JIoVs2liPMqXsx4fxm7fgP3HqFy0AUoQqzStkSSgKp3BheWxvYWTFA057ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZWM4ZTQ5MjI4NTZjZGE1ODhmMzJhNWVjYzc4N2YxOWJiN2UwM2Y3MWVhMTcyZDAwNTI4NDJhY2QyYjY0NDkyODBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZWM4ZTQ5MjI4NTZjZGE1ODhmMzJhNWVjYzc4N2YxOWJiN2UwM2Y3MWVhMTcyZDAwNTI4NDJhY2QyYjY0NDkyODBhIiwidWlkIjoiODA5MzYxZjQ4OTI1ZmY3ZDA1YmNiNTg2NDZlOGQzMTkiLCJ1c2VybmFtZSI6InRyaXN0YXJ0b20ifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTQ4MjYyMDUsImhhc2giOiI0MWRhYzZmZGI5ODU4MDI2ZjFhN2U2NzlhOGE1OTAxZGVjNGJlODI1NTE4ZTUxM2E2YTA4Y2RkZjc2NzUzMjZhOWYyNjY1NzJhNmU3NzJjNDkxNTE0ODg3MGU0Nzk1YmNjZWUzZGNkNDA0ZWY3ODM2NzU4YjA1NzZlZTlmZTdmMCIsImhhc2hfbWV0YSI6ImM1ZDU3YzBjZDg4MzI2MmUxN2I3Mjg3ZGMxZDExNjgxNDkwNzQ4MzA5MzQ4YzRhMDBhYWE2ZDJjM2M1NGUxZmYiLCJzZXFubyI6MTg3NDkwNX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ0cmlzdGFydG9tLmdpdGh1Yi5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM4In0sImN0aW1lIjoxNTE0ODI2MjgxLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImVjZjA2OTYwOWM3ZjIyOWMzMTY4ZDVhZmM0YjNjYjQxNGIxNWZmNzdhMzU3M2ZmMjQ5Mjk5ZjQxMzc1MWQ3YmQiLCJzZXFubyI6NSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBqjJg9OND/UL4iHkh9ftNXu04EIZX4unpuC7zYWHM5l2F0nvnQPMUFsQdSBiZ6Ey+kqJt4r/ZzGavh+IFvZxcNqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgrZUGGvzLNOWUEetG4AsiyLXV/iE7bbznLLR8n1GjRYKjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tristartom
+
+==================================================================
