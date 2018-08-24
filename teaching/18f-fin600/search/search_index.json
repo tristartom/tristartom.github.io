@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to CIS600/FIN600: Blockchain and Cryptocurrency\n\n\nSchedule and textbooks\n\n\n[\nlink\n]\n\n\nReading list (for technology review)\n\n\nThe following is Blockchain white papers and technical papers.\n\n\nBlockchain finance and supply-chain\n\n\n\n\nOn the Feasibility of Decentralized Derivatives Markets, Shayan Eskandari, Jeremy Clark, Vignesh Sundaresan, and Moe Adham\n\n\nToward Cryptocurrency Lending, Mildred Chidinma Okoye, and Jeremy Clark\n\n\nEscrow protocols for cryptocurrencies: How to buy physical goods using Bitcoin, Steven Goldfeder, Joseph Bonneau, Rosario Gennaro, and Arvind Narayanan\n\n\nPrediction Markets and Real World Data Feeds (Textbook, Sec. 9.5)\n\n\nCoC: Secure Supply Chain Management System based on Public Ledger, Lei Xu, Lin Chen, Zhimin Gao, Yang Lu, and Weidong Shi", 
+            "text": "Welcome to CIS600/FIN600: Blockchain and Cryptocurrency\n\n\nSchedule and textbooks\n\n\n[\nlink\n]\n\n\nReading list (for technology review)\n\n\nThe following is Blockchain white papers and technical papers.\n\n\nBlockchain finance and supply-chain\n\n\n\n\nOn the Feasibility of Decentralized Derivatives Markets, Shayan Eskandari, Jeremy Clark, Vignesh Sundaresan, and Moe Adham\n\n\nToward Cryptocurrency Lending, Mildred Chidinma Okoye, and Jeremy Clark\n\n\nEscrow protocols for cryptocurrencies: How to buy physical goods using Bitcoin, Steven Goldfeder, Joseph Bonneau, Rosario Gennaro, and Arvind Narayanan\n\n\nPrediction Markets and Real World Data Feeds (Textbook, Sec. 9.5)\n\n\nCoC: Secure Supply Chain Management System based on Public Ledger, Lei Xu, Lin Chen, Zhimin Gao, Yang Lu, and Weidong Shi\n\n\n\n\nBlockchain and InfoSec infrastructure\n\n\n\n\nDecentralizing Privacy: Using Blockchain to Protect Personal Data, Guy Zyskind, etc\n\n\nSecuring healthcare it infrastructure with blockchain and modern cryptography, Yan Huang, Haixu Tang", 
             "title": "Welcome to CIS600/FIN600: Blockchain and Cryptocurrency"
         }, 
         {
@@ -24,6 +24,11 @@
             "location": "/#blockchain-finance-and-supply-chain", 
             "text": "On the Feasibility of Decentralized Derivatives Markets, Shayan Eskandari, Jeremy Clark, Vignesh Sundaresan, and Moe Adham  Toward Cryptocurrency Lending, Mildred Chidinma Okoye, and Jeremy Clark  Escrow protocols for cryptocurrencies: How to buy physical goods using Bitcoin, Steven Goldfeder, Joseph Bonneau, Rosario Gennaro, and Arvind Narayanan  Prediction Markets and Real World Data Feeds (Textbook, Sec. 9.5)  CoC: Secure Supply Chain Management System based on Public Ledger, Lei Xu, Lin Chen, Zhimin Gao, Yang Lu, and Weidong Shi", 
             "title": "Blockchain finance and supply-chain"
+        }, 
+        {
+            "location": "/#blockchain-and-infosec-infrastructure", 
+            "text": "Decentralizing Privacy: Using Blockchain to Protect Personal Data, Guy Zyskind, etc  Securing healthcare it infrastructure with blockchain and modern cryptography, Yan Huang, Haixu Tang", 
+            "title": "Blockchain and InfoSec infrastructure"
         }
     ]
 }
