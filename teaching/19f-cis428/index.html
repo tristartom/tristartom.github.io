@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <title>Homepage - Welcome to Applied Cryptography</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Homepage";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Welcome to Applied Cryptography</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Homepage</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#cis600-applied-cryptography">CIS600 Applied Cryptography</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#reading-materials">Reading materials</a></li>
+        
+            <li><a class="toctree-l3" href="#grading">Grading</a></li>
+        
+            <li><a class="toctree-l3" href="#schedule">Schedule</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="homework/">Homework</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Welcome to Applied Cryptography</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Homepage</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="cis600-applied-cryptography">CIS600 Applied Cryptography</h1>
+<ul>
+<li>Instructor: Yuzhe (Richard) Tang</li>
+<li>Time: TuTh 11:00 AM-12:20 PM</li>
+<li>Location: Shaffer Art Building 121</li>
+</ul>
+<h2 id="reading-materials">Reading materials</h2>
+<ul>
+<li>Textbooks <ul>
+<li>Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell, (<code>KL</code>) </li>
+<li>Cryptography Engineering: Design Principles and Practical Applications, 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno (<code>FSK</code>)</li>
+</ul>
+</li>
+</ul>
+<!--
+    * A Graduate Course in Applied Cryptography, Dan Boneh and Victor Shoup, [[pdf](http://toc.cryptobook.us)], `BS`
+    * Principles of Computer System Design: An Introduction, Information Security (Chapter 11), Jerome H. Saltzer, M. Frans Kaashoek, [[online book](https://ocw.mit.edu/resources/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/online-textbook/protection_open_5_0.pdf)], (`SK`)
+
+- Other useful books
+    * Network Security with OpenSSL, Pravir Chandra, Matt Messier, John Viega (`OpenSSL`)
+    * A course in cryptography, Rafael Pass, abhi shelat (`PS`)
+-->
+
+<h2 id="grading">Grading</h2>
+<ul>
+<li>Class participation (10%), Homework/Programming tasks/Presentation (50%), Exams (40%)</li>
+</ul>
+<!--
+
+Syllabus
+---
+
+[[pdf](syllabus-600ce.pdf)]
+
+-->
+
+<h2 id="schedule">Schedule</h2>
+<table>
+<thead>
+<tr>
+<th>week</th>
+<th>topic</th>
+<th>questions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,2</td>
+<td>intro <code>KL</code>1, [<a href="./Class-00.pptx">slides</a>]</td>
+<td>1. What are the two typical formal properties required in a cryptographic scheme? 2. What are the three elements in provable security? 3. What are two parts in a formal security defintion?</td>
+</tr>
+<tr>
+<td>3</td>
+<td>perfect secrecy <code>KL</code>2,B</td>
+<td>1. name the theorem for computing conditional probability. 2. How to formally describe a discrete random variable? 3. Describe the scheme of perfectly-secret encryption, 4.Describe the intuition and formal definition of perfect secrecy. 5. Describe an alternative (and equivalent) definition of perfect secrecy. 6. Name one construction achieving perfect secrecy. What's drawback of this construction. Is the drawback specific to the construction?</td>
+</tr>
+<tr>
+<td>4</td>
+<td>private-key encryption <code>KL</code>3.1,3.2,3.4,3.5</td>
+<td>1. What's difference between perfect secrecy and comptutational security? 2. Name as many games as possible in computational security. Describe the difference among them. 3. What primitives are used in constructing CPA-secure encryption? What assumptions are made?</td>
+</tr>
+<tr>
+<td>5</td>
+<td>mode of operations <code>KL</code>3.6,<code>FSK</code>4</td>
+<td>1. Name as many Blockcipher modes of operations as possible. Are they CPA-secure?</td>
+</tr>
+<tr>
+<td>6</td>
+<td>key-exchange &amp; TLS <code>KL</code>10,12.7/8, [<a href="http://www.moserware.com/2009/06/first-few-milliseconds-of-https.html">First msec in HTTPS</a>]</td>
+<td>1. Describe the security game defined for key-exchange protocols? How many "parties" are involved? 2. How many rounds are there in a KE protocol? 3. Name the KE protocol based on DL hardness. 4. What's the KE protocol used in key-distribution center? How is it less practical than the DL-based KE protocol? 5. Name at least two building blocks  in TLS handshake.</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>MAC <code>KL</code>4</td>
+<td>1. What're security game and security definition in MAC? 2. Describe a construction of fixed-length MAC and what primitives are used. 3. Name one domain-extension construction for variable-length MAC. 4. Which construction paradigm is provably secure for authenticated encryption?</td>
+</tr>
+<tr>
+<td>7.2</td>
+<td>SW attestation, [<a href="https://eprint.iacr.org/2016/086.pdf">SGX explained</a>]-Chap3.3</td>
+<td></td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>hash <code>KL</code>5</td>
+<td>1. what're three security notions for Hash? 2. name the domain extension for Hash? 3. name the industrial-standard variable-length MAC? 4. name a generic attack against hash? 5. name one application of hash.</td>
+</tr>
+<tr>
+<td>8.2</td>
+<td>recitation (HW 1,2)</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Spring break</td>
+<td></td>
+</tr>
+<tr>
+<td>10.1</td>
+<td>blockchain: intro. <code>BtC</code>2</td>
+<td>1. name two basic functionalities of any currency. 2. name one attack unique in digital currency. 3. what's the idea of bitcoin to decentralize trust? 4. what makes bitcoin consensus protocol practically working despite the negative theoretical result?</td>
+</tr>
+<tr>
+<td>10.2</td>
+<td>TPM-measurement [<a href="https://users.ece.cmu.edu/~adrian/731-sp04/readings/rc23064.pdf">TCG</a>]</td>
+<td>Guest lecture by Scott Constable [<a href="https://www.linkedin.com/in/scottconstablemathtrombone">webpage</a>]</td>
+</tr>
+<tr>
+<td>11</td>
+<td>hash applications and BitCoin consensus <code>KL</code>5.6,<code>BtC</code>1,2</td>
+<td>1. which security notion of hash is necessary for the security of Merkle tree? 2. which security notation(s) of hash is/are necessary for the security of commitment scheme? 3. what property of BitCoin P2P network is necessary for the security of consensus against double-spend attack? 4. what incentive technique is used in BitCoin consensus?</td>
+</tr>
+<tr>
+<td>12.1</td>
+<td>group theory <code>KL</code>8 &amp; PKE <code>KL</code>11</td>
+<td>1. name the hardness assumption behind DH protocol? 2. what defines a residue group. 3. name one thing different in PKE security from PrivKE security. 4. name the scheme used for PKE domain-extension. 5. name the DH-based construction for PKE</td>
+</tr>
+<tr>
+<td>12.2</td>
+<td>digital signature <code>KL</code>12</td>
+<td>1. Name the transform paradigm for constructing fixed-length digital signature (from identification scheme). 2. Name the domain-extension scheme to construct variable-length digital signature. 3. Compare MAC and DS, describe the differentiating property.</td>
+</tr>
+<tr>
+<td>13.1</td>
+<td>recitation (HW 3,4)</td>
+<td></td>
+</tr>
+<tr>
+<td>13.2</td>
+<td>exam. 1</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Bitcoin anonimity <code>BtC</code>6,<code>BS</code>2.3</td>
+<td>1. name one de-anonymization attack against Bitcoin. 2. name one defense heuristic for Bitcoin anonymity. 3. name one cryptographic protocol for defense in Bitcoin anonimity.</td>
+</tr>
+<tr>
+<td>15.1</td>
+<td>Security protocols <code>SK</code>11.5 and Kerboros[<a href="http://web.mit.edu/kerberos/dialogue.html">link</a>]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--
+
+| 14.2 | forward secrecy (Tor, PGP,etc) | 1. what's leaked in SGX dynamic memory management? 2. which private-key encryption scheme is used in enclave? |
+| 15.2 | smart contract `BtC`9 | |
+| 15.1 | SGX memory | 1. what's leaked in SGX dynamic memory management? 2. which private-key encryption scheme is used in enclave? |
+| 16.1 | secure impl.: trusting the trust [[pdf](https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf)] | |
+| 16.2 | cryptography misuse  | [[Impl. pitfalls](http://cseweb.ucsd.edu/~mihir/cse107/yoshi.pdf)],[[GCM-SIV](https://eprint.iacr.org/2015/102.pdf)] |
+
+
+weak points (can't modeled)
+
+- PKI: User authentication and identity management: Kerberos, PGP
+- Trusted execution environment and software attestation
+
+hardness
+
+| 15.1 | secure computation: introduction | 
+
+inferrence attacks
+
+Project options
+---
+
+1. Password storage and management
+2. Blockchain 
+3. Authentication 
+
+Discuss with me, for the details of each option.
+
+* Programming resource
+    * Crypto library: NaCL ("salt"), OpenSSL, `OpenSSL`
+
+-->
+
+<!---
+
+1. Cryptographic games
+    * Lecture:
+    * Presentation:
+    * Project: Using EasyCrypt to specify a protocol
+2. Password storage and management
+    * Lecture:
+    * Presentation: 
+    * Project: Cracking password on Linux
+3. Authentication
+    * Lecture: Kerberos 
+    * Presentation: 
+        * Innovative technology for attestation and sealing [[pdf](https://software.intel.com/sites/default/files/article/413939/hasp-2013-innovative-technology-for-attestation-and-sealing.pdf)]
+    * Project: Implementing Attestation in Intel SGX
+4. Blockchain and cryptocurrency
+    * Lecture: [[txtbk](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf)], 
+    * Presentation: 
+        * Zerocash: Decentralized Anonymous Payments from Bitcoin, [[website](http://zerocash-project.org)]
+        * Teechan: Payment Channels Using Trusted Execution Environments, [[pdf](https://www.cs.cornell.edu/People/egs/papers/teechan.pdf)]
+        * Enhancing Bitcoin Security and Performance with Strong Consistency via Collective Signing, [[pdf](https://arxiv.org/pdf/1602.06997v3.pdf)]
+        * Town Crier: An Authenticated Data Feed for Smart Contracts, [(https://eprint.iacr.org/2016/168.pdf)]
+    * Project: Using Etheorem ([[labs](https://mc2-umd.github.io/ethereumlab/)])
+
+-->
+
+<!--
+
+Part 1
+---
+
+*Lectures: Introduction to Modern Cryptography*
+
+* Introduction
+    * probability theory `KL`-A.3
+    * perfect secrecy `KL`-2
+* Private-key cryptography 
+    * Crash course on computation hardness and complexity `PS`-2/B
+    * Symmetric key encryption and computational security: Block cipher, AES `KL`-3
+    * Message authentication code, hash, password and commitment `KL`-4/5
+* Public-key cryptography
+    * Crash course on number theory, `KL`-8
+    * Key distribution: DH `FSK`-11 (`KL`-10.1/.3)
+    * Public-key encryption: RSA, Digital signatures, `FSK`-12 (`KL`-11/12)
+
+* Programming resources
+    * EasyCrypt 
+
+* Secure computation
+    * Homomorphic encryption
+    * The case of ZeroDB Inc.
+    * Multi-party computation: Yao's GC, GMW
+    * Verifiable comptution
+
+Part 2
+---
+
+*Projects & presentations: Real-world security applications & protocols*
+
+1. Block-chain and cryptocurrency, 
+    * Lecture: [[txtbk](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf)], 
+    * Lab: [[lab](https://mc2-umd.github.io/ethereumlab/)]
+    * Paper presentation:
+        * Teechan: Payment Channels Using Trusted Execution Environments, [[pdf](https://www.cs.cornell.edu/People/egs/papers/teechan.pdf)]
+        * Enhancing Bitcoin Security and Performance with Strong Consistency via Collective Signing, [[pdf](https://arxiv.org/pdf/1602.06997v3.pdf)]
+        * Zerocash: Decentralized Anonymous Payments from Bitcoin, [[website](http://zerocash-project.org)]
+        * Town Crier: An Authenticated Data Feed for Smart Contracts, [(https://eprint.iacr.org/2016/168.pdf)]
+2. Attestation protocols and the case of Intel SGX, 
+    * Lecture: [[VC3]()], [[Haven]()], [[Attestation](https://software.intel.com/sites/default/files/article/413939/hasp-2013-innovative-technology-for-attestation-and-sealing.pdf)]
+    * Paper presentation:
+        * SCONE: Secure Linux Containers with Intel SGX, [[pdf](https://www.usenix.org/system/files/conference/osdi16/osdi16-arnautov.pdf)]
+        * Rollback and Forking Detection for Trusted Execution Environments using Lightweight Collective Memory, [[pdf](https://arxiv.org/pdf/1701.00981v1.pdf)]
+        * Attestation Transparency: Building secure Internet services for legacy clients
+3. Kerberos and password management
+
+* Programming resources
+    * Crypto library: NaCL ("salt"), OpenSSL, `OpenSSL`
+
+    * Certificate transparency
+    * The Tor project
+
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="homework/" class="btn btn-neutral float-right" title="Homework">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="homework/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="./js/theme.js"></script>
+      <script src="./search/require.js"></script>
+      <script src="./search/search.js"></script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 0.17.2
+Build Date UTC : 2019-08-26 18:21:47
+-->
