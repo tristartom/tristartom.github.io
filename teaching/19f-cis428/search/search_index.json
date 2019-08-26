@@ -29,6 +29,11 @@
             "location": "/homework/", 
             "text": "", 
             "title": "Homework"
+        }, 
+        {
+            "location": "/labs/", 
+            "text": "MD5 collision attack lab: [\nlink\n]\n\n\nRSA public-key encryption and signature lab: [\nlink\n]\n\n\nPublic-key infrastructure lab (PKI): [\nlink\n]", 
+            "title": "Labs"
         }
     ]
 }
