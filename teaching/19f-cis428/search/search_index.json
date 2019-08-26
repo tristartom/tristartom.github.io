@@ -32,8 +32,13 @@
         }, 
         {
             "location": "/labs/", 
-            "text": "MD5 collision attack lab: [\nlink\n]\n\n\nRSA public-key encryption and signature lab: [\nlink\n]\n\n\nPublic-key infrastructure lab (PKI): [\nlink\n]", 
+            "text": "SEED Labs\n\n\n\n\nMD5 collision attack lab: [\nlink\n]\n\n\nRSA public-key encryption and signature lab: [\nlink\n]\n\n\nPublic-key infrastructure lab (PKI): [\nlink\n]", 
             "title": "Labs"
+        }, 
+        {
+            "location": "/labs/#seed-labs", 
+            "text": "MD5 collision attack lab: [ link ]  RSA public-key encryption and signature lab: [ link ]  Public-key infrastructure lab (PKI): [ link ]", 
+            "title": "SEED Labs"
         }
     ]
 }
