@@ -26,6 +26,11 @@
             "title": "Schedule (Tentative)"
         }, 
         {
+            "location": "/class_tests/", 
+            "text": "week\n\n\ntopic\n\n\nquestions\n\n\n\n\n\n\n\n\n\n\n1,2\n\n\nintro \nKL\n1, [\nslides\n]\n\n\n1. What are the two typical formal properties required in a cryptographic scheme? 2. What are the three elements in provable security? 3. What are two parts in a formal security defintion?", 
+            "title": "Tests"
+        }, 
+        {
             "location": "/homework/", 
             "text": "", 
             "title": "Homework"
