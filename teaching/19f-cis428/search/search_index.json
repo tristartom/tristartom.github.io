@@ -27,13 +27,18 @@
         }, 
         {
             "location": "/class_tests/", 
-            "text": "week\n\n\ntopic\n\n\nquestions\n\n\n\n\n\n\n\n\n\n\n1,2\n\n\nintro \nKL\n1, [\nslides\n]\n\n\n1. What are the two typical formal properties required in a cryptographic scheme? 2. What are the three elements in provable security? 3. What are two parts in a formal security defintion?", 
+            "text": "Topic 1: Introduction to modern cryptography\n\n\nWhat are the differences between classic cryptography and modern cryptography?\n\n\nWhat are the two elements in provable security? In other words, what's required to back the statement that some cryptographic construction is provably secure?\n\n\nWhat do you need to specify in a security definition?\n\n\nState the differences between provable security and real-world security? You may think about their differences from the following point of view: scope, applicability, the treatment of security, etc.", 
             "title": "Tests"
         }, 
         {
             "location": "/homework/", 
-            "text": "", 
+            "text": "Homeworks\n\n\nTBA", 
             "title": "Homework"
+        }, 
+        {
+            "location": "/homework/#homeworks", 
+            "text": "TBA", 
+            "title": "Homeworks"
         }, 
         {
             "location": "/labs/", 
