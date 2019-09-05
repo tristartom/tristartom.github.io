@@ -27,8 +27,13 @@
         }, 
         {
             "location": "/class_tests/", 
-            "text": "Topic 1: Introduction to modern cryptography\n\n\nWhat are the differences between classic cryptography and modern cryptography?\n\n\nWhat are the two elements in provable security? In other words, what's required to back the statement that some cryptographic construction is provably secure?\n\n\nWhat do you need to specify in a security definition?\n\n\nState the differences between provable security and real-world security? You may think about their differences from the following point of view: scope, applicability, the treatment of security, etc.", 
+            "text": "Class tests\n\n\n\n\nCheck the lecture notes posted at [\nlink\n]\n\n\nThe tests can be found on this online document after the test: [\ndoc\n]\n\n\nThe answer will be released on the same online document after the test.", 
             "title": "Tests"
+        }, 
+        {
+            "location": "/class_tests/#class-tests", 
+            "text": "Check the lecture notes posted at [ link ]  The tests can be found on this online document after the test: [ doc ]  The answer will be released on the same online document after the test.", 
+            "title": "Class tests"
         }, 
         {
             "location": "/homework/", 
