@@ -32,72 +32,22 @@ A:hover {color: #FF0000;}
 <body>
 <span class = "style5">
 Career: Secure and Cost-Effective Transparency Logs with Blockchains
-<p/>
+</li>    <li class="style21">
 </span>
 
 <ol start="1">
 <li class="style21">
-<b>Preliminary Result</b>: 
-"Log-Structured Authenticated Data Structure with Minimal Trust (Or When LSM tree meets ADS)" <br>
-Yuzhe Tang, Ju Chen.<br>
-IACR Report 2016, [<a href="https://eprint.iacr.org/2016/1063.pdf">pdf</a>, Related theoretic facts: <a href="http://eprint.iacr.org/2016/617.pdf">pdf</a>] <br>
-<ul><li class="style22">
-The work proposes a novel approach to building authenticated cloud storage systems by combining Authentication Data Structure (ADS) and Log-Structured Merge Trees (LSM trees). ADS is a security protocol used to ensure data authenticity in an outsourced key-value store. LSM tree is a data structure used to build cloud key-value stores with write-optimized performance. This work is the first to combine these two structures together and builds an overall storage system. The end result is that data can be authenticated without (significantly) slowing down the write performance in a log-structured cloud storage system.
-</li>
-</li></ul>
-<li class="style21">
-<i>Prior Related Work</i>: 
-"Lightweight Authentication of Freshness in Outsourced Key-Value Stores"<br> 
-Yuzhe Tang, Ting Wang, Ling Liu, Xin Hu, Jiyong Jang <br> 
-ACSAC 2014 (AR&lt;19.9%), 
-[<a href="./docs/acsac14.pdf">pdf</a>, ICDE demo: <a href="./docs/ICDE14_demo_768.pdf">pdf</a>] 
-<ul><li class="style22">
-In this work, we consider a client outsourcing a key-value store to an untrusted cloud wants to ensure data returned from the cloud-side storage is up-to-date and fresh. The freshness verification essentially requires to efficiently link the data write signed in the past to the write signed recently. We propose a Merkle tree structure augmented with Bloom filters which 
-improves write performance while enabling freshness authentication. The proposed scheme is implemented in Apache HBase.
-</li></ul>
-</li>
-<li class="style21">
-<i>Prior Related Work</i>: 
-"Deferred Lightweight Indexing for Log-Structured Key-Value Stores"<br>
-Yuzhe Tang, Arun Iyengar, Wei Tan, Liana Fong, Ling Liu, Balaji Palanisamy <br> 
-CCGrid 2015, (AR&lt;25.7%), [<a href="./docs/ccgrid15.pdf">pdf</a>, <a href="https://github.com/tristartom/nosql-indexing">src</a>]
-<br> &#9733; 
-<font>Best Paper Award [<a href="http://cloud.siat.ac.cn/ccgrid2015/awards.html">link</a>]</font>
-<ul><li class="style22">
-This work supports secondary index on a "NoSQL" key-value store, and tackles the optimization of write performance. Inspire by the Log-structured Merge (LSM) design that optimizes the write performance of primary index, our key idea is to apply LSM tree to the secondary index design. The distinct design comes from the mapping of the LSM design to the underlying sharded index-base partitions. We proposed a  mechanism  to defer index maintenance without sacrificing the performance of serving online reads and writes. We implemented the proposed scheme on Apache HBase without modifying its internal codebase, and open-source the code on <a href="https://github.com/tristartom/nosql-indexing">github</a>.
-</li>
-</ul>
-</li>
-</ol>
+Kai Li, Yuzhe Tang, Beom Heyn Kim, Jianliang Xu. "Secure Consistency Verification for Untrusted Cloud Storage by Public Blockchains", SecureComm 2019
+</li>    <li class="style21">
 
+Ce Zhang, Cheng Xu, Jianliang Xu, Yuzhe Tang, Byron Choi. "GEM^2-Tree: A Gas-Efficient Structure for Authenticated Range Queries in Blockchain" IEEE ICDE 2019, Full Paper, AR=26.8%
+</li>    <li class="style21">
 
-&nbsp; Broader Impacts
+Qiwu Zou, Yuzhe Tang, Ju Chen, Kai Li, Charles Kamoua, Kevin Kwiat, Laurent Njilla. "ChainFS: Blockchain-Secured Cloud Storage", IEEE Cloud 2018
+</li>    <li class="style21">
 
-<ol start="1">
-
-<li class="style21"> 
-<b>Public lecture</b>: 
-"Blockchain: Applications, Security Promises and Internals", <br>
-at CSIAC, Dec. 2017, [<a href="https://www.csiac.org/event/blockchain-applications-security-promises-and-internals/">link</a>]
-</li>
-
-<li class="style21"> 
-<b>Public lecture</b>: 
-"Blockchain: Applications, Security Promises and Internals", <br>
-at CSIAC, Dec. 2017, [<a href="https://www.csiac.org/event/blockchain-applications-security-promises-and-internals/">webinar</a>], [<a href="docs/csiac17.pdf">slides</a>]
-</li>
-
-<li class="style21"> 
-<b>Public lecture</b>: 
-"Get Your Head In The Clouds! Cloud Computing' Risks and Rewards", <br>
-at The Museum of Science and Technology at Syracuse, June 2017, [<a href="http://www.cnyo.org/tag/yuzhe-tang-ph-d/">link</a>]
-</li>
-
-<li class="style21"> 
-<b>Local event </b>: 
-Host "Great Lakes Security Day 2018", <br>
-at Syracuse University, 2018, [<a href="http://tristartom.github.io/glsd18/">link</a>]
-</li>
+Yuzhe (Richard) Tang, Zihao Xing, Cheng Xu, Ju Chen, Jianliang Xu. "Lightweight Blockchain Logging for Data-Intensive Applications", 2nd Workshop of Trusted Smart Contracts 2018 at International Conference on Financial Cryptography and Data Security
+</li> 
 
 </ol>
 
