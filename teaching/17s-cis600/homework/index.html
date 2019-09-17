@@ -40,7 +40,7 @@ Homework 3
     4. use the public-private key pair to encrypt and decrypt messages
     5. use the public-private key pair to sign and verify messages 
 3. [Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform $k, r$ in $\{0,1\}^n$, and sends $s := k\oplus{}r$ to Bob. (b) Bob chooses uniform $t$ in $\{0,1\}^n$, and sends $u := s\oplus{}t$ to Alice. (c) Alice computes $w := u\oplus{}r$ and sends $w$ to Bob. (d) Alice outputs $k$ and Bob outputs $w\oplus{}t$. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack). Note $\oplus$ is XOR.
- 
+-->
 <!--
 
 Amin's sol:
@@ -80,18 +80,17 @@ openssl sha1 -out digest.txt plain.txt
 openssl sha1 -sign private/cs691privatekey.pem -out rsasign.bin plain.txt
 openssl sha1 -verify cs691publickey.pem -signature rsasign.bin plain.txt
 -->
-<h2 id="homework-4">Homework 4</h2>
-<ol style="list-style-type: decimal">
-<li><strong>Merkle tree collision-resistance</strong> [Exercise 5.12] Prove theorem 5.11, that is, the collision-resistance of Merkle tree depends on the collision-resistance of the hash function used in Merkle tree.</li>
-<li><strong>Merkle tree for variable-length hash</strong> [Exercise 5.13] Show how to find a collision in the Merkle tree construction if <span class="math"><em>t</em></span> is not fixed. Specifically, show how to find two sets of inputs <span class="math"><em>x</em><sub>1</sub>, ..., <em>x</em><sub><em>t</em></sub></span> and <span class="math"><em>x</em><sub>1</sub>′, ..., <em>x</em><sub>2<em>t</em></sub>′</span>, such that <span class="math"><em>M</em><em>T</em><sub><em>t</em></sub>(<em>x</em><sub>1</sub>, ..., <em>x</em><sub><em>t</em></sub>) = <em>M</em><em>T</em><sub>2<em>t</em></sub>(<em>x</em><sub>1</sub>′, ..., <em>x</em><sub>2<em>t</em></sub>′)</span>.
-<ul>
-<li>Can you design an approach to fix the problem and have variable-length collision resistant Merkle tree?</li>
-</ul></li>
-<li>[Bonus: 20/100] Consider a variable-length Merkle-tree scheme <span class="math"><em>M</em><em>T</em></span> and a message space <span class="math"><em>M</em></span> where there is an ordering scheme (i.e. total order between two messages). Use <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub></span> to digest an ordered list of <em>distinct</em> messages. Can <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub></span> support the merge operation of the two lists? Given two lists, the merge result is an ordered list of distinct messages. Formally, consider two lists <span class="math"><em>m</em><sup><em>A</em></sup> = <em>m</em><sub>1</sub><sup><em>A</em></sup><em>m</em><sub>2</sub><sup><em>A</em></sup>...<em>m</em><sub><em>t</em></sub><sup><em>A</em></sup></span> and <span class="math"><em>m</em><sup><em>B</em></sup> = <em>m</em><sub>1</sub><sup><em>B</em></sup><em>m</em><sub>2</sub><sup><em>B</em></sup>...<em>m</em><sub><em>t</em>′</sub><sup><em>B</em></sup></span> where (w.o.l.g.) <span class="math"><em>m</em><sub>1</sub><sup><em>A</em></sup> &lt; <em>m</em><sub>2</sub><sup><em>A</em></sup> &lt; ... &lt; <em>m</em><sub><em>t</em></sub><sup><em>A</em></sup></span> and <span class="math"><em>m</em><sub>1</sub><sup><em>B</em></sup> &lt; <em>m</em><sub>2</sub><sup><em>B</em></sup> &lt; ... &lt; <em>m</em><sub><em>t</em>′</sub><sup><em>B</em></sup></span>. <span class="math"><em>m</em> := <em>m</em><em>e</em><em>r</em><em>g</em><em>e</em>(<em>m</em><sup><em>A</em></sup>, <em>m</em><sup><em>B</em></sup>)</span> where <span class="math"><em>m</em></span> contains all blocks in <span class="math">{<em>m</em><sub>1</sub><sup><em>A</em></sup>, <em>m</em><sub>2</sub><sup><em>A</em></sup>, ..., <em>m</em><sub><em>t</em></sub><sup><em>A</em></sup>, <em>m</em><sub>1</sub><sup><em>B</em></sup>, <em>m</em><sub>2</sub><sup><em>B</em></sup>, ..., <em>m</em><sub><em>t</em>′</sub><sup><em>B</em></sup></span>, is an ordered list, and has all blocks distinct. Denote by <span class="math"><em>d</em><sup><em>A</em></sup></span> the root hash of Merkle tree <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub>(<em>m</em><sup><em>A</em></sup>)</span> and <span class="math"><em>d</em><sup><em>B</em></sup></span> that of <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub>(<em>m</em><sup><em>B</em></sup>)</span>. Would it be possible to compute <span class="math"><em>d</em></span>, the root hash of <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub>(<em>m</em><em>e</em><em>r</em><em>g</em><em>e</em>(<em>m</em><sup><em>A</em></sup>, <em>m</em><sup><em>B</em></sup>))</span> directly from <span class="math"><em>d</em><sup><em>A</em></sup></span> and <span class="math"><em>d</em><sup><em>B</em></sup></span>?
-<ul>
-<li>Hint: To make it non-trivial, one can ignore the case that two lists are non-overlapping and totally-ordered. --&gt;</li>
-</ul></li>
-</ol>
+<!--
+  
+Homework 4
+---
+
+1. **Merkle tree collision-resistance** [Exercise 5.12] Prove theorem 5.11, that is, the collision-resistance of Merkle tree depends on the collision-resistance of the hash function used in Merkle tree.
+2. **Merkle tree for variable-length hash** [Exercise 5.13] Show how to find a collision in the Merkle tree construction if $t$ is not fixed. Specifically, show how to find two sets of inputs $x_1,...,x_t$ and $x_1',...,x_{2t}'$, such that $MT_t(x_1,...,x_t)=MT_{2t}(x_1',...,x_{2t}')$.
+    - Can you design an approach to fix the problem and have variable-length collision resistant Merkle tree? 
+3. [Bonus: 20/100] Consider a variable-length Merkle-tree scheme $MT$ and a message space ${M}$ where there is an ordering scheme (i.e. total order between two messages). Use $MT_{M}$ to digest an ordered list of *distinct* messages. Can $MT_{M}$ support the merge operation of the two lists? Given two lists, the merge result is an ordered list of distinct messages. Formally, consider two lists $m^A=m^A_1m^A_2...m^A_t$ and $m^B=m^B_1m^B_2...m^B_{t'}$ where (w.o.l.g.) $m^A_1<m^A_2<...<m^A_t$ and $m^B_1<m^B_2<...<m^B_{t'}$. $m:=merge(m^A,m^B)$ where $m$ contains all blocks in $\{m^A_1,m^A_2,...,m^A_t,m^B_1,m^B_2,...,m^B_{t'}$, is an ordered list, and has all blocks distinct. Denote by $d^A$ the root hash of Merkle tree $MT_{M}(m^A)$ and $d^B$ that of $MT_{M}(m^B)$. Would it be possible to compute $d$, the root hash of $MT_{{M}}(merge(m^A,m^B))$ directly from $d^A$ and $d^B$?
+    - Hint: To make it non-trivial, one can ignore the case that two lists are non-overlapping and totally-ordered.
+-->
 <!--
 
 4. **Authenticated Data Structures** [Exercise 1 from book `BtC` (Bitcoin and Cryptocurrency Technologies); Page 49].
