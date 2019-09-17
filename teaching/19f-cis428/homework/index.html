@@ -14,35 +14,33 @@
 <li>Prove that we may assume that the key-generation algorithm Gen always chooses a key uniformly from the key space K.</li>
 <li>[Bonus:30/100] [Exercise 3.4]: Prove the equivalence of Definition 3.8 and Definition 3.9.</li>
 </ol>
-<h2 id="homework-2">Homework 2</h2>
-<ol style="list-style-type: decimal">
-<li><strong>variable-length PrivK encryption (stream cipher)</strong> Write programs (with language of your choice) to implement the following:
-<ol style="list-style-type: decimal">
-<li>one-time pad</li>
-<li>the RC4 stream cipher (read chapter 6.1.4 in textbook)</li>
-<li>construction 3.17</li>
-<li>domain extension for a variable-length encryption based on 3); hint: use stream-cipher mode of operation (read 3.6.1). Note no block cipher is allowed in the implementation.</li>
-</ol></li>
-<li>[Exercise 3.20]: Consider a stateful variant of CBC-mode encryption where the sender simply increments the IV by 1 each time a message is encrypted (rather than choosing IV at random each time). Show that the resulting scheme is not CPA-secure.</li>
-<li>[Bonus: 30/100] Write down the proof of security for Theorem 3.18 IN YOUR OWN LANGUAGE. Don't copy and paste from the textbook.</li>
-</ol>
-<h2 id="homework-3">Homework 3</h2>
-<ol style="list-style-type: decimal">
-<li><strong>CPA-secure variable-length PrivK encryption (block cipher)</strong> Write programs (with language of your choice) to implement a CPA-secure encryption scheme based on block cipher. In your implementation, you can assume a insecure block cipher (e.g. a fixed permutation or even an identity function). Specifically, implement construction for the following schemes:
-<ol style="list-style-type: decimal">
-<li>Fixed-length encryption (with scheme of your choice),</li>
-<li>Variable-length encryption; use CBC mode for domain extension.</li>
-</ol></li>
-<li><strong>OpenSSL</strong> Read online [<a href="http://cs.uccs.edu/~cs691/crypto/openssl/example.htm">tutorial</a>], finish the following operations. Upload the screenshots as your solution.
-<ol style="list-style-type: decimal">
-<li>create a self signed CA certificate</li>
-<li>generate private-public key pair bind to an user, say <code>CIS600</code></li>
-<li>request a certificate of user <code>CIS600</code> to CA for signing; (hint: use <code>CIS600</code>'s public key as his identity)</li>
-<li>use the public-private key pair to encrypt and decrypt messages</li>
-<li>use the public-private key pair to sign and verify messages</li>
-</ol></li>
-<li>[Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform <span class="math"><em>k</em>, <em>r</em></span> in <span class="math">{0, 1}<sup><em>n</em></sup></span>, and sends <span class="math"><em>s</em> := <em>k</em> ⊕ <em>r</em></span> to Bob. (b) Bob chooses uniform <span class="math"><em>t</em></span> in <span class="math">{0, 1}<sup><em>n</em></sup></span>, and sends <span class="math"><em>u</em> := <em>s</em> ⊕ <em>t</em></span> to Alice. (c) Alice computes <span class="math"><em>w</em> := <em>u</em> ⊕ <em>r</em></span> and sends <span class="math"><em>w</em></span> to Bob. (d) Alice outputs <span class="math"><em>k</em></span> and Bob outputs <span class="math"><em>w</em> ⊕ <em>t</em></span>. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack). Note <span class="math"> ⊕ </span> is XOR.</li>
-</ol>
+<!--
+
+Homework 2
+---
+
+1. **variable-length PrivK encryption (stream cipher)** Write programs (with language of your choice) to implement the following: 
+    1. one-time pad
+    2. the RC4 stream cipher (read chapter 6.1.4 in textbook) 
+    3. construction 3.17 
+    4. domain extension for a variable-length encryption based on 3); hint: use stream-cipher mode of operation (read 3.6.1). Note no block cipher is allowed in the implementation.
+2. [Exercise 3.20]: Consider a stateful variant of CBC-mode encryption where the sender simply increments the IV by 1 each time a message is encrypted (rather than choosing IV at random each time). Show that the resulting scheme is not CPA-secure.
+3. [Bonus: 30/100] Write down the proof of security for Theorem 3.18 IN YOUR OWN LANGUAGE. Don't copy and paste from the textbook.
+
+Homework 3
+---
+
+1. **CPA-secure variable-length PrivK encryption (block cipher)** Write programs (with language of your choice) to implement a CPA-secure encryption scheme based on block cipher. In your implementation, you can assume a insecure block cipher (e.g. a fixed permutation or even an identity function). Specifically, implement construction for the following schemes:
+    1. Fixed-length encryption (with scheme of your choice),
+    2. Variable-length encryption; use CBC mode for domain extension.
+2. **OpenSSL** Read online [[tutorial](http://cs.uccs.edu/~cs691/crypto/openssl/example.htm)], finish the following operations. Upload the screenshots as your solution.
+    1. create a self signed CA certificate
+    2. generate private-public key pair bind to an user, say `CIS600`
+    3. request a certificate of user `CIS600` to CA for signing; (hint: use `CIS600`'s public key as his identity)
+    4. use the public-private key pair to encrypt and decrypt messages
+    5. use the public-private key pair to sign and verify messages 
+3. [Exercise 10.4] Consider the following key-exchange protocol: (a) Alice chooses uniform $k, r$ in $\{0,1\}^n$, and sends $s := k\oplus{}r$ to Bob. (b) Bob chooses uniform $t$ in $\{0,1\}^n$, and sends $u := s\oplus{}t$ to Alice. (c) Alice computes $w := u\oplus{}r$ and sends $w$ to Bob. (d) Alice outputs $k$ and Bob outputs $w\oplus{}t$. Show that Alice and Bob output the same key. Analyze the security of the scheme (i.e., either prove its security or show a concrete attack). Note $\oplus$ is XOR.
+-->
 <!--
 
 Amin's sol:
@@ -82,18 +80,17 @@ openssl sha1 -out digest.txt plain.txt
 openssl sha1 -sign private/cs691privatekey.pem -out rsasign.bin plain.txt
 openssl sha1 -verify cs691publickey.pem -signature rsasign.bin plain.txt
 -->
-<h2 id="homework-4">Homework 4</h2>
-<ol style="list-style-type: decimal">
-<li><strong>Merkle tree collision-resistance</strong> [Exercise 5.12] Prove theorem 5.11, that is, the collision-resistance of Merkle tree depends on the collision-resistance of the hash function used in Merkle tree.</li>
-<li><strong>Merkle tree for variable-length hash</strong> [Exercise 5.13] Show how to find a collision in the Merkle tree construction if <span class="math"><em>t</em></span> is not fixed. Specifically, show how to find two sets of inputs <span class="math"><em>x</em><sub>1</sub>, ..., <em>x</em><sub><em>t</em></sub></span> and <span class="math"><em>x</em><sub>1</sub>′, ..., <em>x</em><sub>2<em>t</em></sub>′</span>, such that <span class="math"><em>M</em><em>T</em><sub><em>t</em></sub>(<em>x</em><sub>1</sub>, ..., <em>x</em><sub><em>t</em></sub>) = <em>M</em><em>T</em><sub>2<em>t</em></sub>(<em>x</em><sub>1</sub>′, ..., <em>x</em><sub>2<em>t</em></sub>′)</span>.
-<ul>
-<li>Can you design an approach to fix the problem and have variable-length collision resistant Merkle tree?</li>
-</ul></li>
-<li>[Bonus: 20/100] Consider a variable-length Merkle-tree scheme <span class="math"><em>M</em><em>T</em></span> and a message space <span class="math"><em>M</em></span> where there is an ordering scheme (i.e. total order between two messages). Use <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub></span> to digest an ordered list of <em>distinct</em> messages. Can <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub></span> support the merge operation of the two lists? Given two lists, the merge result is an ordered list of distinct messages. Formally, consider two lists <span class="math"><em>m</em><sup><em>A</em></sup> = <em>m</em><sub>1</sub><sup><em>A</em></sup><em>m</em><sub>2</sub><sup><em>A</em></sup>...<em>m</em><sub><em>t</em></sub><sup><em>A</em></sup></span> and <span class="math"><em>m</em><sup><em>B</em></sup> = <em>m</em><sub>1</sub><sup><em>B</em></sup><em>m</em><sub>2</sub><sup><em>B</em></sup>...<em>m</em><sub><em>t</em>′</sub><sup><em>B</em></sup></span> where (w.o.l.g.) <span class="math"><em>m</em><sub>1</sub><sup><em>A</em></sup> &lt; <em>m</em><sub>2</sub><sup><em>A</em></sup> &lt; ... &lt; <em>m</em><sub><em>t</em></sub><sup><em>A</em></sup></span> and <span class="math"><em>m</em><sub>1</sub><sup><em>B</em></sup> &lt; <em>m</em><sub>2</sub><sup><em>B</em></sup> &lt; ... &lt; <em>m</em><sub><em>t</em>′</sub><sup><em>B</em></sup></span>. <span class="math"><em>m</em> := <em>m</em><em>e</em><em>r</em><em>g</em><em>e</em>(<em>m</em><sup><em>A</em></sup>, <em>m</em><sup><em>B</em></sup>)</span> where <span class="math"><em>m</em></span> contains all blocks in <span class="math">{<em>m</em><sub>1</sub><sup><em>A</em></sup>, <em>m</em><sub>2</sub><sup><em>A</em></sup>, ..., <em>m</em><sub><em>t</em></sub><sup><em>A</em></sup>, <em>m</em><sub>1</sub><sup><em>B</em></sup>, <em>m</em><sub>2</sub><sup><em>B</em></sup>, ..., <em>m</em><sub><em>t</em>′</sub><sup><em>B</em></sup></span>, is an ordered list, and has all blocks distinct. Denote by <span class="math"><em>d</em><sup><em>A</em></sup></span> the root hash of Merkle tree <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub>(<em>m</em><sup><em>A</em></sup>)</span> and <span class="math"><em>d</em><sup><em>B</em></sup></span> that of <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub>(<em>m</em><sup><em>B</em></sup>)</span>. Would it be possible to compute <span class="math"><em>d</em></span>, the root hash of <span class="math"><em>M</em><em>T</em><sub><em>M</em></sub>(<em>m</em><em>e</em><em>r</em><em>g</em><em>e</em>(<em>m</em><sup><em>A</em></sup>, <em>m</em><sup><em>B</em></sup>))</span> directly from <span class="math"><em>d</em><sup><em>A</em></sup></span> and <span class="math"><em>d</em><sup><em>B</em></sup></span>?
-<ul>
-<li>Hint: To make it non-trivial, one can ignore the case that two lists are non-overlapping and totally-ordered.</li>
-</ul></li>
-</ol>
+<!--
+  
+Homework 4
+---
+
+1. **Merkle tree collision-resistance** [Exercise 5.12] Prove theorem 5.11, that is, the collision-resistance of Merkle tree depends on the collision-resistance of the hash function used in Merkle tree.
+2. **Merkle tree for variable-length hash** [Exercise 5.13] Show how to find a collision in the Merkle tree construction if $t$ is not fixed. Specifically, show how to find two sets of inputs $x_1,...,x_t$ and $x_1',...,x_{2t}'$, such that $MT_t(x_1,...,x_t)=MT_{2t}(x_1',...,x_{2t}')$.
+    - Can you design an approach to fix the problem and have variable-length collision resistant Merkle tree? 
+3. [Bonus: 20/100] Consider a variable-length Merkle-tree scheme $MT$ and a message space ${M}$ where there is an ordering scheme (i.e. total order between two messages). Use $MT_{M}$ to digest an ordered list of *distinct* messages. Can $MT_{M}$ support the merge operation of the two lists? Given two lists, the merge result is an ordered list of distinct messages. Formally, consider two lists $m^A=m^A_1m^A_2...m^A_t$ and $m^B=m^B_1m^B_2...m^B_{t'}$ where (w.o.l.g.) $m^A_1<m^A_2<...<m^A_t$ and $m^B_1<m^B_2<...<m^B_{t'}$. $m:=merge(m^A,m^B)$ where $m$ contains all blocks in $\{m^A_1,m^A_2,...,m^A_t,m^B_1,m^B_2,...,m^B_{t'}$, is an ordered list, and has all blocks distinct. Denote by $d^A$ the root hash of Merkle tree $MT_{M}(m^A)$ and $d^B$ that of $MT_{M}(m^B)$. Would it be possible to compute $d$, the root hash of $MT_{{M}}(merge(m^A,m^B))$ directly from $d^A$ and $d^B$?
+    - Hint: To make it non-trivial, one can ignore the case that two lists are non-overlapping and totally-ordered.
+-->
 <!--
 
 4. **Authenticated Data Structures** [Exercise 1 from book `BtC` (Bitcoin and Cryptocurrency Technologies); Page 49].
