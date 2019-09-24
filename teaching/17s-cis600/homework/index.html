@@ -11,7 +11,10 @@
 <h2 id="homework-1">Homework 1</h2>
 <ol style="list-style-type: decimal">
 <li>[Exercise 2.7] When using the one-time pad with the key k = <span class="math">0<sup><em>l</em></sup></span>, we have <span class="math"><em>E</em><em>n</em><em>c</em><sub><em>k</em></sub>(<em>m</em>) = <em>k</em> ⊕ <em>m</em> = <em>m</em></span> and the message is sent in the clear! It has therefore been suggested to modify the one-time pad by only encrypting with <span class="math"><em>k</em>! = 0<sup><em>l</em></sup></span> (i.e., to have Gen choose k uniformly from the set of nonzero keys of length l). Is this modified scheme still perfectly secret? Explain. Note <span class="math"> ⊕ </span> is XOR.</li>
-<li>Prove that we may assume that the key-generation algorithm Gen always chooses a key uniformly from the key space K.</li>
+<li>Prove that we may assume that the key-generation algorithm Gen always chooses a key uniformly from the key space <span class="math">$\math{K}$</span>.
+<ul>
+<li>Hint: Given any encryption scheme with the keys generated following <em>any distribution</em>, you may want to find an equivalent form of the encryption scheme with keys generated uniformly.</li>
+</ul></li>
 <li>[Bonus:30/100] [Exercise 3.4]: Prove the equivalence of Definition 3.8 and Definition 3.9.</li>
 </ol>
 <!--
