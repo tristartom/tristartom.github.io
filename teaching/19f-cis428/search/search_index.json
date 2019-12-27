@@ -37,7 +37,7 @@
         }, 
         {
             "location": "/techreview/", 
-            "text": "Project (CIS 628)\n\n\nTimeline\n\n\n\n\nTopic proposal: Oct. 04, 2019\n\n\nFinal submission: Dec. 08, 2019\n\n\n\n\nDeliverables\n\n\n\n\nProposal (15%): one-pager including abstract.\n\n\nFinal report (85%): Formal survey of the technology with no less than 10 pages (format: 12-point font size on single-spaced 8.5\" x 11\"  pages). In this report, you should properly lay out the different topics explored in your report. \n\n\nFor instance, if you survey \"techniques for Blockchain throughput\", you can have sections for \"on-chain techniques\" including sharding, new consensus algorithms, etc. and sections for \"off-chain techniques\" including say payment channels and networks, etc. \n\n\n\n\n\n\n\n\nFinal deliverable\n\n\nHere is a more detailed description of technology review: Topics can come from weekly lecture and class discussions as well as papers in the reading list. You are required write a technology review of 10-15 pages, including figures and references. \n\n\nAn example\n: Write a 10-page summary of the current state of work improving Blockchain throughput. The paper should address the following:\n\n\n\n\nWhat is the overall thrust in terms of development and goals, or products and goals of industry in this area?\n\n\nWhat technical solutions or standards exist: elaborate on them. Include protocols, data formats, and architectures.\n\n\nState what problems remain to be solved and how the developer community is approaching them.\n\n\nList any open problems.\n\n\n\n\nSample topics\n\n\n\n\nHomomorphic encryption\n\n\nMulti-party computations\n\n\nGarbled circuits\n\n\nVerifiable computations\n\n\nZero-knowledge proof\n\n\nAdversarial machine learning and adverserial examples", 
+            "text": "Project (CIS 628)\n\n\nTimeline\n\n\n\n\nTopic proposal: Oct. 04, 2019\n\n\nFinal submission: Dec. 08, 2019\n\n\n\n\nDeliverables\n\n\n\n\nProposal (15%): one-pager including abstract.\n\n\nFinal report (85%): Formal survey of the technology with no less than 10 pages (format: 12-point font size on single-spaced 8.5\" x 11\"  pages). \nThe report should focus on \na cryptography-centric topic\n and needs to have the following elements for each technique surveyed: \nscheme definition, security definition, sample constructions, security analysis, proof and/or intuition\n. \n\n\n\n\nSample topics\n\n\n\n\nHomomorphic encryption\n\n\nMulti-party computations\n\n\nGarbled circuits, oblivious transfer, etc.\n\n\n\n\n\n\nVerifiable computations\n\n\nZero-knowledge proof\n\n\nAdversarial machine learning and adverserial examples\n\n\nPublic blockchains", 
             "title": "Tech review"
         }, 
         {
@@ -52,17 +52,12 @@
         }, 
         {
             "location": "/techreview/#deliverables", 
-            "text": "Proposal (15%): one-pager including abstract.  Final report (85%): Formal survey of the technology with no less than 10 pages (format: 12-point font size on single-spaced 8.5\" x 11\"  pages). In this report, you should properly lay out the different topics explored in your report.   For instance, if you survey \"techniques for Blockchain throughput\", you can have sections for \"on-chain techniques\" including sharding, new consensus algorithms, etc. and sections for \"off-chain techniques\" including say payment channels and networks, etc.", 
+            "text": "Proposal (15%): one-pager including abstract.  Final report (85%): Formal survey of the technology with no less than 10 pages (format: 12-point font size on single-spaced 8.5\" x 11\"  pages). \nThe report should focus on  a cryptography-centric topic  and needs to have the following elements for each technique surveyed:  scheme definition, security definition, sample constructions, security analysis, proof and/or intuition .", 
             "title": "Deliverables"
         }, 
         {
-            "location": "/techreview/#final-deliverable", 
-            "text": "Here is a more detailed description of technology review: Topics can come from weekly lecture and class discussions as well as papers in the reading list. You are required write a technology review of 10-15 pages, including figures and references.   An example : Write a 10-page summary of the current state of work improving Blockchain throughput. The paper should address the following:   What is the overall thrust in terms of development and goals, or products and goals of industry in this area?  What technical solutions or standards exist: elaborate on them. Include protocols, data formats, and architectures.  State what problems remain to be solved and how the developer community is approaching them.  List any open problems.", 
-            "title": "Final deliverable"
-        }, 
-        {
             "location": "/techreview/#sample-topics", 
-            "text": "Homomorphic encryption  Multi-party computations  Garbled circuits  Verifiable computations  Zero-knowledge proof  Adversarial machine learning and adverserial examples", 
+            "text": "Homomorphic encryption  Multi-party computations  Garbled circuits, oblivious transfer, etc.    Verifiable computations  Zero-knowledge proof  Adversarial machine learning and adverserial examples  Public blockchains", 
             "title": "Sample topics"
         }, 
         {
