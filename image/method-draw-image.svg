@@ -1,0 +1,15 @@
+<svg width="597" height="56" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="58" width="599" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="22" x="1" stroke-width="0" stroke="#000" fill="#00bf00">F</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="22" x="18" stroke-width="0" stroke="#000" fill="#ff7f00">S</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_5" y="22" x="36" stroke-width="0" stroke="#000" fill="#ff0000">S</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="22" x="54" stroke-width="0" stroke="#000" fill="#007fff">L</text>
+  <text stroke="#000" transform="matrix(0.9784696102142334,0,0,1,0,0) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_7" y="50.546875" x="0" stroke-width="0" fill="#ffffff">Welcome to Full-Stack Scurity Lab, Department of EECS</text>
+ </g>
+</svg>
