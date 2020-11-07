@@ -1,0 +1,52 @@
+Course Project
+============
+
+Policy
+---
+
+Students can work in groups. But once groups are formed, collaboration is only allowed within the group. More specifically, **inter-group collaboration is prohabited**. Each group can have no more than 3 people.
+
+Deliverable
+---
+
+* Mid-term report/presentation (40%): Formal survey of the technology with no less than 5 pages (format: 12-point font size on single-spaced 8.5" x 11” pages)   
+ * Group with good mid-term report will be given an opportunity to do presentation in class. And **in-class presentation will be awarded with bonus grades (extra 30%)**
+* Final report (20%): Formal survey of the technology and project design \& implementation, no less than 10 pages (the same format to mid-term report).
+* Final program/demo (40%): Demo needs to allow other people to reproduce your results.
+
+Timeline
+---
+
+| Week          | Schedule |
+| ------------- |:-------------:| 
+| Week 1-4      |form group and choose topic|
+| Week 8        |mid-term report  |
+| Week 13       |final report/demo  |
+
+
+Topics (Tentative)
+---
+
+1. x86-64 ISA   
+  * * Page table and page-fault: intercept and analyze page-fault  
+  * * Return-oriented programming (ROP): formulate a working ROP attack  
+  * * Program data dependency analysis  
+  * * Double stack and isolation  
+  * * Cache false sharing  
+2. Intel ISA extension  
+  * * AVX: understand AVX/SIMD, write data-parallel program that demonstrates perf speedup.  
+  * * SGX: understand SGX/CLS, write user-land code [[link](projs/sgx.md)]
+5. Devices (blkdev, cdev, netdev)   
+  * * USB: write a USB driver [[ldd3-13](http://lwn.net/images/pdf/LDD3/ch13.pdf)]  
+  * * SSD: access SSD controller  
+4. Cloud interface  
+  * * Amazon AWS  
+
+<!--
+3. Other possible topics
+  * * GPGPU:
+  * * AES: 
+  * * TTY, DMA, etc
+-->
+
+

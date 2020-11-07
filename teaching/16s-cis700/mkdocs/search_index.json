@@ -1,0 +1,139 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "CIS700/CSE791: Big-Data and Cloud Security (BDCS)\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nCourse schedule\n\n\n\n\n\n\n\n\nDay\n\n\nTopic\n\n\nReadings\n\n\nOptional readings\n\n\nQuestions\n\n\n\n\n\n\n\n\n\n\njan 22\n\n\nIntro\n\n\n[\nslides\n]\n\n\n\n\n\n\n\n\n\n\nfeb 3\n\n\nIntro\n\n\n[\nslides\n]\n\n\n\n\n\n\n\n\n\n\nfeb 5\n\n\nsecurity analysis\n\n\ncloud analysis[\npdf\n], free shopping [\npdf\n], cloud attack surface [\npdf\n]\n\n\nSecEng\n-C1, vul-analysis [\nlink\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nfeb 12\n\n\ncontainer security\n\n\nKvmSec[\npdf\n], graphene [\npdf\n]\n\n\ndrawbridge [\npdf\n], docker security[\npdf\n], cloud container[\npdf\n], kubernetes[\npdf\n], borg[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nfeb 19\n\n\ndb optimizer\n\n\nprogressive optimization[\npdf\n], geo-distributed[\npdf\n]\n\n\nRedBook\n-C7, DBO solved?[\nlink\n], dist. query[\nacm\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nfeb 26\n\n\ndata federation\n\n\nclio[\npdf\n], bigdawg [\npdf\n], large-curation[\npdf\n]\n\n\nRedBook\n-C12, Turing'15[\nvideo\n] (db history and postgres)\n\n\n[\nlink\n]\n\n\n\n\n\n\nmar 4\n\n\nMid-term presentation\n\n\n\n\n\n\n\n\n\n\n\n\nmar 11\n\n\nconsistency attacks\n\n\nconcurrency attack overview [\npdf\n], txos[\npdf\n]\n\n\nRedBook\n-C6, feral concurrency[\npdf\n], certificate transparency [\nacm link\n], ssi[\npdf\n], fork-consistency[\npdf\n], no-border[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nmar 25\n\n\nTEE\n\n\nFlickr[\npdf\n], OpenSGX[\npdf\n], trust-ice[\npdf\n], Intel x86 harmful[\npdf\n]\n\n\nTEE intro [\nlink\n], Iago attack[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\napr 8\n\n\nCrypto basics-1\n\n\nSecEng\n (Ch2,7,10,11-14,18)\n\n\n\n\n\n\n\n\n\n\napr 13\n\n\nCrypto basics-2\n\n\nSecEng\n (Ch5,6,etc)\n\n\n\n\n\n\n\n\n\n\napr 15\n\n\nTEE DB\n\n\nCorrectDB [\npdf\n], TrustedDB [\npdf\n], trust-otp[\npdf\n]\n\n\n\n\n[\nlink\n]\n\n\n\n\n\n\napr 22\n\n\nmulti-party computing\n\n\npantry[\npdf\n], canon-mpc[\npdf\n]\n\n\nsnark[\npdf\n], spdz[\npdf\n], YaoGC\n\n\n[\nlink\n]\n\n\n\n\n\n\napr 29\n\n\ncrypto-homomorphism\n\n\ninferrence attack[\npdf\n], homo-sign[\npdf\n], homo-mac[\npdf\n]\n\n\ncipherbase[\npdf\n], cryptdb[\npdf\n], monomi[\npdf\n], \nCrypto\n-C10, ope [\npdf\n],Mylar[\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\nmay 3\n\n\ntor \n verifiable program\n\n\nVuvuzela [\npdf\n], buffet[\npdf\n]\n\n\ntor [\npdf\n], Mix [\npdf\n]\n\n\n[\nlink\n]\n\n\n\n\n\n\n\n\nReference book\n\n\n\n\nSecEng\n: Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.\n\n\nRedBook\n: Readings in Database Systems, 5th Edition, Peter Bailis, Joseph M. Hellerstein, Michael Stonebraker, editors. [\nfree copy\n]\n\n\nCrypto\n: Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell", 
+            "title": "Schedule"
+        }, 
+        {
+            "location": "/#cis700cse791-big-data-and-cloud-security-bdcs", 
+            "text": "Instructor: Yuzhe (Richard) Tang", 
+            "title": "CIS700/CSE791: Big-Data and Cloud Security (BDCS)"
+        }, 
+        {
+            "location": "/#course-schedule", 
+            "text": "Day  Topic  Readings  Optional readings  Questions      jan 22  Intro  [ slides ]      feb 3  Intro  [ slides ]      feb 5  security analysis  cloud analysis[ pdf ], free shopping [ pdf ], cloud attack surface [ pdf ]  SecEng -C1, vul-analysis [ link ]  [ link ]    feb 12  container security  KvmSec[ pdf ], graphene [ pdf ]  drawbridge [ pdf ], docker security[ pdf ], cloud container[ pdf ], kubernetes[ pdf ], borg[ pdf ]  [ link ]    feb 19  db optimizer  progressive optimization[ pdf ], geo-distributed[ pdf ]  RedBook -C7, DBO solved?[ link ], dist. query[ acm ]  [ link ]    feb 26  data federation  clio[ pdf ], bigdawg [ pdf ], large-curation[ pdf ]  RedBook -C12, Turing'15[ video ] (db history and postgres)  [ link ]    mar 4  Mid-term presentation       mar 11  consistency attacks  concurrency attack overview [ pdf ], txos[ pdf ]  RedBook -C6, feral concurrency[ pdf ], certificate transparency [ acm link ], ssi[ pdf ], fork-consistency[ pdf ], no-border[ pdf ]  [ link ]    mar 25  TEE  Flickr[ pdf ], OpenSGX[ pdf ], trust-ice[ pdf ], Intel x86 harmful[ pdf ]  TEE intro [ link ], Iago attack[ pdf ]  [ link ]    apr 8  Crypto basics-1  SecEng  (Ch2,7,10,11-14,18)      apr 13  Crypto basics-2  SecEng  (Ch5,6,etc)      apr 15  TEE DB  CorrectDB [ pdf ], TrustedDB [ pdf ], trust-otp[ pdf ]   [ link ]    apr 22  multi-party computing  pantry[ pdf ], canon-mpc[ pdf ]  snark[ pdf ], spdz[ pdf ], YaoGC  [ link ]    apr 29  crypto-homomorphism  inferrence attack[ pdf ], homo-sign[ pdf ], homo-mac[ pdf ]  cipherbase[ pdf ], cryptdb[ pdf ], monomi[ pdf ],  Crypto -C10, ope [ pdf ],Mylar[ pdf ]  [ link ]    may 3  tor   verifiable program  Vuvuzela [ pdf ], buffet[ pdf ]  tor [ pdf ], Mix [ pdf ]  [ link ]", 
+            "title": "Course schedule"
+        }, 
+        {
+            "location": "/#reference-book", 
+            "text": "SecEng : Cryptography Engineering: Design Principles and Practical Applications 1st Edition, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno.  RedBook : Readings in Database Systems, 5th Edition, Peter Bailis, Joseph M. Hellerstein, Michael Stonebraker, editors. [ free copy ]  Crypto : Introduction to Modern Cryptography (2nd edition), Jonathan Katz and Yehuda Lindell", 
+            "title": "Reference book"
+        }, 
+        {
+            "location": "/syl/", 
+            "text": "Syllabus\n\n\nClass meetings\n\n\n\n\nWhen: Fr 9:30AM - 12:15PM\n\n\nWhere: Room 4-206K, Centre for Science \n Tech (CST)\n\n\n\n\nWho should take the course?\n\n\nThe course is mainly designed for PhD students and master students with a research motivation. The course requires preliminary knowledge on \ncomputer systems (operating systems, architecture and databases)\n and system-level programming skills. \n\n\nGrading policy\n\n\nSubmission of any work done by others will result in an F grade in the course, with the academic integrity violation reported to the University administration for further action. Violations include plagiarism, and usage of material available on the internet without proper attribution.\n\n\n\n\nClass participation (10%)  \n\n\nIn-class presentation (50%): peer grading form [\nlink\n]  \n\n\nProject (40%):  \n\n\nMid-term presentation (20%)\n\n\nFinal demo \n code submission (20%)\n\n\n\n\n\n\n\n\nOffice\n\n\n\n\nOffice: 4-193, CST, Yuzhe Tang\n\n\nEmail: ytang100@syr.edu", 
+            "title": "Syllabus"
+        }, 
+        {
+            "location": "/syl/#syllabus", 
+            "text": "", 
+            "title": "Syllabus"
+        }, 
+        {
+            "location": "/syl/#class-meetings", 
+            "text": "When: Fr 9:30AM - 12:15PM  Where: Room 4-206K, Centre for Science   Tech (CST)", 
+            "title": "Class meetings"
+        }, 
+        {
+            "location": "/syl/#who-should-take-the-course", 
+            "text": "The course is mainly designed for PhD students and master students with a research motivation. The course requires preliminary knowledge on  computer systems (operating systems, architecture and databases)  and system-level programming skills.", 
+            "title": "Who should take the course?"
+        }, 
+        {
+            "location": "/syl/#grading-policy", 
+            "text": "Submission of any work done by others will result in an F grade in the course, with the academic integrity violation reported to the University administration for further action. Violations include plagiarism, and usage of material available on the internet without proper attribution.   Class participation (10%)    In-class presentation (50%): peer grading form [ link ]    Project (40%):    Mid-term presentation (20%)  Final demo   code submission (20%)", 
+            "title": "Grading policy"
+        }, 
+        {
+            "location": "/syl/#office", 
+            "text": "Office: 4-193, CST, Yuzhe Tang  Email: ytang100@syr.edu", 
+            "title": "Office"
+        }, 
+        {
+            "location": "/proj/", 
+            "text": "Project Topics\n\n\nProgramming option (w bonus)\n\n\nSample topics\n\n\n\n\nSecure applications on the SGX emulator [\nlink\n]:\n\n\nan OTP service [\npdf\n]\n\n\nzookeeper [\npdf\n]\n\n\nprivacy-preserving multi-party analytics\n\n\n\n\n\n\nCryptographic multi-party computation for analytics\n\n\n\n\nSurvey option\n\n\nChoose a topic related to big-data and cloud security. Conduct an in-depth survey in the field. Consult SoK papers (\"Systemization of knowledge\") in recent IEEE S\nP proceedings. The final survey must have the same format to the S\nP SoK paper; an example can be found [\nhere\n].\n\n\nTimeline\n\n\n\n\nProject proposal: due Feb. 10\n\n\nMid-term report/presentation: due Mar. 4\n\n\nFinal submission: due Apr. 29", 
+            "title": "Project"
+        }, 
+        {
+            "location": "/proj/#project-topics", 
+            "text": "", 
+            "title": "Project Topics"
+        }, 
+        {
+            "location": "/proj/#programming-option-w-bonus", 
+            "text": "Sample topics   Secure applications on the SGX emulator [ link ]:  an OTP service [ pdf ]  zookeeper [ pdf ]  privacy-preserving multi-party analytics    Cryptographic multi-party computation for analytics", 
+            "title": "Programming option (w bonus)"
+        }, 
+        {
+            "location": "/proj/#survey-option", 
+            "text": "Choose a topic related to big-data and cloud security. Conduct an in-depth survey in the field. Consult SoK papers (\"Systemization of knowledge\") in recent IEEE S P proceedings. The final survey must have the same format to the S P SoK paper; an example can be found [ here ].", 
+            "title": "Survey option"
+        }, 
+        {
+            "location": "/proj/#timeline", 
+            "text": "Project proposal: due Feb. 10  Mid-term report/presentation: due Mar. 4  Final submission: due Apr. 29", 
+            "title": "Timeline"
+        }, 
+        {
+            "location": "/qa/", 
+            "text": "Questions\n\n\nWrite down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.\n\n\nfeb 5: security analysis\n\n\n\n\nwhat constitue of a cloud attack surface? (hint: consider a cloud service model)\n\n\nwhy is it hard to make a system secure?\n\n\nwhat is the vulnerability exploited in a \"free shopping\" paper?\n\n\n\n\nfeb 12: container security\n\n\n\n\nwhat is the conceptual diff. between container/VM instance/sandbox/libOS (from the trust-model perspective)?\n\n\nwhy do we need libOS?\n\n\n\n\nfeb 19: db optimizer\n\n\n\n\nwhat is the idea behind db optimizer? what makes it useful/possible?\n\n\nwhat is yet to be solved in the \"DBO solved\" paper?\n\n\nwhat is \"site selection\" problem? and how is it solved?\n\n\n\n\nfeb 26: data federation\n\n\n\n\nwhat is the typical work in data federation?\n\n\nwhat makes data federation difficult?\n\n\n\n\nmar 11: consistency attacks\n\n\n\n\nwhat is consistency defined in \"txos\" paper?\n\n\nwhat is consistency defined in \"fork consistency\" paper?\n\n\nwhat is consistency defined in \"certificate transparency\" paper?\n\n\n\n\nmar 25: TEE\n\n\n\n\nwhat is the model of TEE?\n\n\nHow is SGX differentiated from TPM/TXT?\n\n\nHow is TEE related to cloud?\n\n\n\n\napr 15: TEE DB\n\n\n\n\nwhat is the security properties addressed in CorrectDB?\n\n\nwhat is the security properties addressed in TrustedDB?\n\n\nwhat is the gap between those db-level security and TEE security?\n\n\n\n\napr 22: multi-party computing\n\n\n\n\nwhat is the model (input and output) of MPC? what does it guarantee in security?\n\n\nwhat applications would MPC be used for in real life?\n\n\nwhat makes verifiable computing expensive?\n\n\n\n\napr 29: crypto-homomorphism\n\n\n\n\nwhat is the interface of homomorphic signature? compare it with verifiable computing\n\n\nwhat extra information is exposed by using OPE?\n\n\ncompare and contrast the system architecture of cipherbase and cryptodb?\n\n\n\n\nmay 3: tor \n verifiable program\n\n\n\n\nwhat is traffic analysis? and how to apply it to tor network?\n\n\nwhy is it costly for verifiable program?\n\n\nwhat are the ideas to make circuit succinct?", 
+            "title": "Reading questions"
+        }, 
+        {
+            "location": "/qa/#questions", 
+            "text": "Write down your answers in a piece of paper, and turn it in at the beginning of each class. You might be asked in class to exlain your answer. You can find the answers in the \"readings\" and \"optional readings\" sections.", 
+            "title": "Questions"
+        }, 
+        {
+            "location": "/qa/#feb-5-security-analysis", 
+            "text": "what constitue of a cloud attack surface? (hint: consider a cloud service model)  why is it hard to make a system secure?  what is the vulnerability exploited in a \"free shopping\" paper?", 
+            "title": "feb 5: security analysis"
+        }, 
+        {
+            "location": "/qa/#feb-12-container-security", 
+            "text": "what is the conceptual diff. between container/VM instance/sandbox/libOS (from the trust-model perspective)?  why do we need libOS?", 
+            "title": "feb 12: container security"
+        }, 
+        {
+            "location": "/qa/#feb-19-db-optimizer", 
+            "text": "what is the idea behind db optimizer? what makes it useful/possible?  what is yet to be solved in the \"DBO solved\" paper?  what is \"site selection\" problem? and how is it solved?", 
+            "title": "feb 19: db optimizer"
+        }, 
+        {
+            "location": "/qa/#feb-26-data-federation", 
+            "text": "what is the typical work in data federation?  what makes data federation difficult?", 
+            "title": "feb 26: data federation"
+        }, 
+        {
+            "location": "/qa/#mar-11-consistency-attacks", 
+            "text": "what is consistency defined in \"txos\" paper?  what is consistency defined in \"fork consistency\" paper?  what is consistency defined in \"certificate transparency\" paper?", 
+            "title": "mar 11: consistency attacks"
+        }, 
+        {
+            "location": "/qa/#mar-25-tee", 
+            "text": "what is the model of TEE?  How is SGX differentiated from TPM/TXT?  How is TEE related to cloud?", 
+            "title": "mar 25: TEE"
+        }, 
+        {
+            "location": "/qa/#apr-15-tee-db", 
+            "text": "what is the security properties addressed in CorrectDB?  what is the security properties addressed in TrustedDB?  what is the gap between those db-level security and TEE security?", 
+            "title": "apr 15: TEE DB"
+        }, 
+        {
+            "location": "/qa/#apr-22-multi-party-computing", 
+            "text": "what is the model (input and output) of MPC? what does it guarantee in security?  what applications would MPC be used for in real life?  what makes verifiable computing expensive?", 
+            "title": "apr 22: multi-party computing"
+        }, 
+        {
+            "location": "/qa/#apr-29-crypto-homomorphism", 
+            "text": "what is the interface of homomorphic signature? compare it with verifiable computing  what extra information is exposed by using OPE?  compare and contrast the system architecture of cipherbase and cryptodb?", 
+            "title": "apr 29: crypto-homomorphism"
+        }, 
+        {
+            "location": "/qa/#may-3-tor-verifiable-program", 
+            "text": "what is traffic analysis? and how to apply it to tor network?  why is it costly for verifiable program?  what are the ideas to make circuit succinct?", 
+            "title": "may 3: tor &amp; verifiable program"
+        }
+    ]
+}

@@ -1,0 +1,289 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "CIS655/CSE661: Advanced Computer Architecture\n\n\nInstructor: Yuzhe (Richard) Tang\n\n\nTextbook\n\n\nComputer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design\n\n\nLecture schedule\n\n\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nChapter\n\n\nSlides\n\n\n\n\n\n\n\n\n\n\n1.Overview\n\n\nintro\n\n\n1\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n1.Overview\n\n\nmetrics\n\n\n1\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n2.CPU\n\n\nILP \n pipelining\n\n\nA\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n2.CPU\n\n\ndata hazard by compiler\n\n\n3\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n2.CPU\n\n\nbranch hazard by HW\n\n\nC.2,3.3,3.9\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n2.CPU\n\n\ndata hazard by HW, a.k.a tomasulo\n\n\n3.4,3.5,3.6,3.9\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n2.CPU\n\n\nmulti-issue \n SIMD\n\n\n3\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n3.Memory\n\n\ncache\n\n\n2.1,2.2,B.1,B.2,B.3\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n3.Memory\n\n\ncache2\n\n\n2.2\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n\n\nMid-term covers till here\n\n\n\n\n\n\n\n\n\n\n3.Memory\n\n\nmemory\n\n\nB.4,B.5,2.4\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n3.Memory\n\n\nmemory protection\n\n\nB.4,B.5,2.4\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n4.Multi-processing\n\n\nmultiprocessing\n\n\n5.1,5.2\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n4.Multi-processing\n\n\ncache-coherence\n\n\n5.2,5.3,5.4\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n4.Multi-processing\n\n\nsynchronization\n\n\n5.5\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n4.Multi-processing\n\n\nmemory consistency\n\n\n5.5, 5.6\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n4.Multi-processing\n\n\nmany-core\n\n\n5.8\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n5.IO\n\n\nstorage\n\n\nD\n\n\n[\nlink to BB\n], [\none more\n]\n\n\n\n\n\n\n5.IO\n\n\nraid \n lsm\n\n\nD\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n5.IO\n\n\ninterconnect\n\n\nF\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n6.WSC\n\n\nwsc\n\n\n6\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n6.WSC\n\n\nenergy\n\n\n6\n\n\n[\nlink to BB\n]\n\n\n\n\n\n\n\n\nreview\n\n\n\n\n[\nlink to BB\n]", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#cis655cse661-advanced-computer-architecture", 
+            "text": "Instructor: Yuzhe (Richard) Tang", 
+            "title": "CIS655/CSE661: Advanced Computer Architecture"
+        }, 
+        {
+            "location": "/#textbook", 
+            "text": "Computer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design", 
+            "title": "Textbook"
+        }, 
+        {
+            "location": "/#lecture-schedule", 
+            "text": "Topic  Session  Chapter  Slides      1.Overview  intro  1  [ link to BB ]    1.Overview  metrics  1  [ link to BB ]    2.CPU  ILP   pipelining  A  [ link to BB ]    2.CPU  data hazard by compiler  3  [ link to BB ]    2.CPU  branch hazard by HW  C.2,3.3,3.9  [ link to BB ]    2.CPU  data hazard by HW, a.k.a tomasulo  3.4,3.5,3.6,3.9  [ link to BB ]    2.CPU  multi-issue   SIMD  3  [ link to BB ]    3.Memory  cache  2.1,2.2,B.1,B.2,B.3  [ link to BB ]    3.Memory  cache2  2.2  [ link to BB ]     Mid-term covers till here      3.Memory  memory  B.4,B.5,2.4  [ link to BB ]    3.Memory  memory protection  B.4,B.5,2.4  [ link to BB ]    4.Multi-processing  multiprocessing  5.1,5.2  [ link to BB ]    4.Multi-processing  cache-coherence  5.2,5.3,5.4  [ link to BB ]    4.Multi-processing  synchronization  5.5  [ link to BB ]    4.Multi-processing  memory consistency  5.5, 5.6  [ link to BB ]    4.Multi-processing  many-core  5.8  [ link to BB ]    5.IO  storage  D  [ link to BB ], [ one more ]    5.IO  raid   lsm  D  [ link to BB ]    5.IO  interconnect  F  [ link to BB ]    6.WSC  wsc  6  [ link to BB ]    6.WSC  energy  6  [ link to BB ]     review   [ link to BB ]", 
+            "title": "Lecture schedule"
+        }, 
+        {
+            "location": "/syl/", 
+            "text": "Syllabus\n\n\nOutline\n\n\nCIS655/CSE661 teaches on the advanced topics of computer architecture.\nThe teaching puts an emphasis on the practical aspects by taking a programming-oriented approach.\n\n\nClass meetings\n\n\n\n\nWhen: TTh 8:00 - 9:20AM\n\n\nWhere: Watson Theater \n\n\n\n\nPrerequisite (Who should take the course?)\n\n\nThis course assumes students have good knowledge about system programming and assembly code (e.g. Linux POSIX, C/C++ and x86-64).\n\n\nTextbook\n\n\nComputer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design\n\n\nGrading policy\n\n\nSubmission of any work done by others will result in an F grade in the course, with the academic integrity violation reported to the University administration for further action. Violations include plagiarism, and usage of material available on the internet without proper attribution.\n\n\n\n\nClass participation (10%)\n\n\nHomework (30%)\n\n\nProject (25%)\n\n\nExam (35%): Mid-term (15%) and final (20%)\n\n\n\n\nTA and office hours\n\n\n\n\nTA:  \n\n\n\n\n\n\nJielong Xu: jxu21@syr.edu  Tuesday 3:30 to 4:30pm, CST 4-206A \n\n\n\n\n\n\n\n\n\n\nHari Krishna Gajarla: hgajarla@syr.edu, Wednesday 1:00 to 2:00 pm, CST 3-212\n\n\n\n\n\n\n\n\n\n\nHaoyi Shi: hshi05@syr.edu, Wednesday 2:00 to 3:00 pm, CST 4-206A \n\n\n\n\n\n\n\n\n\n\nShivakanth: sneelapp@syr.edu, Thursday 3:30 - 4:30pm, CST 4-206k\n\n\n\n\n\n\n\n\n\n\nKatchaguy (Bebe) Areekijseree: kareekij@syr.edu  \n\n\n\n\n\n\nInstructor: Yuzhe (Richard) Tang  \n\n\n\n\n\n\nOffice hours: Tuesday 3:30 to 4:00pm, CST 4-206A", 
+            "title": "Syllabus"
+        }, 
+        {
+            "location": "/syl/#syllabus", 
+            "text": "", 
+            "title": "Syllabus"
+        }, 
+        {
+            "location": "/syl/#outline", 
+            "text": "CIS655/CSE661 teaches on the advanced topics of computer architecture.\nThe teaching puts an emphasis on the practical aspects by taking a programming-oriented approach.", 
+            "title": "Outline"
+        }, 
+        {
+            "location": "/syl/#class-meetings", 
+            "text": "When: TTh 8:00 - 9:20AM  Where: Watson Theater", 
+            "title": "Class meetings"
+        }, 
+        {
+            "location": "/syl/#prerequisite-who-should-take-the-course", 
+            "text": "This course assumes students have good knowledge about system programming and assembly code (e.g. Linux POSIX, C/C++ and x86-64).", 
+            "title": "Prerequisite (Who should take the course?)"
+        }, 
+        {
+            "location": "/syl/#textbook", 
+            "text": "Computer Architecture: A Quantitative Approach, 5th Edition, The Morgan Kaufmann Series in Computer Architecture and Design", 
+            "title": "Textbook"
+        }, 
+        {
+            "location": "/syl/#grading-policy", 
+            "text": "Submission of any work done by others will result in an F grade in the course, with the academic integrity violation reported to the University administration for further action. Violations include plagiarism, and usage of material available on the internet without proper attribution.   Class participation (10%)  Homework (30%)  Project (25%)  Exam (35%): Mid-term (15%) and final (20%)", 
+            "title": "Grading policy"
+        }, 
+        {
+            "location": "/syl/#ta-and-office-hours", 
+            "text": "TA:      Jielong Xu: jxu21@syr.edu  Tuesday 3:30 to 4:30pm, CST 4-206A       Hari Krishna Gajarla: hgajarla@syr.edu, Wednesday 1:00 to 2:00 pm, CST 3-212      Haoyi Shi: hshi05@syr.edu, Wednesday 2:00 to 3:00 pm, CST 4-206A       Shivakanth: sneelapp@syr.edu, Thursday 3:30 - 4:30pm, CST 4-206k      Katchaguy (Bebe) Areekijseree: kareekij@syr.edu      Instructor: Yuzhe (Richard) Tang      Office hours: Tuesday 3:30 to 4:00pm, CST 4-206A", 
+            "title": "TA and office hours"
+        }, 
+        {
+            "location": "/proj/", 
+            "text": "Course Project\n\n\nPolicy\n\n\nStudents can work in groups. But once groups are formed, collaboration is only allowed within the group. More specifically, \ninter-group collaboration is prohibited\n. Each group can have no more than 3 people.\n\n\nDeliverable\n\n\n\n\nMid-term report/presentation (40%): Formal survey of the technology with no less than 5 pages (format: 12-point font size on single-spaced 8.5\" x 11\u201d pages)   \n\n\nGroup with good mid-term report will be given an opportunity to do presentation in class. And \nin-class presentation will be awarded with bonus grades (extra 30%)\n\n\nFinal report (20%): Formal survey of the technology and project design \\\n implementation, no less than 10 pages (the same format to mid-term report).\n\n\nFinal program/demo (40%): Demo needs to allow other people to reproduce your results.\n\n\n\n\nTimeline\n\n\n\n\n\n\n\n\nWeek\n\n\nSchedule\n\n\n\n\n\n\n\n\n\n\nWeek 1-4\n\n\nform group and choose topic\n\n\n\n\n\n\nWeek 8\n\n\nmid-term report\n\n\n\n\n\n\nWeek 13\n\n\nfinal report/demo\n\n\n\n\n\n\n\n\nTopics (Tentative)\n\n\nChoose just one of the following topics. \n\n\nx86-64 ISA\n\n\n\n\nPage table and page-fault: intercept and analyze page-fault [\nlink\n]  \n\n\nReturn-oriented programming (ROP): formulate a working ROP attack [\nlink\n]  \n\n\nProgram data-dependency analysis\n\n\n\n\nISA extensions\n\n\n\n\nSGX: understand SGX/CLS, write user-land code [\nlink\n]\n\n\nAVX: understand AVX/SIMD, write data-parallel program that demonstrates perf speedup [\nlink\n].  \n\n\nOther ideas: TrustZone by ARM[\nlink\n], MPX [\nlink\n]\n\n\n\n\nCloud interface\n\n\n\n\nAmazon AWS: set up AWS services in cloud and write a client program to interact cloud, [\nlink\n]\n\n\n\n\n\n\n\nProposing a new topic\n\n\nAlternatively, you can propose a project of your own interest. If you take this option, you have to:\n\n\n\n\nWrite a full-fledged project proposal, of at least two full pages (in the same format to mid-term report, see above), detailed in its relavence to \"computer architecture,\" and why it is a cutting-edge technology.\n\n\nSubmit a hello-world program and demonstrate its working. This is to prevent you from choosing \nunrealistic\n topics, such as \"studying quantum computer\", that in near future there will be no real system allowing you to implement any working code on it.", 
+            "title": "Project-policy"
+        }, 
+        {
+            "location": "/proj/#course-project", 
+            "text": "", 
+            "title": "Course Project"
+        }, 
+        {
+            "location": "/proj/#policy", 
+            "text": "Students can work in groups. But once groups are formed, collaboration is only allowed within the group. More specifically,  inter-group collaboration is prohibited . Each group can have no more than 3 people.", 
+            "title": "Policy"
+        }, 
+        {
+            "location": "/proj/#deliverable", 
+            "text": "Mid-term report/presentation (40%): Formal survey of the technology with no less than 5 pages (format: 12-point font size on single-spaced 8.5\" x 11\u201d pages)     Group with good mid-term report will be given an opportunity to do presentation in class. And  in-class presentation will be awarded with bonus grades (extra 30%)  Final report (20%): Formal survey of the technology and project design \\  implementation, no less than 10 pages (the same format to mid-term report).  Final program/demo (40%): Demo needs to allow other people to reproduce your results.", 
+            "title": "Deliverable"
+        }, 
+        {
+            "location": "/proj/#timeline", 
+            "text": "Week  Schedule      Week 1-4  form group and choose topic    Week 8  mid-term report    Week 13  final report/demo", 
+            "title": "Timeline"
+        }, 
+        {
+            "location": "/proj/#topics-tentative", 
+            "text": "Choose just one of the following topics.   x86-64 ISA   Page table and page-fault: intercept and analyze page-fault [ link ]    Return-oriented programming (ROP): formulate a working ROP attack [ link ]    Program data-dependency analysis   ISA extensions   SGX: understand SGX/CLS, write user-land code [ link ]  AVX: understand AVX/SIMD, write data-parallel program that demonstrates perf speedup [ link ].    Other ideas: TrustZone by ARM[ link ], MPX [ link ]   Cloud interface   Amazon AWS: set up AWS services in cloud and write a client program to interact cloud, [ link ]", 
+            "title": "Topics (Tentative)"
+        }, 
+        {
+            "location": "/proj/#proposing-a-new-topic", 
+            "text": "Alternatively, you can propose a project of your own interest. If you take this option, you have to:   Write a full-fledged project proposal, of at least two full pages (in the same format to mid-term report, see above), detailed in its relavence to \"computer architecture,\" and why it is a cutting-edge technology.  Submit a hello-world program and demonstrate its working. This is to prevent you from choosing  unrealistic  topics, such as \"studying quantum computer\", that in near future there will be no real system allowing you to implement any working code on it.", 
+            "title": "Proposing a new topic"
+        }, 
+        {
+            "location": "/projs/trustzone/", 
+            "text": "TrustZone Technology\n\n\nTrustZone[\nlink\n] is a technology introduced by ARM, aimed to provide security for various platforms. It secures peripherals such as secure memory, crypto blocks, keyboard and screen to ensure they can be protected from software attack.\nTrustZone technology allows the processor to evaluate the code in Normal world user mode and Secure world user mode, and ensures that normal world code can't acceess secure world resources. This kind of mode switch is called monitor mode. For example, software can trigger the monitor mode by calling Secure Monitor Call instruction (SMC)[\nlink\n], or by exceptions mechanism.\n\n\nMinimal-requirement tasks\n\n\nAt its minimum, the students taking this project should deliver the following:\n\n\n\n\nSimulate the hardware architecture of TrustZone, including Normal world, Secure world and Monitor Mode in high-level language, e.g. C++, Java, Python\n\n\nSimulate the working of TrustZone, including context switch between Normal world and Secure world via Monitor Mode and SMC mechanism\n\n\nWrite a simple application to demonstrate the implementation\n\n\n\n\nRequirements for Mid-term report\n\n\n\n\nRead the provided materials, understand concept of TrustZone and the new instructions (e.g. \nSMC\n)\n\n\nUnderstand the working of TrustZone\n\n\nProvide concret design of TrustZone emulator\n\n\n\n\nDesign and implement an emulator to emulate the working of TrustZone.\n\n\nBonus\n\n\nDesign a security system to take advantage of TrustZone features.\n\n\n\n\nExample: Build TLR in TrustZone [\npdf\n]", 
+            "title": "trustzone"
+        }, 
+        {
+            "location": "/projs/trustzone/#trustzone-technology", 
+            "text": "TrustZone[ link ] is a technology introduced by ARM, aimed to provide security for various platforms. It secures peripherals such as secure memory, crypto blocks, keyboard and screen to ensure they can be protected from software attack.\nTrustZone technology allows the processor to evaluate the code in Normal world user mode and Secure world user mode, and ensures that normal world code can't acceess secure world resources. This kind of mode switch is called monitor mode. For example, software can trigger the monitor mode by calling Secure Monitor Call instruction (SMC)[ link ], or by exceptions mechanism.", 
+            "title": "TrustZone Technology"
+        }, 
+        {
+            "location": "/projs/trustzone/#minimal-requirement-tasks", 
+            "text": "At its minimum, the students taking this project should deliver the following:   Simulate the hardware architecture of TrustZone, including Normal world, Secure world and Monitor Mode in high-level language, e.g. C++, Java, Python  Simulate the working of TrustZone, including context switch between Normal world and Secure world via Monitor Mode and SMC mechanism  Write a simple application to demonstrate the implementation", 
+            "title": "Minimal-requirement tasks"
+        }, 
+        {
+            "location": "/projs/trustzone/#requirements-for-mid-term-report", 
+            "text": "Read the provided materials, understand concept of TrustZone and the new instructions (e.g.  SMC )  Understand the working of TrustZone  Provide concret design of TrustZone emulator   Design and implement an emulator to emulate the working of TrustZone.", 
+            "title": "Requirements for Mid-term report"
+        }, 
+        {
+            "location": "/projs/trustzone/#bonus", 
+            "text": "Design a security system to take advantage of TrustZone features.   Example: Build TLR in TrustZone [ pdf ]", 
+            "title": "Bonus"
+        }, 
+        {
+            "location": "/projs/avx/", 
+            "text": "AVX\n\n\nAVX is an extension to ISA proposed by Intel, which allows user to operate a single instruction on different values for one time. For example, VADDPS, when using 256-bit registers, is able to perform addition on 8 floating numbers for one time.\n\n\nRead AVX document [\npdf\n] and [\npdf\n], understand the semantics of AVX instructions (e.g. VMOVUPS, VMULPS, VADDPS, etc). At the end of the first pdf, all the AVX instructions are listed, and students can find the semantics of the instructions in the second pdf.\nThe following is just a piece of copy about semantics for VMOVUPS.\n\n\n\n\n\n\n\n\nInstr.\n\n\nOp / En\n\n\n64 32 bit mode support\n\n\nCPUID Feature Flag\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nVMOVUPS ymm1, ymm2/m256\n\n\nRM\n\n\nV / V\n\n\nAVX\n\n\nMove unaligned packed single-precision floating-point from ymm2/mem to ymm1.\n\n\n\n\n\n\nVMOVUPS ymm2/m256, ymm1\n\n\nMR\n\n\nV / V\n\n\nAVX\n\n\nMove unaligned packed single-precision floating-point from ymm1 to ymm2/mem.\n\n\n\n\n\n\nVMOVUPS xmm1 {k1}{z}, xmm2/m128\n\n\nFVM-RM\n\n\nV / V\n\n\nAVX512VL AVX512F\n\n\nMove unaligned packed single-precision floating-point values from xmm2/m128 to xmm1 using writemask k1.\n\n\n\n\n\n\n\n\nJump-start task\n\n\nAssuming there is a CPU that supports AVX, write an assembly program with AVX (256-bit and 512-bit versions) to do the following operations:\n\n\n\n\nAddition of two vectors in assembly codes\n\n\nInner product of two matrics in assembly codes\n\n\n\n\nFor example, the addition of two vectors implemented in AVX should have the same functionality with the following \nC\n code:\n\n\n// a, b and c are arrays of floating point with the same length. The length of them are both larger than 100,000.\n// len is the length of a.\nvoid add(float*a, float *b, float *c, int len){\n    for(int i=0;i\nlen;i++)\n       c[i]=a[i]+b[i];\n}\n\n\n\n\nMinimal-requirement task\n\n\nAt its minimum, the students taking this project should deliver the following:\n\n\n\n\nChoose an iterative machine-learning algorithm, for example, logistic regression with fixed Hessian Matrix [\npdf\n],[\nlink\n].\n\n\nImplement selected algorithm using AVX instruction. The implementation can be in assembly code or in C code with AVX annotations (and then using \ngcc\n to compile).\n\n\nConduct performance study and measure the performance advantage of using AVX by comparing the performance differences between the code with AVX and that with ordinary assembly code.\n\n\n\n\nRequirements for Mid-term report\n\n\n\n\nRead the provided materials and understand the opcodes needed for the target algorithm\n\n\nDesign workflow of the calculation\n\n\nDesign the operations within each step of the workflow\n\n\n\n\nBonus\n\n\nWe do provide extra credits or bonus for those whose work goes beyond the minimal requirements and have interesting and inspiring discoveries about AVX.\nFor example,\n\n\n\n\nImplement standard Hessian Matrix rather than approximated Hessian Matrix for Logistic Regression.\n\n\nImplement multi-threading with AVX", 
+            "title": "avx"
+        }, 
+        {
+            "location": "/projs/avx/#avx", 
+            "text": "AVX is an extension to ISA proposed by Intel, which allows user to operate a single instruction on different values for one time. For example, VADDPS, when using 256-bit registers, is able to perform addition on 8 floating numbers for one time.  Read AVX document [ pdf ] and [ pdf ], understand the semantics of AVX instructions (e.g. VMOVUPS, VMULPS, VADDPS, etc). At the end of the first pdf, all the AVX instructions are listed, and students can find the semantics of the instructions in the second pdf.\nThe following is just a piece of copy about semantics for VMOVUPS.     Instr.  Op / En  64 32 bit mode support  CPUID Feature Flag  Description      VMOVUPS ymm1, ymm2/m256  RM  V / V  AVX  Move unaligned packed single-precision floating-point from ymm2/mem to ymm1.    VMOVUPS ymm2/m256, ymm1  MR  V / V  AVX  Move unaligned packed single-precision floating-point from ymm1 to ymm2/mem.    VMOVUPS xmm1 {k1}{z}, xmm2/m128  FVM-RM  V / V  AVX512VL AVX512F  Move unaligned packed single-precision floating-point values from xmm2/m128 to xmm1 using writemask k1.", 
+            "title": "AVX"
+        }, 
+        {
+            "location": "/projs/avx/#jump-start-task", 
+            "text": "Assuming there is a CPU that supports AVX, write an assembly program with AVX (256-bit and 512-bit versions) to do the following operations:   Addition of two vectors in assembly codes  Inner product of two matrics in assembly codes   For example, the addition of two vectors implemented in AVX should have the same functionality with the following  C  code:  // a, b and c are arrays of floating point with the same length. The length of them are both larger than 100,000.\n// len is the length of a.\nvoid add(float*a, float *b, float *c, int len){\n    for(int i=0;i len;i++)\n       c[i]=a[i]+b[i];\n}", 
+            "title": "Jump-start task"
+        }, 
+        {
+            "location": "/projs/avx/#minimal-requirement-task", 
+            "text": "At its minimum, the students taking this project should deliver the following:   Choose an iterative machine-learning algorithm, for example, logistic regression with fixed Hessian Matrix [ pdf ],[ link ].  Implement selected algorithm using AVX instruction. The implementation can be in assembly code or in C code with AVX annotations (and then using  gcc  to compile).  Conduct performance study and measure the performance advantage of using AVX by comparing the performance differences between the code with AVX and that with ordinary assembly code.", 
+            "title": "Minimal-requirement task"
+        }, 
+        {
+            "location": "/projs/avx/#requirements-for-mid-term-report", 
+            "text": "Read the provided materials and understand the opcodes needed for the target algorithm  Design workflow of the calculation  Design the operations within each step of the workflow", 
+            "title": "Requirements for Mid-term report"
+        }, 
+        {
+            "location": "/projs/avx/#bonus", 
+            "text": "We do provide extra credits or bonus for those whose work goes beyond the minimal requirements and have interesting and inspiring discoveries about AVX.\nFor example,   Implement standard Hessian Matrix rather than approximated Hessian Matrix for Logistic Regression.  Implement multi-threading with AVX", 
+            "title": "Bonus"
+        }, 
+        {
+            "location": "/projs/pt/", 
+            "text": "Page-Table Manipulation\n\n\nEvery process is given the impression that it is working with large, contiguous sections of memory. When a process requests access to a data in its memory, it is the responsibility of the operating system to map the virtual address provided by the process to the physical address of the actual memory where that data is stored. The page table is where the operating system stores its mappings of virtual addresses to physical addresses, with each mapping also known as a page table entry (PTE)\n\n\nThe CPU's memory management unit (MMU) stores a cache of recently used mappings from the operating system's page table in translation lookaside buffer (TLB). When a virtual address needs to be translated into a physical address, the TLB is searched first. If there is no match, the page fault handler will typically look up the address mapping in the page table to see whether a mapping exists (a page walk).\n\n\nJump-Start Task\n\n\nWrite a Linux kernel module that intercepts and reports (to terminal) all page-faults\n\n\nMinimal-Requirement Task\n\n\nWrite a kernel module that will\n\n\n\n\nRedirect page-fault handling to signal handling\n\n\nIn signal handling, find a mechanism to trigger the original \ndo_page_fault", 
+            "title": "page-table"
+        }, 
+        {
+            "location": "/projs/pt/#page-table-manipulation", 
+            "text": "Every process is given the impression that it is working with large, contiguous sections of memory. When a process requests access to a data in its memory, it is the responsibility of the operating system to map the virtual address provided by the process to the physical address of the actual memory where that data is stored. The page table is where the operating system stores its mappings of virtual addresses to physical addresses, with each mapping also known as a page table entry (PTE)  The CPU's memory management unit (MMU) stores a cache of recently used mappings from the operating system's page table in translation lookaside buffer (TLB). When a virtual address needs to be translated into a physical address, the TLB is searched first. If there is no match, the page fault handler will typically look up the address mapping in the page table to see whether a mapping exists (a page walk).", 
+            "title": "Page-Table Manipulation"
+        }, 
+        {
+            "location": "/projs/pt/#jump-start-task", 
+            "text": "Write a Linux kernel module that intercepts and reports (to terminal) all page-faults", 
+            "title": "Jump-Start Task"
+        }, 
+        {
+            "location": "/projs/pt/#minimal-requirement-task", 
+            "text": "Write a kernel module that will   Redirect page-fault handling to signal handling  In signal handling, find a mechanism to trigger the original  do_page_fault", 
+            "title": "Minimal-Requirement Task"
+        }, 
+        {
+            "location": "/projs/mpx/", 
+            "text": "MPX\n\n\nUnderstand the concept of MPX [\nlink\n], and new instructions (e.g. BNDMK).\n\n\nDownload MPX emulator and write client program (e.g. the program in the above link).\n\n\nPropose a project idea to demonstrate the working of the \nMPX\n.", 
+            "title": "mpx"
+        }, 
+        {
+            "location": "/projs/mpx/#mpx", 
+            "text": "Understand the concept of MPX [ link ], and new instructions (e.g. BNDMK).  Download MPX emulator and write client program (e.g. the program in the above link).  Propose a project idea to demonstrate the working of the  MPX .", 
+            "title": "MPX"
+        }, 
+        {
+            "location": "/projs/rop/", 
+            "text": "Return Oriented Programming(ROP)\n\n\nReturn-oriented programming is a security attack technique in which attacker can execute code in the presence of defensive measures such as executable space protection (Non executable memory segments). \n\n\nIn normal buffer overflow attack, attacker uses local buffer to spray specific shell code on stack and also overrides return address to execute this shell code, But having executable space protection makes this attack invalid. ROP attack tries to execute arbitrary code present in the executable regions of the memory thus invalidating executable space protection.\nA sequence of instructions ending in RET is called a gadget. \n\n\n    pop %rdi\n    retq\n\n\n\n\nRop uses gadgets to perform the attacks. Stack-Smashing Protector and ASLR can be disabled during the attack.\n\n\nJump-start task\n\n\nTo get hang of it, As a first step start with basic buffer overflow attack on victim program by disabling executable space protection, place the shell code (designed to execute system call to get access to command shell) into the buffer and also overwrite the return address to execute this shell code.\nnext enable executable space protection and perform above step but now using ROP technique. i.e using the pre existing gadgets perform the attack.You may use old library version to get basic gadget as mentioned above.\nFollowing is the sample victim program.\n\n\n#include \nstdio.h\n \nint main() \n{ \n    char name[64]; \n    puts(\nInput your name:\n); \n    gets(name); \n    printf(\n, %s!\\n\n, name); \n    return 0; \n}\n\n\n\n\n\nMinimal-Requirement task:\n\n\n1) You need design a complex attack using gadget chaining. \n2) Must use newer versions of all software modules involved (as much newer as possible). \n3) Must be able to perform attack both in 32 and 64 bit architectures (depending on complexity of your attack this task can be adjusted to bonus task)\n\n\nBonus task\n\n\nUse popular software to demontrate the attack\nCome up with solutions(apart from existing solutions) to mitigate these attacks", 
+            "title": "rop"
+        }, 
+        {
+            "location": "/projs/rop/#return-oriented-programmingrop", 
+            "text": "Return-oriented programming is a security attack technique in which attacker can execute code in the presence of defensive measures such as executable space protection (Non executable memory segments).   In normal buffer overflow attack, attacker uses local buffer to spray specific shell code on stack and also overrides return address to execute this shell code, But having executable space protection makes this attack invalid. ROP attack tries to execute arbitrary code present in the executable regions of the memory thus invalidating executable space protection.\nA sequence of instructions ending in RET is called a gadget.       pop %rdi\n    retq  Rop uses gadgets to perform the attacks. Stack-Smashing Protector and ASLR can be disabled during the attack.", 
+            "title": "Return Oriented Programming(ROP)"
+        }, 
+        {
+            "location": "/projs/rop/#jump-start-task", 
+            "text": "To get hang of it, As a first step start with basic buffer overflow attack on victim program by disabling executable space protection, place the shell code (designed to execute system call to get access to command shell) into the buffer and also overwrite the return address to execute this shell code.\nnext enable executable space protection and perform above step but now using ROP technique. i.e using the pre existing gadgets perform the attack.You may use old library version to get basic gadget as mentioned above.\nFollowing is the sample victim program.  #include  stdio.h  \nint main() \n{ \n    char name[64]; \n    puts( Input your name: ); \n    gets(name); \n    printf( , %s!\\n , name); \n    return 0; \n}", 
+            "title": "Jump-start task"
+        }, 
+        {
+            "location": "/projs/rop/#minimal-requirement-task", 
+            "text": "1) You need design a complex attack using gadget chaining. \n2) Must use newer versions of all software modules involved (as much newer as possible). \n3) Must be able to perform attack both in 32 and 64 bit architectures (depending on complexity of your attack this task can be adjusted to bonus task)", 
+            "title": "Minimal-Requirement task:"
+        }, 
+        {
+            "location": "/projs/rop/#bonus-task", 
+            "text": "Use popular software to demontrate the attack\nCome up with solutions(apart from existing solutions) to mitigate these attacks", 
+            "title": "Bonus task"
+        }, 
+        {
+            "location": "/projs/amazon/", 
+            "text": "Amazon Cloud Services (AWS) Programming\n\n\nThe project is to explore and demonstrate the programming interfaces exposed by a Cloud service provider. We consider the case of Amazon here by its AWS services.\n\n\nMinimal-requirement tasks\n\n\nAt its minimum, the students taking this project should deliver the following:\n\n\n\n\nChoose at least three AWS services under at least two XaaS models. For instance, Amazon's DynamoDB service is under PaaS model.\n\n\nStudy the capacity-planning interface, and then set up the chosen services free tier\n\n\nWrite a client program on your local Ubuntu VM OS that interacts with remote services\n\n\nScale up/out your program, demonstrating the benefit of using Cloud services (in comparison with installing software locally).", 
+            "title": "amazon"
+        }, 
+        {
+            "location": "/projs/amazon/#amazon-cloud-services-aws-programming", 
+            "text": "The project is to explore and demonstrate the programming interfaces exposed by a Cloud service provider. We consider the case of Amazon here by its AWS services.", 
+            "title": "Amazon Cloud Services (AWS) Programming"
+        }, 
+        {
+            "location": "/projs/amazon/#minimal-requirement-tasks", 
+            "text": "At its minimum, the students taking this project should deliver the following:   Choose at least three AWS services under at least two XaaS models. For instance, Amazon's DynamoDB service is under PaaS model.  Study the capacity-planning interface, and then set up the chosen services free tier  Write a client program on your local Ubuntu VM OS that interacts with remote services  Scale up/out your program, demonstrating the benefit of using Cloud services (in comparison with installing software locally).", 
+            "title": "Minimal-requirement tasks"
+        }, 
+        {
+            "location": "/hw/cachemiss/", 
+            "text": "Programming Homework\n\n\nThe homework is to optimize computer program for matrix computations in terms of cache miss rate.\n\n\nA.Simple matrix traversal [30 points]\n\n\nA.1 Set up the system\n\n\n1.Copy the following code to a file \na11.cpp\n\n\n#include\niostream\n\n\nusing namespace std;\n\nint string2int(const string \n cppString){\n    const char* cstring = cppString.c_str();\n    int i = atoi(cstring);\n    return i;\n}\n\nint main(int argc, char *argv[]){\n    if(argc != 1 + 1){ //non argument case: argc = 1\n        cerr \n \nformat: ./a.out datasize\n \n endl;\n        cerr \n \nexample: ./a.out 1000\n \n endl;\n        return 0;\n    }\n\n    cout \n \nfirst commandline argument is \n \n argv[1] \n endl;\n\n\n    long datasize = string2int(argv[1]);\n    int * array = new int[datasize*datasize];\n\n    for (long i = 0; i \n datasize; i++){\n      for (long j = 0; j \n datasize; j++){\n        array[j*datasize+i] = i;\n      }\n    }\n\n    delete[] array;\n}\n\n\n\n\n2.Compile \na11.cpp\n using the following command.\n\n\ng++ -std=c++0x -O0  a11.cpp -o a11.out\n\n\n\n\n3.Run \na11.cpp\n by\n\n\n./a11.out 1000\n\n\n\n\n4.Measure the performance, and capture the cache miss rate. Specifically, we need to capture the miss rate of \nD1\n, that is, the L1 data cache. \n\n\nWhile you can use your favorable profiler to do cache profiling, I recommend to use Valgrind [\nCachegrind\n]. \n\n\nI have set up Valgrind on a VirtualBox image which can be downloaded from Blackboard.\n\n\nYou should set up VirtualBox by downloading it from Oracle website [\nlink\n]; You should choose installation file based on your local OS. Once you install VirtualBox successfully, you can download the image and launch an Ubuntu instance. On Ubuntu, you can find \na11.cpp\n on \n/programming/cachemiss/\n, and compile it to \na11.out\n. Then follow the instructions below to run the program while measuring \nD1\n miss rate.\n\n\ncd /programming/cachemiss/\n./tt_sh/profilerun_cache.sh ./a11.out 10000\n\n\n\n\nAfter running the command, you should be able to see something similar to the screen-shot below, from which you can find the \nD1\n miss rate (e.g. \n10.4%\n in the following screen-shot). Make note of the miss rate on your machine.\n\n\n\n\nA.2 Optimize the program\n\n\nOptimize the program by applying the idea of \"Loop Interchange\" as discussed in the class meeting. Save the optimized program to \na10.cpp\n and repeat the same process (for compiling, execution, and measurement).\n\n\nA.3 Deliverable\n\n\nYou should make a zip file containing:\n\n\n\n\nThe cache miss rate of running \na11.out\n on your system.\n\n\nYour optimized program (source code!): \na10.cpp\n.\n\n\nThe cache miss rate of running \na10.out\n on your system.\n\n\n\n\nAnd then submit the zip file to Blackboard.\n\n\nB. Matrix transpose [70 points]\n\n\nMatrix transpose is an operation that interchanges matrix rows and columns; the idea is illustrated in the pseudo code below:\n\n\nfor(i = 0; i \n 3; i++){\n    for(j = 0; j \n 3; j++){\n        output[j][i] = input[i][j];\n    }\n}\n\n\n\n\nB.1 Basic implementation\n\n\nThis part requires you to implement a program for matrix transpose. First provide a basic implementation based on code snippet above, run the program with a \n2000*2000\n matrix and measure the \nD1\n miss rate as described before. \n\n\nB.2 Optimization\n\n\nThen, optimize your implementation using the \"blocking\" idea discussed in the class. Re-run the program with a \n2000*2000\n matrix. \n\n\nVary the value of blocking factor and measure the cache miss rates accordingly. Report the relationship between the configured blocking factor and cache miss rate, and study the \"optimal\" value of blocking factor.\n\n\nB.3 Deliverable\n\n\nYou should make a zip file containing:\n\n\n\n\nYour basic implementation for matrix transpose (i.e. the compilable source code!).\n\n\nThe cache miss rate of running basic matrix-transpose program on your system.\n\n\nYour optimized program (i.e. the compilable source code!).\n\n\nThe cache miss rate of running optimized matrix-transpose program on your system. Here, you should include a series of (instead of just one) values for measured cache miss rates, under different setting of blocking factor. Report the optimal value of blocking factor that achieves the minimal miss rate.\n\n\nThe zip file from \nA.3\n\n\n\n\nAnd then submit the zip file to Blackboard.\n\n\n\n\n Yuzhe Tang, 2015", 
+            "title": "cachemiss"
+        }, 
+        {
+            "location": "/hw/cachemiss/#programming-homework", 
+            "text": "The homework is to optimize computer program for matrix computations in terms of cache miss rate.", 
+            "title": "Programming Homework"
+        }, 
+        {
+            "location": "/hw/cachemiss/#asimple-matrix-traversal-30-points", 
+            "text": "A.1 Set up the system  1.Copy the following code to a file  a11.cpp  #include iostream \n\nusing namespace std;\n\nint string2int(const string   cppString){\n    const char* cstring = cppString.c_str();\n    int i = atoi(cstring);\n    return i;\n}\n\nint main(int argc, char *argv[]){\n    if(argc != 1 + 1){ //non argument case: argc = 1\n        cerr    format: ./a.out datasize    endl;\n        cerr    example: ./a.out 1000    endl;\n        return 0;\n    }\n\n    cout    first commandline argument is     argv[1]   endl;\n\n\n    long datasize = string2int(argv[1]);\n    int * array = new int[datasize*datasize];\n\n    for (long i = 0; i   datasize; i++){\n      for (long j = 0; j   datasize; j++){\n        array[j*datasize+i] = i;\n      }\n    }\n\n    delete[] array;\n}  2.Compile  a11.cpp  using the following command.  g++ -std=c++0x -O0  a11.cpp -o a11.out  3.Run  a11.cpp  by  ./a11.out 1000  4.Measure the performance, and capture the cache miss rate. Specifically, we need to capture the miss rate of  D1 , that is, the L1 data cache.   While you can use your favorable profiler to do cache profiling, I recommend to use Valgrind [ Cachegrind ].   I have set up Valgrind on a VirtualBox image which can be downloaded from Blackboard.  You should set up VirtualBox by downloading it from Oracle website [ link ]; You should choose installation file based on your local OS. Once you install VirtualBox successfully, you can download the image and launch an Ubuntu instance. On Ubuntu, you can find  a11.cpp  on  /programming/cachemiss/ , and compile it to  a11.out . Then follow the instructions below to run the program while measuring  D1  miss rate.  cd /programming/cachemiss/\n./tt_sh/profilerun_cache.sh ./a11.out 10000  After running the command, you should be able to see something similar to the screen-shot below, from which you can find the  D1  miss rate (e.g.  10.4%  in the following screen-shot). Make note of the miss rate on your machine.   A.2 Optimize the program  Optimize the program by applying the idea of \"Loop Interchange\" as discussed in the class meeting. Save the optimized program to  a10.cpp  and repeat the same process (for compiling, execution, and measurement).  A.3 Deliverable  You should make a zip file containing:   The cache miss rate of running  a11.out  on your system.  Your optimized program (source code!):  a10.cpp .  The cache miss rate of running  a10.out  on your system.   And then submit the zip file to Blackboard.", 
+            "title": "A.Simple matrix traversal [30 points]"
+        }, 
+        {
+            "location": "/hw/cachemiss/#b-matrix-transpose-70-points", 
+            "text": "Matrix transpose is an operation that interchanges matrix rows and columns; the idea is illustrated in the pseudo code below:  for(i = 0; i   3; i++){\n    for(j = 0; j   3; j++){\n        output[j][i] = input[i][j];\n    }\n}  B.1 Basic implementation  This part requires you to implement a program for matrix transpose. First provide a basic implementation based on code snippet above, run the program with a  2000*2000  matrix and measure the  D1  miss rate as described before.   B.2 Optimization  Then, optimize your implementation using the \"blocking\" idea discussed in the class. Re-run the program with a  2000*2000  matrix.   Vary the value of blocking factor and measure the cache miss rates accordingly. Report the relationship between the configured blocking factor and cache miss rate, and study the \"optimal\" value of blocking factor.  B.3 Deliverable  You should make a zip file containing:   Your basic implementation for matrix transpose (i.e. the compilable source code!).  The cache miss rate of running basic matrix-transpose program on your system.  Your optimized program (i.e. the compilable source code!).  The cache miss rate of running optimized matrix-transpose program on your system. Here, you should include a series of (instead of just one) values for measured cache miss rates, under different setting of blocking factor. Report the optimal value of blocking factor that achieves the minimal miss rate.  The zip file from  A.3   And then submit the zip file to Blackboard.    Yuzhe Tang, 2015", 
+            "title": "B. Matrix transpose [70 points]"
+        }, 
+        {
+            "location": "/midterm/midterm/", 
+            "text": "Mid-term exam\n\n\nPolicy\n\n\nThe mid-term exam will take place between 8:00 AM and 9:20 AM, Oct. 22nd, in Watson Theater. \n\n\nThe exam will be open-book and allow calculators; any other electronic devices including electronic watches, tablet, laptop, etc, will be prohibited. The mid-term exam must be done individually. No collaboration will be allowed, and close monitoring will be enforced during the exam. Cheating behavior will NOT be tolerated.\n\n\nDuring the exam, turn off your mobile phone, and put your SUID card on your table. You don't need to bring extra papers, and we will provide sufficient blank papers.\n\n\nScope\n\n\nThe content covered by mid-term will be primarily based on \nslides, and homework\n (use textbook as reference and secondary material). The mid-term will cover all topics taught till \"Cache Optimization (3.2)\" (inclusively). \n\n\nThe mid-term will be in a format similar to homework exercises and pop-quiz (i.e. single-choice questions and exercises).", 
+            "title": "req"
+        }, 
+        {
+            "location": "/midterm/midterm/#mid-term-exam", 
+            "text": "", 
+            "title": "Mid-term exam"
+        }, 
+        {
+            "location": "/midterm/midterm/#policy", 
+            "text": "The mid-term exam will take place between 8:00 AM and 9:20 AM, Oct. 22nd, in Watson Theater.   The exam will be open-book and allow calculators; any other electronic devices including electronic watches, tablet, laptop, etc, will be prohibited. The mid-term exam must be done individually. No collaboration will be allowed, and close monitoring will be enforced during the exam. Cheating behavior will NOT be tolerated.  During the exam, turn off your mobile phone, and put your SUID card on your table. You don't need to bring extra papers, and we will provide sufficient blank papers.", 
+            "title": "Policy"
+        }, 
+        {
+            "location": "/midterm/midterm/#scope", 
+            "text": "The content covered by mid-term will be primarily based on  slides, and homework  (use textbook as reference and secondary material). The mid-term will cover all topics taught till \"Cache Optimization (3.2)\" (inclusively).   The mid-term will be in a format similar to homework exercises and pop-quiz (i.e. single-choice questions and exercises).", 
+            "title": "Scope"
+        }, 
+        {
+            "location": "/midterm/stu-pres/", 
+            "text": "", 
+            "title": "talk"
+        }, 
+        {
+            "location": "/final/", 
+            "text": "Final exam\n\n\nPolicy\n\n\nThe final exam will take place from 1:00 PM to 2:40 PM, Dec. 18th, in Watson Theater. \n\n\nThe exam will be \nclosed-book\n but allow 1-page cheat sheet and calculators; any other electronic devices including electronic watches, tablet, laptop, etc, will be prohibited. The final exam must be done individually. No collaboration will be allowed, and close monitoring will be enforced during the exam. Cheating in any form will NOT be tolerated.\n\n\nDuring the exam, turn off your mobile phone, and put your SUID card on your table. You don't need to bring extra papers, and we will provide sufficient blank papers.\n\n\nScope\n\n\nThe final will cover the \nentire\n semaster. It will put more emphasis on the second half but still cover the first half. It will primarily be based on \nslides, and homework\n (use textbook as reference and secondary material). \n\n\nThe final will be similar to mid-term in terms of format.", 
+            "title": "Final"
+        }, 
+        {
+            "location": "/final/#final-exam", 
+            "text": "", 
+            "title": "Final exam"
+        }, 
+        {
+            "location": "/final/#policy", 
+            "text": "The final exam will take place from 1:00 PM to 2:40 PM, Dec. 18th, in Watson Theater.   The exam will be  closed-book  but allow 1-page cheat sheet and calculators; any other electronic devices including electronic watches, tablet, laptop, etc, will be prohibited. The final exam must be done individually. No collaboration will be allowed, and close monitoring will be enforced during the exam. Cheating in any form will NOT be tolerated.  During the exam, turn off your mobile phone, and put your SUID card on your table. You don't need to bring extra papers, and we will provide sufficient blank papers.", 
+            "title": "Policy"
+        }, 
+        {
+            "location": "/final/#scope", 
+            "text": "The final will cover the  entire  semaster. It will put more emphasis on the second half but still cover the first half. It will primarily be based on  slides, and homework  (use textbook as reference and secondary material).   The final will be similar to mid-term in terms of format.", 
+            "title": "Scope"
+        }
+    ]
+}
