@@ -365,3 +365,38 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+.container{
+	width:940px;
+	height: 170px;
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 200px;
+	margin-left: auto;
+	background: #dc6a32;
+  background-image: -ms-linear-gradient(top, #dc6a32 30%, #d44500 70%);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.3, #dc6a32),color-stop(0.7, #d44500));
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    header {
+        height: 150px;
+    }
+    #headerdiv {
+        height: 150px;
+	width:	738px;
+	position: absolute;
+  	background: transparent url(../image/2in1.svg) left center no-repeat;
+    }
+    #headerdiv2 {
+   	height: 150px;
+	width: 738px;
+	position: relative;
+  	background: transparent url(../image/schooltop.svg) right center no-repeat;
+    }
+}
+
