@@ -381,6 +381,63 @@ table.imgtable, table.imgtable td {
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.3, #dc6a32),color-stop(0.7, #d44500));
 }
 
+
+/* Custom, iPhone Retina */ 
+@media(max-width:320px){
+}
+@media only screen and (min-width : 320px) {
+   header {
+   	height: 105px;
+   }
+   #headerdiv {
+   	height: 105px;
+	width: 290px;
+	position: absolute;
+  	background: transparent url(../image/phone2in1.svg) left center no-repeat;
+   }
+   #headerdiv2 {
+   	height: 105px;
+	width: 290px;
+	position: relative;
+  	background: transparent url(../image/phoneschool.svg) right center no-repeat;
+   }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    header {
+         height: 150px;
+    }
+   #headerdiv {
+         height: 150px; 
+  	 background: transparent url(../image/2in1.svg) left center no-repeat;
+    }
+    #headerdiv2 {
+   	height: 150px;
+	width: 738px;
+	position: relative;
+  	background: transparent url(../image/schooltop.svg) right center no-repeat;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    header {
+         height: 150px;
+    }
+    #headerdiv {
+         height: 150px; 
+         width: 738px; 
+	 position: absolute;
+  	 background: transparent url(../image/2in1.svg) left center no-repeat;
+    }
+    #headerdiv2 {
+   	height: 150px;
+	width: 738px;
+	position: relative;
+  	background: transparent url(../image/schooltop.svg) right center no-repeat;
+   }
+ }
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     header {
