@@ -366,6 +366,20 @@ table.imgtable, table.imgtable td {
     text-align: left;
 }
 
+.second{
+  color: orange; 
+}
+.first {
+  color: green; 
+}
+.third {
+  color: red; 
+}
+.forth {
+  color: blue; 
+}
+
+
 .container{
 	width:940px;
 	height: 170px;
@@ -380,7 +394,6 @@ table.imgtable, table.imgtable td {
   background-image: -ms-linear-gradient(top, #dc6a32 30%, #d44500 70%);
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.3, #dc6a32),color-stop(0.7, #d44500));
 }
-
 
 /* Custom, iPhone Retina */ 
 @media(max-width:320px){
