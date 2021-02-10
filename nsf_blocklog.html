@@ -28,14 +28,10 @@ _gaq.push(['_trackPageview']);
 <h2>Preliminary Research Results</h2>
 <ul>
 <li><p>Yuzhe Tang, Kai Li, Yibo Wang, Sencer Burak Somuncuoglu. &ldquo;Towards Scalable Auditable Logs on Blockchains via Lightweight Fork Prevention&rdquo; the SERIAL&rsquo;20 Workshop in conjunction with Middleware 2020, <a href="./docs/serial20-final1.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1BmyQaZIgdMRq6OfyVCTKtNTt_DBra6M8j0hZpmA9jew/edit?usp=sharing">[slides]</a>, <a href="https://youtu.be/YqQI53RouYk?t=2252">[video]</a></p>
-</li>
-</ul>
-<div class="infoblock">
-<div class="blocktitle">Summary</div>
-<div class="blockcontent">
-<p>This work presents a lightweight log client design on blockchain that prevents log-forking attacks against an adversarial server. The trick here is to equate the forking attack in the upper-level log applications with the double-spending attacks in the underlying blockchain system &ndash; Log forks are thus prevented as the double-spending attacks are prevented by the blockchain. To save the log client cost and avoid a full log replica, we propose a novel scheme for blockchain to witness the views of _both_ clients and the server. This workshop presents an initial implementation of our protocol on HyperLedger Fabric with simulation-based cost evaluation.</p>
-</div></div>
 <ul>
+<li><p><i><u>Summary</u>: This work presents a lightweight log client design on blockchain that prevents log-forking attacks against an adversarial server. The trick here is to equate the forking attack in the upper-level log applications with the double-spending attacks in the underlying blockchain system -- Log forks are thus prevented as the double-spending attacks are prevented by the blockchain. To save the log client cost and avoid a full log replica, we propose a novel scheme for blockchain to witness the views of _both_ clients and the server. This workshop presents an initial implementation of our protocol on HyperLedger Fabric with simulation-based cost evaluation.</i></p>
+</li></ul>
+</li>
 <li><p>Kai Li, Yuzhe Tang, Beom Heyn Kim, Jianliang Xu. &ldquo;Secure Consistency Verification for Untrusted Cloud Storage by Public Blockchains&rdquo;, SecureComm 2019</p>
 </li>
 <li><p>Qiwu Zou, Yuzhe Tang, Ju Chen, Kai Li, Charles Kamoua, Kevin Kwiat, Laurent Njilla. &ldquo;ChainFS: Blockchain-Secured Cloud Storage&rdquo;, IEEE Cloud 2018</p>
@@ -45,17 +41,18 @@ _gaq.push(['_trackPageview']);
 </ul>
 <h2>Other Blockchain-related Papers by the PI</h2>
 <ul>
-<li><p>Kai Li, Jiaqi Chen, Xianghong Liu, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;Title to be available&rdquo; To appear in <b>NDSS 2021</b></p>
+<li><p>Kai Li, Jiaqi Chen, Xianghong Liu, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; To appear in <b>NDSS 2021</b> <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a></p>
+<ul>
+<li><p><i><u>Summary</u>: This work presents a measurement study examining the security of Ethereum RPC services. The API being exploited is eth_call, which is an essential service operation that support local smart-contract execution for free. An attacker can misuse this API and obtain a zero-cost denial-of-service attack, which we call Denial of Ethereum Rpc Service (DoERS). Novel measurement methods are proposed to uncover load balancing, Gas limits, and other internal behaviors in the otherwise blackbox services. The results show that at the time of measurement, most services are subject to the DoERS attacks.</i></p>
+</li>
+<li><p><i><u>Disclaimer</u>: The vulnerability has been fixed since Feb., 2021.</i></p>
+</li></ul>
 </li>
 <li><p>Kai Li, Yuzhe Tang, Jiaqi Chen, Zhehu Yuan, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo; ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="https://arxiv.org/abs/1911.04078">[Preprints]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>, <a href="https://github.com/syracuse-fullstacksecurity/GRuB">[code]</a>.</p>
-</li>
-</ul>
-<div class="infoblock">
-<div class="blocktitle">Summary</div>
-<div class="blockcontent">
-<p>Given data feeding becomes a critical component in today's DeFi applications, this work presents a cost-effective design of data feeds onto Ethereum like blockchains. The key idea is this: A push-based data feed incurs operations to update smart-contract storage and is expensive under write-intensive workloads (i.e., producing data updates at a high rate without much data reads from smart contracts). A pull-based data fee design incurs transactions to bring off-chain data to the smart contract and is expensive under read-intensive workloads. Thus, we propose GRuB, a workload-aware data replication scheme that can adaptively avoid the high cost of push-based (pull-based) design under write-intensive (read-intensive) workloads. The key technique is a family of online algorithms that make data-replication designs based on the observed workload. We conduct algorithm analysis to show the proposed online algorithms achieve bounded competitiveness. For evaluation, we build a system prototype on Ethereum and several benchmarks based on collected real traces of DeFi applications (e.g., stablecoins and pegged tokens). Our evaluation results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</p>
-</div></div>
 <ul>
+<li><p><i><u>Summary</u>: Given data feeding becomes a critical component in today's DeFi applications, this work presents a cost-effective design of data feeds onto Ethereum like blockchains. The key idea is this: A push-based data feed incurs operations to update smart-contract storage and is expensive under write-intensive workloads (i.e., producing data updates at a high rate without much data reads from smart contracts). A pull-based data fee design incurs transactions to bring off-chain data to the smart contract and is expensive under read-intensive workloads. Thus, we propose GRuB, a workload-aware data replication scheme that can adaptively avoid the high cost of push-based (pull-based) design under write-intensive (read-intensive) workloads. The key technique is a family of online algorithms that make data-replication designs based on the observed workload. We conduct algorithm analysis to show the proposed online algorithms achieve bounded competitiveness. For evaluation, we build a system prototype on Ethereum and several benchmarks based on collected real traces of DeFi applications (e.g., stablecoins and pegged tokens). Our evaluation results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i></p>
+</li></ul>
+</li>
 <li><p>Ce Zhang, Cheng Xu, Jianliang Xu, Yuzhe Tang, Byron Choi. &ldquo;GEM^2-Tree: A Gas-Efficient Structure for Authenticated Range Queries in Blockchain&rdquo; IEEE <b>ICDE 2019</b>, Full Paper, AR=26.8% <a href="./docs/icde19.pdf">[pdf]</a>.</p>
 </li>
 </ul>
@@ -81,7 +78,7 @@ _gaq.push(['_trackPageview']);
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-01-16 20:42:44 EST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2021-02-10 13:47:23 EST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
