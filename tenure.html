@@ -24,22 +24,7 @@ _gaq.push(['_trackPageview']);
  })();
 </script>
 <div id="layout-content">
-<h1>Scalably Auditable Transparency Logs based on Blockchains</h1>
-<h2>Preliminary Research Results</h2>
-<ul>
-<li><p>Yuzhe Tang, Kai Li, Yibo Wang, Sencer Burak Somuncuoglu. &ldquo;Towards Scalable Auditable Logs on Blockchains via Lightweight Fork Prevention&rdquo; the SERIAL&rsquo;20 Workshop in conjunction with Middleware 2020, <a href="./docs/serial20-final1.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1BmyQaZIgdMRq6OfyVCTKtNTt_DBra6M8j0hZpmA9jew/edit?usp=sharing">[slides]</a>, <a href="https://youtu.be/YqQI53RouYk?t=2252">[video]</a></p>
-<ul>
-<li><p><i><u>Summary</u>: This work presents a lightweight log client design on blockchain that prevents log-forking attacks against an adversarial server. The trick here is to equate the forking attack in the upper-level log applications with the double-spending attacks in the underlying blockchain system -- Log forks are thus prevented as the double-spending attacks are prevented by the blockchain. To save the log client cost and avoid a full log replica, we propose a novel scheme for blockchain to witness the views of _both_ clients and the server. This workshop presents an initial implementation of our protocol on HyperLedger Fabric with simulation-based cost evaluation.</i></p>
-</li></ul>
-</li>
-<li><p>Kai Li, Yuzhe Tang, Beom Heyn Kim, Jianliang Xu. &ldquo;Secure Consistency Verification for Untrusted Cloud Storage by Public Blockchains&rdquo;, SecureComm 2019</p>
-</li>
-<li><p>Qiwu Zou, Yuzhe Tang, Ju Chen, Kai Li, Charles Kamoua, Kevin Kwiat, Laurent Njilla. &ldquo;ChainFS: Blockchain-Secured Cloud Storage&rdquo;, IEEE Cloud 2018</p>
-</li>
-<li><p>Yuzhe (Richard) Tang, Zihao Xing, Cheng Xu, Ju Chen, Jianliang Xu. &ldquo;Lightweight Blockchain Logging for Data-Intensive Applications&rdquo;, 2nd Workshop of Trusted Smart Contracts 2018 at International Conference on Financial Cryptography and Data Security</p>
-</li>
-</ul>
-<h2>Other Blockchain-related Papers by the PI</h2>
+<h1>Representative Publications</h1>
 <ul>
 <li><p>Kai Li, Jiaqi Chen, Xianghong Liu, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; ISOC <b>NDSS 2021</b> <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a></p>
 <ul>
@@ -53,27 +38,14 @@ _gaq.push(['_trackPageview']);
 <li><p><i><u>Summary</u>: Given data feeding becomes a critical component in today's DeFi applications, this work presents a cost-effective design of data feeds onto Ethereum like blockchains. The key idea is this: A push-based data feed incurs operations to update smart-contract storage and is expensive under write-intensive workloads (i.e., producing data updates at a high rate without much data reads from smart contracts). A pull-based data fee design incurs transactions to bring off-chain data to the smart contract and is expensive under read-intensive workloads. Thus, we propose GRuB, a workload-aware data replication scheme that can adaptively avoid the high cost of push-based (pull-based) design under write-intensive (read-intensive) workloads. The key technique is a family of online algorithms that make data-replication designs based on the observed workload. We conduct algorithm analysis to show the proposed online algorithms achieve bounded competitiveness. For evaluation, we build a system prototype on Ethereum and several benchmarks based on collected real traces of DeFi applications (e.g., stablecoins and pegged tokens). Our evaluation results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i></p>
 </li></ul>
 </li>
-<li><p>Ce Zhang, Cheng Xu, Jianliang Xu, Yuzhe Tang, Byron Choi. &ldquo;GEM^2-Tree: A Gas-Efficient Structure for Authenticated Range Queries in Blockchain&rdquo; IEEE <b>ICDE 2019</b>, Full Paper, AR=26.8% <a href="./docs/icde19.pdf">[pdf]</a>.</p>
-</li>
-</ul>
-<h2>Education Results</h2>
+<li><p>Yuzhe Tang, Kai Li, Yibo Wang, Sencer Burak Somuncuoglu. &ldquo;Towards Scalable Auditable Logs on Blockchains via Lightweight Fork Prevention&rdquo; the SERIAL&rsquo;20 Workshop in conjunction with Middleware 2020, <a href="./docs/serial20-final1.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1BmyQaZIgdMRq6OfyVCTKtNTt_DBra6M8j0hZpmA9jew/edit?usp=sharing">[slides]</a>, <a href="https://youtu.be/YqQI53RouYk?t=2252">[video]</a></p>
 <ul>
-<li><p>Blockchain labs in security and finance applications: <a href="https://blockchainlabsu.github.io/">[blockchainlabsu.github.io]</a></p>
+<li><p><i><u>Summary</u>: This work presents a lightweight log client design on blockchain that prevents log-forking attacks against an adversarial server. The trick here is to equate the forking attack in the upper-level log applications with the double-spending attacks in the underlying blockchain system -- Log forks are thus prevented as the double-spending attacks are prevented by the blockchain. To save the log client cost and avoid a full log replica, we propose a novel scheme for blockchain to witness the views of _both_ clients and the server. This workshop presents an initial implementation of our protocol on HyperLedger Fabric with simulation-based cost evaluation.</i></p>
+</li></ul>
 </li>
-<li><p>Blockchain course crosslisted in CS and Finance at Syracuse Univ.: <a href="https://tristartom.github.io/teaching/20f-fin600/index.html">[2020]</a>, <a href="http://tristartom.github.io/teaching/19f-fin600/index.html">[2019]</a>, <a href="http://tristartom.github.io/teaching/18f-fin600/index.html">[2018]</a></p>
+<li><p>Ju Chen, Yuzhe Tang, Hao Zhou. &ldquo;Strongly Secure and Efficient Data Shuffle on Hardware Enclaves&rdquo;. The SysTex Workshop affiliated with SOSP 2017</p>
 </li>
-<li><p>Blockchain lab in SEED workshop 2018: <a href="http://www.cis.syr.edu/~wedu/seed/workshop_agenda2018.html">[link]</a></p>
-</li>
-</ul>
-<h2>Broader Impacts Activities</h2>
-<ul>
-<li><p>Public lecture to K-12: &ldquo;Cloud computing and security&rdquo;,</p>
-</li>
-<li><p>at summer camp in Syracuse City School District, July, 2019</p>
-</li>
-<li><p>Public lecture to high-school teachers: &ldquo;Blockchain: Applications, Security Promises and Internals&rdquo;, at SUPA workshop, May, 2018, <a href="http://tristartom.github.io/docs/BlockchainTutorial-SUPA.pdf">[slides]</a></p>
-</li>
-<li><p>Public lecture to IT professionals: &ldquo;Blockchain: Applications, Security Promises and Internals&rdquo;, at CSIAC, Dec. 2017, <a href="https://www.csiac.org/event/blockchain-applications-security-promises-and-internals/">[webinar]</a></p>
+<li><p>Yuzhe Tang, Ting Wang, Ling Liu, Xin Hu, Jiyong Jang. &ldquo;Lightweight Authentication of Freshness in Outsourced Key-Value Stores&rdquo;. ACSAC 2014</p>
 </li>
 </ul>
 <div id="footer">
