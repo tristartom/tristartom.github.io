@@ -26,15 +26,12 @@ _gaq.push(['_trackPageview']);
 <div id="layout-content">
 <h1>Representative Publications</h1>
 <p>1. Kai Li, Jiaqi Chen, Xianghong Liu, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; ISOC <b>NDSS 2021</b> <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a></p>
-
-<ul>
-<li>
 <ul>
 <li><p><i><u>Summary</u>: This work presents a measurement study examining the security of Ethereum RPC services. The API being exploited is eth_call, which is an essential service operation that support local smart-contract execution for free. An attacker can misuse this API and obtain a zero-cost denial-of-service attack, which we call Denial of Ethereum Rpc Service (DoERS). Novel measurement methods are proposed to uncover load balancing, Gas limits, and other internal behaviors in the otherwise blackbox services. The results show that at the time of measurement, most services are subject to the DoERS attacks.</i></p>
 </li>
 <li><p><i><u>Disclaimer</u>: The vulnerability has been fixed since Feb., 2021.</i>
 1. Kai Li, Yuzhe Tang, Jiaqi Chen, Zhehu Yuan, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo; ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="https://arxiv.org/abs/1911.04078">[Preprints]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>, <a href="https://github.com/syracuse-fullstacksecurity/GRuB">[code]</a>.</p>
-</li>
+<ul>
 <li><p><i><u>Summary</u>: Given data feeding becomes a critical component in today's DeFi applications, this work presents a cost-effective design of data feeds onto Ethereum like blockchains. The key idea is this: A push-based data feed incurs operations to update smart-contract storage and is expensive under write-intensive workloads (i.e., producing data updates at a high rate without much data reads from smart contracts). A pull-based data fee design incurs transactions to bring off-chain data to the smart contract and is expensive under read-intensive workloads. Thus, we propose GRuB, a workload-aware data replication scheme that can adaptively avoid the high cost of push-based (pull-based) design under write-intensive (read-intensive) workloads. The key technique is a family of online algorithms that make data-replication designs based on the observed workload. We conduct algorithm analysis to show the proposed online algorithms achieve bounded competitiveness. For evaluation, we build a system prototype on Ethereum and several benchmarks based on collected real traces of DeFi applications (e.g., stablecoins and pegged tokens). Our evaluation results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i>
 1. Yuzhe Tang, Kai Li, Yibo Wang, Sencer Burak Somuncuoglu. &ldquo;Towards Scalable Auditable Logs on Blockchains via Lightweight Fork Prevention&rdquo; the SERIAL&rsquo;20 Workshop in conjunction with Middleware 2020, <a href="./docs/serial20-final1.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1BmyQaZIgdMRq6OfyVCTKtNTt_DBra6M8j0hZpmA9jew/edit?usp=sharing">[slides]</a>, <a href="https://youtu.be/YqQI53RouYk?t=2252">[video]</a></p>
 </li>
@@ -48,7 +45,7 @@ _gaq.push(['_trackPageview']);
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-04-01 12:50:24 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2021-04-01 12:51:10 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
