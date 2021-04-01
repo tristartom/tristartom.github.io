@@ -25,32 +25,32 @@ _gaq.push(['_trackPageview']);
 </script>
 <div id="layout-content">
 <h1>Representative Publications</h1>
-<p>1. Kai Li, Jiaqi Chen, Xianghong Liu, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; ISOC <b>NDSS 2021</b> <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a></p>
+<ul>
+<li><p>Kai Li, Jiaqi Chen, Xianghong Liu, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; ISOC <b>NDSS 2021</b> <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a></p>
 <ul>
 <li><p><i><u>Summary</u>: This work presents a measurement study examining the security of Ethereum RPC services. The API being exploited is eth_call, which is an essential service operation that support local smart-contract execution for free. An attacker can misuse this API and obtain a zero-cost denial-of-service attack, which we call Denial of Ethereum Rpc Service (DoERS). Novel measurement methods are proposed to uncover load balancing, Gas limits, and other internal behaviors in the otherwise blackbox services. The results show that at the time of measurement, most services are subject to the DoERS attacks.</i></p>
 </li>
 <li><p><i><u>Disclaimer</u>: The vulnerability has been fixed since Feb., 2021.</i></p>
+</li></ul>
 </li>
-</ul>
-<p>1. Kai Li, Yuzhe Tang, Jiaqi Chen, Zhehu Yuan, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo; ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="https://arxiv.org/abs/1911.04078">[Preprints]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>, <a href="https://github.com/syracuse-fullstacksecurity/GRuB">[code]</a>.</p>
-
+<li><p>Kai Li, Yuzhe Tang, Jiaqi Chen, Zhehu Yuan, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo; ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="https://arxiv.org/abs/1911.04078">[Preprints]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>, <a href="https://github.com/syracuse-fullstacksecurity/GRuB">[code]</a>.</p>
 <ul>
-<li>
+<li><p><i><u>Summary</u>: Given data feeding becomes a critical component in today's DeFi applications, this work presents a cost-effective design of data feeds onto Ethereum like blockchains. The key idea is this: A push-based data feed incurs operations to update smart-contract storage and is expensive under write-intensive workloads (i.e., producing data updates at a high rate without much data reads from smart contracts). A pull-based data fee design incurs transactions to bring off-chain data to the smart contract and is expensive under read-intensive workloads. Thus, we propose GRuB, a workload-aware data replication scheme that can adaptively avoid the high cost of push-based (pull-based) design under write-intensive (read-intensive) workloads. The key technique is a family of online algorithms that make data-replication designs based on the observed workload. We conduct algorithm analysis to show the proposed online algorithms achieve bounded competitiveness. For evaluation, we build a system prototype on Ethereum and several benchmarks based on collected real traces of DeFi applications (e.g., stablecoins and pegged tokens). Our evaluation results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i></p>
+</li></ul>
+</li>
+<li><p>Yuzhe Tang, Kai Li, Yibo Wang, Sencer Burak Somuncuoglu. &ldquo;Towards Scalable Auditable Logs on Blockchains via Lightweight Fork Prevention&rdquo; the SERIAL&rsquo;20 Workshop in conjunction with Middleware 2020, <a href="./docs/serial20-final1.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1BmyQaZIgdMRq6OfyVCTKtNTt_DBra6M8j0hZpmA9jew/edit?usp=sharing">[slides]</a>, <a href="https://youtu.be/YqQI53RouYk?t=2252">[video]</a></p>
 <ul>
-<li><p><i><u>Summary</u>: Given data feeding becomes a critical component in today's DeFi applications, this work presents a cost-effective design of data feeds onto Ethereum like blockchains. The key idea is this: A push-based data feed incurs operations to update smart-contract storage and is expensive under write-intensive workloads (i.e., producing data updates at a high rate without much data reads from smart contracts). A pull-based data fee design incurs transactions to bring off-chain data to the smart contract and is expensive under read-intensive workloads. Thus, we propose GRuB, a workload-aware data replication scheme that can adaptively avoid the high cost of push-based (pull-based) design under write-intensive (read-intensive) workloads. The key technique is a family of online algorithms that make data-replication designs based on the observed workload. We conduct algorithm analysis to show the proposed online algorithms achieve bounded competitiveness. For evaluation, we build a system prototype on Ethereum and several benchmarks based on collected real traces of DeFi applications (e.g., stablecoins and pegged tokens). Our evaluation results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i>
-1. Yuzhe Tang, Kai Li, Yibo Wang, Sencer Burak Somuncuoglu. &ldquo;Towards Scalable Auditable Logs on Blockchains via Lightweight Fork Prevention&rdquo; the SERIAL&rsquo;20 Workshop in conjunction with Middleware 2020, <a href="./docs/serial20-final1.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1BmyQaZIgdMRq6OfyVCTKtNTt_DBra6M8j0hZpmA9jew/edit?usp=sharing">[slides]</a>, <a href="https://youtu.be/YqQI53RouYk?t=2252">[video]</a></p>
+<li><p><i><u>Summary</u>: This work presents a lightweight log client design on blockchain that prevents log-forking attacks against an adversarial server. The trick here is to equate the forking attack in the upper-level log applications with the double-spending attacks in the underlying blockchain system -- Log forks are thus prevented as the double-spending attacks are prevented by the blockchain. To save the log client cost and avoid a full log replica, we propose a novel scheme for blockchain to witness the views of _both_ clients and the server. This workshop presents an initial implementation of our protocol on HyperLedger Fabric with simulation-based cost evaluation.</i></p>
+</li></ul>
 </li>
-<li><p><i><u>Summary</u>: This work presents a lightweight log client design on blockchain that prevents log-forking attacks against an adversarial server. The trick here is to equate the forking attack in the upper-level log applications with the double-spending attacks in the underlying blockchain system -- Log forks are thus prevented as the double-spending attacks are prevented by the blockchain. To save the log client cost and avoid a full log replica, we propose a novel scheme for blockchain to witness the views of _both_ clients and the server. This workshop presents an initial implementation of our protocol on HyperLedger Fabric with simulation-based cost evaluation.</i>
-1. Ju Chen, Yuzhe Tang, Hao Zhou. &ldquo;Strongly Secure and Efficient Data Shuffle on Hardware Enclaves&rdquo;. The SysTex Workshop affiliated with SOSP 2017
-1. Yuzhe Tang, Ting Wang, Ling Liu, Xin Hu, Jiyong Jang. &ldquo;Lightweight Authentication of Freshness in Outsourced Key-Value Stores&rdquo;. ACSAC 2014</p>
+<li><p>Ju Chen, Yuzhe Tang, Hao Zhou. &ldquo;Strongly Secure and Efficient Data Shuffle on Hardware Enclaves&rdquo;. The SysTex Workshop affiliated with SOSP 2017</p>
 </li>
-</ul>
-
+<li><p>Yuzhe Tang, Ting Wang, Ling Liu, Xin Hu, Jiyong Jang. &ldquo;Lightweight Authentication of Freshness in Outsourced Key-Value Stores&rdquo;. ACSAC 2014</p>
 </li>
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-04-01 12:51:41 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2021-04-01 12:52:03 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
