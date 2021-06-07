@@ -32,14 +32,20 @@ _gaq.push(['_trackPageview']);
 </li>
 </ul>
 <h2>Representative Publications</h2>
+<p><u>Underline</u>: students advised by Dr. Tang</p>
 <ul>
-<li><p>Kai Li, Jiaqi Chen, Xianghong Liu, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; ISOC <b>NDSS 2021</b>, AR=15.2%  <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a>.</p>
+<li><p><u>Yibo Wang</u>, <u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, Xiapu Luo, Ting Chen. &ldquo;iBatch: Saving Ethereum Fees via Secure and Cost-Effective Batching of Smart-Contract Invocations&rdquo; <b>ESEC/FSE 2021</b>, AR=24.5%.</p>
+<ul>
+<li><p><i><u>Summary</u>: This paper presents iBatch, a secure middleware system atop the unmodified Ethereum platform that enables invocation batching without assuming trust on additional third-parties and that allows application-specific configurations to strike a balance between invocation delay and cost effectiveness. Technically, iBatch is built on a novel security protocol to generate batch transactions off-chain and to validate invocations on-chain in a lightweight manner by a stateless smart contract. On top of this mechanism, iBatch supports a variety of policies, ranging from conservative to aggressive batching, that can be used to tailor different application needs. To facilitate deployment at scale, iBatch supports automatic smart-contract rewriting at both source code and bytecode levels. The evaluation results show that iBatch can save 14.6%-59.1% Gas cost per invocation under a moderate 2-minute delay, when compared with unbatched baselines. For timing-sensitive applications, iBatch can save up to 74.34% Ether cost per invocation without any block delay.</i></p>
+</li></ul>
+</li>
+<li><p><u>Kai Li</u>, <u>Jiaqi Chen</u>, <u>Xianghong Liu</u>, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; ISOC <b>NDSS 2021</b>, AR=15.2%  <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a>.</p>
 <ul>
 <li><p><i><u>Summary</u>: This is a measurement study examining the security of Ethereum remote procedural call (RPC) services. The exploitable API being examined is "eth_call", which is an essential RPC-service operation to support free smart-contract execution. An attacker can misuse this API and obtain a zero-cost denial-of-service attack, which we call Denial of Ethereum Rpc Service (DoERS). Novel measurement methods are proposed to uncover the load balancing, rate limiting, Gas limits, and other service internal behaviors that would otherwise be hidden inside the blackbox services. The results show that at the time of measurement, most services are vulnerable to the DoERS attacks -- a DoERS attacker investing zero Ether/USD can cause severe service interruption with significant response time increase.</i>
 </p>
 </li></ul>
 </li>
-<li><p>Kai Li, Yuzhe Tang, Jiaqi Chen, Zhehu Yuan, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo; ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="./docs/mw20.pdf">[pdf (ACM)]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>, <a href="https://github.com/syracuse-fullstacksecurity/GRuB">[code]</a>.</p>
+<li><p><u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, <u>Zhehu Yuan</u>, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo; ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="./docs/mw20.pdf">[pdf (ACM)]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>, <a href="https://github.com/syracuse-fullstacksecurity/GRuB">[code]</a>.</p>
 <ul>
 <li><p><i><u>Summary</u>: This work presents a dynamic cost optimization scheme on Ethereum's data feeds. Data feeding, that is, providing physical world data to smart contracts running on blockchains, becomes a popular paradigm of designing decentralized finance (DeFi) applications and is a multi-million business today. This work presents GRuB,  a workload-aware data replications scheme that dynamically adjusts the current data-feed flow between data pulling (i.e., smart contracts pull data to the blockchain on demand) and data pushing (i.e., off-chain data sources push data to the blockchain). The key idea is that static data pulling incurs expensive transactions per read and static data pushing incurs expensive on-chain storage updates per write. Thus, a workload-adaptive scheme can avoid the inefficiency when real-world DeFi workloads dynamically switch between read-intensive and write intensive patterns. Technically, we propose new online decision-making algorithms with proven asymptotic efficiency (i.e., bounded competitiveness). We build a system prototype of GRuB functional with Ethereum and off-chain Google LevelDB. We evaluate GRuB's concrete performance under YCSB workloads and real DeFi workloads (e.g., stablecoins and pegged tokens). The results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i></p>
 </li></ul>
@@ -74,7 +80,7 @@ _gaq.push(['_trackPageview']);
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-05-28 10:05:18 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2021-06-07 06:59:55 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
