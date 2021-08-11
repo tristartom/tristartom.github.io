@@ -24,7 +24,7 @@ _gaq.push(['_trackPageview']);
  })();
 </script>
 <div id="layout-content">
-<h1>Scalably Auditable Transparency Logs based on Blockchains</h1>
+<h1>Proposal: Towards Truly Scalable Transparency Log Systems from Decentralized Trust</h1>
 <h2>Preliminary Research Results</h2>
 <ul>
 <li><p>Yuzhe Tang, Kai Li, Yibo Wang, Sencer Burak Somuncuoglu. &ldquo;Towards Scalable Auditable Logs on Blockchains via Lightweight Fork Prevention&rdquo; the SERIAL&rsquo;20 Workshop in conjunction with Middleware 2020, <a href="./docs/serial20-final1.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1BmyQaZIgdMRq6OfyVCTKtNTt_DBra6M8j0hZpmA9jew/edit?usp=sharing">[slides]</a>, <a href="https://youtu.be/YqQI53RouYk?t=2252">[video]</a></p>
@@ -32,37 +32,37 @@ _gaq.push(['_trackPageview']);
 <li><p><i><u>Summary</u>: This work presents a lightweight log client design on blockchain that prevents log-forking attacks against an adversarial server. The trick here is to equate the forking attack in the upper-level log applications with the double-spending attacks in the underlying blockchain system -- Log forks are thus prevented as the double-spending attacks are prevented by the blockchain. To save the log client cost and avoid a full log replica, we propose a novel scheme for blockchain to witness the views of _both_ clients and the server. This workshop presents an initial implementation of our protocol on HyperLedger Fabric with simulation-based cost evaluation.</i></p>
 </li></ul>
 </li>
-<li><p>Kai Li, Yuzhe Tang, Beom Heyn Kim, Jianliang Xu. &ldquo;Secure Consistency Verification for Untrusted Cloud Storage by Public Blockchains&rdquo;, SecureComm 2019</p>
-</li>
-<li><p>Qiwu Zou, Yuzhe Tang, Ju Chen, Kai Li, Charles Kamoua, Kevin Kwiat, Laurent Njilla. &ldquo;ChainFS: Blockchain-Secured Cloud Storage&rdquo;, IEEE Cloud 2018</p>
-</li>
-<li><p>Yuzhe (Richard) Tang, Zihao Xing, Cheng Xu, Ju Chen, Jianliang Xu. &ldquo;Lightweight Blockchain Logging for Data-Intensive Applications&rdquo;, 2nd Workshop of Trusted Smart Contracts 2018 at International Conference on Financial Cryptography and Data Security</p>
-</li>
-</ul>
-<h2>Other Blockchain-related Papers by the PI</h2>
+<li><p><u>Yibo Wang</u>, <u>Qi Zhang</u>, <u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, Xiapu Luo, Ting Chen. &ldquo;iBatch: Saving Ethereum Fees via Secure and Cost-Effective Batching of Smart-Contract Invocations&rdquo; <b>ESEC/FSE 2021</b>, AR=24.5% <a href="./docs/fse21-ibatch.pdf">[pdf (ACM)]</a>, <a href="https://arxiv.org/abs/2106.08554">[preprint]</a>, <a href="https://2021.esec-fse.org/details/fse-2021-papers/37/Towards-Practical-and-Cost-Effective-Batching-of-Smart-Contract-Invocations-on-Ethere">[html]</a>, <a href="https://docs.google.com/presentation/d/1BAbKc0El5ccnSwowvgFECqgYMjrKFBS-aQMwgGJBYfo/edit?usp=sharing">[slides]</a></p>
 <ul>
-<li><p>Kai Li, Jiaqi Chen, Xianghong Liu, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; ISOC <b>NDSS 2021</b> <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a></p>
-<ul>
-<li><p><i><u>Summary</u>: This work presents a measurement study examining the security of Ethereum RPC services. The API being exploited is eth_call, which is an essential service operation that support local smart-contract execution for free. An attacker can misuse this API and obtain a zero-cost denial-of-service attack, which we call Denial of Ethereum Rpc Service (DoERS). Novel measurement methods are proposed to uncover load balancing, Gas limits, and other internal behaviors in the otherwise blackbox services. The results show that at the time of measurement, most services are subject to the DoERS attacks.</i></p>
-</li>
-<li><p><i><u>Disclaimer</u>: The vulnerability has been fixed since Feb., 2021.</i></p>
+<li><p><i><u>Summary</u>: Blockchains' transaction fees are skyrocketing and have scared away some "big" customers. This work, iBatch, tackles this problem on Ethereum. iBatch is a security protocol to batch process multiple smart-contract invocations in a single transaction, hence amortizing the high fee. To ensure strong security (invocation integrity) while saving costs, we propose a novel nonce-maintenance method to defend against replay attacks. We design a middleware system supporting a range of batching policies from the conservative to the more aggressive batching. By replaying real Ethereum transactions, we evaluate iBatch's cost. The result shows iBatch saves 14.6%-59.1% Gas cost per invocation with a moderate 2-minute delay and 19.06%-31.52% Ether cost per invocation with a minimal delay of 0.26-1.66 blocks.</i></p>
 </li></ul>
 </li>
-<li><p>Kai Li, Yuzhe Tang, Jiaqi Chen, Zhehu Yuan, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo; ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="https://arxiv.org/abs/1911.04078">[Preprints]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>, <a href="https://github.com/syracuse-fullstacksecurity/GRuB">[code]</a>.</p>
+<li><p><u>Kai Li</u>, <u>Jiaqi Chen</u>, <u>Xianghong Liu</u>, Yuzhe Tang, XiaoFeng Wang, Xiapu Luo. &ldquo;As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service&rdquo; ISOC <b>NDSS 2021</b>, AR=15.2% <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1otvlWH0Nbz8nXBdo03ZjTbhnVaUNkHahGoUpPOlVjRc/edit?usp=sharing">[slides]</a>.</p>
 <ul>
-<li><p><i><u>Summary</u>: Given data feeding becomes a critical component in today's DeFi applications, this work presents a cost-effective design of data feeds onto Ethereum like blockchains. The key idea is this: A push-based data feed incurs operations to update smart-contract storage and is expensive under write-intensive workloads (i.e., producing data updates at a high rate without much data reads from smart contracts). A pull-based data fee design incurs transactions to bring off-chain data to the smart contract and is expensive under read-intensive workloads. Thus, we propose GRuB, a workload-aware data replication scheme that can adaptively avoid the high cost of push-based (pull-based) design under write-intensive (read-intensive) workloads. The key technique is a family of online algorithms that make data-replication designs based on the observed workload. We conduct algorithm analysis to show the proposed online algorithms achieve bounded competitiveness. For evaluation, we build a system prototype on Ethereum and several benchmarks based on collected real traces of DeFi applications (e.g., stablecoins and pegged tokens). Our evaluation results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i></p>
+<li><p><i><u>Summary</u>: This work presents a measurement study examining the security of Ethereum remote procedural call (RPC) services. The key RPC API is "eth_call", which supports free execution of smart contracts. Misusing this API leads to a zero-cost denial-of-service attack, which we call Denial of Ethereum Rpc Service (DoERS). Novel measurement methods are proposed to uncover the load balancing, rate limiting, Gas limits, and other service internal behaviors that would otherwise be hidden inside the blackbox services. The results show that at the time of measurement, most services are vulnerable to the DoERS attacks -- a DoERS attacker investing zero Ether/USD can cause severe service interruption with significant response time increase.</i>
+</p>
+</li></ul>
+</li>
+<li><p><u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, <u>Zhehu Yuan</u>, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo; ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="./docs/mw20.pdf">[pdf (ACM)]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>, <a href="https://github.com/syracuse-fullstacksecurity/GRuB">[code]</a>.</p>
+<ul>
+<li><p><i><u>Summary</u>: This work presents a dynamic cost optimization scheme on Ethereum's data feeds. Data feeding, that is, providing physical world data to smart contracts running on blockchains, becomes a popular paradigm of designing decentralized finance (DeFi) applications and is a multi-million business today. This work presents GRuB, a workload-aware data replications scheme that dynamically adjusts the current data-feed flow between data pulling (i.e., smart contracts pull data to the blockchain on demand) and data pushing (i.e., off-chain data sources push data to the blockchain). The key idea is that static data pulling incurs expensive transactions per read and static data pushing incurs expensive on-chain storage updates per write. Thus, a workload-adaptive scheme can avoid the inefficiency when real-world DeFi workloads dynamically switch between read-intensive and write intensive patterns. Technically, we propose new online decision-making algorithms with proven asymptotic efficiency (i.e., bounded competitiveness). We build a system prototype of GRuB functional with Ethereum and off-chain Google LevelDB. We evaluate GRuB's concrete performance under YCSB workloads and real DeFi workloads (e.g., stablecoins and pegged tokens). The results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i></p>
 </li></ul>
 </li>
 <li><p>Ce Zhang, Cheng Xu, Jianliang Xu, Yuzhe Tang, Byron Choi. &ldquo;GEM^2-Tree: A Gas-Efficient Structure for Authenticated Range Queries in Blockchain&rdquo; IEEE <b>ICDE 2019</b>, Full Paper, AR=26.8% <a href="./docs/icde19.pdf">[pdf]</a>.</p>
+<ul>
+<li><p><i><u>Summary</u>: This work presents data outsourcing schemes built on top of untrusted clouds and trusted blockchain for authenticated range queries. The key design challenge tackled is the "Gas" efficiency, that is, the amount of computation done on expensive Ethereum blockchain is minimized. To do so, we propose a novel data authentication scheme that adaptively shape-shifts between a log-structured merge (LSM) tree and a B-tree. The key observation is to choose the most cost-effective data structures (i.e., LSM tree or B tree) based on data sizes. We implement a system prototype on Ethereum, conduct extensive cost analysis and evaluate the concrete monetary cost under YCSB, which shows the proposed scheme saves more than 30% costs compared with state-of-the-art approaches. </i></p>
 </li>
 </ul>
-<h2>Education Results</h2>
+
+</li>
+</ul>
+<h2>Preliminary Education Results</h2>
 <ul>
 <li><p>Blockchain labs in security and finance applications: <a href="https://blockchainlabsu.github.io/">[blockchainlabsu.github.io]</a></p>
 </li>
 <li><p>Blockchain course crosslisted in CS and Finance at Syracuse Univ.: <a href="https://tristartom.github.io/teaching/20f-fin600/index.html">[2020]</a>, <a href="http://tristartom.github.io/teaching/19f-fin600/index.html">[2019]</a>, <a href="http://tristartom.github.io/teaching/18f-fin600/index.html">[2018]</a></p>
 </li>
-<li><p>Blockchain lab in SEED workshop 2018: <a href="http://www.cis.syr.edu/~wedu/seed/workshop_agenda2018.html">[link]</a></p>
+<li><p>Training session on the Blockchain labs in SEED workshop in 2018: <a href="http://www.cis.syr.edu/~wedu/seed/workshop_agenda2018.html">[link]</a></p>
 </li>
 </ul>
 <h2>Broader Impacts Activities</h2>
@@ -73,12 +73,12 @@ _gaq.push(['_trackPageview']);
 </li>
 <li><p>Public lecture to high-school teachers: &ldquo;Blockchain: Applications, Security Promises and Internals&rdquo;, at SUPA workshop, May, 2018, <a href="http://tristartom.github.io/docs/BlockchainTutorial-SUPA.pdf">[slides]</a></p>
 </li>
-<li><p>Public lecture to IT professionals: &ldquo;Blockchain: Applications, Security Promises and Internals&rdquo;, at CSIAC, Dec. 2017, <a href="https://www.csiac.org/event/blockchain-applications-security-promises-and-internals/">[webinar]</a></p>
+<li><p>Public lecture to IT professionals: &ldquo;Blockchain: Applications, Security Promises and Internals&rdquo;, at CSIAC, Dec. 2017, <a href="https://www.csiac.org/event/blockchain-applications-security-promises-and-internals/">[webinar]</a> <a href='https://clustrmaps.com/site/1bjcv'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=hfFvXjaaVD9f5OHh-JbrQrkVqnDXBjbtpk654NvuSbQ' width="1px" /></a></p>
 </li>
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-08-10 20:50:47 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2021-08-10 21:04:47 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
