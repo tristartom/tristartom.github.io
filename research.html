@@ -24,23 +24,11 @@ _gaq.push(['_trackPageview']);
  })();
 </script>
 <div id="layout-content">
-<h1>Yuzhe Tang's Research Overview</h1>
-<div class="infoblock">
-<div class="blocktitle">News</div>
-<div class="blockcontent">
+<h1>Dr. Yuzhe Tang's Research Overview</h1>
 <ul>
-<li><p>Paper in submission to ACM CCS&rsquo;21 receives major revision. Details released soon.</p>
-</li>
-<li><p>Paper in submission to ACM Middleware&rsquo;21 (Industrial track) is accepted.</p>
-</li>
-<li><p>Paper conditionally accepted to ACM IMC&rsquo;21.</p>
-</li>
-</ul>
-</div></div>
-<ul>
-<li><p>C.V.:<a href="resume/tang-cv-full.html">[webpage]</a>,<a href="resume/tang-cv-full.pdf">[pdf]</a></p>
-</li>
 <li><p>Research overview: <a href="https://docs.google.com/presentation/d/15I9Vfvvew1M9rRdqfX7gRLgC9L0jliWGkjryegQTrEI/edit?usp=sharing">[slides]</a></p>
+</li>
+<li><p>C.V.:<a href="resume/tang-cv-full.html">[webpage]</a>,<a href="resume/tang-cv-full.pdf">[pdf]</a></p>
 </li>
 </ul>
 <p>
@@ -55,12 +43,17 @@ width="800" />
 <h2>Representative Publications</h2>
 <p><u>Underline</u>: students advised by Dr. Tang</p>
 <ul>
+<li><p><span class="label" style="background-color: rgb(204, 102, 0); color: white;border: 1px solid rgb(204, 102, 0);border-radius: 5px;">new</span> <u>Kai Li</u>, <u>Yibo Wang</u>, Yuzhe Tang. &ldquo;DETER: Denial of Ethereum Txpool sERvices&rdquo;, ACM <b>IMC 2021</b>, AR=??% <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">design flaws</span>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">DoS</span> </p>
+<ul>
+<li><p><i><u>Summary</u>: This work presents the DETER attacks that deny a remote Ethereum node's service in mining and transaction relay by exploiting flawed transaction handling in its memory pool (or txpool). DETER attacks incur zero or low Ether cost, and can be extended to result in disruption to an entire Ethereum network. We propose mitigation schemes that reduce a DETER attack's success rate to zero while preserving the miners' revenue. We also verify the properties of security and profitability under real and synthetic Ethereum transactions.</i></p>
+</li></ul>
+</li>
 <li><p><span class="label" style="background-color: rgb(204, 102, 0); color: white;border: 1px solid rgb(204, 102, 0);border-radius: 5px;">new</span> <u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, <u>Yibo Wang</u>, <u>Xianghong Liu</u>. &ldquo;TopoShot: Uncovering Ethereum's Network Topology Leveraging Replacement Transactions&rdquo;, ACM <b>IMC 2021</b>, AR=28% (Conditionally accepted) <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">network measurement</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain overlay network</span> </p>
 <ul>
 <li><p><i><u>Summary</u>: This paper presents the first measurement study that uncovers Ethereum's peer-to-peer network topology. Network topology in Ethereum remains an open research problem, measuring which requires to infer the routing-table information hidden in blackbox nodes and is known to be challenging. This paper presents TopoShot, a novel method uniquely repurposing Ethereum's transaction replacement/eviction policies for topology measurement. For the large-scale measurement, we propose a non-trivial parallel measurement schedule. We take extensive measures and notably propose workload-adaptive configurations to minimize service interruption to tested nodes/network. Through systematic measurement studies, our work induces new knowledge including the full-network topology in major testnets (Ropsten, Rinkeby and Goerli) and critical sub-network topology in the mainnet, which reveal interesting graph-theoretic properties and connectivity centralization in real Ethereum networks.</i></p>
 </li></ul>
 </li>
-<li><p><u>Yibo Wang</u>, <u>Q. Zhang</u>, <u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, Xiapu Luo, T. Chen. &ldquo;iBatch: Saving Ethereum Fees via Secure and Cost-Effective Batching of Smart-Contract Invocations&rdquo; <b>ESEC/FSE 2021</b>, AR=24.5% <a href="./docs/fse21-ibatch.pdf">[pdf (ACM)]</a>, <a href="https://arxiv.org/abs/2106.08554">[preprint]</a>, <a href="https://2021.esec-fse.org/details/fse-2021-papers/37/Towards-Practical-and-Cost-Effective-Batching-of-Smart-Contract-Invocations-on-Ethere">[html]</a>, <a href="https://docs.google.com/presentation/d/1BAbKc0El5ccnSwowvgFECqgYMjrKFBS-aQMwgGJBYfo/edit?usp=sharing">[slides]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">DApp</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">cost-efficiency</span></p>
+<li><p><u>Yibo Wang</u>, <u>Q. Zhang</u>, <u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, Xiapu Luo, T. Chen. &ldquo;iBatch: Saving Ethereum Fees via Secure and Cost-Effective Batching of Smart-Contract Invocations&rdquo; <b>ESEC/FSE 2021</b>, AR=24.5% <a href="./docs/fse21-ibatch.pdf">[pdf (ACM)]</a>, <a href="https://arxiv.org/abs/2106.08554">[preprint]</a>, <a href="https://2021.esec-fse.org/details/fse-2021-papers/37/Towards-Practical-and-Cost-Effective-Batching-of-Smart-Contract-Invocations-on-Ethere">[html]</a>, <a href="https://docs.google.com/presentation/d/1BAbKc0El5ccnSwowvgFECqgYMjrKFBS-aQMwgGJBYfo/edit?usp=sharing">[slides]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">cost-efficiency</span></p>
 <ul>
 <li><p><i><u>Summary</u>: Today, blockchains' transaction fees are skyrocketing and have scared away some big customers (e.g., Binance as an institutional customer in Ethereum). This work tackles this pressing problem on Ethereum and presents iBatch, a security protocol to batch-process multiple smart-contract invocations in a single transaction, hence amortizing its high fees. To ensure the security (invocation integrity) while saving costs, we propose a novel nonce-maintenance method to defend against replay attacks. We design a middleware system supporting a range of batching policies from the conservative to the more aggressive batching. By replaying real Ethereum transactions, we evaluate iBatch's cost. The result shows iBatch saves 14.6%-59.1% Gas cost per invocation with a moderate 2-minute delay and 19.06%-31.52% Ether cost per invocation with a minimal delay of 0.26-1.66 blocks.</i></p>
 </li></ul>
@@ -71,7 +64,7 @@ width="800" />
 </p>
 </li></ul>
 </li>
-<li><p><u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, <u>Zhehu Yuan</u>, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo;, ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="./docs/mw20.pdf">[pdf (ACM)]</a>, <a href="https://arxiv.org/abs/1911.04078">[preprint]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">DApp</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">cost-efficiency</span></p>
+<li><p><u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, <u>Zhehu Yuan</u>, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo;, ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="./docs/mw20.pdf">[pdf (ACM)]</a>, <a href="https://arxiv.org/abs/1911.04078">[preprint]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">cost-efficiency</span></p>
 <ul>
 <li><p><i><u>Summary</u>: This work presents a dynamic cost optimization scheme on Ethereum's data feeds. Data feeding, that is, providing physical world data to smart contracts running on blockchains, becomes a popular paradigm of designing decentralized finance (DeFi) applications and is a multi-million business today. This work presents GRuB, a workload-aware data replications scheme that dynamically adjusts the current data-feed flow between data pulling (i.e., smart contracts pull data to the blockchain on demand) and data pushing (i.e., off-chain data sources push data to the blockchain). The key idea is that static data pulling incurs expensive transactions per read and static data pushing incurs expensive on-chain storage updates per write. Thus, a workload-adaptive scheme can avoid the inefficiency when real-world DeFi workloads dynamically switch between read-intensive and write intensive patterns. Technically, we propose new online decision-making algorithms with proven asymptotic efficiency (i.e., bounded competitiveness). We build a system prototype of GRuB functional with Ethereum and off-chain Google LevelDB. We evaluate GRuB's concrete performance under YCSB workloads and real DeFi workloads (e.g., stablecoins and pegged tokens). The results show that GRuB achieves up to 55% saving in Gas compared with the baseline designs of statically pushed or pulled data feeds.</i></p>
 </li></ul>
@@ -101,7 +94,7 @@ width="800" />
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-09-03 23:07:45 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2021-09-04 06:47:04 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
