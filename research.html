@@ -32,14 +32,24 @@ _gaq.push(['_trackPageview']);
 <p>
 <br/>
 <div class="item">
-<img src="career_overview2.png"
+<img src="images/career_overview3.png"
 alt="Overview of Dr. Yuzhe Tang's research"
 width="800" />
 </div>
 <br/>
 </p>
-<h2>Representative Publications</h2>
+<h2>Representative Publications on Blockchain Systems Security</h2>
 <p><u>Underline</u>: students advised by Dr. Tang</p>
+
+<ul>
+<li>
+<ul>
+<li><p>Project 1: Blockchain Systems Security</p>
+</li>
+</ul>
+
+</li>
+</ul>
 <ul>
 <li><p><span class="label" style="background-color: rgb(204, 102, 0); color: white;border: 1px solid rgb(204, 102, 0);border-radius: 5px;">new</span> <u>Kai Li</u>, <u>Yibo Wang</u>, Yuzhe Tang. &ldquo;DETER: Denial of Ethereum Txpool sERvices&rdquo;, ACM <b>CCS 2021</b>, <a href="./docs/ccs21.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1geTDmLd-Q78fwN9gy-qvO5XDjb3sIPuWy3bO0T5ZECM/edit?usp=sharing">[slides]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">design flaws</span>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">DoS</span> </p>
 <ul>
@@ -55,16 +65,25 @@ width="800" />
 <ul>
 <li><p><i><u>Summary</u>: This work presents a measurement study examining the security of Ethereum remote procedural call (RPC) services. The key RPC API is "eth_call", which supports free execution of smart contracts. Misusing this API leads to a zero-cost denial-of-service attack, which we call Denial of Ethereum Rpc Service (DoERS). Novel measurement methods are proposed to uncover the load balancing, rate limiting, Gas limits, and other service internal behaviors that would otherwise be hidden inside the blackbox services. The results show that at the time of measurement, most services are vulnerable to the DoERS attacks -- a DoERS attacker investing zero Ether/USD can cause severe service interruption with significant response time increase.</i>
 </p>
-</li></ul>
 </li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p>Project 2: DApp Cost Efficiency</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
 <li><p><u>Yibo Wang</u>, <u>Qi Zhang</u>, <u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, Xiapu Luo, Ting Chen. &ldquo;iBatch: Saving Ethereum Fees via Secure and Cost-Effective Batching of Smart-Contract Invocations&rdquo; <b>ESEC/FSE 2021</b>, AR=24.5% <a href="./docs/fse21-ibatch.pdf">[pdf (ACM)]</a>, <a href="https://arxiv.org/abs/2106.08554">[preprint]</a>, <a href="https://2021.esec-fse.org/details/fse-2021-papers/37/Towards-Practical-and-Cost-Effective-Batching-of-Smart-Contract-Invocations-on-Ethere">[html]</a>, <a href="https://docs.google.com/presentation/d/1BAbKc0El5ccnSwowvgFECqgYMjrKFBS-aQMwgGJBYfo/edit?usp=sharing">[slides]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">cost-efficiency</span></p>
 <ul>
 <li><p><i><u>Summary</u>: Today, blockchains' transaction fees are skyrocketing and have scared away some big customers (e.g., Binance as an institutional customer in Ethereum). This work tackles this pressing problem on Ethereum and presents iBatch, a security protocol to batch-process multiple smart-contract invocations in a single transaction, hence amortizing its high fees. To ensure the security (invocation integrity) while saving costs, we propose a novel nonce-maintenance method to defend against replay attacks. We design a middleware system supporting a range of batching policies from the conservative to the more aggressive batching. By replaying real Ethereum transactions, we evaluate iBatch's cost. The result shows iBatch saves 14.6%-59.1% Gas cost per invocation with a moderate 2-minute delay and 19.06%-31.52% Ether cost per invocation with a minimal delay of 0.26-1.66 blocks.</i></p>
-</li></ul>
-</li>
-<li><p>Yuzhe Tang, <u>Kai Li</u>, Qi Zhang, Jianliang Xu, <u>Ju Chen</u>. &ldquo;Authenticated Key-Value Stores with Hardware Enclaves&rdquo;, ACM/IFIP <b>Middleware 2021</b> (Industrial track) <a href="https://arxiv.org/abs/1904.12068">[extended version]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">TEE</span>, <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">KV store</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">data integrity</span></p>
-<ul>
-<li><p><i><u>Summary</u>: Authenticated data storage on an untrusted platform is an important computing paradigm for cloud applications ranging from big-data outsourcing, to cryptocurrency and certificate transparency log. These modern applications increasingly feature update-intensive workloads, whereas existing authenticated data structures (ADSs) designed with in-place updates are inefficient to handle such workloads. In this paper, we address this issue and propose a novel authenticated log-structured merge tree (eLSM) based key-value store by leveraging Intel SGX enclaves. We present a system design that runs the code of eLSM store inside enclave. To circumvent the limited enclave memory (128 MB with the latest Intel CPUs), we propose to place the memory buffer of the eLSM store outside the enclave and protect the buffer using a new authenticated data structure by digesting individual LSM-tree levels. We design protocols to support query authentication in data integrity, completeness (under range queries), and freshness. The proof in our protocol is made small by including only the Merkle proofs at selective levels. We implement eLSM on top of Google LevelDB and Facebook RocksDB with minimal code change and performance interference. We evaluate the performance of eLSM under the YCSB workload benchmark and show a performance advantage of up to 4.5X speedup.</i></p>
 </li></ul>
 </li>
 <li><p><u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, <u>Zhehu Yuan</u>, Cheng Xu, Jianliang Xu. &ldquo;Cost-Effective Data Feeds to Blockchains via Workload-Adaptive Data Replication&rdquo;, ACM/IFIP <b>Middleware 2020</b>, AR=25.2% <a href="./docs/mw20.pdf">[pdf (ACM)]</a>, <a href="https://arxiv.org/abs/1911.04078">[preprint]</a>, <a href="https://youtu.be/HdIdEIQx2T4">[video]</a>, <a href="https://docs.google.com/presentation/d/1NhP2RmQGpnnRCaYayFSt3pld4fk-rXmDkWqYjf4YOPU/edit?usp=sharing">[slides]</a>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">cost-efficiency</span></p>
@@ -75,6 +94,25 @@ width="800" />
 <li><p>Ce Zhang, Cheng Xu, Jianliang Xu, Yuzhe Tang, Byron Choi. &ldquo;GEM^2-Tree: A Gas-Efficient Structure for Authenticated Range Queries in Blockchain&rdquo;, IEEE <b>ICDE 2019</b>, Full Paper, AR=26.8% <a href="./docs/icde19.pdf">[pdf]</a>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain application</span>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">outsourced databases</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">data integrity</span></p>
 <ul>
 <li><p><i><u>Summary</u>: This work presents data outsourcing schemes built on top of untrusted clouds and trusted blockchain for authenticated range queries. The key design challenge tackled is the "Gas" efficiency, that is, the amount of computation done on expensive Ethereum blockchain is minimized. To do so, we propose a novel data authentication scheme that adaptively shape-shifts between a log-structured merge (LSM) tree and a B-tree. The key observation is to choose the most cost-effective data structures (i.e., LSM tree or B tree) based on data sizes. We implement a system prototype on Ethereum, conduct extensive cost analysis and evaluate the concrete monetary cost under YCSB, which shows the proposed scheme saves more than 30% costs compared with state-of-the-art approaches. </i></p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p>Other topics </p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Yuzhe Tang, <u>Kai Li</u>, Qi Zhang, Jianliang Xu, <u>Ju Chen</u>. &ldquo;Authenticated Key-Value Stores with Hardware Enclaves&rdquo;, ACM/IFIP <b>Middleware 2021</b> (Industrial track) <a href="https://arxiv.org/abs/1904.12068">[extended version]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">TEE</span>, <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">KV store</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">data integrity</span></p>
+<ul>
+<li><p><i><u>Summary</u>: Authenticated data storage on an untrusted platform is an important computing paradigm for cloud applications ranging from big-data outsourcing, to cryptocurrency and certificate transparency log. These modern applications increasingly feature update-intensive workloads, whereas existing authenticated data structures (ADSs) designed with in-place updates are inefficient to handle such workloads. In this paper, we address this issue and propose a novel authenticated log-structured merge tree (eLSM) based key-value store by leveraging Intel SGX enclaves. We present a system design that runs the code of eLSM store inside enclave. To circumvent the limited enclave memory (128 MB with the latest Intel CPUs), we propose to place the memory buffer of the eLSM store outside the enclave and protect the buffer using a new authenticated data structure by digesting individual LSM-tree levels. We design protocols to support query authentication in data integrity, completeness (under range queries), and freshness. The proof in our protocol is made small by including only the Merkle proofs at selective levels. We implement eLSM on top of Google LevelDB and Facebook RocksDB with minimal code change and performance interference. We evaluate the performance of eLSM under the YCSB workload benchmark and show a performance advantage of up to 4.5X speedup.</i></p>
 </li></ul>
 </li>
 <li><p>Yuzhe Tang, Ling Liu, &ldquo;Privacy-Preserving Multi-Keyword Search in Information Networks&rdquo;. IEEE <b>TKDE 2015</b> <a href="./docs/tkde15.pdf"">[pdf]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">privacy preservation</span></p>
@@ -97,7 +135,7 @@ width="800" />
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2022-05-06 17:41:33 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2022-05-08 14:49:28 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
