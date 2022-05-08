@@ -28,7 +28,7 @@ _gaq.push(['_trackPageview']);
 <ul>
 <li><p>C.V.:<a href="resume/tang-cv-full.html">[webpage]</a>,<a href="resume/tang-cv-full.pdf">[pdf]</a></p>
 </li>
-<li><p>Research overview: Yellow are research papers and green are awarded grants."</p>
+<li><p>Research overview: Yellow are research papers and green are awarded grants.</p>
 </li>
 </ul>
 <p>
@@ -42,13 +42,14 @@ width="800" />
 <h2>Representative Publications on Blockchain Systems Security</h2>
 <p><u>Underline</u>: students advised by Dr. Tang</p>
 <h3>Project 1: Blockchain Systems Security</h3>
+<p>&lt;!&ndash; <span class="label" style="background-color: rgb(204, 102, 0); color: white;border: 1px solid rgb(204, 102, 0);border-radius: 5px;">new</span> &ndash;&gt;</p>
 <ul>
-<li><p><span class="label" style="background-color: rgb(204, 102, 0); color: white;border: 1px solid rgb(204, 102, 0);border-radius: 5px;">new</span> <u>Kai Li</u>, <u>Yibo Wang</u>, Yuzhe Tang. &ldquo;DETER: Denial of Ethereum Txpool sERvices&rdquo;, ACM <b>CCS 2021</b>, <a href="./docs/ccs21.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1geTDmLd-Q78fwN9gy-qvO5XDjb3sIPuWy3bO0T5ZECM/edit?usp=sharing">[slides]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">design flaws</span>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">DoS</span> </p>
+<li><p><u>Kai Li</u>, <u>Yibo Wang</u>, Yuzhe Tang. &ldquo;DETER: Denial of Ethereum Txpool sERvices&rdquo;, ACM <b>CCS 2021</b>, <a href="./docs/ccs21.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1geTDmLd-Q78fwN9gy-qvO5XDjb3sIPuWy3bO0T5ZECM/edit?usp=sharing">[slides]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">design flaws</span>  <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">DoS</span> </p>
 <ul>
 <li><p><i><u>Summary</u>: This work examines the design security of Ethereum's txpool (or memory pool) which is a buffer storing unconfirmed transactions prior to mining. By modeling transaction operations in txpool, we discover a series of denial-of-service attacks, named DETER attacks that can disable a remote Ethereum node's txpool and deny critical services in mining and transaction relay. DETER attacks incur zero or low Ether cost. We propose amplification of DETER attacks to result in global impacts/disruption on an Ethereum network. To fix the problem, we propose practical mitigation schemes that reduce a DETER attack's success rate down to zero while effectively preserving the miners' revenue.</i></p>
 </li></ul>
 </li>
-<li><p><span class="label" style="background-color: rgb(204, 102, 0); color: white;border: 1px solid rgb(204, 102, 0);border-radius: 5px;">new</span> <u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, <u>Yibo Wang</u>, <u>Xianghong Liu</u>. &ldquo;TopoShot: Uncovering Ethereum's Network Topology Leveraging Replacement Transactions&rdquo;, ACM <b>IMC 2021</b>, AR=28% <a href="./docs/imc21-toposhot.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1g_MH6YrNfgq_aFGiv6hnf_wrBt9gsywiHkuSSDxItF4/edit?usp=sharing">[slides]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">network measurement</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain overlay network</span> </p>
+<li><p><u>Kai Li</u>, Yuzhe Tang, <u>Jiaqi Chen</u>, <u>Yibo Wang</u>, <u>Xianghong Liu</u>. &ldquo;TopoShot: Uncovering Ethereum's Network Topology Leveraging Replacement Transactions&rdquo;, ACM <b>IMC 2021</b>, AR=28% <a href="./docs/imc21-toposhot.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1g_MH6YrNfgq_aFGiv6hnf_wrBt9gsywiHkuSSDxItF4/edit?usp=sharing">[slides]</a> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">network measurement</span> <span class="label" style="background-color: white; color: rgb(0, 153, 51);border: 1px solid rgb(0, 153, 51);border-radius: 5px;">blockchain overlay network</span> </p>
 <ul>
 <li><p><i><u>Summary</u>: Measuring Ethereum networks' topology is known to be a difficult problem and has remained open as of 2021 (By contrast, measuring Bitcoin's topology has been solved as early as in 2015). This paper addresses the challenges of measuring Ethereum network topology and inferring the routing-table information hidden in blackbox Ethereum nodes in an operational network. We propose TopoShot, a novel method uniquely repurposing Ethereum's transaction replacement/eviction policies for topology measurement/inference. We propose parallel measurement schedule for large-scale networks. We take extensive care to reduce the impacts on the tested nodes. Through systematic measurement studies, our work induces new knowledge including the full-network topology in major testnets (Ropsten, Rinkeby and Goerli) and critical sub-network topology in the mainnet, which reveal interesting graph-theoretic properties and connectivity centralization in real Ethereum networks.</i></p>
 </li></ul>
@@ -109,7 +110,7 @@ width="800" />
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2022-05-08 14:55:11 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2022-05-08 14:56:16 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
