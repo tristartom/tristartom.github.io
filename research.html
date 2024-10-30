@@ -24,27 +24,43 @@ _gaq.push(['_trackPageview']);
  })();
 </script>
 <div id="layout-content">
-<h1>Yuzhe Tang's Research Overview</h1>
-<p>
-<br/>
-<div class="item">
-<img src="career_overview3.png"
-alt="Overview of Dr. Yuzhe Tang's research"
-width="800" />
-</div>
-<br/>
-</p>
+<h1>Yuzhe Tang's Research </h1>
+<h2>Highlights</h2>
+<ul>
+<li><p>World-leading researcher on &ldquo;blockchain mempool security&rdquo;</p>
+<ul>
+<li><p>Relevant results published in IEEE S&amp;P 25, <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[USENIX Security 24]</a>, <a href="./docs/ccs21.pdf">[CCS 21]</a></p>
+</li>
+<li><p>Severe bugs discovered and confirmed by Ethereum Foundation</p>
+</li>
+<li><p>Research funded by two awards from the highly competitive Ethereum Foundation academic grant program: <a href="https://esp.ethereum.foundation/academic-grants-2022">[award 22]</a>, <a href="https://blog.ethereum.org/2023/06/28/academic-grants-round-23">[award 23]</a></p>
+</li>
+<li><p>Development efforts funded by one award in 2024 from the Ethereum Foundation Ecosystem Support Program </p>
+</li>
+<li><p>Developed security patches adopted in Geth v1.11.4 <a href="https://github.com/ethereum/go-ethereum/releases/tag/v1.11.4">[release notes]</a>. </p>
+</li></ul>
+</li>
+<li><p>Blockchain expert specialized in topics:</p>
+<ul>
+<li><p>&ldquo;blockchain denial of service&rdquo; <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[NDSS 21]</a>, &ldquo;financial security of smart contracts&rdquo; <a href="https://arxiv.org/abs/2401.11547">[Euro S&amp;P 23]</a>, &ldquo;blockchain cost modeling&rdquo; (<a href="./docs/fse21-ibatch.pdf">[FSE 21]</a>, <a href="./docs/mw21i.pdf">[Middleware 20]</a>, <a href="./docs/icde19.pdf">[ICDE 19]</a>), &ldquo;upgradable smart contracts&rdquo; <a href="http://arxiv.org/abs/2403.01290">[WWW 24]</a></p>
+</li>
+<li><p>Our iBatch <a href="./docs/fse21-ibatch.pdf">[FSE 21]</a> influences the design of account abstraction mechanism (ERC-4337) on Ethereum.</p>
+</li>
+</ul>
+
+</li>
+</ul>
 <h2>Five Representative Publications</h2>
 <p><u>Underline</u>: students advised by Dr. Tang</p>
 <ul>
 <li><p><b>USENIX Security'24</b>: &ldquo;Understanding Ethereum Mempool Security under Asymmetric DoS by Symbolized Stateful Fuzzing&rdquo;, AR=14.5%, <u>Yibo Wang</u>, Yuzhe Tang, <u>Kai Li</u>, <u>Wanning Ding</u>, <u>Zhihua Yang</u>. <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1aNOTQvB3_MRjV06rTBrlFuS-J4S-JQkTEf4A4Kat_pM/edit?usp=sharing">[slides]</a></p>
 <ul>
-<li><p><i>Summary: mpfuzz is the first fuzzer to find unique design flaws in mempool, a security-critical component in blockchains. mpfuzz models asymmetric mempool-DoS (denial of service) attacks like DETER (CCS'21) as its bug oracles and employs a novel transaction-symbolization technique to speed up fuzzing. Instead of covering the large space of concrete Ethereum transactions, mpfuzz covers only seven symbols abstracted from the semantics of Ethereum transactions in a way that does not miss detecting bugs. mpfuzz detects more than 20 mempool DoS vulnerabitlies besides DETER, most of which are confirmed. </i></p>
+<li><p><i>Summary: mpfuzz is the first fuzzer to find unique design flaws in mempool, a security-critical component in blockchains. mpfuzz models asymmetric mempool-DoS (denial of service) attacks like DETER (CCS'21) as its bug oracles and employs a novel transaction-symbolization technique to speed up fuzzing. Instead of covering the large space of concrete Ethereum transactions, mpfuzz covers only seven symbols abstracted from the semantics of Ethereum transactions in a way that does not cause the false negative of bug detection. mpfuzz detects more than 20 new mempool DoS vulnerabilities beyond DETER, most of which are confirmed. </i></p>
 </li></ul>
 </li>
 <li><p><b>Euro S&P'23</b>: &ldquo;Understanding the Security Risks of Decentralized Exchanges by Uncovering Unfair Trades in the Wild&rdquo;, AR=35.7%, <u>Jiaqi Chen</u>, <u>Yibo Wang</u>, <u>Yuxuan Zhou</u>, <u>Wanning Ding </u>, Yuzhe Tang, X. Wang, <u>Kai Li</u>. <a href="https://arxiv.org/abs/2401.11547">[preprint]</a>, <a href="https://docs.google.com/presentation/d/1u9pjArFqbiQDoGr2yIUc9fndJ-Z_Vr2YfmqNNwwPSLY/edit?usp=sharing">[slides]</a>, <a href="https://docs.google.com/presentation/d/1NI96D1VtWG_TvvRQIHCXOTFS24TxZee4SqytfMyIAtA/edit?usp=sharing">[2-page slides]</a></p>
 <ul>
-<li><p><i>Summary: DEX, or decentralized exchange, is a prominent class of decentralized finance (DeFi) applications on blockchains, attracting a total locked value worth tens of billions of USD today. This paper presents the first large-scale empirical study that uncovers unfair trades on popular DEX services on Ethereum and Binance Smart Chain (BSC). By joining and analyzing 60 million transactions, we find 671,400 unfair trades on all six measured DEXes, including Uniswap, Balancer, and Curve. Out of these unfair trades, we attribute 55,000 instances, with high confidence, to token thefts that cause a value loss of more than 3.88 million USD. Furthermore, the measurement study uncovers previously unknown causes of extractable value and real-world adaptive strategies to these causes. Finally, we propose countermeasures to redesign secure DEX protocols and to harden deployed services against the discovered security risks.</i></p>
+<li><p><i>Summary: This paper presents a large-scale measurement study on popular decentralized exchanges (DEX). It uncovers a previously unknown and surprising phenomenon: DEXes widely exercise unfair practices in settling trades, leading to the financial unsafety of the traded crypto-assets. Analyzing 60 million transactions, it finds 671,400 unfair trades on Uniswap, Balancer, Curve, and other leading DEXes, causing the loss of value worth more than 3.88 million USD. The root cause is the fundamental difficulty in enforcing access control of tokens across smart contracts on Ethereum.</i></p>
 </li></ul>
 </li>
 <li><p><b>CCS'21</b>: &ldquo;DETER: Denial of Ethereum Txpool sERvices&rdquo;, AR=22%, <u>Kai Li</u>, <u>Yibo Wang</u>, Yuzhe Tang. <a href="./docs/ccs21.pdf">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1geTDmLd-Q78fwN9gy-qvO5XDjb3sIPuWy3bO0T5ZECM/edit?usp=sharing">[slides]</a>, <a href="https://research.protocol.ai/sites/consensusday21/programme/">[talk]</a>, <a href="./docs/GLSD21_deter_poster.pdf">[poster]</a>, <a href="https://github.com/ethereum/go-ethereum/releases/tag/v1.11.4">[Patch@Geth-1.11.4]</a>, <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23327">[CVE-2022-23327]</a>, <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23328">[CVE-2022-23328]</a> </p>
@@ -66,9 +82,13 @@ width="800" />
 
 </li>
 </ul>
+<ul>
+<li><p>Other selected papers: <a href="./research2.html">[link]</a></p>
+</li>
+</ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2024-10-29 13:10:21 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2024-10-30 04:36:40 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
