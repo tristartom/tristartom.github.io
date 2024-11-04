@@ -33,7 +33,7 @@ _gaq.push(['_trackPageview']);
 </li>
 <li><p>Severe bugs discovered and confirmed by Ethereum Foundation</p>
 </li>
-<li><p>Research funded by two awards from the highly competitive Ethereum Foundation academic grant program: <a href="https://esp.ethereum.foundation/academic-grants-2022">[award 22]</a>, <a href="https://blog.ethereum.org/2023/06/28/academic-grants-round-23">[award 23]</a></p>
+<li><p>Research funded by two awards from the highly competitive Ethereum Foundation academic grant program: <a href="https://blog.ethereum.org/2022/07/29/academic-grants-grantee-announce">[award 22]</a>, <a href="https://blog.ethereum.org/2023/06/28/academic-grants-round-23">[award 23]</a></p>
 </li>
 <li><p>Development efforts funded by one award in 2024 from the Ethereum Foundation Ecosystem Support Program </p>
 </li>
@@ -45,6 +45,23 @@ _gaq.push(['_trackPageview']);
 <li><p>&ldquo;fuzzing blockchain clients&rdquo; <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[USENIX Security 24]</a>, &ldquo;blockchain denial of service&rdquo; <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[NDSS 21]</a>, &ldquo;financial security of smart contracts&rdquo; <a href="https://arxiv.org/abs/2401.11547">[Euro S&amp;P 23]</a>, &ldquo;blockchain cost modeling&rdquo; (<a href="./docs/fse21-ibatch.pdf">[FSE 21]</a>, <a href="./docs/mw21i.pdf">[Middleware 20]</a>, <a href="./docs/icde19.pdf">[ICDE 19]</a>), &ldquo;upgradable smart contracts&rdquo; <a href="http://arxiv.org/abs/2403.01290">[WWW 24]</a></p>
 </li>
 <li><p>Our iBatch <a href="./docs/fse21-ibatch.pdf">[FSE 21]</a> influences the design of account abstraction mechanism (ERC-4337) on Ethereum.</p>
+</li></ul>
+</li>
+<li><p>Research interest:</p>
+<ul>
+<li><p>Security analysis and vulnerability discovery: <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[USENIX Security 24]</a>, <a href="./docs/ccs21.pdf">[CCS 21]</a> </p>
+</li>
+<li><p>Provable/formal-secure defenses: S&amp;P 25</p>
+</li>
+<li><p>Security-oriented large-scale measurement: <a href="./docs/imc21-toposhot.pdf">[IMC 21]</a>, <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[NDSS 21]</a></p>
+</li>
+<li><p>Workload analysis and performance optimization: <a href="https://arxiv.org/abs/2106.08554">[TSE 23]</a>, <a href="./docs/fse21-ibatch.pdf">[FSE 21]</a>, <a href="./docs/mw21i.pdf">[Middleware 20]</a>, <a href="./docs/icde19.pdf">[ICDE 19]</a></p>
+</li>
+<li><p>Big-data systems: <a href="./docs/acsac14.pdf">ACSAC 14]</a>, <a href="./docs/edbt14.pdf">[EDBT 14]</a>, <a href="./docs/tpds13.pdf">[TPDS 13]</a>, <a href="./docs/icdcs08.pdf">[ICDCS 08]</a></p>
+</li>
+<li><p>Data privacy: <a href="./docs/tkde15.pdf">[TKDE 15]</a>, <a href="./docs/icdcs14.pdf">[ICDCS 14]</a>, <a href="./docs/cikm11.pdf">[CIKM 11]</a></p>
+</li>
+<li><p>Security/systems education: <a href="https://github.com/badd-labs/badd-labs">[BADD labs]</a>, <a href="https://github.com/tristartom/systems_programs">[SysProg labs]</a></p>
 </li>
 </ul>
 
@@ -55,7 +72,7 @@ _gaq.push(['_trackPageview']);
 <ul>
 <li><p><b>USENIX Security'24</b>: &ldquo;Understanding Ethereum Mempool Security under Asymmetric DoS by Symbolized Stateful Fuzzing&rdquo;, AR=14.5%, <u>Yibo Wang</u>, Yuzhe Tang, <u>Kai Li</u>, <u>Wanning Ding</u>, <u>Zhihua Yang</u>. <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1aNOTQvB3_MRjV06rTBrlFuS-J4S-JQkTEf4A4Kat_pM/edit?usp=sharing">[slides]</a></p>
 <ul>
-<li><p><i>Summary: mpfuzz is the first fuzzer to find unique design flaws in mempool, a security-critical component in blockchains. mpfuzz models asymmetric mempool-DoS (denial of service) attacks like DETER (CCS'21) as its bug oracles and employs a novel transaction-symbolization technique to speed up fuzzing. Instead of covering the large space of concrete Ethereum transactions, mpfuzz covers only seven symbols abstracted from the semantics of Ethereum transactions in a way that does not cause the false negative of bug detection. mpfuzz detects more than 20 new mempool DoS vulnerabilities beyond DETER, most of which are confirmed. </i></p>
+<li><p><i>Summary: mpfuzz is the first fuzzer to find unique design flaws in mempool, a security-critical component in blockchains. mpfuzz models asymmetric mempool-DoS (denial of service) attacks like DETER (CCS'21) as its bug oracles and employs a novel transaction-symbolization technique to speed up fuzzing. Instead of covering the large space of concrete Ethereum transactions, mpfuzz covers only seven symbols abstracted from the semantics of Ethereum transactions without causing false negatives in bug detection. mpfuzz detects more than 20 new mempool DoS vulnerabilities beyond DETER, most of which are confirmed. </i></p>
 </li></ul>
 </li>
 <li><p><b>Euro S&P'23</b>: &ldquo;Understanding the Security Risks of Decentralized Exchanges by Uncovering Unfair Trades in the Wild&rdquo;, AR=35.7%, <u>Jiaqi Chen</u>, <u>Yibo Wang</u>, <u>Yuxuan Zhou</u>, <u>Wanning Ding </u>, Yuzhe Tang, X. Wang, <u>Kai Li</u>. <a href="https://arxiv.org/abs/2401.11547">[preprint]</a>, <a href="https://docs.google.com/presentation/d/1u9pjArFqbiQDoGr2yIUc9fndJ-Z_Vr2YfmqNNwwPSLY/edit?usp=sharing">[slides]</a>, <a href="https://docs.google.com/presentation/d/1NI96D1VtWG_TvvRQIHCXOTFS24TxZee4SqytfMyIAtA/edit?usp=sharing">[2-page slides]</a></p>
@@ -88,7 +105,7 @@ _gaq.push(['_trackPageview']);
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2024-10-31 15:42:50 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2024-11-04 04:18:03 EST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
