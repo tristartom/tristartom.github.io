@@ -27,9 +27,9 @@ _gaq.push(['_trackPageview']);
 <h1>Yuzhe Tang's Research </h1>
 <h2>Highlights</h2>
 <ul>
-<li><p>Leading researcher on &ldquo;mempool security&rdquo; (mempool is a permissionless cache in decentralized systems, such as blockchains)</p>
+<li><p>Leading researcher on &ldquo;mempool security&rdquo; (mempool is a shared cache in a permissionless setting, widely adopted in decentralized systems like blockchains)</p>
 <ul>
-<li><p>Relevant results published in IEEE S&amp;P 25, <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[USENIX Security 24]</a>, <a href="./docs/ccs21.pdf">[CCS 21]</a>, <a href="./docs/imc21-toposhot.pdf">[IMC 21]</a></p>
+<li><p>Relevant results published in <a href="./docs/sp25.pdf">[IEEE S&amp;P 25]</a>, <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[USENIX Security 24]</a>, <a href="./docs/ccs21.pdf">[CCS 21]</a>, <a href="./docs/imc21-toposhot.pdf">[IMC 21]</a></p>
 </li>
 <li><p>Severe bugs discovered and confirmed by Ethereum Foundation</p>
 </li>
@@ -51,7 +51,7 @@ _gaq.push(['_trackPageview']);
 <ul>
 <li><p>Security analysis and vulnerability discovery: <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[USENIX Security 24]</a>, <a href="./docs/ccs21.pdf">[CCS 21]</a> </p>
 </li>
-<li><p>Provable/formal-secure defenses: IEEE S&amp;P 25</p>
+<li><p>Provable/formal-secure defenses: <a href="./docs/sp25.pdf">[IEEE S&amp;P 25]</a></p>
 </li>
 <li><p>Security-oriented large-scale measurement: <a href="https://arxiv.org/abs/2401.11547">[Euro S&amp;P 23]</a>, <a href="./docs/imc21-toposhot.pdf">[IMC 21]</a>, <a href="https://www.ndss-symposium.org/wp-content/uploads/2021-108-paper.pdf">[NDSS 21]</a></p>
 </li>
@@ -74,9 +74,14 @@ _gaq.push(['_trackPageview']);
 
 </li>
 </ul>
-<h2>Five Representative Publications</h2>
+<h2>Six Representative Publications</h2>
 <p><u>Underline</u>: students advised by Dr. Tang</p>
 <ul>
+<li><p><b>IEEE S&P'25</b>: &ldquo;Asymmetric Mempool DoS Security: Formal Definitions and Provable Secure Designs&rdquo;, AR=??%, <u>Wanning Ding</u>, Yuzhe Tang, <u>Yibo Wang</u>. <a href="./docs/sp25.pdf">[pdf]</a></p>
+<ul>
+<li><p><i>Summary: This paper presents the first set of economic-security definition for mempools and saferAd, the first provable secure mempool designs. saferAd defends against the dual attacks of mempool evictions and locking by enforcing an upper bound of attack damage under the locking attacks and a lower bound of the attack cost under eviction attacks. </i></p>
+</li></ul>
+</li>
 <li><p><b>USENIX Security'24</b>: &ldquo;Understanding Ethereum Mempool Security under Asymmetric DoS by Symbolized Stateful Fuzzing&rdquo;, AR=14.5%, <u>Yibo Wang</u>, Yuzhe Tang, <u>Kai Li</u>, <u>Wanning Ding</u>, <u>Zhihua Yang</u>. <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo">[pdf]</a>, <a href="https://docs.google.com/presentation/d/1aNOTQvB3_MRjV06rTBrlFuS-J4S-JQkTEf4A4Kat_pM/edit?usp=sharing">[slides]</a></p>
 <ul>
 <li><p><i>Summary: mpfuzz is the first fuzzer to find unique design flaws in mempool, a security-critical component in blockchains. mpfuzz models asymmetric mempool-DoS (denial of service) attacks like DETER (CCS'21) as its bug oracles and employs a novel transaction-symbolization technique to speed up fuzzing. Instead of covering the large space of concrete Ethereum transactions, mpfuzz covers only seven symbols abstracted from the semantics of Ethereum transactions without causing false negatives in bug detection. mpfuzz detects more than 20 new mempool DoS vulnerabilities beyond DETER, most of which are confirmed. </i></p>
@@ -112,7 +117,7 @@ _gaq.push(['_trackPageview']);
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2024-11-04 05:07:24 EST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2024-11-05 06:52:39 EST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>
