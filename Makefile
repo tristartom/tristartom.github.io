@@ -1,4 +1,4 @@
 all:
 	git add -A
-	git commit -am "no comments"
+	git commit -am "updated with no comments"
 	git push
